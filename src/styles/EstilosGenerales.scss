@@ -1,0 +1,25 @@
+// ORDEN CORRECTO:
+// 1. Primero las variables y overrides
+@import "./bootstrap-overrides";
+
+// 2. Luego Bootstrap (para que lea las variables de arriba)
+@import "bootstrap/scss/bootstrap";
+
+// 3. Finalmente tus estilos base y clases personalizadas
+body {
+  font-family: var(--font-secondary);
+  color: var(--text-main);
+  background-color: #ffffff;
+}
+
+.text-standard {
+  font-family: var(--font-secondary);
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.title-standard {
+  font-family: var(--font-primary);
+  color: var(--primary);
+  font-weight: 700;
+}
