@@ -1,58 +1,66 @@
 <template>
-  <section class="hero container-fluid bg-white py-4 py-md-5">
+  <section class="hero container-fluid bg-white pb-4 pb-md-5"> 
     <div class="container">
       <div class="row align-items-center">
-        
-        <!-- Lado Izquierdo: Logo Principal -->
+        <!-- Izquierda: Logo y Título -->
         <div class="col-12 col-md-6 text-center text-md-start mb-4 mb-md-0">
           <img
             src="@/assets/img/logos/Sevee_Logo.svg"
-            alt="Logo Principal SEVEE"
-            class="hero__logo img-fluid"
+            alt="Logo SEVEE"
+            class="hero__logo img-fluid mb-3"
           />
         </div>
 
-        <!-- Lado Derecho: Ilustración de Rompecabezas -->
+        <!-- Derecha: Rompecabezas -->
         <div class="col-12 col-md-6 text-center">
           <img
             src="@/assets/img/logos/Sevee_Ilustracion.svg"
-            alt="Ilustración SEVEE"
+            alt="Ilustración"
             class="hero__illustration img-fluid"
           />
         </div>
-
       </div>
     </div>
   </section>
 </template>
 
-<script setup>
-
-</script>
-
-<style lang="scss" scoped>
-// Aplicando BEM y Tokens de diseño
+<style scoped>
 .hero {
-  @media (min-width: 768px) {
-    min-height: 50vh; 
-    display: flex;
-    align-items: center;
-  }
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+}
 
-  &__logo {
+.hero.container-fluid {
+  padding-right: 0 !important;
+  padding-left: 0 !important;
+}
+
+.hero .container,
+.hero .row,
+.hero .col-12 {
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+}
+
+.hero__logo {
+  margin-top: 0 !important;
+}
+
+@media (min-width: 650px) {
+  .hero__title {
+    font-size: 2.5rem;
+  }
+  .hero__logo {
     max-height: 180px;
-    @media (min-width: 768px) {
-      max-height: 250px;
-    }
-    object-fit: contain;
+    margin-top: 0 !important;
   }
+}
 
-  &__illustration {
-    max-width: 85%;
-    @media (min-width: 768px) {
-      max-width: 100%;
-    }
-    filter: drop-shadow(0px 10px 15px rgba(0, 0, 0, 0.1));
-  }
+.hero__illustration {
+  max-width: 90%;
+  filter: drop-shadow(0px 10px 15px rgba(0, 0, 0, 0.1));
+  margin-top: 0 !important;
 }
 </style>

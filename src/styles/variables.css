@@ -1,0 +1,34 @@
+/* ============================================================
+   ARCHIVO: src/styles/variables.css
+   DESCRIPCIÓN: Paleta de colores institucional y variables globales
+   ============================================================ */
+
+:root {
+  
+  /* Azul Institucional (Logo SEVEE y Títulos Principales) */
+  --color-primary:  #246cb6; 
+  
+  /* Turquesa Vibrante (Fondo del Filtro Lateral y Barra Info) */
+  --color-secondary: #12a2c2; 
+  
+  /* Naranja (Botón 'Primera Vuelta' y destacados) */
+  --color-accent: #f78c0e;
+  
+  /* Gris Oscuro / Negro (Fondo del Footer) */
+  --bg-footer: #1e1e1e;
+  
+  /* Azul Muy Claro (Fondos suaves de secciones) */
+  --bg-soft: #f0f8fb; 
+  
+  /* Blancos y Grises de Texto */
+  --text-main: #333333;       /* Texto general */
+  --text-muted: #6c757d;      /* Texto secundario */
+  --bg-light: #f8f9fa;        /* Fondo general */
+
+  /* --- TIPOGRAFÍA --- */
+  /* Oswald: Solo para Títulos grandes */
+  --font-titles: 'Oswald', sans-serif;
+  
+  /* Open Sans: Para TODO lo demás (Párrafos, Tablas, Menús) */
+  --font-body: 'Open Sans', sans-serif;
+}

@@ -1,0 +1,42 @@
+/* ============================================================
+   ARCHIVO: src/styles/fonts.css
+   DESCRIPCIÓN: Carga de tipografías locales desde 'assets/fonts'
+   ============================================================ */
+
+/* --- 1. OSWALD (Para Títulos e Impacto) --- */
+@font-face {
+  font-family: 'Oswald';
+  /* Busca el archivo en src/assets/fonts */
+  src: url('@/assets/fonts/Oswald-Regular.ttf') format('truetype');
+  font-weight: 400; /* Peso Normal */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Oswald';
+  src: url('@/assets/fonts/Oswald-Medium.ttf') format('truetype');
+  font-weight: 500; /* Peso Medio */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Oswald';
+  src: url('@/assets/fonts/Oswald-Bold.ttf') format('truetype');
+  font-weight: 700; /* Negrita */
+  font-style: normal;
+}
+
+/* --- 2. OPEN SANS (Para Párrafos, Tablas y Textos Pequeños) --- */
+@font-face {
+  font-family: 'Open Sans';
+  src: url('@/assets/fonts/OpenSans-Regular.ttf') format('truetype');
+  font-weight: 400; /* Peso Normal */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  src: url('@/assets/fonts/OpenSans-Bold.ttf') format('truetype');
+  font-weight: 600; /* Negrita (Usamos 600 para resaltar en tablas) */
+  font-style: normal;
+}

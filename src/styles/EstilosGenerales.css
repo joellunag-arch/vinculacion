@@ -1,0 +1,219 @@
+/* ============================================================
+   ARCHIVO: src/styles/EstilosGenerales.css
+   DESCRIPCIÓN: Hoja de estilos maestra del sistema SEVEE.
+   Contiene la lógica visual, tipografía y adaptaciones de Bootstrap.
+   ============================================================ */
+
+/* ----------------------------------------------------------
+   1. IMPORTACIONES
+   Conectamos con los archivos de configuración externa.
+   ---------------------------------------------------------- */
+@import './fonts.css';      /* Carga las fuentes locales (Oswald y Open Sans) */
+@import './variables.css';  /* Carga la paleta de colores (#246cb6, #f78c0e, etc.) */
+
+/* ----------------------------------------------------------
+   2. CONFIGURACIÓN BASE (REGLA DE ORO)
+   Establecemos Open Sans como la fuente predeterminada para leer.
+   ---------------------------------------------------------- */
+body {
+  font-family: var(--font-body); /* Variable definida en variables.css */
+  color: var(--text-main);       /* Color de texto gris oscuro (#333) */
+  background-color: #fff;
+  line-height: 1.6;              /* Espaciado entre líneas para mejor lectura */
+}
+
+/* REGLA DE FUERZA MAYOR (!important):
+   Muchos navegadores ignoran la fuente del body en elementos de formulario
+   o tablas. Aquí obligamos a que TODOS usen Open Sans.
+*/
+p, span, small, a, li, td, th, tr, table, input, select, button {
+  font-family: var(--font-body) !important;
+}
+
+/* ----------------------------------------------------------
+   3. ESTILOS DE TÍTULOS (OSWALD)
+   Usamos la fuente Oswald para generar impacto visual.
+   ---------------------------------------------------------- */
+/* Aplica a todos los encabezados, la clase titulo-seccion, la marca del menú y etiquetas del filtro */
+h1, h2, h3, h4, h5, .titulo-seccion, .navbar-brand, .sidebar-filtro label {
+  font-family: var(--font-titles);
+  text-transform: uppercase;     /* Siempre en MAYÚSCULAS */
+  letter-spacing: 0.5px;         /* Separación sutil entre letras */
+}
+
+/* Estilo específico para el título grande de la página (Ej: RESULTADOS NACIONALES) */
+.titulo-seccion {
+  color: var(--color-primary);   /* Azul Institucional (#246cb6) */
+  font-weight: 700;              /* Negrita */
+  text-align: center;
+  margin: 2rem 0;
+  font-size: 2.5rem;             /* Tamaño grande */
+}
+
+/* Estilo para la caja Turquesa del Título (Como en la imagen image_4170df.png) */
+.titulo-encabezado {
+  background-color: var(--color-secondary); /* Turquesa #12a2c2 */
+  color: #fff;
+  padding: 10px 40px;
+  display: inline-block; /* Para que la caja se ajuste al texto o tamaño fijo */
+  border-radius: 4px;    /* Bordes ligeramente redondeados */
+  font-family: var(--font-titles); /* Oswald */
+  font-size: 2rem;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1); /* Sombra suave */
+}
+
+/* ----------------------------------------------------------
+   4. MENÚ DE NAVEGACIÓN (NAVBAR)
+   Personalización de colores según solicitud específica.
+   ---------------------------------------------------------- */
+.navbar-sevee {
+  background-color: #fff;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05); /* Sombra suave en la parte inferior */
+}
+
+/* Enlaces del menú (Inicio, Votantes, Acerca De) */
+.nav-link-custom {
+  font-family: var(--font-body);
+  font-weight: 600;             /* Letra semi-negrita */
+  margin-left: 1rem;            /* Separación entre opciones */
+  transition: color 0.3s ease;  /* Efecto suave al cambiar de color */
+  
+  /* ESTADO NORMAL: Color AZUL (#246cb6) */
+  color: var(--color-primary) !important; 
+}
+
+/* ESTADO HOVER (Al pasar el mouse): Cambia a color NARANJA (#f78c0e) */
+.nav-link-custom:hover {
+  color: var(--color-accent) !important; 
+}
+
+/* ----------------------------------------------------------
+   5. FILTRO LATERAL (BARRA TURQUESA)
+   Estilos para la columna izquierda de selección.
+   ---------------------------------------------------------- */
+.sidebar-filtro {
+  background-color: var(--color-secondary); /* Turquesa Vibrante (#12a2c2) */
+  color: #fff;                              /* Texto blanco */
+  padding: 20px;
+  min-height: 100%;                         /* Ocupa todo el alto disponible */
+}
+
+/* Etiquetas de los campos (Ej: "SELECCIONAR VUELTA") */
+.sidebar-filtro label {
+  font-size: 0.9rem;
+  margin-bottom: 5px;
+  display: block;
+}
+
+/* Inputs y Selects dentro del filtro */
+.sidebar-filtro .form-select {
+  background-color: rgba(255, 255, 255, 0.1); /* Fondo semitransparente */
+  border: 1px solid rgba(255, 255, 255, 0.4); /* Borde blanco sutil */
+  color: #fff;
+  margin-bottom: 15px;
+  font-family: var(--font-body);
+}
+
+/* Corrección: Las opciones desplegables deben tener fondo blanco y texto oscuro */
+.sidebar-filtro .form-select option {
+  color: #333;
+  background-color: #fff;
+}
+
+/* ----------------------------------------------------------
+   6. BOTONES DE VUELTA (PRIMERA / SEGUNDA)
+   Botones cuadrados para alternar entre vueltas electorales.
+   ---------------------------------------------------------- */
+/* ----------------------------------------------------------
+   6. BOTONES DE VUELTA (INTERACTIVOS)
+   ---------------------------------------------------------- */
+.btn-vuelta {
+  font-family: var(--font-titles); /* Fuente Oswald */
+  font-size: 1.1rem;
+  padding: 10px 30px;
+  cursor: pointer;
+  border: 1px solid #333; /* Borde negro fino como en la imagen */
+  transition: all 0.2s ease;
+  margin: 0; /* Sin espacios para que se peguen si usas flex */
+}
+
+/* ESTADO SELECCIONADO (Activo):
+   Se pinta del Naranja solicitado (#f78c0e) y letras blancas */
+.btn-vuelta.activo {
+  background-color: #f78c0e; 
+  color: #fff;
+  z-index: 1; /* Para que el borde resalte sobre el otro */
+}
+
+/* ESTADO NO SELECCIONADO (Inactivo):
+   Se queda blanco con letras negras (como el botón "Segunda Vuelta") */
+.btn-vuelta.inactivo {
+  background-color: #fff;
+  color: #333;
+}
+
+/* Efecto Hover solo para el botón blanco (el naranja no cambia) */
+.btn-vuelta.inactivo:hover {
+  background-color: #f0f0f0; /* Gris muy suave al pasar el mouse */
+}
+
+/* ----------------------------------------------------------
+   7. PIE DE PÁGINA (FOOTER)
+   Sección oscura inferior con información institucional.
+   ---------------------------------------------------------- */
+.footer-sevee {
+  background-color: var(--bg-footer); /* Gris Oscuro (#1e1e1e) */
+  color: #fff;
+  padding-top: 40px;
+  border-top: 4px solid #333;         /* Línea separadora superior */
+}
+
+/* Textos y enlaces dentro del footer */
+.footer-text, .footer-sevee p, .footer-sevee a {
+  font-family: var(--font-body);
+  color: #ccc;                       /* Gris claro para no cansar la vista */
+  font-size: 0.85rem;                /* Letra pequeña */
+  text-decoration: none;
+}
+
+/* Al pasar el mouse por un enlace del footer, se vuelve blanco puro */
+.footer-sevee a:hover {
+  color: #fff;
+}
+
+/* ----------------------------------------------------------
+   8. BARRA DE INFORMACIÓN GENERAL (Estadísticas Inferiores)
+   Esta sección faltaba. Controla la franja turquesa con los números.
+   ---------------------------------------------------------- */
+.barra-informacion {
+  background-color: var(--color-secondary); /* Turquesa #12a2c2 */
+  color: #fff;
+  padding: 1.5rem 0;
+  margin-top: auto; /* Asegura que no choque con elementos superiores */
+}
+
+/* Contenedor de cada estadística (Icono + Número + Etiqueta) */
+.stat-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* El número grande (Ej: 5949695) */
+.stat-number {
+  font-family: var(--font-titles); /* Fuente Oswald */
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+/* La etiqueta pequeña (Ej: SUFRAGANTES) */
+.stat-label {
+  font-family: var(--font-body); /* Fuente Open Sans */
+  font-size: 1rem;
+  text-transform: uppercase; /* Mayúsculas */
+  opacity: 0.9;
+}
