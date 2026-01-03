@@ -1,53 +1,117 @@
 <template>
-  <footer class="footer-sevee mt-auto pb-4">
-    <div class="container">
-      <div class="row align-items-center">
-     
-        <div class="col-md-4 text-center text-md-start mb-4 mb-md-0">
-          <img src="@/assets/img/logos/Sevee_NavBar.svg" alt="SEVEE" class="footer-main-logo mb-2">
-          <p class="footer-text">Sistema Ecuatoriano de Visualización de Estadística Electoral</p>
+  <!-- Pie de página principal del sitio SEVEE -->
+  <footer class="footer-sevee">
+    <div class="container-fluid">
+      <!-- Contenedor que agrupa todos los logos -->
+      <div class="contenedor-logos">
+        <!-- Sección del logo principal de SEVEE -->
+        <div class="seccion-logo-principal">
+          <img src="@/assets/img/logos/P_Sevee.svg" alt="SEVEE" class="logo-sevee" />
         </div>
-
-        <div class="col-md-8">
-          <div class="d-flex justify-content-center justify-content-md-end align-items-center gap-4 flex-wrap">
-            <div class="text-center">
-              <img src="@/assets/img/logos/Logo_IAEN 2.svg" alt="IAEN" class="footer-inst-logo">
-              <div class="tiny-text">Instituto de Altos Estudios Nacionales</div>
-            </div>
-            <div class="text-center">
-              <img src="@/assets/img/logos/Logo_Uce.svg" alt="UCE" class="footer-inst-logo">
-              <div class="tiny-text">Universidad Central del Ecuador</div>
-            </div>
-            <div class="text-center">
-              <img src="@/assets/img/logos/Logo_AC 1.svg" alt="Ágora" class="footer-inst-logo">
-              <div class="tiny-text">Ágora Ciudadana</div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Línea de Copyright estilizada con el nuevo color -->
-      <div class="row mt-4 pt-3" style="border-top: 1px solid #333;">
-        <div class="col text-center">
-          <p class="footer-text mb-0 opacity-75">
-            Copyright © 2025 | Derechos reservados
-          </p>
+        <!-- Sección de logos de instituciones colaboradoras -->
+        <div class="seccion-logos-institucionales">
+          <img src="@/assets/img/logos/P_IAEN.svg" alt="IAEN" class="logo-institucional" />
+          <img src="@/assets/img/logos/P_Uce.svg" alt="UCE" class="logo-institucional" />
+          <img src="@/assets/img/logos/P_Ac.svg" alt="Ágora Ciudadana" class="logo-institucional" />
         </div>
       </div>
     </div>
+    <!-- Línea de derechos de autor con año dinámico -->
+    <div class="pie-derechos footer-text">Copyright &#169; {{ anio }} | Derechos reservados</div>
   </footer>
 </template>
 
+<script setup>
+// Obtiene el año actual de forma dinámica para el copyright
+const anio = new Date().getFullYear();
+</script>
+
 <style scoped>
-.footer-main-logo {
-  height: 45px;
-  /* El filtro blanco se mantiene para que el logo resalte sobre el fondo oscuro #1e1e1e */
-  filter: brightness(0) invert(1); 
+/* Importa estilos generales del proyecto */
+@import '@/styles/EstilosGenerales.css';
+
+/* ========================================
+   CONTENEDOR PRINCIPAL DE LOGOS
+   ======================================== */
+/* Configuración de flexbox para disposición responsive de logos */
+.contenedor-logos {
+  display: flex;
+  align-items: center;
+  padding: 1.5rem 1rem;
+  flex-wrap: wrap;
+  gap: 1.5rem; /* Espacio entre elementos */
 }
-.footer-inst-logo {
-  height: 50px;
-  margin-bottom: 5px;
+
+/* ========================================
+   LOGO PRINCIPAL SEVEE
+   ======================================== */
+/* En móvil: logo centrado ocupando todo el ancho */
+.seccion-logo-principal {
+  flex: 1 1 100%;
+  text-align: center;
 }
-/* No necesitamos definir .tiny-text ni .footer-text aquí 
-   porque ya están en el EstilosGenerales.css de tu compañero */
+
+/* ========================================
+   LOGOS INSTITUCIONALES
+   ======================================== */
+/* En móvil: logos apilados verticalmente y centrados */
+.seccion-logos-institucionales {
+  flex: 1 1 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem; /* Espacio entre logos */
+}
+
+/* ========================================
+   ESTILOS RESPONSIVE (TABLET Y DESKTOP)
+   ======================================== */
+/* A partir de 768px cambia a layout horizontal */
+@media (min-width: 768px) {
+  .contenedor-logos {
+    padding: 1.5rem 5rem; /* Mayor padding lateral en pantallas grandes */
+    flex-wrap: nowrap; /* Evita que los elementos se envuelvan */
+  }
+
+  /* Logo SEVEE ocupa 1/3 del ancho y se alinea a la izquierda */
+  .seccion-logo-principal {
+    flex: 0 0 33.333%;
+    text-align: left;
+  }
+
+  /* Logos institucionales ocupan 2/3 del ancho y se alinean a la derecha */
+  .seccion-logos-institucionales {
+    flex: 0 0 66.666%;
+    flex-direction: row; /* Disposición horizontal */
+    justify-content: flex-end; /* Alineados a la derecha */
+    gap: 10rem; /* Mayor espacio entre logos */
+    margin-right: 10rem; /* Desplazamiento hacia la izquierda */
+  }
+}
+
+/* ========================================
+   TAMAÑOS Y PROPIEDADES DE LOGOS
+   ======================================== */
+/* Propiedades comunes para todos los logos */
+.logo-sevee, .logo-institucional {
+  max-height: 85px; /* Altura máxima de logos */
+  object-fit: contain; /* Mantiene proporciones sin deformar */
+  vertical-align: middle; /* Alineación vertical */
+}
+
+/* Ancho máximo específico del logo SEVEE */
+.logo-sevee { max-width: 250px; }
+/* Ancho máximo de logos institucionales */
+.logo-institucional { max-width: 200px; }
+
+/* ========================================
+   LÍNEA DE DERECHOS DE AUTOR
+   ======================================== */
+/* Sección inferior con copyright */
+.pie-derechos {
+  background-color: #2a2a2a; /* Fondo más claro que el footer principal */
+  border-top: 1px solid #444; /* Línea superior de separación más clara */
+  text-align: center; /* Texto centrado */
+  padding: 1.5rem 0; /* Espaciado vertical */
+}
 </style>

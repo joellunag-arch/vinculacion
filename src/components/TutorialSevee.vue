@@ -1,10 +1,10 @@
 <template>
-  <section class="tutorial container-fluid bg-white pt-5 px-0"> <!-- Agrega px-0 -->
-    <div class="container px-4 px-md-5"> <!-- Agrega padding horizontal solo en el contenido -->
+  <section class="tutorial container-fluid  pt-5 px-0"> <!-- Agrega px-0 -->
+    <div class="container px-4 px-md-5"> 
       <div class="row align-items-center mb-5">
         <!-- Título -->
         <div class="col-12 col-md-5 text-center text-md-start mb-4">
-          <h2 class="tutorial-heading text-lowercase"> <!-- Agregué text-lowercase -->
+          <h2 class="tutorial-heading text-lowercase"> 
             Aprende más sobre cómo funciona el Sevee.
           </h2>
         </div>
@@ -39,6 +39,7 @@
 .tutorial {
   padding-left: 0 !important;
   padding-right: 0 !important;
+  background: var(--bg-celeste);
 }
 
 .tutorial-heading {
@@ -46,10 +47,9 @@
   color: var(--text-main);
   font-weight: 700;
   font-size: 2.2rem;
-  text-transform: lowercase; /* Esto pondrá todo en minúsculas */
+  text-transform: lowercase; 
 }
 
-/* O si prefieres mantener la primera letra en mayúscula: */
 .tutorial-heading::first-letter {
   text-transform: uppercase;
 }
