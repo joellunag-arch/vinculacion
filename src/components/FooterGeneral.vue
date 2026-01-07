@@ -1,3 +1,13 @@
+<!--
+  FooterGeneral.vue
+
+  Componente que renderiza el pie de página general del sitio SEVEE.
+  Incluye el logo principal de SEVEE y los logos de las instituciones colaboradoras
+  (IAEN, UCE, Ágora Ciudadana), así como la información de derechos de autor con
+  año dinámico. El diseño es completamente responsive, adaptándose de layout vertical
+  en móviles a horizontal en tablets y desktop.
+-->
+
 <template>
   <!-- Pie de página principal del sitio SEVEE -->
   <footer class="footer-sevee">
@@ -37,7 +47,7 @@ const anio = new Date().getFullYear();
 .contenedor-logos {
   display: flex;
   align-items: center;
-  padding: 1.5rem 1rem;
+  padding: 0.75rem 1rem;
   flex-wrap: wrap;
   gap: 1.5rem; /* Espacio entre elementos */
 }
@@ -69,7 +79,7 @@ const anio = new Date().getFullYear();
 /* A partir de 768px cambia a layout horizontal */
 @media (min-width: 768px) {
   .contenedor-logos {
-    padding: 1.5rem 5rem; /* Mayor padding lateral en pantallas grandes */
+    padding: 1rem 5rem; /* Mayor padding lateral en pantallas grandes */
     flex-wrap: nowrap; /* Evita que los elementos se envuelvan */
   }
 
@@ -84,8 +94,8 @@ const anio = new Date().getFullYear();
     flex: 0 0 66.666%;
     flex-direction: row; /* Disposición horizontal */
     justify-content: flex-end; /* Alineados a la derecha */
-    gap: 10rem; /* Mayor espacio entre logos */
-    margin-right: 10rem; /* Desplazamiento hacia la izquierda */
+    gap: 9rem; /* Mayor espacio entre logos */
+    margin-right: 8rem; /* Desplazamiento hacia la izquierda */
   }
 }
 
@@ -112,6 +122,6 @@ const anio = new Date().getFullYear();
   background-color: #2a2a2a; /* Fondo más claro que el footer principal */
   border-top: 1px solid #444; /* Línea superior de separación más clara */
   text-align: center; /* Texto centrado */
-  padding: 1.5rem 0; /* Espaciado vertical */
+  padding: 0.5rem 0; /* Espaciado vertical */
 }
 </style>
