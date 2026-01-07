@@ -35,7 +35,7 @@
 }
 
 @font-face {
-  font-family: 'Open Sans';
+  font-family: 'Open Sans'; /* Para párrafos, tablas y textos pequeños */
   src: url('@/assets/fonts/OpenSans-Bold.ttf') format('truetype');
   font-weight: 600; /* Negrita (Usamos 600 para resaltar en tablas) */
   font-style: normal;

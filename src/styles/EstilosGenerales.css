@@ -24,7 +24,7 @@ body {
 
 /* REGLA DE FUERZA MAYOR (!important):
    Muchos navegadores ignoran la fuente del body en elementos de formulario
-   o tablas. Aquí obligamos a que TODOS usen Open Sans.
+   o tablas. Aquí obligamos a que TODOS usen la fuente Open Sans.
 */
 p, span, small, a, li, td, th, tr, table, input, select, button {
   font-family: var(--font-body) !important;
