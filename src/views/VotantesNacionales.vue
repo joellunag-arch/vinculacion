@@ -3,6 +3,7 @@
     <ContenedorCarrusel
       ambito="NACIONALES"
       :periodo="year"
+      :etapasDisponibles="etapasDisponibles"
       @update-etapa="manejarCambioVuelta"
       @toggle-search="abrirFiltros"
     >
@@ -29,12 +30,19 @@
 </template>
 
 <script setup>
-import { ref } from "vue";
+import { ref, computed } from "vue";
 import ContenedorCarrusel from "@/components/ContenedorCarrusel.vue";
+import { useElectoralData } from "@/composable/useElectoralData";
 
 const props = defineProps(["year"]);
+const { obtenerEtapasDelAno } = useElectoralData();
 
 const vueltaActiva = ref(1);
+
+// Obtiene automáticamente las etapas disponibles del config
+const etapasDisponibles = computed(() =>
+  obtenerEtapasDelAno("NACIONALES", props.year)
+);
 
 const manejarCambioVuelta = (num) => {
   vueltaActiva.value = num;
