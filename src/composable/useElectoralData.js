@@ -19,22 +19,22 @@ export function useElectoralData() {
 
       if (etapa === 1) carpetaEtapa = 'PrimeraVuelta';
       else if (etapa === 2) carpetaEtapa = 'SegundaVuelta';
-      else { 
-        carpetaEtapa = 'asambleístas'; 
-        esPresidente = false; 
+      else {
+        carpetaEtapa = 'asambleístas';
+        esPresidente = false;
       }
 
       const pathBase = esPresidente ? 'presidentes/' : '';
-      
+
       // 2. Importación dinámica (Acceso al MODELO)
       // Ruta: src/assets/datos/[año]/datos/[presidentes]/[etapa]/DatosProvincias.json
       const modulo = await import(`../assets/datos/${year}/datos/${pathBase}${carpetaEtapa}/DatosProvincias.json`);
-      
+
       const data = modulo.default;
 
       // 3. Procesamiento de datos (Lógica de Negocio)
       provincias.value = data;
-      
+
       resumenNacional.value = {
         total: data.reduce((acc, p) => acc + (p.votos_total || 0), 0),
         blancos: data.reduce((acc, p) => acc + (p.votos_blancos || 0), 0),

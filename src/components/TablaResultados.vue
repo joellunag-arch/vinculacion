@@ -15,7 +15,9 @@
           <td class="fw-bold">{{ item.PROVINCIA }}</td>
           <td>{{ item.ganador }}</td>
           <td>
-            <span class="badge bg-light text-dark border">{{ item.ganador }}</span>
+            <span class="badge bg-light text-dark border">{{
+              item.ganador
+            }}</span>
           </td>
           <td class="text-end fw-bold text-primary">
             {{ item.resultados[item.ganador]?.porcentaje }}%
@@ -28,7 +30,7 @@
 
 <script setup>
 defineProps({
-  datos: { type: Array, default: () => [] }
+  datos: { type: Array, default: () => [] },
 });
 </script>
 
