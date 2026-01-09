@@ -1,4 +1,5 @@
 import { ref, computed } from 'vue';
+import { obtenerEtapasDisponibles } from '@/config/elecciones';
 
 export function useElectoralData() {
   const provincias = ref([]);
@@ -17,24 +18,24 @@ export function useElectoralData() {
       let carpetaEtapa = '';
       let esPresidente = true;
 
-      if (etapa === 1) carpetaEtapa = 'PrimeraVuelta';
-      else if (etapa === 2) carpetaEtapa = 'SegundaVuelta';
-      else { 
-        carpetaEtapa = 'asambleístas'; 
-        esPresidente = false; 
+      if (etapa === 1) carpetaEtapa = 'primera_vuelta';
+      else if (etapa === 2) carpetaEtapa = 'segunda_vuelta';
+      else {
+        carpetaEtapa = 'asambleistas';
+        esPresidente = false;
       }
 
       const pathBase = esPresidente ? 'presidentes/' : '';
-      
+
       // 2. Importación dinámica (Acceso al MODELO)
-      // Ruta: src/assets/datos/[año]/datos/[presidentes]/[etapa]/DatosProvincias.json
-      const modulo = await import(`../assets/datos/${year}/datos/${pathBase}${carpetaEtapa}/DatosProvincias.json`);
-      
+      // Ruta: src/assets/data/[año]/informacion_electoral/[presidentes]/[etapa]/DatosProvincias.json
+      const modulo = await import(`../assets/data/${year}/informacion_electoral/${pathBase}${carpetaEtapa}/DatosProvincias.json`);
+
       const data = modulo.default;
 
       // 3. Procesamiento de datos (Lógica de Negocio)
       provincias.value = data;
-      
+
       resumenNacional.value = {
         total: data.reduce((acc, p) => acc + (p.votos_total || 0), 0),
         blancos: data.reduce((acc, p) => acc + (p.votos_blancos || 0), 0),
@@ -51,11 +52,22 @@ export function useElectoralData() {
     }
   };
 
+  /**
+   * Obtiene las etapas disponibles para un ámbito y año
+   * @param {string} ambito - NACIONALES o EXTRANJEROS
+   * @param {string} year - Año electoral
+   * @returns {array} Array con las etapas disponibles
+   */
+  const obtenerEtapasDelAno = (ambito, year) => {
+    return obtenerEtapasDisponibles(ambito, year);
+  };
+
   return {
     provincias,
     resumenNacional,
     loading,
     error,
-    cargarResultados
+    cargarResultados,
+    obtenerEtapasDelAno
   };
 }

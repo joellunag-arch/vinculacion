@@ -1,0 +1,65 @@
+[
+  {
+    "CODPRO": "01",
+    "PROVINCIA": "AZUAY",
+    "votos_validos": 448492,
+    "votos_blancos": 8775,
+    "votos_nulos": 37454,
+    "votos_total": 494721,
+    "ganador": "ADN",
+    "resultados": {
+      "ADN": {
+        "candidato": "DANIEL NOBOA AZIN",
+        "votos": 206001,
+        "porcentaje": 45.93
+      },
+      "RC5": {
+        "candidato": "LUISA GONZALEZ",
+        "votos": 190000,
+        "porcentaje": 42.36
+      }
+    }
+  },
+  {
+    "CODPRO": "17",
+    "PROVINCIA": "PICHINCHA",
+    "votos_validos": 1500000,
+    "votos_blancos": 25000,
+    "votos_nulos": 120000,
+    "votos_total": 1645000,
+    "ganador": "RC5",
+    "resultados": {
+      "ADN": {
+        "candidato": "DANIEL NOBOA AZIN",
+        "votos": 700000,
+        "porcentaje": 46.66
+      },
+      "RC5": {
+        "candidato": "LUISA GONZALEZ",
+        "votos": 800000,
+        "porcentaje": 53.34
+      }
+    }
+  },
+  {
+    "CODPRO": "09",
+    "PROVINCIA": "GUAYAS",
+    "votos_validos": 2100000,
+    "votos_blancos": 45000,
+    "votos_nulos": 180000,
+    "votos_total": 2325000,
+    "ganador": "ADN",
+    "resultados": {
+      "ADN": {
+        "candidato": "DANIEL NOBOA AZIN",
+        "votos": 1100000,
+        "porcentaje": 52.38
+      },
+      "RC5": {
+        "candidato": "LUISA GONZALEZ",
+        "votos": 1000000,
+        "porcentaje": 47.62
+      }
+    }
+  }
+]

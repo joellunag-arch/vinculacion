@@ -4,83 +4,109 @@
       <div
         id="carouselElectoral"
         ref="carouselRef"
-        class="carousel slide bg-white-opacity shadow-lg overflow-hidden"
+        class="carousel slide bg-white-opacity shadow-lg"
         data-bs-interval="false"
       >
-        <div class="row pt-4 pb-2 justify-content-center text-center">
-          <div class="col-12 mb-3">
+        <!-- =========================
+             HEADER
+        ========================== -->
+        <div class="row align-items-center mx-0 header-electoral">
+          <!-- LUPA -->
+          <div v-if="slideActivo === 0" class="col-auto search-container">
+            <button class="btn-search-fab" @click="$emit('toggle-search')">
+              <i class="bi bi-search"></i>
+            </button>
+          </div>
+
+          <!-- TÍTULO -->
+          <div class="col-auto mx-auto text-center">
             <div class="titulo-electoral">
               <h2 class="mb-0 fw-bold">{{ tituloActual }}</h2>
             </div>
           </div>
+        </div>
 
-          <div
-            v-if="slideActivo === 0"
-            class="col-12 d-flex justify-content-center"
-          >
+        <!-- ==========================
+             BOTONES DE ETAPA
+        ========================== -->
+        <div
+          v-if="slideActivo === 0"
+          class="row justify-content-center pb-3 mx-0 etapa-container"
+        >
+          <div class="col-12 d-flex justify-content-center px-0">
             <button
-              @click="cambiarEtapa(1)"
-              :class="['btn-etapa', { activo: etapa === 1 }]"
+              @click="etapaHabilitada(1) && cambiarEtapa(1)"
+              :class="[
+                'btn-etapa',
+                { activo: etapa === 1, disabled: !etapaHabilitada(1) },
+              ]"
             >
               PRIMERA VUELTA
             </button>
+
             <button
-              @click="cambiarEtapa(2)"
-              :class="['btn-etapa', { activo: etapa === 2 }]"
+              @click="etapaHabilitada(2) && cambiarEtapa(2)"
+              :class="[
+                'btn-etapa',
+                { activo: etapa === 2, disabled: !etapaHabilitada(2) },
+              ]"
             >
               SEGUNDA VUELTA
             </button>
+
             <button
-              @click="cambiarEtapa(3)"
-              :class="['btn-etapa', { activo: etapa === 3 }]"
+              @click="etapaHabilitada(3) && cambiarEtapa(3)"
+              :class="[
+                'btn-etapa',
+                { activo: etapa === 3, disabled: !etapaHabilitada(3) },
+              ]"
             >
               ASAMBLEÍSTAS
             </button>
           </div>
         </div>
 
+        <!-- =========================
+             SLIDES
+        ========================== -->
         <div class="carousel-inner">
           <div class="carousel-item active p-4">
             <div class="row min-vh-50">
               <div class="col-md-9 position-relative border-end border-light">
-                <button class="btn-search-fab" @click="$emit('toggle-search')">
-                  <i class="bi bi-search"></i>
-                </button>
-                <slot name="mapa"
-                  ><div class="placeholder-content">Mapa del Ecuador</div></slot
-                >
+                <slot name="mapa">
+                  <div class="placeholder-content">Mapa del Ecuador</div>
+                </slot>
               </div>
               <div class="col-md-3">
-                <slot name="filtros"
-                  ><div class="placeholder-content small">
-                    Filtros / Listado
-                  </div></slot
-                >
+                <slot name="filtros">
+                  <div class="placeholder-content small">Filtros / Listado</div>
+                </slot>
               </div>
             </div>
           </div>
+
           <div class="carousel-item p-4">
             <div
               class="min-vh-50 d-flex align-items-center justify-content-center"
             >
-              <slot name="graficos"
-                ><div class="placeholder-content">
-                  Gráficos de resultados
-                </div></slot
-              >
+              <slot name="graficos">
+                <div class="placeholder-content">Gráficos de resultados</div>
+              </slot>
             </div>
           </div>
+
           <div class="carousel-item p-4">
             <div class="min-vh-50 overflow-auto">
-              <slot name="tablas"
-                ><div class="placeholder-content">
-                  Tablas de resultados
-                </div></slot
-              >
+              <slot name="tablas">
+                <div class="placeholder-content">Tablas de resultados</div>
+              </slot>
             </div>
           </div>
         </div>
 
+        <!-- =========================
+             INDICADORES
+        ========================== -->
         <div class="carousel-indicators-custom">
           <button
             class="btn-nav"
@@ -89,6 +115,7 @@
           >
             <i class="bi bi-chevron-left"></i>
           </button>
+
           <div class="dots">
             <button
               v-for="idx in 3"
@@ -98,6 +125,7 @@
               :class="['dot-btn', { active: slideActivo === idx - 1 }]"
             />
           </div>
+
           <button
             class="btn-nav"
             data-bs-target="#carouselElectoral"
@@ -113,11 +141,20 @@
 
 <script setup>
 import { ref, computed, onMounted, onUnmounted } from "vue";
+
 const props = defineProps({
   ambito: { type: String, default: "NACIONALES" },
   periodo: { type: String, default: "1992" },
+
+  //CONTROL DINÁMICO DE ETAPAS
+  etapasDisponibles: {
+    type: Array,
+    default: () => [1], // por defecto solo primera vuelta
+  },
 });
+
 const emit = defineEmits(["update-etapa", "toggle-search"]);
+
 const etapa = ref(1);
 const slideActivo = ref(0);
 const carouselRef = ref(null);
@@ -128,10 +165,15 @@ const tituloActual = computed(() => {
   return `RESULTADOS ${props.ambito} ${props.periodo}`;
 });
 
+const etapaHabilitada = (num) => {
+  return props.etapasDisponibles.includes(num);
+};
+
 const cambiarEtapa = (num) => {
   etapa.value = num;
   emit("update-etapa", num);
 };
+
 const detectarCambioSlide = (event) => {
   slideActivo.value = event.to;
 };
@@ -139,6 +181,7 @@ const detectarCambioSlide = (event) => {
 onMounted(() => {
   carouselRef.value?.addEventListener("slide.bs.carousel", detectarCambioSlide);
 });
+
 onUnmounted(() => {
   carouselRef.value?.removeEventListener(
     "slide.bs.carousel",
@@ -153,47 +196,71 @@ onUnmounted(() => {
   background-size: cover;
   background-position: center;
   min-height: 85vh;
-  padding: 2rem 0;
+  padding-bottom: 140px;
 }
 
 .bg-white-opacity {
-  background-color: rgba(255, 255, 255, 0.94);
-  backdrop-filter: blur(6px);
-  border-radius: 4px;
+  background: transparent !important;
 }
 
-.titulo-electoral {
-  display: inline-block;
-  background-color: var(--color-primary);
-  padding: 10px 36px;
-  border-radius: 4px;
-  color: #fff;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+/* =========================
+   HEADER
+========================= */
+.header-electoral {
+  padding-top: 28px;
+  padding-bottom: 12px;
+  display: flex;
+  align-items: center;
+}
 
-  h2 {
-    font-family: var(--font-titles);
-    font-size: 1.6rem;
-    margin: 0;
-    letter-spacing: 0.5px;
+/* =========================
+   TÍTULO
+========================= */
+.titulo-electoral {
+  background-color: var(--color-secondary);
+  padding: 8px 32px;
+  border-radius: 4px;
+  color: white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
+  display: inline-block;
+}
+
+@media (max-width: 768px) {
+  .titulo-electoral {
+    padding: 6px 20px;
+    h2 {
+      font-size: 1.2rem;
+    }
   }
 }
 
+h2 {
+  font-family: var(--font-titles);
+  font-size: 1.6rem;
+  margin: 0;
+}
+
+/* =========================
+   SEPARACIÓN TÍTULO / BOTONES
+========================= */
+.etapa-container {
+  padding-top: 14px;
+}
+
+/* =========================
+   BOTONES ETAPA
+========================= */
 .btn-etapa {
-  background-color: #fff;
+  background: #ffffff;
   border: 1px solid #333;
-  padding: 10px 28px;
+  padding: 8px 26px;
   font-family: var(--font-titles);
   font-size: 1rem;
-  letter-spacing: 0.5px;
   cursor: pointer;
-  transition: all 0.25s ease;
+  transition: all 0.2s ease;
 
   & + .btn-etapa {
     border-left: none;
-  }
-
-  &:hover {
-    background-color: var(--bg-soft);
   }
 
   &.activo {
@@ -202,55 +269,76 @@ onUnmounted(() => {
     border-color: var(--color-accent);
     z-index: 1;
   }
-}
 
-.min-vh-50 {
-  min-height: 520px;
-}
+  &.disabled {
+    opacity: 0.4;
+    cursor: not-allowed;
+    pointer-events: none;
+    background: #f5f5f5;
+    color: #666;
+  }
 
-.btn-search-fab {
-  position: absolute;
-  top: 16px;
-  left: 16px;
-  width: 46px;
-  height: 46px;
-  border-radius: 50%;
-  background-color: var(--color-secondary);
-  color: #fff;
-  border: none;
-  z-index: 10;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 1.1rem;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-
-  &:hover {
-    transform: scale(1.05);
-    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.35);
+  @media (max-width: 768px) {
+    padding: 6px 10px;
+    font-size: 0.75rem;
   }
 }
 
-.carousel-indicators-custom {
-  padding: 14px 28px;
-  background-color: var(--bg-light);
-  border-top: 1px solid #ddd;
+/* =========================
+   LUPA
+========================= */
+.search-container {
+  margin-left: 24px;
+}
+
+.btn-search-fab {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: var(--color-secondary);
+  border: none;
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+
+  i {
+    color: white !important;
+    font-size: 1.15rem !important;
+  }
+}
+
+/* =========================
+   INDICADORES
+========================= */
+.carousel-indicators-custom {
+  position: relative;
+  padding: 30px 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.dots {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
 }
 
 .btn-nav {
-  background: none;
+  background: transparent;
   border: none;
-  font-size: 1.7rem;
-  color: var(--text-muted);
   cursor: pointer;
-  transition: color 0.2s ease;
+  z-index: 2;
 
-  &:hover {
-    color: var(--color-primary);
+  i {
+    color: #888 !important;
+    font-size: 1.8rem !important;
+  }
+
+  &:hover i {
+    color: var(--color-secondary) !important;
   }
 }
 
@@ -258,31 +346,53 @@ onUnmounted(() => {
   width: 12px;
   height: 12px;
   border-radius: 50%;
-  background-color: #d6d6d6;
-  border: 1px solid #aaa;
-  margin: 0 6px;
-  padding: 0;
-  transition: all 0.2s ease;
+  background-color: #ccc;
+  border: none;
+  margin: 0 4px;
 
   &.active {
-    background-color: var(--color-primary);
-    border-color: var(--color-primary);
+    background-color: #6c757d;
   }
 }
 
+/* =========================
+   GENERAL
+========================= */
+.min-vh-50 {
+  min-height: 520px;
+}
+
 .placeholder-content {
-  background-color: #fafafa;
-  border: 2px dashed #ccc;
+  border: 2px dashed #bdbdbd;
   height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
-  color: var(--text-muted);
+  color: #7a7a7a;
   font-weight: 600;
   text-align: center;
-  padding: 12px;
-  border-radius: 4px;
 }
 
-</style>
+.carousel,
+.carousel-inner {
+  overflow: hidden !important;
+}
 
+/* =========================
+   MOBILE
+========================= */
+@media (max-width: 768px) {
+  .header-electoral {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .search-container {
+    order: 3;
+    margin-left: 0;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+  }
+}
+</style>
