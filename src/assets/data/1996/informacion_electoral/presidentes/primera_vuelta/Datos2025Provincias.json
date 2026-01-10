@@ -1,0 +1,2459 @@
+[
+    {
+        "CODPRO": "01",
+        "PROVINCIA": "AZUAY",
+        "votos_validos": 448492,
+        "votos_blancos": 8775,
+        "votos_nulos": 37454,
+        "votos_total": 494721,
+        "ganador": "ADN",
+        "resultados": {
+            "ADN": {
+                "candidato": "DANIEL NOBOA AZIN",
+                "votos": 206001,
+                "porcentaje": 45.93
+            },
+            "AMIGO": {
+                "candidato": "JUAN IVAN CUEVA",
+                "votos": 938,
+                "porcentaje": 0.21
+            },
+            "AVANZA": {
+                "candidato": "LUIS FELIPE TILLERIA",
+                "votos": 1360,
+                "porcentaje": 0.3
+            },
+            "CD": {
+                "candidato": "JIMMY JAIRALA VALLAZZA",
+                "votos": 1237,
+                "porcentaje": 0.28
+            },
+            "CONSTRUYE": {
+                "candidato": "HENRY CUCALON",
+                "votos": 1518,
+                "porcentaje": 0.34
+            },
+            "CREO": {
+                "candidato": "FRANCESCO TABACCHI",
+                "votos": 1014,
+                "porcentaje": 0.23
+            },
+            "DSI": {
+                "candidato": "IVAN SAQUICELA",
+                "votos": 1439,
+                "porcentaje": 0.32
+            },
+            "ID": {
+                "candidato": "CARLOS RABASCALL",
+                "votos": 1507,
+                "porcentaje": 0.34
+            },
+            "MUPP": {
+                "candidato": "LEONIDAS IZA",
+                "votos": 29700,
+                "porcentaje": 6.62
+            },
+            "PID": {
+                "candidato": "VICTOR ARAUS",
+                "votos": 807,
+                "porcentaje": 0.18
+            },
+            "PSC": {
+                "candidato": "HENRY KRONFLE KOZHAYA",
+                "votos": 1656,
+                "porcentaje": 0.37
+            },
+            "PSE": {
+                "candidato": "PEDRO GRANJA",
+                "votos": 3331,
+                "porcentaje": 0.74
+            },
+            "PSP": {
+                "candidato": "ANDREA GONZALEZ",
+                "votos": 21933,
+                "porcentaje": 4.89
+            },
+            "RC/RETO": {
+                "candidato": "LUISA GONZALEZ",
+                "votos": 173148,
+                "porcentaje": 38.61
+            },
+            "SUMA": {
+                "candidato": "ENRIQUE GOMEZ",
+                "votos": 1006,
+                "porcentaje": 0.22
+            },
+            "UP": {
+                "candidato": "JORGE ESCALA",
+                "votos": 1897,
+                "porcentaje": 0.42
+            }
+        }
+    },
+    {
+        "CODPRO": "02",
+        "PROVINCIA": "BOLIVAR",
+        "votos_validos": 134508,
+        "votos_blancos": 3997,
+        "votos_nulos": 11345,
+        "votos_total": 149850,
+        "ganador": "ADN",
+        "resultados": {
+            "ADN": {
+                "candidato": "DANIEL NOBOA AZIN",
+                "votos": 65281,
+                "porcentaje": 48.53
+            },
+            "AMIGO": {
+                "candidato": "JUAN IVAN CUEVA",
+                "votos": 211,
+                "porcentaje": 0.16
+            },
+            "AVANZA": {
+                "candidato": "LUIS FELIPE TILLERIA",
+                "votos": 408,
+                "porcentaje": 0.3
+            },
+            "CD": {
+                "candidato": "JIMMY JAIRALA VALLAZZA",
+                "votos": 212,
+                "porcentaje": 0.16
+            },
+            "CONSTRUYE": {
+                "candidato": "HENRY CUCALON",
+                "votos": 440,
+                "porcentaje": 0.33
+            },
+            "CREO": {
+                "candidato": "FRANCESCO TABACCHI",
+                "votos": 279,
+                "porcentaje": 0.21
+            },
+            "DSI": {
+                "candidato": "IVAN SAQUICELA",
+                "votos": 182,
+                "porcentaje": 0.14
+            },
+            "ID": {
+                "candidato": "CARLOS RABASCALL",
+                "votos": 287,
+                "porcentaje": 0.21
+            },
+            "MUPP": {
+                "candidato": "LEONIDAS IZA",
+                "votos": 23645,
+                "porcentaje": 17.58
+            },
+            "PID": {
+                "candidato": "VICTOR ARAUS",
+                "votos": 288,
+                "porcentaje": 0.21
+            },
+            "PSC": {
+                "candidato": "HENRY KRONFLE KOZHAYA",
+                "votos": 539,
+                "porcentaje": 0.4
+            },
+            "PSE": {
+                "candidato": "PEDRO GRANJA",
+                "votos": 619,
+                "porcentaje": 0.46
+            },
+            "PSP": {
+                "candidato": "ANDREA GONZALEZ",
+                "votos": 3546,
+                "porcentaje": 2.64
+            },
+            "RC/RETO": {
+                "candidato": "LUISA GONZALEZ",
+                "votos": 37832,
+                "porcentaje": 28.13
+            },
+            "SUMA": {
+                "candidato": "ENRIQUE GOMEZ",
+                "votos": 376,
+                "porcentaje": 0.28
+            },
+            "UP": {
+                "candidato": "JORGE ESCALA",
+                "votos": 363,
+                "porcentaje": 0.27
+            }
+        }
+    },
+    {
+        "CODPRO": "03",
+        "PROVINCIA": "CAÑAR",
+        "votos_validos": 129617,
+        "votos_blancos": 3235,
+        "votos_nulos": 9984,
+        "votos_total": 142836,
+        "ganador": "ADN",
+        "resultados": {
+            "ADN": {
+                "candidato": "DANIEL NOBOA AZIN",
+                "votos": 59415,
+                "porcentaje": 45.84
+            },
+            "AMIGO": {
+                "candidato": "JUAN IVAN CUEVA",
+                "votos": 235,
+                "porcentaje": 0.18
+            },
+            "AVANZA": {
+                "candidato": "LUIS FELIPE TILLERIA",
+                "votos": 376,
+                "porcentaje": 0.29
+            },
+            "CD": {
+                "candidato": "JIMMY JAIRALA VALLAZZA",
+                "votos": 320,
+                "porcentaje": 0.25
+            },
+            "CONSTRUYE": {
+                "candidato": "HENRY CUCALON",
+                "votos": 490,
+                "porcentaje": 0.38
+            },
+            "CREO": {
+                "candidato": "FRANCESCO TABACCHI",
+                "votos": 349,
+                "porcentaje": 0.27
+            },
+            "DSI": {
+                "candidato": "IVAN SAQUICELA",
+                "votos": 158,
+                "porcentaje": 0.12
+            },
+            "ID": {
+                "candidato": "CARLOS RABASCALL",
+                "votos": 273,
+                "porcentaje": 0.21
+            },
+            "MUPP": {
+                "candidato": "LEONIDAS IZA",
+                "votos": 16064,
+                "porcentaje": 12.39
+            },
+            "PID": {
+                "candidato": "VICTOR ARAUS",
+                "votos": 241,
+                "porcentaje": 0.19
+            },
+            "PSC": {
+                "candidato": "HENRY KRONFLE KOZHAYA",
+                "votos": 670,
+                "porcentaje": 0.52
+            },
+            "PSE": {
+                "candidato": "PEDRO GRANJA",
+                "votos": 800,
+                "porcentaje": 0.62
+            },
+            "PSP": {
+                "candidato": "ANDREA GONZALEZ",
+                "votos": 4043,
+                "porcentaje": 3.12
+            },
+            "RC/RETO": {
+                "candidato": "LUISA GONZALEZ",
+                "votos": 45356,
+                "porcentaje": 34.99
+            },
+            "SUMA": {
+                "candidato": "ENRIQUE GOMEZ",
+                "votos": 314,
+                "porcentaje": 0.24
+            },
+            "UP": {
+                "candidato": "JORGE ESCALA",
+                "votos": 513,
+                "porcentaje": 0.4
+            }
+        }
+    },
+    {
+        "CODPRO": "04",
+        "PROVINCIA": "CARCHI",
+        "votos_validos": 117558,
+        "votos_blancos": 2938,
+        "votos_nulos": 8318,
+        "votos_total": 128814,
+        "ganador": "ADN",
+        "resultados": {
+            "ADN": {
+                "candidato": "DANIEL NOBOA AZIN",
+                "votos": 58084,
+                "porcentaje": 49.41
+            },
+            "AMIGO": {
+                "candidato": "JUAN IVAN CUEVA",
+                "votos": 230,
+                "porcentaje": 0.2
+            },
+            "AVANZA": {
+                "candidato": "LUIS FELIPE TILLERIA",
+                "votos": 454,
+                "porcentaje": 0.39
+            },
+            "CD": {
+                "candidato": "JIMMY JAIRALA VALLAZZA",
+                "votos": 286,
+                "porcentaje": 0.24
+            },
+            "CONSTRUYE": {
+                "candidato": "HENRY CUCALON",
+                "votos": 492,
+                "porcentaje": 0.42
+            },
+            "CREO": {
+                "candidato": "FRANCESCO TABACCHI",
+                "votos": 338,
+                "porcentaje": 0.29
+            },
+            "DSI": {
+                "candidato": "IVAN SAQUICELA",
+                "votos": 114,
+                "porcentaje": 0.1
+            },
+            "ID": {
+                "candidato": "CARLOS RABASCALL",
+                "votos": 565,
+                "porcentaje": 0.48
+            },
+            "MUPP": {
+                "candidato": "LEONIDAS IZA",
+                "votos": 5063,
+                "porcentaje": 4.31
+            },
+            "PID": {
+                "candidato": "VICTOR ARAUS",
+                "votos": 236,
+                "porcentaje": 0.2
+            },
+            "PSC": {
+                "candidato": "HENRY KRONFLE KOZHAYA",
+                "votos": 242,
+                "porcentaje": 0.21
+            },
+            "PSE": {
+                "candidato": "PEDRO GRANJA",
+                "votos": 669,
+                "porcentaje": 0.57
+            },
+            "PSP": {
+                "candidato": "ANDREA GONZALEZ",
+                "votos": 4064,
+                "porcentaje": 3.46
+            },
+            "RC/RETO": {
+                "candidato": "LUISA GONZALEZ",
+                "votos": 46118,
+                "porcentaje": 39.23
+            },
+            "SUMA": {
+                "candidato": "ENRIQUE GOMEZ",
+                "votos": 166,
+                "porcentaje": 0.14
+            },
+            "UP": {
+                "candidato": "JORGE ESCALA",
+                "votos": 437,
+                "porcentaje": 0.37
+            }
+        }
+    },
+    {
+        "CODPRO": "05",
+        "PROVINCIA": "COTOPAXI",
+        "votos_validos": 304043,
+        "votos_blancos": 6370,
+        "votos_nulos": 23151,
+        "votos_total": 333564,
+        "ganador": "ADN",
+        "resultados": {
+            "ADN": {
+                "candidato": "DANIEL NOBOA AZIN",
+                "votos": 114512,
+                "porcentaje": 37.66
+            },
+            "AMIGO": {
+                "candidato": "JUAN IVAN CUEVA",
+                "votos": 855,
+                "porcentaje": 0.28
+            },
+            "AVANZA": {
+                "candidato": "LUIS FELIPE TILLERIA",
+                "votos": 764,
+                "porcentaje": 0.25
+            },
+            "CD": {
+                "candidato": "JIMMY JAIRALA VALLAZZA",
+                "votos": 552,
+                "porcentaje": 0.18
+            },
+            "CONSTRUYE": {
+                "candidato": "HENRY CUCALON",
+                "votos": 759,
+                "porcentaje": 0.25
+            },
+            "CREO": {
+                "candidato": "FRANCESCO TABACCHI",
+                "votos": 614,
+                "porcentaje": 0.2
+            },
+            "DSI": {
+                "candidato": "IVAN SAQUICELA",
+                "votos": 292,
+                "porcentaje": 0.1
+            },
+            "ID": {
+                "candidato": "CARLOS RABASCALL",
+                "votos": 459,
+                "porcentaje": 0.15
+            },
+            "MUPP": {
+                "candidato": "LEONIDAS IZA",
+                "votos": 89280,
+                "porcentaje": 29.36
+            },
+            "PID": {
+                "candidato": "VICTOR ARAUS",
+                "votos": 655,
+                "porcentaje": 0.22
+            },
+            "PSC": {
+                "candidato": "HENRY KRONFLE KOZHAYA",
+                "votos": 879,
+                "porcentaje": 0.29
+            },
+            "PSE": {
+                "candidato": "PEDRO GRANJA",
+                "votos": 1333,
+                "porcentaje": 0.44
+            },
+            "PSP": {
+                "candidato": "ANDREA GONZALEZ",
+                "votos": 5820,
+                "porcentaje": 1.91
+            },
+            "RC/RETO": {
+                "candidato": "LUISA GONZALEZ",
+                "votos": 84358,
+                "porcentaje": 27.75
+            },
+            "SUMA": {
+                "candidato": "ENRIQUE GOMEZ",
+                "votos": 967,
+                "porcentaje": 0.32
+            },
+            "UP": {
+                "candidato": "JORGE ESCALA",
+                "votos": 1944,
+                "porcentaje": 0.64
+            }
+        }
+    },
+    {
+        "CODPRO": "06",
+        "PROVINCIA": "CHIMBORAZO",
+        "votos_validos": 304910,
+        "votos_blancos": 6207,
+        "votos_nulos": 23596,
+        "votos_total": 334713,
+        "ganador": "ADN",
+        "resultados": {
+            "ADN": {
+                "candidato": "DANIEL NOBOA AZIN",
+                "votos": 159103,
+                "porcentaje": 52.18
+            },
+            "AMIGO": {
+                "candidato": "JUAN IVAN CUEVA",
+                "votos": 587,
+                "porcentaje": 0.19
+            },
+            "AVANZA": {
+                "candidato": "LUIS FELIPE TILLERIA",
+                "votos": 1455,
+                "porcentaje": 0.48
+            },
+            "CD": {
+                "candidato": "JIMMY JAIRALA VALLAZZA",
+                "votos": 596,
+                "porcentaje": 0.2
+            },
+            "CONSTRUYE": {
+                "candidato": "HENRY CUCALON",
+                "votos": 1077,
+                "porcentaje": 0.35
+            },
+            "CREO": {
+                "candidato": "FRANCESCO TABACCHI",
+                "votos": 632,
+                "porcentaje": 0.21
+            },
+            "DSI": {
+                "candidato": "IVAN SAQUICELA",
+                "votos": 521,
+                "porcentaje": 0.17
+            },
+            "ID": {
+                "candidato": "CARLOS RABASCALL",
+                "votos": 1257,
+                "porcentaje": 0.41
+            },
+            "MUPP": {
+                "candidato": "LEONIDAS IZA",
+                "votos": 51740,
+                "porcentaje": 16.97
+            },
+            "PID": {
+                "candidato": "VICTOR ARAUS",
+                "votos": 708,
+                "porcentaje": 0.23
+            },
+            "PSC": {
+                "candidato": "HENRY KRONFLE KOZHAYA",
+                "votos": 918,
+                "porcentaje": 0.3
+            },
+            "PSE": {
+                "candidato": "PEDRO GRANJA",
+                "votos": 1988,
+                "porcentaje": 0.65
+            },
+            "PSP": {
+                "candidato": "ANDREA GONZALEZ",
+                "votos": 7674,
+                "porcentaje": 2.52
+            },
+            "RC/RETO": {
+                "candidato": "LUISA GONZALEZ",
+                "votos": 75087,
+                "porcentaje": 24.63
+            },
+            "SUMA": {
+                "candidato": "ENRIQUE GOMEZ",
+                "votos": 608,
+                "porcentaje": 0.2
+            },
+            "UP": {
+                "candidato": "JORGE ESCALA",
+                "votos": 959,
+                "porcentaje": 0.31
+            }
+        }
+    },
+    {
+        "CODPRO": "07",
+        "PROVINCIA": "EL ORO",
+        "votos_validos": 419995,
+        "votos_blancos": 8226,
+        "votos_nulos": 28549,
+        "votos_total": 456770,
+        "ganador": "RC/RETO",
+        "resultados": {
+            "ADN": {
+                "candidato": "DANIEL NOBOA AZIN",
+                "votos": 184192,
+                "porcentaje": 43.86
+            },
+            "AMIGO": {
+                "candidato": "JUAN IVAN CUEVA",
+                "votos": 658,
+                "porcentaje": 0.16
+            },
+            "AVANZA": {
+                "candidato": "LUIS FELIPE TILLERIA",
+                "votos": 1561,
+                "porcentaje": 0.37
+            },
+            "CD": {
+                "candidato": "JIMMY JAIRALA VALLAZZA",
+                "votos": 1140,
+                "porcentaje": 0.27
+            },
+            "CONSTRUYE": {
+                "candidato": "HENRY CUCALON",
+                "votos": 1720,
+                "porcentaje": 0.41
+            },
+            "CREO": {
+                "candidato": "FRANCESCO TABACCHI",
+                "votos": 766,
+                "porcentaje": 0.18
+            },
+            "DSI": {
+                "candidato": "IVAN SAQUICELA",
+                "votos": 331,
+                "porcentaje": 0.08
+            },
+            "ID": {
+                "candidato": "CARLOS RABASCALL",
+                "votos": 809,
+                "porcentaje": 0.19
+            },
+            "MUPP": {
+                "candidato": "LEONIDAS IZA",
+                "votos": 3986,
+                "porcentaje": 0.95
+            },
+            "PID": {
+                "candidato": "VICTOR ARAUS",
+                "votos": 757,
+                "porcentaje": 0.18
+            },
+            "PSC": {
+                "candidato": "HENRY KRONFLE KOZHAYA",
+                "votos": 2515,
+                "porcentaje": 0.6
+            },
+            "PSE": {
+                "candidato": "PEDRO GRANJA",
+                "votos": 2043,
+                "porcentaje": 0.49
+            },
+            "PSP": {
+                "candidato": "ANDREA GONZALEZ",
+                "votos": 11086,
+                "porcentaje": 2.64
+            },
+            "RC/RETO": {
+                "candidato": "LUISA GONZALEZ",
+                "votos": 206435,
+                "porcentaje": 49.15
+            },
+            "SUMA": {
+                "candidato": "ENRIQUE GOMEZ",
+                "votos": 605,
+                "porcentaje": 0.14
+            },
+            "UP": {
+                "candidato": "JORGE ESCALA",
+                "votos": 1391,
+                "porcentaje": 0.33
+            }
+        }
+    },
+    {
+        "CODPRO": "08",
+        "PROVINCIA": "ESMERALDAS",
+        "votos_validos": 304619,
+        "votos_blancos": 15859,
+        "votos_nulos": 31417,
+        "votos_total": 351895,
+        "ganador": "RC/RETO",
+        "resultados": {
+            "ADN": {
+                "candidato": "DANIEL NOBOA AZIN",
+                "votos": 123873,
+                "porcentaje": 40.66
+            },
+            "AMIGO": {
+                "candidato": "JUAN IVAN CUEVA",
+                "votos": 483,
+                "porcentaje": 0.16
+            },
+            "AVANZA": {
+                "candidato": "LUIS FELIPE TILLERIA",
+                "votos": 988,
+                "porcentaje": 0.32
+            },
+            "CD": {
+                "candidato": "JIMMY JAIRALA VALLAZZA",
+                "votos": 827,
+                "porcentaje": 0.27
+            },
+            "CONSTRUYE": {
+                "candidato": "HENRY CUCALON",
+                "votos": 1574,
+                "porcentaje": 0.52
+            },
+            "CREO": {
+                "candidato": "FRANCESCO TABACCHI",
+                "votos": 760,
+                "porcentaje": 0.25
+            },
+            "DSI": {
+                "candidato": "IVAN SAQUICELA",
+                "votos": 368,
+                "porcentaje": 0.12
+            },
+            "ID": {
+                "candidato": "CARLOS RABASCALL",
+                "votos": 575,
+                "porcentaje": 0.19
+            },
+            "MUPP": {
+                "candidato": "LEONIDAS IZA",
+                "votos": 3625,
+                "porcentaje": 1.19
+            },
+            "PID": {
+                "candidato": "VICTOR ARAUS",
+                "votos": 883,
+                "porcentaje": 0.29
+            },
+            "PSC": {
+                "candidato": "HENRY KRONFLE KOZHAYA",
+                "votos": 4760,
+                "porcentaje": 1.56
+            },
+            "PSE": {
+                "candidato": "PEDRO GRANJA",
+                "votos": 1079,
+                "porcentaje": 0.35
+            },
+            "PSP": {
+                "candidato": "ANDREA GONZALEZ",
+                "votos": 4089,
+                "porcentaje": 1.34
+            },
+            "RC/RETO": {
+                "candidato": "LUISA GONZALEZ",
+                "votos": 158960,
+                "porcentaje": 52.18
+            },
+            "SUMA": {
+                "candidato": "ENRIQUE GOMEZ",
+                "votos": 419,
+                "porcentaje": 0.14
+            },
+            "UP": {
+                "candidato": "JORGE ESCALA",
+                "votos": 1356,
+                "porcentaje": 0.45
+            }
+        }
+    },
+    {
+        "CODPRO": "09",
+        "PROVINCIA": "GUAYAS",
+        "votos_validos": 2485767,
+        "votos_blancos": 53721,
+        "votos_nulos": 161162,
+        "votos_total": 2700650,
+        "ganador": "RC/RETO",
+        "resultados": {
+            "ADN": {
+                "candidato": "DANIEL NOBOA AZIN",
+                "votos": 1083469,
+                "porcentaje": 43.59
+            },
+            "AMIGO": {
+                "candidato": "JUAN IVAN CUEVA",
+                "votos": 3307,
+                "porcentaje": 0.13
+            },
+            "AVANZA": {
+                "candidato": "LUIS FELIPE TILLERIA",
+                "votos": 7434,
+                "porcentaje": 0.3
+            },
+            "CD": {
+                "candidato": "JIMMY JAIRALA VALLAZZA",
+                "votos": 19140,
+                "porcentaje": 0.77
+            },
+            "CONSTRUYE": {
+                "candidato": "HENRY CUCALON",
+                "votos": 8690,
+                "porcentaje": 0.35
+            },
+            "CREO": {
+                "candidato": "FRANCESCO TABACCHI",
+                "votos": 8693,
+                "porcentaje": 0.35
+            },
+            "DSI": {
+                "candidato": "IVAN SAQUICELA",
+                "votos": 2296,
+                "porcentaje": 0.09
+            },
+            "ID": {
+                "candidato": "CARLOS RABASCALL",
+                "votos": 3407,
+                "porcentaje": 0.14
+            },
+            "MUPP": {
+                "candidato": "LEONIDAS IZA",
+                "votos": 19141,
+                "porcentaje": 0.77
+            },
+            "PID": {
+                "candidato": "VICTOR ARAUS",
+                "votos": 6281,
+                "porcentaje": 0.25
+            },
+            "PSC": {
+                "candidato": "HENRY KRONFLE KOZHAYA",
+                "votos": 31972,
+                "porcentaje": 1.29
+            },
+            "PSE": {
+                "candidato": "PEDRO GRANJA",
+                "votos": 11974,
+                "porcentaje": 0.48
+            },
+            "PSP": {
+                "candidato": "ANDREA GONZALEZ",
+                "votos": 58290,
+                "porcentaje": 2.34
+            },
+            "RC/RETO": {
+                "candidato": "LUISA GONZALEZ",
+                "votos": 1206486,
+                "porcentaje": 48.54
+            },
+            "SUMA": {
+                "candidato": "ENRIQUE GOMEZ",
+                "votos": 4014,
+                "porcentaje": 0.16
+            },
+            "UP": {
+                "candidato": "JORGE ESCALA",
+                "votos": 11173,
+                "porcentaje": 0.45
+            }
+        }
+    },
+    {
+        "CODPRO": "10",
+        "PROVINCIA": "IMBABURA",
+        "votos_validos": 303021,
+        "votos_blancos": 6099,
+        "votos_nulos": 23423,
+        "votos_total": 332543,
+        "ganador": "RC/RETO",
+        "resultados": {
+            "ADN": {
+                "candidato": "DANIEL NOBOA AZIN",
+                "votos": 116412,
+                "porcentaje": 38.42
+            },
+            "AMIGO": {
+                "candidato": "JUAN IVAN CUEVA",
+                "votos": 512,
+                "porcentaje": 0.17
+            },
+            "AVANZA": {
+                "candidato": "LUIS FELIPE TILLERIA",
+                "votos": 1211,
+                "porcentaje": 0.4
+            },
+            "CD": {
+                "candidato": "JIMMY JAIRALA VALLAZZA",
+                "votos": 890,
+                "porcentaje": 0.29
+            },
+            "CONSTRUYE": {
+                "candidato": "HENRY CUCALON",
+                "votos": 1380,
+                "porcentaje": 0.46
+            },
+            "CREO": {
+                "candidato": "FRANCESCO TABACCHI",
+                "votos": 573,
+                "porcentaje": 0.19
+            },
+            "DSI": {
+                "candidato": "IVAN SAQUICELA",
+                "votos": 403,
+                "porcentaje": 0.13
+            },
+            "ID": {
+                "candidato": "CARLOS RABASCALL",
+                "votos": 671,
+                "porcentaje": 0.22
+            },
+            "MUPP": {
+                "candidato": "LEONIDAS IZA",
+                "votos": 41952,
+                "porcentaje": 13.84
+            },
+            "PID": {
+                "candidato": "VICTOR ARAUS",
+                "votos": 581,
+                "porcentaje": 0.19
+            },
+            "PSC": {
+                "candidato": "HENRY KRONFLE KOZHAYA",
+                "votos": 766,
+                "porcentaje": 0.25
+            },
+            "PSE": {
+                "candidato": "PEDRO GRANJA",
+                "votos": 1765,
+                "porcentaje": 0.58
+            },
+            "PSP": {
+                "candidato": "ANDREA GONZALEZ",
+                "votos": 7773,
+                "porcentaje": 2.57
+            },
+            "RC/RETO": {
+                "candidato": "LUISA GONZALEZ",
+                "votos": 126307,
+                "porcentaje": 41.68
+            },
+            "SUMA": {
+                "candidato": "ENRIQUE GOMEZ",
+                "votos": 538,
+                "porcentaje": 0.18
+            },
+            "UP": {
+                "candidato": "JORGE ESCALA",
+                "votos": 1287,
+                "porcentaje": 0.42
+            }
+        }
+    },
+    {
+        "CODPRO": "11",
+        "PROVINCIA": "LOJA",
+        "votos_validos": 300912,
+        "votos_blancos": 6493,
+        "votos_nulos": 15412,
+        "votos_total": 322817,
+        "ganador": "ADN",
+        "resultados": {
+            "ADN": {
+                "candidato": "DANIEL NOBOA AZIN",
+                "votos": 168113,
+                "porcentaje": 55.87
+            },
+            "AMIGO": {
+                "candidato": "JUAN IVAN CUEVA",
+                "votos": 744,
+                "porcentaje": 0.25
+            },
+            "AVANZA": {
+                "candidato": "LUIS FELIPE TILLERIA",
+                "votos": 973,
+                "porcentaje": 0.32
+            },
+            "CD": {
+                "candidato": "JIMMY JAIRALA VALLAZZA",
+                "votos": 785,
+                "porcentaje": 0.26
+            },
+            "CONSTRUYE": {
+                "candidato": "HENRY CUCALON",
+                "votos": 888,
+                "porcentaje": 0.3
+            },
+            "CREO": {
+                "candidato": "FRANCESCO TABACCHI",
+                "votos": 430,
+                "porcentaje": 0.14
+            },
+            "DSI": {
+                "candidato": "IVAN SAQUICELA",
+                "votos": 285,
+                "porcentaje": 0.09
+            },
+            "ID": {
+                "candidato": "CARLOS RABASCALL",
+                "votos": 660,
+                "porcentaje": 0.22
+            },
+            "MUPP": {
+                "candidato": "LEONIDAS IZA",
+                "votos": 11378,
+                "porcentaje": 3.78
+            },
+            "PID": {
+                "candidato": "VICTOR ARAUS",
+                "votos": 464,
+                "porcentaje": 0.15
+            },
+            "PSC": {
+                "candidato": "HENRY KRONFLE KOZHAYA",
+                "votos": 997,
+                "porcentaje": 0.33
+            },
+            "PSE": {
+                "candidato": "PEDRO GRANJA",
+                "votos": 1591,
+                "porcentaje": 0.53
+            },
+            "PSP": {
+                "candidato": "ANDREA GONZALEZ",
+                "votos": 12572,
+                "porcentaje": 4.18
+            },
+            "RC/RETO": {
+                "candidato": "LUISA GONZALEZ",
+                "votos": 99351,
+                "porcentaje": 33.02
+            },
+            "SUMA": {
+                "candidato": "ENRIQUE GOMEZ",
+                "votos": 577,
+                "porcentaje": 0.19
+            },
+            "UP": {
+                "candidato": "JORGE ESCALA",
+                "votos": 1104,
+                "porcentaje": 0.37
+            }
+        }
+    },
+    {
+        "CODPRO": "12",
+        "PROVINCIA": "LOS RIOS",
+        "votos_validos": 539423,
+        "votos_blancos": 24559,
+        "votos_nulos": 53762,
+        "votos_total": 617744,
+        "ganador": "RC/RETO",
+        "resultados": {
+            "ADN": {
+                "candidato": "DANIEL NOBOA AZIN",
+                "votos": 203286,
+                "porcentaje": 37.69
+            },
+            "AMIGO": {
+                "candidato": "JUAN IVAN CUEVA",
+                "votos": 851,
+                "porcentaje": 0.16
+            },
+            "AVANZA": {
+                "candidato": "LUIS FELIPE TILLERIA",
+                "votos": 1535,
+                "porcentaje": 0.28
+            },
+            "CD": {
+                "candidato": "JIMMY JAIRALA VALLAZZA",
+                "votos": 1817,
+                "porcentaje": 0.34
+            },
+            "CONSTRUYE": {
+                "candidato": "HENRY CUCALON",
+                "votos": 2466,
+                "porcentaje": 0.46
+            },
+            "CREO": {
+                "candidato": "FRANCESCO TABACCHI",
+                "votos": 1142,
+                "porcentaje": 0.21
+            },
+            "DSI": {
+                "candidato": "IVAN SAQUICELA",
+                "votos": 661,
+                "porcentaje": 0.12
+            },
+            "ID": {
+                "candidato": "CARLOS RABASCALL",
+                "votos": 750,
+                "porcentaje": 0.14
+            },
+            "MUPP": {
+                "candidato": "LEONIDAS IZA",
+                "votos": 4477,
+                "porcentaje": 0.83
+            },
+            "PID": {
+                "candidato": "VICTOR ARAUS",
+                "votos": 1364,
+                "porcentaje": 0.25
+            },
+            "PSC": {
+                "candidato": "HENRY KRONFLE KOZHAYA",
+                "votos": 6799,
+                "porcentaje": 1.26
+            },
+            "PSE": {
+                "candidato": "PEDRO GRANJA",
+                "votos": 1690,
+                "porcentaje": 0.31
+            },
+            "PSP": {
+                "candidato": "ANDREA GONZALEZ",
+                "votos": 8640,
+                "porcentaje": 1.6
+            },
+            "RC/RETO": {
+                "candidato": "LUISA GONZALEZ",
+                "votos": 301486,
+                "porcentaje": 55.89
+            },
+            "SUMA": {
+                "candidato": "ENRIQUE GOMEZ",
+                "votos": 1036,
+                "porcentaje": 0.19
+            },
+            "UP": {
+                "candidato": "JORGE ESCALA",
+                "votos": 1423,
+                "porcentaje": 0.26
+            }
+        }
+    },
+    {
+        "CODPRO": "13",
+        "PROVINCIA": "MANABI",
+        "votos_validos": 994032,
+        "votos_blancos": 42405,
+        "votos_nulos": 89992,
+        "votos_total": 1126429,
+        "ganador": "RC/RETO",
+        "resultados": {
+            "ADN": {
+                "candidato": "DANIEL NOBOA AZIN",
+                "votos": 299913,
+                "porcentaje": 30.17
+            },
+            "AMIGO": {
+                "candidato": "JUAN IVAN CUEVA",
+                "votos": 1774,
+                "porcentaje": 0.18
+            },
+            "AVANZA": {
+                "candidato": "LUIS FELIPE TILLERIA",
+                "votos": 3017,
+                "porcentaje": 0.3
+            },
+            "CD": {
+                "candidato": "JIMMY JAIRALA VALLAZZA",
+                "votos": 3201,
+                "porcentaje": 0.32
+            },
+            "CONSTRUYE": {
+                "candidato": "HENRY CUCALON",
+                "votos": 4904,
+                "porcentaje": 0.49
+            },
+            "CREO": {
+                "candidato": "FRANCESCO TABACCHI",
+                "votos": 2430,
+                "porcentaje": 0.24
+            },
+            "DSI": {
+                "candidato": "IVAN SAQUICELA",
+                "votos": 1149,
+                "porcentaje": 0.12
+            },
+            "ID": {
+                "candidato": "CARLOS RABASCALL",
+                "votos": 2294,
+                "porcentaje": 0.23
+            },
+            "MUPP": {
+                "candidato": "LEONIDAS IZA",
+                "votos": 5197,
+                "porcentaje": 0.52
+            },
+            "PID": {
+                "candidato": "VICTOR ARAUS",
+                "votos": 2482,
+                "porcentaje": 0.25
+            },
+            "PSC": {
+                "candidato": "HENRY KRONFLE KOZHAYA",
+                "votos": 8562,
+                "porcentaje": 0.86
+            },
+            "PSE": {
+                "candidato": "PEDRO GRANJA",
+                "votos": 3783,
+                "porcentaje": 0.38
+            },
+            "PSP": {
+                "candidato": "ANDREA GONZALEZ",
+                "votos": 22249,
+                "porcentaje": 2.24
+            },
+            "RC/RETO": {
+                "candidato": "LUISA GONZALEZ",
+                "votos": 627888,
+                "porcentaje": 63.17
+            },
+            "SUMA": {
+                "candidato": "ENRIQUE GOMEZ",
+                "votos": 1886,
+                "porcentaje": 0.19
+            },
+            "UP": {
+                "candidato": "JORGE ESCALA",
+                "votos": 3303,
+                "porcentaje": 0.33
+            }
+        }
+    },
+    {
+        "CODPRO": "14",
+        "PROVINCIA": "MOR.STGO.",
+        "votos_validos": 97560,
+        "votos_blancos": 3216,
+        "votos_nulos": 6628,
+        "votos_total": 107404,
+        "ganador": "ADN",
+        "resultados": {
+            "ADN": {
+                "candidato": "DANIEL NOBOA AZIN",
+                "votos": 50231,
+                "porcentaje": 51.49
+            },
+            "AMIGO": {
+                "candidato": "JUAN IVAN CUEVA",
+                "votos": 253,
+                "porcentaje": 0.26
+            },
+            "AVANZA": {
+                "candidato": "LUIS FELIPE TILLERIA",
+                "votos": 325,
+                "porcentaje": 0.33
+            },
+            "CD": {
+                "candidato": "JIMMY JAIRALA VALLAZZA",
+                "votos": 333,
+                "porcentaje": 0.34
+            },
+            "CONSTRUYE": {
+                "candidato": "HENRY CUCALON",
+                "votos": 437,
+                "porcentaje": 0.45
+            },
+            "CREO": {
+                "candidato": "FRANCESCO TABACCHI",
+                "votos": 201,
+                "porcentaje": 0.21
+            },
+            "DSI": {
+                "candidato": "IVAN SAQUICELA",
+                "votos": 187,
+                "porcentaje": 0.19
+            },
+            "ID": {
+                "candidato": "CARLOS RABASCALL",
+                "votos": 302,
+                "porcentaje": 0.31
+            },
+            "MUPP": {
+                "candidato": "LEONIDAS IZA",
+                "votos": 11888,
+                "porcentaje": 12.19
+            },
+            "PID": {
+                "candidato": "VICTOR ARAUS",
+                "votos": 235,
+                "porcentaje": 0.24
+            },
+            "PSC": {
+                "candidato": "HENRY KRONFLE KOZHAYA",
+                "votos": 298,
+                "porcentaje": 0.31
+            },
+            "PSE": {
+                "candidato": "PEDRO GRANJA",
+                "votos": 416,
+                "porcentaje": 0.43
+            },
+            "PSP": {
+                "candidato": "ANDREA GONZALEZ",
+                "votos": 2182,
+                "porcentaje": 2.24
+            },
+            "RC/RETO": {
+                "candidato": "LUISA GONZALEZ",
+                "votos": 29175,
+                "porcentaje": 29.9
+            },
+            "SUMA": {
+                "candidato": "ENRIQUE GOMEZ",
+                "votos": 649,
+                "porcentaje": 0.67
+            },
+            "UP": {
+                "candidato": "JORGE ESCALA",
+                "votos": 448,
+                "porcentaje": 0.46
+            }
+        }
+    },
+    {
+        "CODPRO": "15",
+        "PROVINCIA": "NAPO",
+        "votos_validos": 81468,
+        "votos_blancos": 1122,
+        "votos_nulos": 3841,
+        "votos_total": 86431,
+        "ganador": "ADN",
+        "resultados": {
+            "ADN": {
+                "candidato": "DANIEL NOBOA AZIN",
+                "votos": 44737,
+                "porcentaje": 54.91
+            },
+            "AMIGO": {
+                "candidato": "JUAN IVAN CUEVA",
+                "votos": 103,
+                "porcentaje": 0.13
+            },
+            "AVANZA": {
+                "candidato": "LUIS FELIPE TILLERIA",
+                "votos": 325,
+                "porcentaje": 0.4
+            },
+            "CD": {
+                "candidato": "JIMMY JAIRALA VALLAZZA",
+                "votos": 210,
+                "porcentaje": 0.26
+            },
+            "CONSTRUYE": {
+                "candidato": "HENRY CUCALON",
+                "votos": 238,
+                "porcentaje": 0.29
+            },
+            "CREO": {
+                "candidato": "FRANCESCO TABACCHI",
+                "votos": 172,
+                "porcentaje": 0.21
+            },
+            "DSI": {
+                "candidato": "IVAN SAQUICELA",
+                "votos": 139,
+                "porcentaje": 0.17
+            },
+            "ID": {
+                "candidato": "CARLOS RABASCALL",
+                "votos": 134,
+                "porcentaje": 0.16
+            },
+            "MUPP": {
+                "candidato": "LEONIDAS IZA",
+                "votos": 9322,
+                "porcentaje": 11.44
+            },
+            "PID": {
+                "candidato": "VICTOR ARAUS",
+                "votos": 141,
+                "porcentaje": 0.17
+            },
+            "PSC": {
+                "candidato": "HENRY KRONFLE KOZHAYA",
+                "votos": 190,
+                "porcentaje": 0.23
+            },
+            "PSE": {
+                "candidato": "PEDRO GRANJA",
+                "votos": 392,
+                "porcentaje": 0.48
+            },
+            "PSP": {
+                "candidato": "ANDREA GONZALEZ",
+                "votos": 2786,
+                "porcentaje": 3.42
+            },
+            "RC/RETO": {
+                "candidato": "LUISA GONZALEZ",
+                "votos": 22002,
+                "porcentaje": 27.01
+            },
+            "SUMA": {
+                "candidato": "ENRIQUE GOMEZ",
+                "votos": 320,
+                "porcentaje": 0.39
+            },
+            "UP": {
+                "candidato": "JORGE ESCALA",
+                "votos": 257,
+                "porcentaje": 0.32
+            }
+        }
+    },
+    {
+        "CODPRO": "16",
+        "PROVINCIA": "PASTAZA",
+        "votos_validos": 61715,
+        "votos_blancos": 1214,
+        "votos_nulos": 3699,
+        "votos_total": 66628,
+        "ganador": "ADN",
+        "resultados": {
+            "ADN": {
+                "candidato": "DANIEL NOBOA AZIN",
+                "votos": 36232,
+                "porcentaje": 58.71
+            },
+            "AMIGO": {
+                "candidato": "JUAN IVAN CUEVA",
+                "votos": 157,
+                "porcentaje": 0.25
+            },
+            "AVANZA": {
+                "candidato": "LUIS FELIPE TILLERIA",
+                "votos": 202,
+                "porcentaje": 0.33
+            },
+            "CD": {
+                "candidato": "JIMMY JAIRALA VALLAZZA",
+                "votos": 161,
+                "porcentaje": 0.26
+            },
+            "CONSTRUYE": {
+                "candidato": "HENRY CUCALON",
+                "votos": 141,
+                "porcentaje": 0.23
+            },
+            "CREO": {
+                "candidato": "FRANCESCO TABACCHI",
+                "votos": 106,
+                "porcentaje": 0.17
+            },
+            "DSI": {
+                "candidato": "IVAN SAQUICELA",
+                "votos": 76,
+                "porcentaje": 0.12
+            },
+            "ID": {
+                "candidato": "CARLOS RABASCALL",
+                "votos": 121,
+                "porcentaje": 0.2
+            },
+            "MUPP": {
+                "candidato": "LEONIDAS IZA",
+                "votos": 7408,
+                "porcentaje": 12.0
+            },
+            "PID": {
+                "candidato": "VICTOR ARAUS",
+                "votos": 102,
+                "porcentaje": 0.17
+            },
+            "PSC": {
+                "candidato": "HENRY KRONFLE KOZHAYA",
+                "votos": 330,
+                "porcentaje": 0.53
+            },
+            "PSE": {
+                "candidato": "PEDRO GRANJA",
+                "votos": 294,
+                "porcentaje": 0.48
+            },
+            "PSP": {
+                "candidato": "ANDREA GONZALEZ",
+                "votos": 1523,
+                "porcentaje": 2.47
+            },
+            "RC/RETO": {
+                "candidato": "LUISA GONZALEZ",
+                "votos": 14427,
+                "porcentaje": 23.38
+            },
+            "SUMA": {
+                "candidato": "ENRIQUE GOMEZ",
+                "votos": 210,
+                "porcentaje": 0.34
+            },
+            "UP": {
+                "candidato": "JORGE ESCALA",
+                "votos": 225,
+                "porcentaje": 0.36
+            }
+        }
+    },
+    {
+        "CODPRO": "17",
+        "PROVINCIA": "PICHINCHA",
+        "votos_validos": 1870489,
+        "votos_blancos": 17625,
+        "votos_nulos": 119420,
+        "votos_total": 2007534,
+        "ganador": "ADN",
+        "resultados": {
+            "ADN": {
+                "candidato": "DANIEL NOBOA AZIN",
+                "votos": 906040,
+                "porcentaje": 48.44
+            },
+            "AMIGO": {
+                "candidato": "JUAN IVAN CUEVA",
+                "votos": 3332,
+                "porcentaje": 0.18
+            },
+            "AVANZA": {
+                "candidato": "LUIS FELIPE TILLERIA",
+                "votos": 6261,
+                "porcentaje": 0.33
+            },
+            "CD": {
+                "candidato": "JIMMY JAIRALA VALLAZZA",
+                "votos": 4513,
+                "porcentaje": 0.24
+            },
+            "CONSTRUYE": {
+                "candidato": "HENRY CUCALON",
+                "votos": 6040,
+                "porcentaje": 0.32
+            },
+            "CREO": {
+                "candidato": "FRANCESCO TABACCHI",
+                "votos": 4939,
+                "porcentaje": 0.26
+            },
+            "DSI": {
+                "candidato": "IVAN SAQUICELA",
+                "votos": 1637,
+                "porcentaje": 0.09
+            },
+            "ID": {
+                "candidato": "CARLOS RABASCALL",
+                "votos": 5375,
+                "porcentaje": 0.29
+            },
+            "MUPP": {
+                "candidato": "LEONIDAS IZA",
+                "votos": 136111,
+                "porcentaje": 7.28
+            },
+            "PID": {
+                "candidato": "VICTOR ARAUS",
+                "votos": 3597,
+                "porcentaje": 0.19
+            },
+            "PSC": {
+                "candidato": "HENRY KRONFLE KOZHAYA",
+                "votos": 4728,
+                "porcentaje": 0.25
+            },
+            "PSE": {
+                "candidato": "PEDRO GRANJA",
+                "votos": 12998,
+                "porcentaje": 0.69
+            },
+            "PSP": {
+                "candidato": "ANDREA GONZALEZ",
+                "votos": 64025,
+                "porcentaje": 3.42
+            },
+            "RC/RETO": {
+                "candidato": "LUISA GONZALEZ",
+                "votos": 700478,
+                "porcentaje": 37.45
+            },
+            "SUMA": {
+                "candidato": "ENRIQUE GOMEZ",
+                "votos": 2256,
+                "porcentaje": 0.12
+            },
+            "UP": {
+                "candidato": "JORGE ESCALA",
+                "votos": 8159,
+                "porcentaje": 0.44
+            }
+        }
+    },
+    {
+        "CODPRO": "18",
+        "PROVINCIA": "TUNGURAHUA",
+        "votos_validos": 357658,
+        "votos_blancos": 5092,
+        "votos_nulos": 22352,
+        "votos_total": 385102,
+        "ganador": "ADN",
+        "resultados": {
+            "ADN": {
+                "candidato": "DANIEL NOBOA AZIN",
+                "votos": 218104,
+                "porcentaje": 60.98
+            },
+            "AMIGO": {
+                "candidato": "JUAN IVAN CUEVA",
+                "votos": 594,
+                "porcentaje": 0.17
+            },
+            "AVANZA": {
+                "candidato": "LUIS FELIPE TILLERIA",
+                "votos": 1242,
+                "porcentaje": 0.35
+            },
+            "CD": {
+                "candidato": "JIMMY JAIRALA VALLAZZA",
+                "votos": 977,
+                "porcentaje": 0.27
+            },
+            "CONSTRUYE": {
+                "candidato": "HENRY CUCALON",
+                "votos": 989,
+                "porcentaje": 0.28
+            },
+            "CREO": {
+                "candidato": "FRANCESCO TABACCHI",
+                "votos": 797,
+                "porcentaje": 0.22
+            },
+            "DSI": {
+                "candidato": "IVAN SAQUICELA",
+                "votos": 460,
+                "porcentaje": 0.13
+            },
+            "ID": {
+                "candidato": "CARLOS RABASCALL",
+                "votos": 897,
+                "porcentaje": 0.25
+            },
+            "MUPP": {
+                "candidato": "LEONIDAS IZA",
+                "votos": 39738,
+                "porcentaje": 11.11
+            },
+            "PID": {
+                "candidato": "VICTOR ARAUS",
+                "votos": 730,
+                "porcentaje": 0.2
+            },
+            "PSC": {
+                "candidato": "HENRY KRONFLE KOZHAYA",
+                "votos": 1384,
+                "porcentaje": 0.39
+            },
+            "PSE": {
+                "candidato": "PEDRO GRANJA",
+                "votos": 2016,
+                "porcentaje": 0.56
+            },
+            "PSP": {
+                "candidato": "ANDREA GONZALEZ",
+                "votos": 9122,
+                "porcentaje": 2.55
+            },
+            "RC/RETO": {
+                "candidato": "LUISA GONZALEZ",
+                "votos": 79028,
+                "porcentaje": 22.1
+            },
+            "SUMA": {
+                "candidato": "ENRIQUE GOMEZ",
+                "votos": 766,
+                "porcentaje": 0.21
+            },
+            "UP": {
+                "candidato": "JORGE ESCALA",
+                "votos": 814,
+                "porcentaje": 0.23
+            }
+        }
+    },
+    {
+        "CODPRO": "19",
+        "PROVINCIA": "ZAMORA CH.",
+        "votos_validos": 69394,
+        "votos_blancos": 1437,
+        "votos_nulos": 3129,
+        "votos_total": 73960,
+        "ganador": "ADN",
+        "resultados": {
+            "ADN": {
+                "candidato": "DANIEL NOBOA AZIN",
+                "votos": 41366,
+                "porcentaje": 59.61
+            },
+            "AMIGO": {
+                "candidato": "JUAN IVAN CUEVA",
+                "votos": 109,
+                "porcentaje": 0.16
+            },
+            "AVANZA": {
+                "candidato": "LUIS FELIPE TILLERIA",
+                "votos": 211,
+                "porcentaje": 0.3
+            },
+            "CD": {
+                "candidato": "JIMMY JAIRALA VALLAZZA",
+                "votos": 127,
+                "porcentaje": 0.18
+            },
+            "CONSTRUYE": {
+                "candidato": "HENRY CUCALON",
+                "votos": 148,
+                "porcentaje": 0.21
+            },
+            "CREO": {
+                "candidato": "FRANCESCO TABACCHI",
+                "votos": 119,
+                "porcentaje": 0.17
+            },
+            "DSI": {
+                "candidato": "IVAN SAQUICELA",
+                "votos": 70,
+                "porcentaje": 0.1
+            },
+            "ID": {
+                "candidato": "CARLOS RABASCALL",
+                "votos": 109,
+                "porcentaje": 0.16
+            },
+            "MUPP": {
+                "candidato": "LEONIDAS IZA",
+                "votos": 3796,
+                "porcentaje": 5.47
+            },
+            "PID": {
+                "candidato": "VICTOR ARAUS",
+                "votos": 101,
+                "porcentaje": 0.15
+            },
+            "PSC": {
+                "candidato": "HENRY KRONFLE KOZHAYA",
+                "votos": 142,
+                "porcentaje": 0.2
+            },
+            "PSE": {
+                "candidato": "PEDRO GRANJA",
+                "votos": 403,
+                "porcentaje": 0.58
+            },
+            "PSP": {
+                "candidato": "ANDREA GONZALEZ",
+                "votos": 2174,
+                "porcentaje": 3.13
+            },
+            "RC/RETO": {
+                "candidato": "LUISA GONZALEZ",
+                "votos": 20217,
+                "porcentaje": 29.13
+            },
+            "SUMA": {
+                "candidato": "ENRIQUE GOMEZ",
+                "votos": 106,
+                "porcentaje": 0.15
+            },
+            "UP": {
+                "candidato": "JORGE ESCALA",
+                "votos": 196,
+                "porcentaje": 0.28
+            }
+        }
+    },
+    {
+        "CODPRO": "20",
+        "PROVINCIA": "GALAPAGOS",
+        "votos_validos": 16044,
+        "votos_blancos": 215,
+        "votos_nulos": 882,
+        "votos_total": 17141,
+        "ganador": "ADN",
+        "resultados": {
+            "ADN": {
+                "candidato": "DANIEL NOBOA AZIN",
+                "votos": 8834,
+                "porcentaje": 55.06
+            },
+            "AMIGO": {
+                "candidato": "JUAN IVAN CUEVA",
+                "votos": 13,
+                "porcentaje": 0.08
+            },
+            "AVANZA": {
+                "candidato": "LUIS FELIPE TILLERIA",
+                "votos": 41,
+                "porcentaje": 0.26
+            },
+            "CD": {
+                "candidato": "JIMMY JAIRALA VALLAZZA",
+                "votos": 32,
+                "porcentaje": 0.2
+            },
+            "CONSTRUYE": {
+                "candidato": "HENRY CUCALON",
+                "votos": 28,
+                "porcentaje": 0.17
+            },
+            "CREO": {
+                "candidato": "FRANCESCO TABACCHI",
+                "votos": 25,
+                "porcentaje": 0.16
+            },
+            "DSI": {
+                "candidato": "IVAN SAQUICELA",
+                "votos": 7,
+                "porcentaje": 0.04
+            },
+            "ID": {
+                "candidato": "CARLOS RABASCALL",
+                "votos": 19,
+                "porcentaje": 0.12
+            },
+            "MUPP": {
+                "candidato": "LEONIDAS IZA",
+                "votos": 590,
+                "porcentaje": 3.68
+            },
+            "PID": {
+                "candidato": "VICTOR ARAUS",
+                "votos": 17,
+                "porcentaje": 0.11
+            },
+            "PSC": {
+                "candidato": "HENRY KRONFLE KOZHAYA",
+                "votos": 409,
+                "porcentaje": 2.55
+            },
+            "PSE": {
+                "candidato": "PEDRO GRANJA",
+                "votos": 68,
+                "porcentaje": 0.42
+            },
+            "PSP": {
+                "candidato": "ANDREA GONZALEZ",
+                "votos": 635,
+                "porcentaje": 3.96
+            },
+            "RC/RETO": {
+                "candidato": "LUISA GONZALEZ",
+                "votos": 5292,
+                "porcentaje": 32.98
+            },
+            "SUMA": {
+                "candidato": "ENRIQUE GOMEZ",
+                "votos": 19,
+                "porcentaje": 0.12
+            },
+            "UP": {
+                "candidato": "JORGE ESCALA",
+                "votos": 15,
+                "porcentaje": 0.09
+            }
+        }
+    },
+    {
+        "CODPRO": "21",
+        "PROVINCIA": "SUCUMBIOS",
+        "votos_validos": 126545,
+        "votos_blancos": 2446,
+        "votos_nulos": 7785,
+        "votos_total": 136776,
+        "ganador": "RC/RETO",
+        "resultados": {
+            "ADN": {
+                "candidato": "DANIEL NOBOA AZIN",
+                "votos": 40892,
+                "porcentaje": 32.31
+            },
+            "AMIGO": {
+                "candidato": "JUAN IVAN CUEVA",
+                "votos": 218,
+                "porcentaje": 0.17
+            },
+            "AVANZA": {
+                "candidato": "LUIS FELIPE TILLERIA",
+                "votos": 349,
+                "porcentaje": 0.28
+            },
+            "CD": {
+                "candidato": "JIMMY JAIRALA VALLAZZA",
+                "votos": 219,
+                "porcentaje": 0.17
+            },
+            "CONSTRUYE": {
+                "candidato": "HENRY CUCALON",
+                "votos": 374,
+                "porcentaje": 0.3
+            },
+            "CREO": {
+                "candidato": "FRANCESCO TABACCHI",
+                "votos": 188,
+                "porcentaje": 0.15
+            },
+            "DSI": {
+                "candidato": "IVAN SAQUICELA",
+                "votos": 172,
+                "porcentaje": 0.14
+            },
+            "ID": {
+                "candidato": "CARLOS RABASCALL",
+                "votos": 150,
+                "porcentaje": 0.12
+            },
+            "MUPP": {
+                "candidato": "LEONIDAS IZA",
+                "votos": 4907,
+                "porcentaje": 3.88
+            },
+            "PID": {
+                "candidato": "VICTOR ARAUS",
+                "votos": 192,
+                "porcentaje": 0.15
+            },
+            "PSC": {
+                "candidato": "HENRY KRONFLE KOZHAYA",
+                "votos": 367,
+                "porcentaje": 0.29
+            },
+            "PSE": {
+                "candidato": "PEDRO GRANJA",
+                "votos": 565,
+                "porcentaje": 0.45
+            },
+            "PSP": {
+                "candidato": "ANDREA GONZALEZ",
+                "votos": 3623,
+                "porcentaje": 2.86
+            },
+            "RC/RETO": {
+                "candidato": "LUISA GONZALEZ",
+                "votos": 73392,
+                "porcentaje": 58.0
+            },
+            "SUMA": {
+                "candidato": "ENRIQUE GOMEZ",
+                "votos": 479,
+                "porcentaje": 0.38
+            },
+            "UP": {
+                "candidato": "JORGE ESCALA",
+                "votos": 458,
+                "porcentaje": 0.36
+            }
+        }
+    },
+    {
+        "CODPRO": "22",
+        "PROVINCIA": "ORELLANA",
+        "votos_validos": 110003,
+        "votos_blancos": 2482,
+        "votos_nulos": 7070,
+        "votos_total": 119555,
+        "ganador": "RC/RETO",
+        "resultados": {
+            "ADN": {
+                "candidato": "DANIEL NOBOA AZIN",
+                "votos": 43494,
+                "porcentaje": 39.54
+            },
+            "AMIGO": {
+                "candidato": "JUAN IVAN CUEVA",
+                "votos": 184,
+                "porcentaje": 0.17
+            },
+            "AVANZA": {
+                "candidato": "LUIS FELIPE TILLERIA",
+                "votos": 453,
+                "porcentaje": 0.41
+            },
+            "CD": {
+                "candidato": "JIMMY JAIRALA VALLAZZA",
+                "votos": 488,
+                "porcentaje": 0.44
+            },
+            "CONSTRUYE": {
+                "candidato": "HENRY CUCALON",
+                "votos": 351,
+                "porcentaje": 0.32
+            },
+            "CREO": {
+                "candidato": "FRANCESCO TABACCHI",
+                "votos": 669,
+                "porcentaje": 0.61
+            },
+            "DSI": {
+                "candidato": "IVAN SAQUICELA",
+                "votos": 224,
+                "porcentaje": 0.2
+            },
+            "ID": {
+                "candidato": "CARLOS RABASCALL",
+                "votos": 208,
+                "porcentaje": 0.19
+            },
+            "MUPP": {
+                "candidato": "LEONIDAS IZA",
+                "votos": 5505,
+                "porcentaje": 5.0
+            },
+            "PID": {
+                "candidato": "VICTOR ARAUS",
+                "votos": 223,
+                "porcentaje": 0.2
+            },
+            "PSC": {
+                "candidato": "HENRY KRONFLE KOZHAYA",
+                "votos": 357,
+                "porcentaje": 0.32
+            },
+            "PSE": {
+                "candidato": "PEDRO GRANJA",
+                "votos": 533,
+                "porcentaje": 0.48
+            },
+            "PSP": {
+                "candidato": "ANDREA GONZALEZ",
+                "votos": 2505,
+                "porcentaje": 2.28
+            },
+            "RC/RETO": {
+                "candidato": "LUISA GONZALEZ",
+                "votos": 53929,
+                "porcentaje": 49.03
+            },
+            "SUMA": {
+                "candidato": "ENRIQUE GOMEZ",
+                "votos": 260,
+                "porcentaje": 0.24
+            },
+            "UP": {
+                "candidato": "JORGE ESCALA",
+                "votos": 620,
+                "porcentaje": 0.56
+            }
+        }
+    },
+    {
+        "CODPRO": "23",
+        "PROVINCIA": "STO DGO TSACHILAS",
+        "votos_validos": 301183,
+        "votos_blancos": 7091,
+        "votos_nulos": 22780,
+        "votos_total": 331054,
+        "ganador": "RC/RETO",
+        "resultados": {
+            "ADN": {
+                "candidato": "DANIEL NOBOA AZIN",
+                "votos": 137616,
+                "porcentaje": 45.69
+            },
+            "AMIGO": {
+                "candidato": "JUAN IVAN CUEVA",
+                "votos": 470,
+                "porcentaje": 0.16
+            },
+            "AVANZA": {
+                "candidato": "LUIS FELIPE TILLERIA",
+                "votos": 1003,
+                "porcentaje": 0.33
+            },
+            "CD": {
+                "candidato": "JIMMY JAIRALA VALLAZZA",
+                "votos": 671,
+                "porcentaje": 0.22
+            },
+            "CONSTRUYE": {
+                "candidato": "HENRY CUCALON",
+                "votos": 982,
+                "porcentaje": 0.33
+            },
+            "CREO": {
+                "candidato": "FRANCESCO TABACCHI",
+                "votos": 607,
+                "porcentaje": 0.2
+            },
+            "DSI": {
+                "candidato": "IVAN SAQUICELA",
+                "votos": 331,
+                "porcentaje": 0.11
+            },
+            "ID": {
+                "candidato": "CARLOS RABASCALL",
+                "votos": 548,
+                "porcentaje": 0.18
+            },
+            "MUPP": {
+                "candidato": "LEONIDAS IZA",
+                "votos": 4812,
+                "porcentaje": 1.6
+            },
+            "PID": {
+                "candidato": "VICTOR ARAUS",
+                "votos": 836,
+                "porcentaje": 0.28
+            },
+            "PSC": {
+                "candidato": "HENRY KRONFLE KOZHAYA",
+                "votos": 1303,
+                "porcentaje": 0.43
+            },
+            "PSE": {
+                "candidato": "PEDRO GRANJA",
+                "votos": 1407,
+                "porcentaje": 0.47
+            },
+            "PSP": {
+                "candidato": "ANDREA GONZALEZ",
+                "votos": 6672,
+                "porcentaje": 2.22
+            },
+            "RC/RETO": {
+                "candidato": "LUISA GONZALEZ",
+                "votos": 142638,
+                "porcentaje": 47.36
+            },
+            "SUMA": {
+                "candidato": "ENRIQUE GOMEZ",
+                "votos": 422,
+                "porcentaje": 0.14
+            },
+            "UP": {
+                "candidato": "JORGE ESCALA",
+                "votos": 865,
+                "porcentaje": 0.29
+            }
+        }
+    },
+    {
+        "CODPRO": "24",
+        "PROVINCIA": "SANTA ELENA",
+        "votos_validos": 230124,
+        "votos_blancos": 6738,
+        "votos_nulos": 16114,
+        "votos_total": 252976,
+        "ganador": "RC/RETO",
+        "resultados": {
+            "ADN": {
+                "candidato": "DANIEL NOBOA AZIN",
+                "votos": 85340,
+                "porcentaje": 37.08
+            },
+            "AMIGO": {
+                "candidato": "JUAN IVAN CUEVA",
+                "votos": 481,
+                "porcentaje": 0.21
+            },
+            "AVANZA": {
+                "candidato": "LUIS FELIPE TILLERIA",
+                "votos": 915,
+                "porcentaje": 0.4
+            },
+            "CD": {
+                "candidato": "JIMMY JAIRALA VALLAZZA",
+                "votos": 1252,
+                "porcentaje": 0.54
+            },
+            "CONSTRUYE": {
+                "candidato": "HENRY CUCALON",
+                "votos": 803,
+                "porcentaje": 0.35
+            },
+            "CREO": {
+                "candidato": "FRANCESCO TABACCHI",
+                "votos": 706,
+                "porcentaje": 0.31
+            },
+            "DSI": {
+                "candidato": "IVAN SAQUICELA",
+                "votos": 334,
+                "porcentaje": 0.15
+            },
+            "ID": {
+                "candidato": "CARLOS RABASCALL",
+                "votos": 486,
+                "porcentaje": 0.21
+            },
+            "MUPP": {
+                "candidato": "LEONIDAS IZA",
+                "votos": 2821,
+                "porcentaje": 1.23
+            },
+            "PID": {
+                "candidato": "VICTOR ARAUS",
+                "votos": 544,
+                "porcentaje": 0.24
+            },
+            "PSC": {
+                "candidato": "HENRY KRONFLE KOZHAYA",
+                "votos": 1672,
+                "porcentaje": 0.73
+            },
+            "PSE": {
+                "candidato": "PEDRO GRANJA",
+                "votos": 1520,
+                "porcentaje": 0.66
+            },
+            "PSP": {
+                "candidato": "ANDREA GONZALEZ",
+                "votos": 6356,
+                "porcentaje": 2.76
+            },
+            "RC/RETO": {
+                "candidato": "LUISA GONZALEZ",
+                "votos": 125452,
+                "porcentaje": 54.51
+            },
+            "SUMA": {
+                "candidato": "ENRIQUE GOMEZ",
+                "votos": 520,
+                "porcentaje": 0.23
+            },
+            "UP": {
+                "candidato": "JORGE ESCALA",
+                "votos": 922,
+                "porcentaje": 0.4
+            }
+        }
+    },
+    {
+        "CODPRO": "26",
+        "PROVINCIA": "EUROPA, OCEANIA Y ASIA",
+        "votos_validos": 96659,
+        "votos_blancos": 1654,
+        "votos_nulos": 5864,
+        "votos_total": 104177,
+        "ganador": "ADN",
+        "resultados": {
+            "ADN": {
+                "candidato": "DANIEL NOBOA AZIN",
+                "votos": 46501,
+                "porcentaje": 48.11
+            },
+            "AMIGO": {
+                "candidato": "JUAN IVAN CUEVA",
+                "votos": 181,
+                "porcentaje": 0.19
+            },
+            "AVANZA": {
+                "candidato": "LUIS FELIPE TILLERIA",
+                "votos": 269,
+                "porcentaje": 0.28
+            },
+            "CD": {
+                "candidato": "JIMMY JAIRALA VALLAZZA",
+                "votos": 419,
+                "porcentaje": 0.43
+            },
+            "CONSTRUYE": {
+                "candidato": "HENRY CUCALON",
+                "votos": 263,
+                "porcentaje": 0.27
+            },
+            "CREO": {
+                "candidato": "FRANCESCO TABACCHI",
+                "votos": 157,
+                "porcentaje": 0.16
+            },
+            "DSI": {
+                "candidato": "IVAN SAQUICELA",
+                "votos": 106,
+                "porcentaje": 0.11
+            },
+            "ID": {
+                "candidato": "CARLOS RABASCALL",
+                "votos": 292,
+                "porcentaje": 0.3
+            },
+            "MUPP": {
+                "candidato": "LEONIDAS IZA",
+                "votos": 3786,
+                "porcentaje": 3.92
+            },
+            "PID": {
+                "candidato": "VICTOR ARAUS",
+                "votos": 164,
+                "porcentaje": 0.17
+            },
+            "PSC": {
+                "candidato": "HENRY KRONFLE KOZHAYA",
+                "votos": 657,
+                "porcentaje": 0.68
+            },
+            "PSE": {
+                "candidato": "PEDRO GRANJA",
+                "votos": 508,
+                "porcentaje": 0.53
+            },
+            "PSP": {
+                "candidato": "ANDREA GONZALEZ",
+                "votos": 1260,
+                "porcentaje": 1.3
+            },
+            "RC/RETO": {
+                "candidato": "LUISA GONZALEZ",
+                "votos": 41616,
+                "porcentaje": 43.05
+            },
+            "SUMA": {
+                "candidato": "ENRIQUE GOMEZ",
+                "votos": 229,
+                "porcentaje": 0.24
+            },
+            "UP": {
+                "candidato": "JORGE ESCALA",
+                "votos": 251,
+                "porcentaje": 0.26
+            }
+        }
+    },
+    {
+        "CODPRO": "27",
+        "PROVINCIA": "CANADA Y ESTADOS UNIDOS",
+        "votos_validos": 36978,
+        "votos_blancos": 294,
+        "votos_nulos": 1288,
+        "votos_total": 38560,
+        "ganador": "ADN",
+        "resultados": {
+            "ADN": {
+                "candidato": "DANIEL NOBOA AZIN",
+                "votos": 21311,
+                "porcentaje": 57.63
+            },
+            "AMIGO": {
+                "candidato": "JUAN IVAN CUEVA",
+                "votos": 43,
+                "porcentaje": 0.12
+            },
+            "AVANZA": {
+                "candidato": "LUIS FELIPE TILLERIA",
+                "votos": 80,
+                "porcentaje": 0.22
+            },
+            "CD": {
+                "candidato": "JIMMY JAIRALA VALLAZZA",
+                "votos": 99,
+                "porcentaje": 0.27
+            },
+            "CONSTRUYE": {
+                "candidato": "HENRY CUCALON",
+                "votos": 86,
+                "porcentaje": 0.23
+            },
+            "CREO": {
+                "candidato": "FRANCESCO TABACCHI",
+                "votos": 40,
+                "porcentaje": 0.11
+            },
+            "DSI": {
+                "candidato": "IVAN SAQUICELA",
+                "votos": 37,
+                "porcentaje": 0.1
+            },
+            "ID": {
+                "candidato": "CARLOS RABASCALL",
+                "votos": 81,
+                "porcentaje": 0.22
+            },
+            "MUPP": {
+                "candidato": "LEONIDAS IZA",
+                "votos": 2022,
+                "porcentaje": 5.47
+            },
+            "PID": {
+                "candidato": "VICTOR ARAUS",
+                "votos": 34,
+                "porcentaje": 0.09
+            },
+            "PSC": {
+                "candidato": "HENRY KRONFLE KOZHAYA",
+                "votos": 131,
+                "porcentaje": 0.35
+            },
+            "PSE": {
+                "candidato": "PEDRO GRANJA",
+                "votos": 119,
+                "porcentaje": 0.32
+            },
+            "PSP": {
+                "candidato": "ANDREA GONZALEZ",
+                "votos": 515,
+                "porcentaje": 1.39
+            },
+            "RC/RETO": {
+                "candidato": "LUISA GONZALEZ",
+                "votos": 12256,
+                "porcentaje": 33.14
+            },
+            "SUMA": {
+                "candidato": "ENRIQUE GOMEZ",
+                "votos": 46,
+                "porcentaje": 0.12
+            },
+            "UP": {
+                "candidato": "JORGE ESCALA",
+                "votos": 78,
+                "porcentaje": 0.21
+            }
+        }
+    },
+    {
+        "CODPRO": "28",
+        "PROVINCIA": "LATINOAMERICA, EL CARIBE Y AFRICA",
+        "votos_validos": 8472,
+        "votos_blancos": 60,
+        "votos_nulos": 318,
+        "votos_total": 8850,
+        "ganador": "ADN",
+        "resultados": {
+            "ADN": {
+                "candidato": "DANIEL NOBOA AZIN",
+                "votos": 5254,
+                "porcentaje": 62.02
+            },
+            "AMIGO": {
+                "candidato": "JUAN IVAN CUEVA",
+                "votos": 22,
+                "porcentaje": 0.26
+            },
+            "AVANZA": {
+                "candidato": "LUIS FELIPE TILLERIA",
+                "votos": 27,
+                "porcentaje": 0.32
+            },
+            "CD": {
+                "candidato": "JIMMY JAIRALA VALLAZZA",
+                "votos": 55,
+                "porcentaje": 0.65
+            },
+            "CONSTRUYE": {
+                "candidato": "HENRY CUCALON",
+                "votos": 38,
+                "porcentaje": 0.45
+            },
+            "CREO": {
+                "candidato": "FRANCESCO TABACCHI",
+                "votos": 22,
+                "porcentaje": 0.26
+            },
+            "DSI": {
+                "candidato": "IVAN SAQUICELA",
+                "votos": 6,
+                "porcentaje": 0.07
+            },
+            "ID": {
+                "candidato": "CARLOS RABASCALL",
+                "votos": 34,
+                "porcentaje": 0.4
+            },
+            "MUPP": {
+                "candidato": "LEONIDAS IZA",
+                "votos": 502,
+                "porcentaje": 5.93
+            },
+            "PID": {
+                "candidato": "VICTOR ARAUS",
+                "votos": 15,
+                "porcentaje": 0.18
+            },
+            "PSC": {
+                "candidato": "HENRY KRONFLE KOZHAYA",
+                "votos": 50,
+                "porcentaje": 0.59
+            },
+            "PSE": {
+                "candidato": "PEDRO GRANJA",
+                "votos": 36,
+                "porcentaje": 0.42
+            },
+            "PSP": {
+                "candidato": "ANDREA GONZALEZ",
+                "votos": 219,
+                "porcentaje": 2.58
+            },
+            "RC/RETO": {
+                "candidato": "LUISA GONZALEZ",
+                "votos": 2146,
+                "porcentaje": 25.33
+            },
+            "SUMA": {
+                "candidato": "ENRIQUE GOMEZ",
+                "votos": 21,
+                "porcentaje": 0.25
+            },
+            "UP": {
+                "candidato": "JORGE ESCALA",
+                "votos": 25,
+                "porcentaje": 0.3
+            }
+        }
+    }
+]

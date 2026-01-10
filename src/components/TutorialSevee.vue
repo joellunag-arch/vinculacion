@@ -14,6 +14,7 @@
           <div class="video-frame shadow-lg">
             <iframe
               src="https://www.youtube.com/embed/S_bhJ4hKKik"
+              loading="lazy"
               title="Video tutorial Sevee"
               frameborder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"

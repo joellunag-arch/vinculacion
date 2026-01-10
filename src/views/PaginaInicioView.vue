@@ -14,9 +14,14 @@
 </template>
 
 <script setup>
+
+import { defineAsyncComponent } from 'vue'
+
 import HeroInicio from '@/components/HeroInicio.vue'
 import BannerIntro from '@/components/BannerIntro.vue'
-import TutorialSevee from '@/components/TutorialSevee.vue'
+
+
+const TutorialSevee = defineAsyncComponent(() => import('@/components/TutorialSevee.vue'))
 </script>
 
 <style scoped>
