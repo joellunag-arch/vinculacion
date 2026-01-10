@@ -1,13 +1,13 @@
 <template>
-  <div class="app-container">
+  <v-app>
     <NavBar />
 
-    <main>
+    <v-main>
       <router-view />
-    </main>
+    </v-main>
 
     <FooterGeneral />
-  </div>
+  </v-app>
 </template>
 
 <script setup>
@@ -21,15 +21,5 @@ body {
   color: #212529 !important;
   margin: 0;
   padding: 0;
-}
-
-.app-container {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-}
-
-main {
-  flex: 1;
 }
 </style>

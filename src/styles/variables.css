@@ -21,6 +21,12 @@
   --bg-soft: #f0f8fb; 
 
   --bg-celeste: #d8edff; 
+
+  /*colores grupo mapas */
+  --color-naranja: #f88c0f;
+  --color-cyan: #12a2c2;
+  --color-texto-blanco: #ffffff;
+  --color-texto-negro: #000000;
   
   /* Blancos y Grises de Texto */
   --text-main: #333333;       /* Texto general */
