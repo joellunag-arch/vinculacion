@@ -2,7 +2,7 @@
   <div class="map-container" style="position: relative; width: 100%; height: 500px;">
     <div class="mapa" ref="mapa" style="width: 100%; height: 100%;"></div>
 
-    <div style="position: absolute; top: 0px; right: 0px; z-index: 1000; padding: 10px;">
+    <div style="position: absolute; top: 0px; right: 0px; z-index: 10; padding: 10px;">
       <v-menu offset-y :close-on-content-click="false">
         <template v-slot:activator="{ props }">
           <v-btn
@@ -134,12 +134,8 @@ export default {
       },
       deep: true,
     },
-    resultadosProvincias: {
-      handler() { this.updateMapData(); }, deep: true
-    },
-    colores: {
-      handler() { this.updateMapData(); }, deep: true
-    },
+    // resultadosProvincias and colores watchers removed to prevent conflicts with lifecycle
+
     datosDescarga: {
       handler(nuevosDatos) {
         this.actualizarDatosExportacion(nuevosDatos);
@@ -249,7 +245,7 @@ export default {
       this.actualizarDatosExportacion(this.datosDescarga);
 
       let pais = chart.series.push(new am4maps.MapPolygonSeries());
-      pais.geodata = this.geoProvincias;
+      pais.geodata = JSON.parse(JSON.stringify(this.geoProvincias));
       pais.useGeodata = true;
       pais.reverseGeodata = true;
       this.paisSeries = pais;
@@ -389,6 +385,8 @@ Votos: {winnerVotes} ({winnerPercent}%)`;
           this.updateMapData();
         } else {
           this.resetMapToHome();
+          // Ensure data is refreshed after resetting to home, as props might have changed (e.g. Clean Filter)
+          this.updateMapData();
         }
       }
     },

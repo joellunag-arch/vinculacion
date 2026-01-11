@@ -29,7 +29,7 @@ export function useElectoralData() {
         );
         if (rutaCompleta) {
           const mod = await globArchivos[rutaCompleta]();
-          return mod.default;
+          return mod.default || mod;
         }
         return [];
       };
@@ -43,11 +43,17 @@ export function useElectoralData() {
       const mapaPath = `/data/${year}/mapas/`;
       const importarMapa = async (file) => {
         const ruta = Object.keys(globArchivos).find(key => key.includes(mapaPath) && key.includes(file));
-        return ruta ? (await globArchivos[ruta]()).default : null;
+        if (ruta) {
+           const mod = await globArchivos[ruta]();
+           // console.log(`Cargando mapa ${file}:`, mod);
+           return mod.default || mod;
+        }
+        return null;
       };
 
       mapas.value.provincias = await importarMapa('provincias.json');
       mapas.value.cantones = await importarMapa('cantones.json');
+      mapas.value.parroquias = await importarMapa('parroquias.json');
 
       // 4. Cargar Info de Candidatos (CandidatosData.js)
       const rutaJS = Object.keys(globJS).find(key => key.includes(`/data/${year}/CandidatosData.js`));

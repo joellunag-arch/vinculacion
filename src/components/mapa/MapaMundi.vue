@@ -91,12 +91,44 @@ import autoTable from "jspdf-autotable";
 
 am4core.useTheme(am4themes_animated);
 
+const NAME_TO_ISO = {
+  "ESPAÑA": "ES",
+  "ITALIA": "IT",
+  "ESTADOS UNIDOS": "US",
+  "CANADA": "CA",
+  "CANADÁ": "CA",
+  "VENEZUELA": "VE",
+  "COLOMBIA": "CO",
+  "PERU": "PE",
+  "PERÚ": "PE",
+  "CHILE": "CL",
+  "ARGENTINA": "AR",
+  "BRASIL": "BR",
+  "MEXICO": "MX",
+  "MÉXICO": "MX",
+  "RUSIA": "RU",
+  "CHINA": "CN",
+  "JAPON": "JP",
+  "JAPÓN": "JP",
+  "AUSTRALIA": "AU",
+  "REINO UNIDO": "GB",
+  "FRANCIA": "FR",
+  "ALEMANIA": "DE",
+  "SUIZA": "CH",
+  "BELGICA": "BE",
+  "BÉLGICA": "BE",
+  "PAISES BAJOS": "NL",
+  "SUECIA": "SE"
+};
+
 export default {
   name: "MapaMundi",
 
   props: {
-    datos: { type: Array, default: () => [] },
-    datosDescarga: { type: Array, default: () => [] },
+    resultados: { type: Array, default: () => [] },
+    colores: { type: Object, default: () => ({}) },
+    // Maintain old props for compatibility if needed, but intended to be replaced
+    datosDescarga: { type: Array, default: () => [] }, 
     configuracion: {
       type: Object,
       default: () => ({
@@ -112,11 +144,14 @@ export default {
     return {
       chart: null,
       polygonSeries: null,
+      datosProcesados: [],
+      datosExportacionProcesados: []
     };
   },
 
   mounted() {
     this.crearMapa();
+    this.procesarDatos();
   },
 
   beforeDestroy() {
@@ -126,26 +161,98 @@ export default {
   },
 
   watch: {
-    datos: {
-      handler(nuevosDatos) {
-        if (this.polygonSeries) {
-          this.polygonSeries.data = nuevosDatos;
-        }
+    resultados: {
+      handler() {
+        this.procesarDatos();
       },
       deep: true,
     },
-    datosDescarga: {
-      handler(nuevosDatos) {
-        const hasData = Array.isArray(nuevosDatos) ? nuevosDatos.length > 0 : (nuevosDatos && Object.keys(nuevosDatos).length > 0);
-        console.log("MapaMundi: datosDescarga changed, hasData:", hasData);
-        this.actualizarDatosExportacion(nuevosDatos);
+    colores: {
+      handler() {
+        this.procesarDatos();
       },
-      deep: true,
-      immediate: true
-    },
+      deep: true
+    }
   },
 
   methods: {
+    procesarDatos() {
+        if (!this.resultados || this.resultados.length === 0) {
+            this.datosProcesados = [];
+            this.updateMapSeries();
+            return;
+        }
+
+        const datosMapeados = [];
+
+        this.resultados.forEach(cantonData => {
+            const nombreCanton = cantonData.CANTON ? cantonData.CANTON.toUpperCase() : "";
+            const isoCode = NAME_TO_ISO[nombreCanton];
+
+            if (isoCode) {
+                let winnerName = cantonData.ganador || "Desconocido";
+                let winnerVotes = 0;
+                let winnerPercent = 0;
+                let winnerCandidate = "";
+
+                let fill = "#cccccc";
+                let tooltipText = "";
+
+                // Logic to extract winner info similar to MapaEcuador
+                if (cantonData.resultados && cantonData.resultados[winnerName]) {
+                    const r = cantonData.resultados[winnerName];
+                    winnerVotes = r.votos;
+                    winnerPercent = r.porcentaje;
+                    winnerCandidate = r.candidato;
+                } else if (cantonData.resultados) {
+                    // Fallback calculation if ganador key is missing or invalid
+                     const values = Object.values(cantonData.resultados).filter(v => v.candidato !== "VALIDOS");
+                     if (values.length > 0) {
+                         const sorted = values.sort((a, b) => b.votos - a.votos);
+                         if (sorted[0]) {
+                             // We don't have the party name key easily here if it's values, but usually it's keyed by party
+                             // If we can't find it, we just use the first one
+                             winnerVotes = sorted[0].votos;
+                             winnerCandidate = sorted[0].candidato;
+                             // We can't easily get the party name key from values alone without the key
+                         }
+                     }
+                }
+
+                // Determine color
+                if (this.colores[winnerName]) {
+                    fill = this.colores[winnerName].principal || this.colores[winnerName];
+                }
+
+                tooltipText = `[bold]${nombreCanton}[/]\nGanador: ${winnerName}\nCandidato: ${winnerCandidate}\nVotos: ${winnerVotes.toLocaleString()} (${winnerPercent}%)`;
+
+                datosMapeados.push({
+                    id: isoCode,
+                    name: nombreCanton,
+                    fill: fill,
+                    colorHover: fill,
+                    ganador: winnerName,
+                    candidato: winnerCandidate,
+                    votos: winnerVotes,
+                    porcentaje: winnerPercent,
+                    tooltipPersonalizado: tooltipText,
+                    // Keep original data processing for export
+                    ...cantonData 
+                });
+            }
+        });
+
+        this.datosProcesados = datosMapeados;
+        this.updateMapSeries();
+        this.actualizarDatosExportacion(this.datosProcesados);
+    },
+
+    updateMapSeries() {
+        if (this.polygonSeries) {
+            this.polygonSeries.data = this.datosProcesados;
+        }
+    },
+
     crearMapa() {
       const self = this;
       let chart = am4core.create(this.$refs.chartdiv, am4maps.MapChart);
@@ -161,19 +268,20 @@ export default {
       polygonSeries.exclude = ["AQ"];
 
       let polygonTemplate = polygonSeries.mapPolygons.template;
-      polygonTemplate.tooltipText = "{name}\n{tooltipPersonalizado}";
+      polygonTemplate.tooltipText = "{tooltipPersonalizado}"; // Modified to use pre-built string
 
       polygonTemplate.fill = am4core.color(this.configuracion.colorDefecto);
       polygonTemplate.stroke = am4core.color(this.configuracion.colorBorde);
       polygonTemplate.strokeWidth = 0.5;
 
-      polygonTemplate.propertyFields.fill = "colorHover";
+      polygonTemplate.propertyFields.fill = "fill"; // Modified to match processed data key
 
       let hs = polygonTemplate.states.create("hover");
       hs.properties.stroke = am4core.color("#000000");
       hs.properties.strokeWidth = 1;
 
-      polygonSeries.data = this.datos;
+      // Initial data logic
+      polygonSeries.data = this.datosProcesados;
       this.polygonSeries = polygonSeries;
 
       chart.zoomControl = new am4maps.ZoomControl();
@@ -194,12 +302,8 @@ export default {
       back.insertBefore(chart.zoomControl.plusButton);
 
       if (this.configuracion.exportar !== false) {
-
-
-
         chart.exporting.filePrefix = "mapa_export";
-     
-        this.actualizarDatosExportacion(this.datosDescarga);
+        this.actualizarDatosExportacion(this.datosProcesados);
       }
       this.chart = chart;
     },
@@ -212,88 +316,57 @@ export default {
           const datosPlanos = this.flattenElectionData(datos);
           this.chart.exporting.data = datosPlanos;
           this.datosExportacionProcesados = datosPlanos;
-          console.log("MapaMundi: Export data updated (Provincias Flattened), length: " + datosPlanos.length);
         } catch (e) {
           console.error("MapaMundi: Error flattening data", e);
-          const raw = JSON.parse(JSON.stringify(datos));
-          this.chart.exporting.data = raw;
-          this.datosExportacionProcesados = raw;
+          // Fallback
+          this.chart.exporting.data = datos;
+          this.datosExportacionProcesados = datos;
         }
+      } else {
+           this.chart.exporting.data = [];
+           this.datosExportacionProcesados = [];
       }
     },
 
     getDatosParaDescarga() {
-      return this.datosExportacionProcesados || this.datosDescarga || {};
+      return this.datosExportacionProcesados || [];
     },
 
     flattenElectionData(data) {
       if (!data || !Array.isArray(data)) return [];
       
       return data.map(item => {
-        try {
-           let locationName = item.CANTON || item.PARROQUIA || item.name || "Desconocido";
+           let locationName = item.name || item.CANTON || "Desconocido";
         
+           // Use processed data if available, otherwise try to extract from raw
            let winnerParty = item.ganador || "";
-           let winnerCandidate = "";
-           let winnerVotes = 0;
+           let winnerCandidate = item.candidato || "";
+           let winnerVotes = item.votos || 0;
+           let winnerPercent = item.porcentaje || 0;
 
-           if (item.resultados && winnerParty && item.resultados[winnerParty]) {
-               const pData = item.resultados[winnerParty];
-               if (pData) {
-                   winnerCandidate = pData.candidato || "";
-                   winnerVotes = pData.votos || 0;
-               }
-           } else if (item.resultados) {
-               try {
-                  const values = Object.values(item.resultados).filter(v => v.candidato !== "VALIDOS");
-                   if (values.length > 0) {
-                       const sorted = values.sort((a, b) => b.votos - a.votos);
-                       if (sorted[0]) {
-                           winnerParty = "N/A (Calculated)"; 
-                           winnerCandidate = sorted[0].candidato;
-                           winnerVotes = sorted[0].votos;
-                       }
-                   }
-               } catch (innerE) {}
+           if (!winnerCandidate && item.resultados && winnerParty && item.resultados[winnerParty]) {
+                const r = item.resultados[winnerParty];
+                winnerCandidate = r.candidato;
+                winnerVotes = r.votos;
+                winnerPercent = r.porcentaje;
            }
 
            return {
              "PAIS": locationName,
              "Ganador": winnerParty,
              "Candidato": winnerCandidate,
-             "Votos": winnerVotes
+             "Votos": winnerVotes,
+             "Porcentaje": winnerPercent + "%"
            };
-        } catch (err) {
-            console.warn("Error flattening item", item, err);
-            return {
-                "PAIS": "Error",
-                "Ganador": "",
-                "Candidato": "",
-                "Votos": 0
-            };
-        }
       });
-    },
-
-    _extractTableData(source, key) {
-        return [];
     },
 
     descargarJSON() {
       try {
         let datos = this.getDatosParaDescarga();
-        
-        if (datos && datos.length > 0 && (datos[0].CODCAN || datos[0].CODPRO)) {
-            console.log("MapaMundi: Raw data detected in export, re-processing...");
-            datos = this.flattenElectionData(this.datosDescarga);
-        } else if (!datos || datos.length === 0) {
-           datos = this.flattenElectionData(this.datosDescarga);
-        }
-        
         if (!datos || datos.length === 0) return;
-
         const blob = new Blob([JSON.stringify(datos, null, 2)], { type: "application/json;charset=utf-8" });
-        saveAs(blob, "Resultados_Electorales.json");
+        saveAs(blob, "Resultados_Exterior.json");
       } catch (e) {
         console.error("Error descargarJSON", e);
       }
@@ -302,22 +375,12 @@ export default {
     descargarXLSX() {
       try {
         let datos = this.getDatosParaDescarga();
-        
-        if (datos && datos.length > 0 && (datos[0].CODCAN || datos[0].CODPRO)) {
-            console.log("MapaMundi: Raw data detected in XLSX export, re-processing...");
-            datos = this.flattenElectionData(this.datosDescarga);
-        } else if (!datos || datos.length === 0) {
-           datos = this.flattenElectionData(this.datosDescarga);
-        }
-
         if (!datos || datos.length === 0) return;
-
         const ws = XLSX.utils.json_to_sheet(datos);
         const wb = XLSX.utils.book_new();
         XLSX.utils.book_append_sheet(wb, ws, "Resultados");
-        
         const wbout = XLSX.write(wb, { bookType: "xlsx", type: "array" });
-        saveAs(new Blob([wbout], { type: "application/octet-stream" }), "Resultados_Electorales.xlsx");
+        saveAs(new Blob([wbout], { type: "application/octet-stream" }), "Resultados_Exterior.xlsx");
       } catch (e) {
         console.error("Error descargarXLSX", e);
       }
@@ -326,32 +389,20 @@ export default {
     descargarHTML() {
        try {
          let datos = this.getDatosParaDescarga();
-         
-         if (datos && datos.length > 0 && (datos[0].CODCAN || datos[0].CODPRO)) {
-             datos = this.flattenElectionData(this.datosDescarga);
-         } else if (!datos || datos.length === 0) {
-           datos = this.flattenElectionData(this.datosDescarga);
-         }
-         
          if (!datos || datos.length === 0) return;
-
-         let html = "<html><head><style>table, th, td { border: 1px solid black; border-collapse: collapse; padding: 5px; font-family: Arial; } th { background-color: #f2f2f2; }</style></head><body><h2>Resultados Electorales</h2><table>";
-         
+         let html = "<html><head><style>table, th, td { border: 1px solid black; border-collapse: collapse; padding: 5px; font-family: Arial; } th { background-color: #f2f2f2; }</style></head><body><h2>Resultados Exterior</h2><table>";
          const keys = Object.keys(datos[0]);
          html += "<thead><tr>";
          keys.forEach(k => html += `<th>${k}</th>`);
          html += "</tr></thead><tbody>";
-
          datos.forEach(row => {
            html += "<tr>";
            keys.forEach(k => html += `<td>${row[k] !== undefined && row[k] !== null ? row[k] : ""}</td>`);
            html += "</tr>";
          });
-
          html += "</tbody></table></body></html>";
-         
          const blob = new Blob([html], { type: "text/html;charset=utf-8" });
-         saveAs(blob, "Resultados_Electorales.html");
+         saveAs(blob, "Resultados_Exterior.html");
        } catch (e) {
           console.error("Error descargarHTML", e);
        }
@@ -360,33 +411,21 @@ export default {
     descargarPDF() {
       try {
         let datos = this.getDatosParaDescarga();
-        
-        if (datos && datos.length > 0 && (datos[0].CODCAN || datos[0].CODPRO)) {
-            datos = this.flattenElectionData(this.datosDescarga);
-        } else if (!datos || datos.length === 0) {
-            datos = this.flattenElectionData(this.datosDescarga);
-        }
-
         if (!datos || datos.length === 0) return;
-
         const doc = new jsPDF();
-        doc.text("Resultados Electorales", 14, 15);
-
+        doc.text("Resultados Exterior", 14, 15);
         const tableColumn = Object.keys(datos[0]);
         const tableRows = [];
-
         datos.forEach(item => {
           const rowData = tableColumn.map(col => item[col]);
           tableRows.push(rowData);
         });
-
         autoTable(doc, {
           head: [tableColumn],
           body: tableRows,
           startY: 20,
         });
-        
-        doc.save("Resultados_Electorales.pdf");
+        doc.save("Resultados_Exterior.pdf");
       } catch (e) {
          console.error("Error descargarPDF", e);
          alert("Error al descargar PDF: " + e.message);
@@ -409,8 +448,6 @@ export default {
       if (!this.chart) return;
       this.chart.goHome();
     },
-
-
   },
 };
 </script>

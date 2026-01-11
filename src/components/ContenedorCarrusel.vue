@@ -18,13 +18,22 @@
             </button>
           </div>
 
+
           <!-- TÍTULO -->
           <div class="col-auto mx-auto text-center">
             <div class="titulo-electoral">
               <h2 class="mb-0 fw-bold">{{ tituloActual }}</h2>
             </div>
           </div>
+
+          <!-- LIMPIAR FILTROS -->
+          <div v-if="slideActivo === 0" class="col-auto clean-container">
+            <button class="btn-search-fab" @click="$emit('clean-filters')" title="Limpiar Filtros">
+              <i class="bi bi-trash-fill"></i>
+            </button>
+          </div>
         </div>
+
 
         <!-- ==========================
              BOTONES DE ETAPA
@@ -72,12 +81,12 @@
         <div class="carousel-inner">
           <div class="carousel-item active p-4">
             <div class="row min-vh-50">
-              <div class="col-md-9 position-relative border-end border-light">
+              <div :class="hasFiltros ? 'col-md-9 position-relative border-end border-light' : 'col-md-12 position-relative'">
                 <slot name="mapa">
                   <div class="placeholder-content">Mapa del Ecuador</div>
                 </slot>
               </div>
-              <div class="col-md-3">
+              <div v-if="hasFiltros" class="col-md-3">
                 <slot name="filtros">
                   <div class="placeholder-content small">Filtros / Listado</div>
                 </slot>
@@ -140,11 +149,12 @@
 </template>
 
 <script setup>
-import { ref, computed, onMounted, onUnmounted } from "vue";
+import { ref, computed, onMounted, onUnmounted, useSlots, watch } from "vue";
 
 const props = defineProps({
   ambito: { type: String, default: "NACIONALES" },
   periodo: { type: String, default: "1992" },
+  etapaActual: { type: Number, default: 1 },
 
   //CONTROL DINÁMICO DE ETAPAS
   etapasDisponibles: {
@@ -153,11 +163,14 @@ const props = defineProps({
   },
 });
 
-const emit = defineEmits(["update-etapa", "toggle-search"]);
+const emit = defineEmits(["update-etapa", "toggle-search", "clean-filters"]);
+const slots = useSlots();
 
-const etapa = ref(1);
+const etapa = ref(props.etapaActual);
 const slideActivo = ref(0);
 const carouselRef = ref(null);
+
+const hasFiltros = computed(() => !!slots.filtros);
 
 const tituloActual = computed(() => {
   if (slideActivo.value === 1) return "GRÁFICOS DE RESULTADOS";
@@ -173,6 +186,11 @@ const cambiarEtapa = (num) => {
   etapa.value = num;
   emit("update-etapa", num);
 };
+
+// Sincronizar con cambios externos
+watch(() => props.etapaActual, (newVal) => {
+  etapa.value = newVal;
+});
 
 const detectarCambioSlide = (event) => {
   slideActivo.value = event.to;
@@ -289,6 +307,10 @@ h2 {
 ========================= */
 .search-container {
   margin-left: 24px;
+}
+
+.clean-container {
+  margin-right: 24px;
 }
 
 .btn-search-fab {
