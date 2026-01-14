@@ -423,7 +423,19 @@ const manejarCambioVuelta = (vuelta) => {
 };
 
 /* LIFECYCLE */
-onMounted(() => cargarTodo(props.year, 1));
+onMounted(async () => {
+  await cargarTodo(props.year, 1);
+  
+  // Verificación de candidatos
+  console.log('📊 Candidatos cargados:', candidatosInfo.value);
+  console.log('🎨 Total candidatos:', candidatos.value.length);
+  
+  // Verifica URLs de imágenes
+  if (candidatos.value.length > 0) {
+    console.log('🖼️ Primera imagen URL:', candidatos.value[0].url);
+    console.log('🏢 Primer logo URL:', candidatos.value[0].logo);
+  }
+});
 
 watch(
   () => props.year,

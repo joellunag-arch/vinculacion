@@ -10,11 +10,12 @@ export function useElectoralData() {
   // 1. Mapear TODOS los archivos de la carpeta 'data'
   const globArchivos = import.meta.glob('../assets/data/**/*.json');
   const globJS = import.meta.glob('../assets/data/**/*.js');
+  
 
   const cargarTodo = async (year, etapa) => {
     loading.value = true;
     
-    // Mapeo de carpetas según tu captura de pantalla
+    // Mapeo de carpetas 
     const carpetaEtapa = etapa === 1 ? 'primera_vuelta' : (etapa === 2 ? 'segunda_vuelta' : 'asambleistas');
     const categoria = etapa === 3 ? 'asambleistas' : 'presidentes';
     
@@ -28,9 +29,11 @@ export function useElectoralData() {
           key.includes(folderPath) && key.includes(fragmento)
         );
         if (rutaCompleta) {
+          console.log(`✅ Cargando ${fragmento} desde:`, rutaCompleta);
           const mod = await globArchivos[rutaCompleta]();
           return mod.default || mod;
         }
+        console.warn(`⚠️ No se encontró archivo para: ${fragmento}`);
         return [];
       };
 
@@ -42,12 +45,15 @@ export function useElectoralData() {
       // 3. Cargar Mapas (desde la carpeta /mapas/ del año)
       const mapaPath = `/data/${year}/mapas/`;
       const importarMapa = async (file) => {
-        const ruta = Object.keys(globArchivos).find(key => key.includes(mapaPath) && key.includes(file));
+        const ruta = Object.keys(globArchivos).find(key => 
+          key.includes(mapaPath) && key.includes(file)
+        );
         if (ruta) {
-           const mod = await globArchivos[ruta]();
-           // console.log(`Cargando mapa ${file}:`, mod);
-           return mod.default || mod;
+          console.log(`✅ Cargando mapa ${file} desde:`, ruta);
+          const mod = await globArchivos[ruta]();
+          return mod.default || mod;
         }
+        console.warn(`⚠️ No se encontró mapa: ${file}`);
         return null;
       };
 
@@ -56,10 +62,18 @@ export function useElectoralData() {
       mapas.value.parroquias = await importarMapa('parroquias.json');
 
       // 4. Cargar Info de Candidatos (CandidatosData.js)
-      const rutaJS = Object.keys(globJS).find(key => key.includes(`/data/${year}/CandidatosData.js`));
+      const rutaJS = Object.keys(globJS).find(key => 
+        key.includes(`/data/${year}/CandidatosData.js`)
+      );
+      
       if (rutaJS) {
+        console.log(`✅ Cargando CandidatosData desde:`, rutaJS);
         const modJS = await globJS[rutaJS]();
         candidatosInfo.value = modJS.candidatoData;
+        console.log(`✅ Candidatos cargados:`, candidatosInfo.value.length);
+      } else {
+        console.error(`❌ No se encontró CandidatosData.js para el año ${year}`);
+        console.log('Rutas JS disponibles:', Object.keys(globJS));
       }
 
       // 5. Calcular Resumen para la Barra Turquesa
@@ -72,18 +86,25 @@ export function useElectoralData() {
       }
 
     } catch (e) {
-      console.error("Error en controlador useElectoralData:", e);
+      console.error("❌ Error en controlador useElectoralData:", e);
     } finally {
       loading.value = false;
     }
   };
 
   const obtenerEtapasDelAno = (ambito, year) => {
-    // Esto debería venir de tu config/elecciones.js idealmente
     if (year === '1996') return [1, 2];
     if (year === '2023') return [1, 2, 3];
     return [1];
   };
 
-  return { loading, datosElectorales, mapas, candidatosInfo, resumenNacional, cargarTodo, obtenerEtapasDelAno };
+  return { 
+    loading, 
+    datosElectorales, 
+    mapas, 
+    candidatosInfo, 
+    resumenNacional, 
+    cargarTodo, 
+    obtenerEtapasDelAno 
+  };
 }
