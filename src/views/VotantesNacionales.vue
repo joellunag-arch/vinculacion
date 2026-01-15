@@ -134,7 +134,7 @@
         <GraficoBarras
           v-if="datosElectorales.provincias.length"
           :datos="datosElectorales.provincias"
-          :partido="partidoSeleccionado"
+          :candidatosExtraInfo="candidatos" 
           categoria="presidentes"
         />
         <p v-else class="estado">No hay datos para gráficos</p>
