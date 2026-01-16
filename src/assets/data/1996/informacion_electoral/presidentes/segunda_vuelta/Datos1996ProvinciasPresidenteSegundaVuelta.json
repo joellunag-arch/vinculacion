@@ -1,0 +1,359 @@
+[
+    {
+        "CODPROV": "01",
+        "PROVINCIA": "AZUAY",
+        "ganador": "PRE-10",
+        "resultados": {
+            "PSC-6": {
+                "candidato": "NEBOT JAIME",
+                "votos": 77590,
+                "porcentaje": 40.24
+            },
+            "PRE-10": {
+                "candidato": "BUCARAM ABDALA",
+                "votos": 115208,
+                "porcentaje": 59.76
+            }
+        }
+    },
+    {
+        "CODPROV": "02",
+        "PROVINCIA": "BOLIVAR",
+        "ganador": "PRE-10",
+        "resultados": {
+            "PSC-6": {
+                "candidato": "NEBOT JAIME",
+                "votos": 23318,
+                "porcentaje": 40.02
+            },
+            "PRE-10": {
+                "candidato": "BUCARAM ABDALA",
+                "votos": 34947,
+                "porcentaje": 59.98
+            }
+        }
+    },
+    {
+        "CODPROV": "03",
+        "PROVINCIA": "CAÑAR",
+        "ganador": "PRE-10",
+        "resultados": {
+            "PSC-6": {
+                "candidato": "NEBOT JAIME",
+                "votos": 23961,
+                "porcentaje": 37.11
+            },
+            "PRE-10": {
+                "candidato": "BUCARAM ABDALA",
+                "votos": 40600,
+                "porcentaje": 62.89
+            }
+        }
+    },
+    {
+        "CODPROV": "04",
+        "PROVINCIA": "CARCHI",
+        "ganador": "PRE-10",
+        "resultados": {
+            "PSC-6": {
+                "candidato": "NEBOT JAIME",
+                "votos": 20388,
+                "porcentaje": 33.3
+            },
+            "PRE-10": {
+                "candidato": "BUCARAM ABDALA",
+                "votos": 40834,
+                "porcentaje": 66.7
+            }
+        }
+    },
+    {
+        "CODPROV": "05",
+        "PROVINCIA": "COTOPAXI",
+        "ganador": "PRE-10",
+        "resultados": {
+            "PSC-6": {
+                "candidato": "NEBOT JAIME",
+                "votos": 38308,
+                "porcentaje": 32.34
+            },
+            "PRE-10": {
+                "candidato": "BUCARAM ABDALA",
+                "votos": 80164,
+                "porcentaje": 67.66
+            }
+        }
+    },
+    {
+        "CODPROV": "06",
+        "PROVINCIA": "CHIMBORAZO",
+        "ganador": "PRE-10",
+        "resultados": {
+            "PSC-6": {
+                "candidato": "NEBOT JAIME",
+                "votos": 45603,
+                "porcentaje": 31.82
+            },
+            "PRE-10": {
+                "candidato": "BUCARAM ABDALA",
+                "votos": 97709,
+                "porcentaje": 68.18
+            }
+        }
+    },
+    {
+        "CODPROV": "07",
+        "PROVINCIA": "EL ORO",
+        "ganador": "PRE-10",
+        "resultados": {
+            "PSC-6": {
+                "candidato": "NEBOT JAIME",
+                "votos": 73432,
+                "porcentaje": 37.31
+            },
+            "PRE-10": {
+                "candidato": "BUCARAM ABDALA",
+                "votos": 123403,
+                "porcentaje": 62.69
+            }
+        }
+    },
+    {
+        "CODPROV": "08",
+        "PROVINCIA": "ESMERALDAS",
+        "ganador": "PRE-10",
+        "resultados": {
+            "PSC-6": {
+                "candidato": "NEBOT JAIME",
+                "votos": 28712,
+                "porcentaje": 24.94
+            },
+            "PRE-10": {
+                "candidato": "BUCARAM ABDALA",
+                "votos": 86426,
+                "porcentaje": 75.06
+            }
+        }
+    },
+    {
+        "CODPROV": "09",
+        "PROVINCIA": "GUAYAS",
+        "ganador": "PSC-6",
+        "resultados": {
+            "PSC-6": {
+                "candidato": "NEBOT JAIME",
+                "votos": 667572,
+                "porcentaje": 56.37
+            },
+            "PRE-10": {
+                "candidato": "BUCARAM ABDALA",
+                "votos": 516751,
+                "porcentaje": 43.63
+            }
+        }
+    },
+    {
+        "CODPROV": "10",
+        "PROVINCIA": "IMBABURA",
+        "ganador": "PRE-10",
+        "resultados": {
+            "PSC-6": {
+                "candidato": "NEBOT JAIME",
+                "votos": 43513,
+                "porcentaje": 37.71
+            },
+            "PRE-10": {
+                "candidato": "BUCARAM ABDALA",
+                "votos": 71875,
+                "porcentaje": 62.29
+            }
+        }
+    },
+    {
+        "CODPROV": "11",
+        "PROVINCIA": "LOJA",
+        "ganador": "PRE-10",
+        "resultados": {
+            "PSC-6": {
+                "candidato": "NEBOT JAIME",
+                "votos": 51246,
+                "porcentaje": 36.59
+            },
+            "PRE-10": {
+                "candidato": "BUCARAM ABDALA",
+                "votos": 88797,
+                "porcentaje": 63.41
+            }
+        }
+    },
+    {
+        "CODPROV": "12",
+        "PROVINCIA": "LOS RIOS",
+        "ganador": "PRE-10",
+        "resultados": {
+            "PSC-6": {
+                "candidato": "NEBOT JAIME",
+                "votos": 66851,
+                "porcentaje": 45.81
+            },
+            "PRE-10": {
+                "candidato": "BUCARAM ABDALA",
+                "votos": 79083,
+                "porcentaje": 54.19
+            }
+        }
+    },
+    {
+        "CODPROV": "13",
+        "PROVINCIA": "MANABI",
+        "ganador": "PRE-10",
+        "resultados": {
+            "PSC-6": {
+                "candidato": "NEBOT JAIME",
+                "votos": 192529,
+                "porcentaje": 42.97
+            },
+            "PRE-10": {
+                "candidato": "BUCARAM ABDALA",
+                "votos": 255479,
+                "porcentaje": 57.03
+            }
+        }
+    },
+    {
+        "CODPROV": "14",
+        "PROVINCIA": "MORONA SANTIAGO",
+        "ganador": "PRE-10",
+        "resultados": {
+            "PSC-6": {
+                "candidato": "NEBOT JAIME",
+                "votos": 6673,
+                "porcentaje": 26.13
+            },
+            "PRE-10": {
+                "candidato": "BUCARAM ABDALA",
+                "votos": 18862,
+                "porcentaje": 73.87
+            }
+        }
+    },
+    {
+        "CODPROV": "15",
+        "PROVINCIA": "NAPO",
+        "ganador": "PSC-6",
+        "resultados": {
+            "PSC-6": {
+                "candidato": "NEBOT JAIME",
+                "votos": 5651,
+                "porcentaje": 55.95
+            },
+            "PRE-10": {
+                "candidato": "BUCARAM ABDALA",
+                "votos": 4449,
+                "porcentaje": 44.05
+            }
+        }
+    },
+    {
+        "CODPROV": "16",
+        "PROVINCIA": "PASTAZA",
+        "ganador": "PRE-10",
+        "resultados": {
+            "PSC-6": {
+                "candidato": "NEBOT JAIME",
+                "votos": 4019,
+                "porcentaje": 25.0
+            },
+            "PRE-10": {
+                "candidato": "BUCARAM ABDALA",
+                "votos": 12057,
+                "porcentaje": 75.0
+            }
+        }
+    },
+    {
+        "CODPROV": "17",
+        "PROVINCIA": "PICHINCHA",
+        "ganador": "PRE-10",
+        "resultados": {
+            "PSC-6": {
+                "candidato": "NEBOT JAIME",
+                "votos": 412547,
+                "porcentaje": 49.69
+            },
+            "PRE-10": {
+                "candidato": "BUCARAM ABDALA",
+                "votos": 417629,
+                "porcentaje": 50.31
+            }
+        }
+    },
+    {
+        "CODPROV": "18",
+        "PROVINCIA": "TUNGURAHUA",
+        "ganador": "PRE-10",
+        "resultados": {
+            "PSC-6": {
+                "candidato": "NEBOT JAIME",
+                "votos": 6,
+                "porcentaje": 0.0
+            },
+            "PRE-10": {
+                "candidato": "BUCARAM ABDALA",
+                "votos": 95441,
+                "porcentaje": 54.91
+            }
+        }
+    },
+    {
+        "CODPROV": "19",
+        "PROVINCIA": "ZAMORA CHINCHIPE",
+        "ganador": "PRE-10",
+        "resultados": {
+            "PSC-6": {
+                "candidato": "NEBOT JAIME",
+                "votos": 5023,
+                "porcentaje": 24.1
+            },
+            "PRE-10": {
+                "candidato": "BUCARAM ABDALA",
+                "votos": 15817,
+                "porcentaje": 75.9
+            }
+        }
+    },
+    {
+        "CODPROV": "20",
+        "PROVINCIA": "GALAPAGOS",
+        "ganador": "PRE-10",
+        "resultados": {
+            "PSC-6": {
+                "candidato": "NEBOT JAIME",
+                "votos": 1740,
+                "porcentaje": 44.21
+            },
+            "PRE-10": {
+                "candidato": "BUCARAM ABDALA",
+                "votos": 2196,
+                "porcentaje": 55.79
+            }
+        }
+    },
+    {
+        "CODPROV": "21",
+        "PROVINCIA": "SUCUMBIOS",
+        "ganador": "PRE-10",
+        "resultados": {
+            "PSC-6": {
+                "candidato": "NEBOT JAIME",
+                "votos": 6247,
+                "porcentaje": 23.87
+            },
+            "PRE-10": {
+                "candidato": "BUCARAM ABDALA",
+                "votos": 19919,
+                "porcentaje": 76.13
+            }
+        }
+    }
+]

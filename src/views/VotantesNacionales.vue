@@ -424,11 +424,13 @@ const manejarCambioVuelta = (vuelta) => {
 
 /* LIFECYCLE */
 onMounted(async () => {
+  console.log("🚀 VotantesNacionales montado");
   await cargarTodo(props.year, 1);
   
   // Verificación de candidatos
-  console.log('📊 Candidatos cargados:', candidatosInfo.value);
-  console.log('🎨 Total candidatos:', candidatos.value.length);
+  console.log('📊 Candidatos cargados (candidatosInfo):', candidatosInfo.value);
+  console.log('🎨 Total candidatos computados:', candidatos.value.length);
+  console.log('📦 Datos Electorales (provincias):', datosElectorales.value.provincias);
   
   // Verifica URLs de imágenes
   if (candidatos.value.length > 0) {

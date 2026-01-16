@@ -134,7 +134,20 @@ export default {
       },
       deep: true,
     },
-    // resultadosProvincias and colores watchers removed to prevent conflicts with lifecycle
+    // Watchers restaurados para manejar la carga asíncrona de datos
+    resultadosProvincias: {
+      handler() {
+        this.updateMapData();
+      },
+      deep: true
+    },
+    
+    colores: {
+      handler() {
+        this.updateMapData();
+      },
+      deep: true
+    },
 
     datosDescarga: {
       handler(nuevosDatos) {

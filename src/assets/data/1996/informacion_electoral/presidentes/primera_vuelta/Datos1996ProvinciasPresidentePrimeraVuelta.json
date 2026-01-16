@@ -1,0 +1,1094 @@
+[
+    {
+        "CODPROV": "01",
+        "PROVINCIA": "AZUAY",
+        "ganador": "MUPP-NP-18",
+        "resultados": {
+            "DP-5": {
+                "candidato": "PAZ RODRIGO",
+                "votos": 24029,
+                "porcentaje": 12.96
+            },
+            "PSC-6": {
+                "candidato": "NEBOT JAIME",
+                "votos": 27140,
+                "porcentaje": 14.64
+            },
+            "PRE-10": {
+                "candidato": "BUCARAM ABDALA",
+                "votos": 21475,
+                "porcentaje": 11.58
+            },
+            "APRE-13": {
+                "candidato": "VARGAS FRANK",
+                "votos": 4053,
+                "porcentaje": 2.19
+            },
+            "MPD-15": {
+                "candidato": "CASTELLO JUAN",
+                "votos": 4745,
+                "porcentaje": 2.56
+            },
+            "MUPP-NP-18": {
+                "candidato": "EHLERS FREDDY",
+                "votos": 96458,
+                "porcentaje": 52.02
+            },
+            "UCI-19": {
+                "candidato": "GALLARDO JOSE",
+                "votos": 1548,
+                "porcentaje": 0.83
+            },
+            "MITI-20": {
+                "candidato": "VALAZQUEZ JACINTO",
+                "votos": 3235,
+                "porcentaje": 1.74
+            },
+            "PLRE-FRA-2/14": {
+                "candidato": "NOBOA RICARDO",
+                "votos": 2751,
+                "porcentaje": 1.48
+            }
+        }
+    },
+    {
+        "CODPROV": "02",
+        "PROVINCIA": "BOLIVAR",
+        "ganador": "PSC-6",
+        "resultados": {
+            "DP-5": {
+                "candidato": "PAZ RODRIGO",
+                "votos": 8836,
+                "porcentaje": 17.83
+            },
+            "PSC-6": {
+                "candidato": "NEBOT JAIME",
+                "votos": 13146,
+                "porcentaje": 26.52
+            },
+            "PRE-10": {
+                "candidato": "BUCARAM ABDALA",
+                "votos": 12150,
+                "porcentaje": 24.51
+            },
+            "APRE-13": {
+                "candidato": "VARGAS FRANK",
+                "votos": 2407,
+                "porcentaje": 4.86
+            },
+            "MPD-15": {
+                "candidato": "CASTELLO JUAN",
+                "votos": 1179,
+                "porcentaje": 2.38
+            },
+            "MUPP-NP-18": {
+                "candidato": "EHLERS FREDDY",
+                "votos": 9457,
+                "porcentaje": 19.08
+            },
+            "UCI-19": {
+                "candidato": "GALLARDO JOSE",
+                "votos": 580,
+                "porcentaje": 1.17
+            },
+            "MITI-20": {
+                "candidato": "VALAZQUEZ JACINTO",
+                "votos": 382,
+                "porcentaje": 0.77
+            },
+            "PLRE-FRA-2/14": {
+                "candidato": "NOBOA RICARDO",
+                "votos": 1429,
+                "porcentaje": 2.88
+            }
+        }
+    },
+    {
+        "CODPROV": "03",
+        "PROVINCIA": "CAÑAR",
+        "ganador": "MUPP-NP-18",
+        "resultados": {
+            "DP-5": {
+                "candidato": "PAZ RODRIGO",
+                "votos": 3938,
+                "porcentaje": 6.88
+            },
+            "PSC-6": {
+                "candidato": "NEBOT JAIME",
+                "votos": 12390,
+                "porcentaje": 21.64
+            },
+            "PRE-10": {
+                "candidato": "BUCARAM ABDALA",
+                "votos": 11031,
+                "porcentaje": 19.27
+            },
+            "APRE-13": {
+                "candidato": "VARGAS FRANK",
+                "votos": 1675,
+                "porcentaje": 2.93
+            },
+            "MPD-15": {
+                "candidato": "CASTELLO JUAN",
+                "votos": 2792,
+                "porcentaje": 4.88
+            },
+            "MUPP-NP-18": {
+                "candidato": "EHLERS FREDDY",
+                "votos": 21650,
+                "porcentaje": 37.81
+            },
+            "UCI-19": {
+                "candidato": "GALLARDO JOSE",
+                "votos": 351,
+                "porcentaje": 0.61
+            },
+            "MITI-20": {
+                "candidato": "VALAZQUEZ JACINTO",
+                "votos": 547,
+                "porcentaje": 0.96
+            },
+            "PLRE-FRA-2/14": {
+                "candidato": "NOBOA RICARDO",
+                "votos": 2880,
+                "porcentaje": 5.03
+            }
+        }
+    },
+    {
+        "CODPROV": "04",
+        "PROVINCIA": "CARCHI",
+        "ganador": "MUPP-NP-18",
+        "resultados": {
+            "DP-5": {
+                "candidato": "PAZ RODRIGO",
+                "votos": 12156,
+                "porcentaje": 20.97
+            },
+            "PSC-6": {
+                "candidato": "NEBOT JAIME",
+                "votos": 7088,
+                "porcentaje": 12.23
+            },
+            "PRE-10": {
+                "candidato": "BUCARAM ABDALA",
+                "votos": 16208,
+                "porcentaje": 27.97
+            },
+            "APRE-13": {
+                "candidato": "VARGAS FRANK",
+                "votos": 1724,
+                "porcentaje": 2.97
+            },
+            "MPD-15": {
+                "candidato": "CASTELLO JUAN",
+                "votos": 1568,
+                "porcentaje": 2.71
+            },
+            "MUPP-NP-18": {
+                "candidato": "EHLERS FREDDY",
+                "votos": 16985,
+                "porcentaje": 29.31
+            },
+            "UCI-19": {
+                "candidato": "GALLARDO JOSE",
+                "votos": 413,
+                "porcentaje": 0.71
+            },
+            "MITI-20": {
+                "candidato": "VALAZQUEZ JACINTO",
+                "votos": 325,
+                "porcentaje": 0.56
+            },
+            "PLRE-FRA-2/14": {
+                "candidato": "NOBOA RICARDO",
+                "votos": 1488,
+                "porcentaje": 2.57
+            }
+        }
+    },
+    {
+        "CODPROV": "05",
+        "PROVINCIA": "COTOPAXI",
+        "ganador": "MUPP-NP-18",
+        "resultados": {
+            "DP-5": {
+                "candidato": "PAZ RODRIGO",
+                "votos": 14997,
+                "porcentaje": 14.49
+            },
+            "PSC-6": {
+                "candidato": "NEBOT JAIME",
+                "votos": 14907,
+                "porcentaje": 14.4
+            },
+            "PRE-10": {
+                "candidato": "BUCARAM ABDALA",
+                "votos": 22636,
+                "porcentaje": 21.87
+            },
+            "APRE-13": {
+                "candidato": "VARGAS FRANK",
+                "votos": 10362,
+                "porcentaje": 10.01
+            },
+            "MPD-15": {
+                "candidato": "CASTELLO JUAN",
+                "votos": 3570,
+                "porcentaje": 3.45
+            },
+            "MUPP-NP-18": {
+                "candidato": "EHLERS FREDDY",
+                "votos": 33416,
+                "porcentaje": 32.29
+            },
+            "UCI-19": {
+                "candidato": "GALLARDO JOSE",
+                "votos": 1336,
+                "porcentaje": 1.29
+            },
+            "MITI-20": {
+                "candidato": "VALAZQUEZ JACINTO",
+                "votos": 991,
+                "porcentaje": 0.96
+            },
+            "PLRE-FRA-2/14": {
+                "candidato": "NOBOA RICARDO",
+                "votos": 1275,
+                "porcentaje": 1.23
+            }
+        }
+    },
+    {
+        "CODPROV": "06",
+        "PROVINCIA": "CHIMBORAZO",
+        "ganador": "MUPP-NP-18",
+        "resultados": {
+            "DP-5": {
+                "candidato": "PAZ RODRIGO",
+                "votos": 22352,
+                "porcentaje": 17.42
+            },
+            "PSC-6": {
+                "candidato": "NEBOT JAIME",
+                "votos": 17871,
+                "porcentaje": 13.92
+            },
+            "PRE-10": {
+                "candidato": "BUCARAM ABDALA",
+                "votos": 24426,
+                "porcentaje": 19.03
+            },
+            "APRE-13": {
+                "candidato": "VARGAS FRANK",
+                "votos": 6672,
+                "porcentaje": 5.2
+            },
+            "MPD-15": {
+                "candidato": "CASTELLO JUAN",
+                "votos": 9735,
+                "porcentaje": 7.58
+            },
+            "MUPP-NP-18": {
+                "candidato": "EHLERS FREDDY",
+                "votos": 40929,
+                "porcentaje": 31.89
+            },
+            "UCI-19": {
+                "candidato": "GALLARDO JOSE",
+                "votos": 1532,
+                "porcentaje": 1.19
+            },
+            "MITI-20": {
+                "candidato": "VALAZQUEZ JACINTO",
+                "votos": 1981,
+                "porcentaje": 1.54
+            },
+            "PLRE-FRA-2/14": {
+                "candidato": "NOBOA RICARDO",
+                "votos": 2850,
+                "porcentaje": 2.22
+            }
+        }
+    },
+    {
+        "CODPROV": "07",
+        "PROVINCIA": "EL ORO",
+        "ganador": "PRE-10",
+        "resultados": {
+            "DP-5": {
+                "candidato": "PAZ RODRIGO",
+                "votos": 12704,
+                "porcentaje": 7.1
+            },
+            "PSC-6": {
+                "candidato": "NEBOT JAIME",
+                "votos": 46366,
+                "porcentaje": 25.92
+            },
+            "PRE-10": {
+                "candidato": "BUCARAM ABDALA",
+                "votos": 74496,
+                "porcentaje": 41.65
+            },
+            "APRE-13": {
+                "candidato": "VARGAS FRANK",
+                "votos": 2728,
+                "porcentaje": 1.53
+            },
+            "MPD-15": {
+                "candidato": "CASTELLO JUAN",
+                "votos": 4381,
+                "porcentaje": 2.45
+            },
+            "MUPP-NP-18": {
+                "candidato": "EHLERS FREDDY",
+                "votos": 20582,
+                "porcentaje": 11.51
+            },
+            "UCI-19": {
+                "candidato": "GALLARDO JOSE",
+                "votos": 11738,
+                "porcentaje": 6.56
+            },
+            "MITI-20": {
+                "candidato": "VALAZQUEZ JACINTO",
+                "votos": 1145,
+                "porcentaje": 0.64
+            },
+            "PLRE-FRA-2/14": {
+                "candidato": "NOBOA RICARDO",
+                "votos": 4713,
+                "porcentaje": 2.64
+            }
+        }
+    },
+    {
+        "CODPROV": "08",
+        "PROVINCIA": "ESMERALDAS",
+        "ganador": "PRE-10",
+        "resultados": {
+            "DP-5": {
+                "candidato": "PAZ RODRIGO",
+                "votos": 5598,
+                "porcentaje": 5.85
+            },
+            "PSC-6": {
+                "candidato": "NEBOT JAIME",
+                "votos": 19724,
+                "porcentaje": 20.6
+            },
+            "PRE-10": {
+                "candidato": "BUCARAM ABDALA",
+                "votos": 52920,
+                "porcentaje": 55.28
+            },
+            "APRE-13": {
+                "candidato": "VARGAS FRANK",
+                "votos": 1753,
+                "porcentaje": 1.83
+            },
+            "MPD-15": {
+                "candidato": "CASTELLO JUAN",
+                "votos": 3438,
+                "porcentaje": 3.59
+            },
+            "MUPP-NP-18": {
+                "candidato": "EHLERS FREDDY",
+                "votos": 9172,
+                "porcentaje": 9.58
+            },
+            "UCI-19": {
+                "candidato": "GALLARDO JOSE",
+                "votos": 586,
+                "porcentaje": 0.61
+            },
+            "MITI-20": {
+                "candidato": "VALAZQUEZ JACINTO",
+                "votos": 481,
+                "porcentaje": 0.5
+            },
+            "PLRE-FRA-2/14": {
+                "candidato": "NOBOA RICARDO",
+                "votos": 2056,
+                "porcentaje": 2.15
+            }
+        }
+    },
+    {
+        "CODPROV": "09",
+        "PROVINCIA": "GUAYAS",
+        "ganador": "PSC-6",
+        "resultados": {
+            "DP-5": {
+                "candidato": "PAZ RODRIGO",
+                "votos": 43322,
+                "porcentaje": 4.08
+            },
+            "PSC-6": {
+                "candidato": "NEBOT JAIME",
+                "votos": 493310,
+                "porcentaje": 46.47
+            },
+            "PRE-10": {
+                "candidato": "BUCARAM ABDALA",
+                "votos": 339488,
+                "porcentaje": 31.98
+            },
+            "APRE-13": {
+                "candidato": "VARGAS FRANK",
+                "votos": 30330,
+                "porcentaje": 2.86
+            },
+            "MPD-15": {
+                "candidato": "CASTELLO JUAN",
+                "votos": 20983,
+                "porcentaje": 1.98
+            },
+            "MUPP-NP-18": {
+                "candidato": "EHLERS FREDDY",
+                "votos": 68625,
+                "porcentaje": 6.46
+            },
+            "UCI-19": {
+                "candidato": "GALLARDO JOSE",
+                "votos": 8493,
+                "porcentaje": 0.8
+            },
+            "MITI-20": {
+                "candidato": "VALAZQUEZ JACINTO",
+                "votos": 9917,
+                "porcentaje": 0.93
+            },
+            "PLRE-FRA-2/14": {
+                "candidato": "NOBOA RICARDO",
+                "votos": 47107,
+                "porcentaje": 4.44
+            }
+        }
+    },
+    {
+        "CODPROV": "10",
+        "PROVINCIA": "IMBABURA",
+        "ganador": "MUPP-NP-18",
+        "resultados": {
+            "DP-5": {
+                "candidato": "PAZ RODRIGO",
+                "votos": 18531,
+                "porcentaje": 17.07
+            },
+            "PSC-6": {
+                "candidato": "NEBOT JAIME",
+                "votos": 15071,
+                "porcentaje": 13.88
+            },
+            "PRE-10": {
+                "candidato": "BUCARAM ABDALA",
+                "votos": 24659,
+                "porcentaje": 22.72
+            },
+            "APRE-13": {
+                "candidato": "VARGAS FRANK",
+                "votos": 6332,
+                "porcentaje": 5.83
+            },
+            "MPD-15": {
+                "candidato": "CASTELLO JUAN",
+                "votos": 4139,
+                "porcentaje": 3.81
+            },
+            "MUPP-NP-18": {
+                "candidato": "EHLERS FREDDY",
+                "votos": 35445,
+                "porcentaje": 32.65
+            },
+            "UCI-19": {
+                "candidato": "GALLARDO JOSE",
+                "votos": 1080,
+                "porcentaje": 0.99
+            },
+            "MITI-20": {
+                "candidato": "VALAZQUEZ JACINTO",
+                "votos": 1338,
+                "porcentaje": 1.23
+            },
+            "PLRE-FRA-2/14": {
+                "candidato": "NOBOA RICARDO",
+                "votos": 1959,
+                "porcentaje": 1.8
+            }
+        }
+    },
+    {
+        "CODPROV": "11",
+        "PROVINCIA": "LOJA",
+        "ganador": "PRE-10",
+        "resultados": {
+            "DP-5": {
+                "candidato": "PAZ RODRIGO",
+                "votos": 23875,
+                "porcentaje": 19.6
+            },
+            "PSC-6": {
+                "candidato": "NEBOT JAIME",
+                "votos": 28861,
+                "porcentaje": 23.69
+            },
+            "PRE-10": {
+                "candidato": "BUCARAM ABDALA",
+                "votos": 30565,
+                "porcentaje": 25.09
+            },
+            "APRE-13": {
+                "candidato": "VARGAS FRANK",
+                "votos": 3824,
+                "porcentaje": 3.14
+            },
+            "MPD-15": {
+                "candidato": "CASTELLO JUAN",
+                "votos": 2437,
+                "porcentaje": 2.0
+            },
+            "MUPP-NP-18": {
+                "candidato": "EHLERS FREDDY",
+                "votos": 24956,
+                "porcentaje": 20.48
+            },
+            "UCI-19": {
+                "candidato": "GALLARDO JOSE",
+                "votos": 2558,
+                "porcentaje": 2.1
+            },
+            "MITI-20": {
+                "candidato": "VALAZQUEZ JACINTO",
+                "votos": 933,
+                "porcentaje": 0.77
+            },
+            "PLRE-FRA-2/14": {
+                "candidato": "NOBOA RICARDO",
+                "votos": 3825,
+                "porcentaje": 3.14
+            }
+        }
+    },
+    {
+        "CODPROV": "12",
+        "PROVINCIA": "LOS RIOS",
+        "ganador": "PRE-10",
+        "resultados": {
+            "DP-5": {
+                "candidato": "PAZ RODRIGO",
+                "votos": 9968,
+                "porcentaje": 5.53
+            },
+            "PSC-6": {
+                "candidato": "NEBOT JAIME",
+                "votos": 66851,
+                "porcentaje": 37.1
+            },
+            "PRE-10": {
+                "candidato": "BUCARAM ABDALA",
+                "votos": 79083,
+                "porcentaje": 43.89
+            },
+            "APRE-13": {
+                "candidato": "VARGAS FRANK",
+                "votos": 4136,
+                "porcentaje": 2.3
+            },
+            "MPD-15": {
+                "candidato": "CASTELLO JUAN",
+                "votos": 2933,
+                "porcentaje": 1.63
+            },
+            "MUPP-NP-18": {
+                "candidato": "EHLERS FREDDY",
+                "votos": 10379,
+                "porcentaje": 5.76
+            },
+            "UCI-19": {
+                "candidato": "GALLARDO JOSE",
+                "votos": 1379,
+                "porcentaje": 0.77
+            },
+            "MITI-20": {
+                "candidato": "VALAZQUEZ JACINTO",
+                "votos": 771,
+                "porcentaje": 0.43
+            },
+            "PLRE-FRA-2/14": {
+                "candidato": "NOBOA RICARDO",
+                "votos": 4673,
+                "porcentaje": 2.59
+            }
+        }
+    },
+    {
+        "CODPROV": "13",
+        "PROVINCIA": "MANABI",
+        "ganador": "PRE-10",
+        "resultados": {
+            "DP-5": {
+                "candidato": "PAZ RODRIGO",
+                "votos": 28322,
+                "porcentaje": 7.6
+            },
+            "PSC-6": {
+                "candidato": "NEBOT JAIME",
+                "votos": 111806,
+                "porcentaje": 29.99
+            },
+            "PRE-10": {
+                "candidato": "BUCARAM ABDALA",
+                "votos": 142419,
+                "porcentaje": 38.2
+            },
+            "APRE-13": {
+                "candidato": "VARGAS FRANK",
+                "votos": 29966,
+                "porcentaje": 8.04
+            },
+            "MPD-15": {
+                "candidato": "CASTELLO JUAN",
+                "votos": 4094,
+                "porcentaje": 1.1
+            },
+            "MUPP-NP-18": {
+                "candidato": "EHLERS FREDDY",
+                "votos": 42616,
+                "porcentaje": 11.43
+            },
+            "UCI-19": {
+                "candidato": "GALLARDO JOSE",
+                "votos": 1554,
+                "porcentaje": 0.42
+            },
+            "MITI-20": {
+                "candidato": "VALAZQUEZ JACINTO",
+                "votos": 1802,
+                "porcentaje": 0.48
+            },
+            "PLRE-FRA-2/14": {
+                "candidato": "NOBOA RICARDO",
+                "votos": 10265,
+                "porcentaje": 2.75
+            }
+        }
+    },
+    {
+        "CODPROV": "14",
+        "PROVINCIA": "MORONA SANTIAGO",
+        "ganador": "MUPP-NP-18",
+        "resultados": {
+            "DP-5": {
+                "candidato": "PAZ RODRIGO",
+                "votos": 3836,
+                "porcentaje": 16.3
+            },
+            "PSC-6": {
+                "candidato": "NEBOT JAIME",
+                "votos": 4305,
+                "porcentaje": 18.29
+            },
+            "PRE-10": {
+                "candidato": "BUCARAM ABDALA",
+                "votos": 5405,
+                "porcentaje": 22.96
+            },
+            "APRE-13": {
+                "candidato": "VARGAS FRANK",
+                "votos": 531,
+                "porcentaje": 2.26
+            },
+            "MPD-15": {
+                "candidato": "CASTELLO JUAN",
+                "votos": 1056,
+                "porcentaje": 4.49
+            },
+            "MUPP-NP-18": {
+                "candidato": "EHLERS FREDDY",
+                "votos": 7751,
+                "porcentaje": 32.93
+            },
+            "UCI-19": {
+                "candidato": "GALLARDO JOSE",
+                "votos": 134,
+                "porcentaje": 0.57
+            },
+            "MITI-20": {
+                "candidato": "VALAZQUEZ JACINTO",
+                "votos": 58,
+                "porcentaje": 0.25
+            },
+            "PLRE-FRA-2/14": {
+                "candidato": "NOBOA RICARDO",
+                "votos": 463,
+                "porcentaje": 1.97
+            }
+        }
+    },
+    {
+        "CODPROV": "15",
+        "PROVINCIA": "NAPO",
+        "ganador": "MUPP-NP-18",
+        "resultados": {
+            "DP-5": {
+                "candidato": "PAZ RODRIGO",
+                "votos": 6305,
+                "porcentaje": 19.93
+            },
+            "PSC-6": {
+                "candidato": "NEBOT JAIME",
+                "votos": 5651,
+                "porcentaje": 17.86
+            },
+            "PRE-10": {
+                "candidato": "BUCARAM ABDALA",
+                "votos": 4449,
+                "porcentaje": 14.06
+            },
+            "APRE-13": {
+                "candidato": "VARGAS FRANK",
+                "votos": 2262,
+                "porcentaje": 7.15
+            },
+            "MPD-15": {
+                "candidato": "CASTELLO JUAN",
+                "votos": 1099,
+                "porcentaje": 3.47
+            },
+            "MUPP-NP-18": {
+                "candidato": "EHLERS FREDDY",
+                "votos": 11200,
+                "porcentaje": 35.39
+            },
+            "UCI-19": {
+                "candidato": "GALLARDO JOSE",
+                "votos": 119,
+                "porcentaje": 0.38
+            },
+            "MITI-20": {
+                "candidato": "VALAZQUEZ JACINTO",
+                "votos": 79,
+                "porcentaje": 0.25
+            },
+            "PLRE-FRA-2/14": {
+                "candidato": "NOBOA RICARDO",
+                "votos": 479,
+                "porcentaje": 1.51
+            }
+        }
+    },
+    {
+        "CODPROV": "16",
+        "PROVINCIA": "PASTAZA",
+        "ganador": "PRE-10",
+        "resultados": {
+            "DP-5": {
+                "candidato": "PAZ RODRIGO",
+                "votos": 2351,
+                "porcentaje": 15.34
+            },
+            "PSC-6": {
+                "candidato": "NEBOT JAIME",
+                "votos": 1947,
+                "porcentaje": 12.7
+            },
+            "PRE-10": {
+                "candidato": "BUCARAM ABDALA",
+                "votos": 6228,
+                "porcentaje": 40.64
+            },
+            "APRE-13": {
+                "candidato": "VARGAS FRANK",
+                "votos": 780,
+                "porcentaje": 5.09
+            },
+            "MPD-15": {
+                "candidato": "CASTELLO JUAN",
+                "votos": 531,
+                "porcentaje": 3.46
+            },
+            "MUPP-NP-18": {
+                "candidato": "EHLERS FREDDY",
+                "votos": 2846,
+                "porcentaje": 18.57
+            },
+            "UCI-19": {
+                "candidato": "GALLARDO JOSE",
+                "votos": 149,
+                "porcentaje": 0.97
+            },
+            "MITI-20": {
+                "candidato": "VALAZQUEZ JACINTO",
+                "votos": 92,
+                "porcentaje": 0.6
+            },
+            "PLRE-FRA-2/14": {
+                "candidato": "NOBOA RICARDO",
+                "votos": 401,
+                "porcentaje": 2.62
+            }
+        }
+    },
+    {
+        "CODPROV": "17",
+        "PROVINCIA": "PICHINCHA",
+        "ganador": "MUPP-NP-18",
+        "resultados": {
+            "DP-5": {
+                "candidato": "PAZ RODRIGO",
+                "votos": 240282,
+                "porcentaje": 29.05
+            },
+            "PSC-6": {
+                "candidato": "NEBOT JAIME",
+                "votos": 110875,
+                "porcentaje": 13.41
+            },
+            "PRE-10": {
+                "candidato": "BUCARAM ABDALA",
+                "votos": 90666,
+                "porcentaje": 10.96
+            },
+            "APRE-13": {
+                "candidato": "VARGAS FRANK",
+                "votos": 67292,
+                "porcentaje": 8.14
+            },
+            "MPD-15": {
+                "candidato": "CASTELLO JUAN",
+                "votos": 15884,
+                "porcentaje": 1.92
+            },
+            "MUPP-NP-18": {
+                "candidato": "EHLERS FREDDY",
+                "votos": 260904,
+                "porcentaje": 31.55
+            },
+            "UCI-19": {
+                "candidato": "GALLARDO JOSE",
+                "votos": 9786,
+                "porcentaje": 1.18
+            },
+            "MITI-20": {
+                "candidato": "VALAZQUEZ JACINTO",
+                "votos": 9266,
+                "porcentaje": 1.12
+            },
+            "PLRE-FRA-2/14": {
+                "candidato": "NOBOA RICARDO",
+                "votos": 22099,
+                "porcentaje": 2.67
+            }
+        }
+    },
+    {
+        "CODPROV": "18",
+        "PROVINCIA": "TUNGURAHUA",
+        "ganador": "MUPP-NP-18",
+        "resultados": {
+            "DP-5": {
+                "candidato": "PAZ RODRIGO",
+                "votos": 26136,
+                "porcentaje": 15.79
+            },
+            "PSC-6": {
+                "candidato": "NEBOT JAIME",
+                "votos": 29210,
+                "porcentaje": 17.64
+            },
+            "PRE-10": {
+                "candidato": "BUCARAM ABDALA",
+                "votos": 31288,
+                "porcentaje": 18.9
+            },
+            "APRE-13": {
+                "candidato": "VARGAS FRANK",
+                "votos": 7166,
+                "porcentaje": 4.33
+            },
+            "MPD-15": {
+                "candidato": "CASTELLO JUAN",
+                "votos": 1935,
+                "porcentaje": 1.17
+            },
+            "MUPP-NP-18": {
+                "candidato": "EHLERS FREDDY",
+                "votos": 60754,
+                "porcentaje": 36.69
+            },
+            "UCI-19": {
+                "candidato": "GALLARDO JOSE",
+                "votos": 2747,
+                "porcentaje": 1.66
+            },
+            "MITI-20": {
+                "candidato": "VALAZQUEZ JACINTO",
+                "votos": 2636,
+                "porcentaje": 1.59
+            },
+            "PLRE-FRA-2/14": {
+                "candidato": "NOBOA RICARDO",
+                "votos": 3693,
+                "porcentaje": 2.23
+            }
+        }
+    },
+    {
+        "CODPROV": "19",
+        "PROVINCIA": "ZAMORA CHINCHIPE",
+        "ganador": "PRE-10",
+        "resultados": {
+            "DP-5": {
+                "candidato": "PAZ RODRIGO",
+                "votos": 2713,
+                "porcentaje": 14.34
+            },
+            "PSC-6": {
+                "candidato": "NEBOT JAIME",
+                "votos": 3582,
+                "porcentaje": 18.94
+            },
+            "PRE-10": {
+                "candidato": "BUCARAM ABDALA",
+                "votos": 6125,
+                "porcentaje": 32.38
+            },
+            "APRE-13": {
+                "candidato": "VARGAS FRANK",
+                "votos": 235,
+                "porcentaje": 1.24
+            },
+            "MPD-15": {
+                "candidato": "CASTELLO JUAN",
+                "votos": 2059,
+                "porcentaje": 10.88
+            },
+            "MUPP-NP-18": {
+                "candidato": "EHLERS FREDDY",
+                "votos": 3515,
+                "porcentaje": 18.58
+            },
+            "UCI-19": {
+                "candidato": "GALLARDO JOSE",
+                "votos": 302,
+                "porcentaje": 1.6
+            },
+            "MITI-20": {
+                "candidato": "VALAZQUEZ JACINTO",
+                "votos": 58,
+                "porcentaje": 0.31
+            },
+            "PLRE-FRA-2/14": {
+                "candidato": "NOBOA RICARDO",
+                "votos": 327,
+                "porcentaje": 1.73
+            }
+        }
+    },
+    {
+        "CODPROV": "20",
+        "PROVINCIA": "GALAPAGOS",
+        "ganador": "PSC-6",
+        "resultados": {
+            "DP-5": {
+                "candidato": "PAZ RODRIGO",
+                "votos": 544,
+                "porcentaje": 13.6
+            },
+            "PSC-6": {
+                "candidato": "NEBOT JAIME",
+                "votos": 1274,
+                "porcentaje": 31.84
+            },
+            "PRE-10": {
+                "candidato": "BUCARAM ABDALA",
+                "votos": 1078,
+                "porcentaje": 26.94
+            },
+            "APRE-13": {
+                "candidato": "VARGAS FRANK",
+                "votos": 156,
+                "porcentaje": 3.9
+            },
+            "MPD-15": {
+                "candidato": "CASTELLO JUAN",
+                "votos": 21,
+                "porcentaje": 0.52
+            },
+            "MUPP-NP-18": {
+                "candidato": "EHLERS FREDDY",
+                "votos": 788,
+                "porcentaje": 19.7
+            },
+            "UCI-19": {
+                "candidato": "GALLARDO JOSE",
+                "votos": 24,
+                "porcentaje": 0.6
+            },
+            "MITI-20": {
+                "candidato": "VALAZQUEZ JACINTO",
+                "votos": 9,
+                "porcentaje": 0.22
+            },
+            "PLRE-FRA-2/14": {
+                "candidato": "NOBOA RICARDO",
+                "votos": 107,
+                "porcentaje": 2.67
+            }
+        }
+    },
+    {
+        "CODPROV": "21",
+        "PROVINCIA": "SUCUMBIOS",
+        "ganador": "MUPP-NP-18",
+        "resultados": {
+            "DP-5": {
+                "candidato": "PAZ RODRIGO",
+                "votos": 2669,
+                "porcentaje": 12.08
+            },
+            "PSC-6": {
+                "candidato": "NEBOT JAIME",
+                "votos": 3726,
+                "porcentaje": 16.87
+            },
+            "PRE-10": {
+                "candidato": "BUCARAM ABDALA",
+                "votos": 4276,
+                "porcentaje": 19.35
+            },
+            "APRE-13": {
+                "candidato": "VARGAS FRANK",
+                "votos": 3551,
+                "porcentaje": 16.07
+            },
+            "MPD-15": {
+                "candidato": "CASTELLO JUAN",
+                "votos": 893,
+                "porcentaje": 4.04
+            },
+            "MUPP-NP-18": {
+                "candidato": "EHLERS FREDDY",
+                "votos": 6696,
+                "porcentaje": 30.31
+            },
+            "UCI-19": {
+                "candidato": "GALLARDO JOSE",
+                "votos": 55,
+                "porcentaje": 0.25
+            },
+            "MITI-20": {
+                "candidato": "VALAZQUEZ JACINTO",
+                "votos": 34,
+                "porcentaje": 0.15
+            },
+            "PLRE-FRA-2/14": {
+                "candidato": "NOBOA RICARDO",
+                "votos": 193,
+                "porcentaje": 0.87
+            }
+        }
+    }
+]

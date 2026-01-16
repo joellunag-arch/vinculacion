@@ -143,6 +143,7 @@ export default {
         // Buscar el candidato en la info extra por nombre o nombre de partido
         const info = this.candidatosExtraInfo.find(c => 
            c.nombrePartido === key || 
+           c.keyNormalizada === key || // Match normalized key from helper
            c.nombre === res.candidato ||
            String(c.partido) === String(key)
         );
