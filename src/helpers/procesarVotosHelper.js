@@ -12,17 +12,21 @@ const obtenerTotalesPresidente = (DatosProvincias) => {
   let totalVotosValidosNacional = 0;
 
   DatosProvincias.forEach((provincia) => {
-    totalVotosValidosNacional += (provincia.votos_validos || 0);
-
+    // Si votos_validos no existe, lo calculamos sumando los votos de los candidatos
+    let votosValidosProvincia = provincia.votos_validos || 0;
     const resultados = provincia.resultados || {};
-    for (const keyPartido in resultados) {
+    let sumaCalculada = 0;
 
+    for (const keyPartido in resultados) {
       const camposIgnorar = [
         'VOTOS', 'BLANCOS', 'NULOS',
         'AUSENTISMO', 'VALIDOS',
         'totalVotos', 'votos_validos'
       ];
       if (camposIgnorar.includes(keyPartido)) continue;
+
+      const votosCandidato = resultados[keyPartido].votos || 0;
+      sumaCalculada += votosCandidato;
 
       const keyNormalizada = normalizarPartido(keyPartido);
 
@@ -33,9 +37,15 @@ const obtenerTotalesPresidente = (DatosProvincias) => {
         };
       }
 
-      acumuladoVotos[keyNormalizada].votosSuma +=
-        (resultados[keyPartido].votos || 0);
+      acumuladoVotos[keyNormalizada].votosSuma += votosCandidato;
     }
+
+    // Usar la suma calculada si votos_validos no venía en el JSON
+    if (!votosValidosProvincia) {
+        votosValidosProvincia = sumaCalculada;
+    }
+    
+    totalVotosValidosNacional += votosValidosProvincia;
   });
 
   const totalesFinales = {};

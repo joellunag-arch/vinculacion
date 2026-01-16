@@ -51,8 +51,8 @@ export const candidatoData = [
   {
     partido: 1,
     nombre: 'PAZ RODRIGO',
-    url: img('1.png'),
-    logo: img('ACTUEMOS.png'),
+    url: img('candidatos/1.png'),
+    logo: img('partidos/ACTUEMOS.png'),
     color: '#08519c',
     nombrePartido: 'DP-5',
     json: '1'
@@ -60,8 +60,8 @@ export const candidatoData = [
   {
     partido: 2,
     nombre: 'NEBOT JAIME',
-    url: img('2.png'),
-    logo: img('ADN.png'),
+    url: img('candidatos/2.png'),
+    logo: img('partidos/ADN.png'),
     color: '#a63603',
     nombrePartido: 'PSC-6',
     json: '2'
@@ -69,8 +69,8 @@ export const candidatoData = [
   {
     partido: 3,
     nombre: 'BUCARAM ABDALA',
-    url: img('3.png'),
-    logo: img('AMIGO.png'),
+    url: img('candidatos/3.png'),
+    logo: img('partidos/AMIGO.png'),
     color: '#7D3C98',
     nombrePartido: 'PRE-10',
     json: '3'
@@ -78,8 +78,8 @@ export const candidatoData = [
   {
     partido: 4,
     nombre: 'VARGAS FRANK',
-    url: img('4.png'),
-    logo: img('CLARO QUE SE PUEDE.png'),
+    url: img('candidatos/4.png'),
+    logo: img('partidos/CLARO QUE SE PUEDE.png'),
     color: '#e69237',
     nombrePartido: 'APRE-13',
     json: '4'
@@ -87,8 +87,8 @@ export const candidatoData = [
   {
     partido: 5,
     nombre: 'CASTELLO JUAN',
-    url: img('5.png'),
-    logo: img('CONSTRUYE.png'),
+    url: img('candidatos/5.png'),
+    logo: img('partidos/CONSTRUYE.png'),
     color: '#35A0AC',
     nombrePartido: 'MPD-15',
     json: '5'
@@ -96,8 +96,8 @@ export const candidatoData = [
   {
     partido: 6,
     nombre: 'EHLERS FREDDY',
-    url: img('6.png'),
-    logo: img('CREO.png'),
+    url: img('candidatos/6.png'),
+    logo: img('partidos/CREO.png'),
     color: '#e91e63',
     nombrePartido: 'MUPP-NP-18',
     json: '6'
@@ -105,8 +105,8 @@ export const candidatoData = [
   {
     partido: 7,
     nombre: 'GALLARDO JOSE',
-    url: img('7.png'),
-    logo: img('PSC.png'),
+    url: img('candidatos/7.png'),
+    logo: img('partidos/PSC.png'),
     color: '#E74C3C',
     nombrePartido: 'UCI-19',
     json: '7'
@@ -114,8 +114,8 @@ export const candidatoData = [
   {
     partido: 8,
     nombre: 'VALAZQUEZ JACINTO',
-    url: img('8.png'),
-    logo: img('RETO.png'),
+    url: img('candidatos/8.png'),
+    logo: img('partidos/RETO.png'),
     color: '#4a4a4a',
     nombrePartido: 'MITI-20',
     json: '8'
@@ -123,8 +123,8 @@ export const candidatoData = [
   {
     partido: 9,
     nombre: 'NOBOA RICARDO',
-    url: img('9.png'),
-    logo: img('UNO.png'),
+    url: img('candidatos/9.png'),
+    logo: img('partidos/UNO.png'),
     color: '#229954',
     nombrePartido: 'PLRE-FRA-2/14',
     json: '9'
