@@ -20,7 +20,7 @@
 
 
           <!-- TÍTULO -->
-          <div class="col-auto mx-auto text-center">
+          <div class="col-auto mx-auto text-center" v-if="slideActivo === 0">
             <div class="titulo-electoral">
               <h2 class="mb-0 fw-bold">{{ tituloActual }}</h2>
             </div>
