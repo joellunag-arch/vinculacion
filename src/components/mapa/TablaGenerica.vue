@@ -12,7 +12,7 @@
 
     <!-- Tabla con estilos específicos -->
     <div class="tabla-wrapper table-responsive px-3">
-      <table class="table table-custom mb-0">
+      <table class="table table-custom mb-0 glass-table">
         <thead>
           <tr>
             <th v-for="col in columnasConfiguradas" :key="col.key">
@@ -70,7 +70,7 @@
 </template>
 
 <script>
-import "../styles/EstilosGenerales.css";
+import "@/styles/EstilosGenerales.css";
 
 export default {
   name: 'TablaGenerica',
@@ -128,7 +128,7 @@ export default {
 <style scoped>
 /* Estilos específicos para igualar la referencia */
 .titulo-container {
-    background-color: #0097A7; /* Teal header color */
+    background-color: var(--color-secondary); /* Turquesa del tema */
     border-radius: 4px;
     display: inline-block;
 }
@@ -139,10 +139,10 @@ export default {
 }
 
 .table-custom thead th {
-    background-color: #B2EBF2 !important; /* Light Teal header background */
+    background-color: rgba(224, 247, 250, 0.4) !important; /* Semi-transparent Cyan */
     color: #000;
     font-weight: bold;
-    border-bottom: 2px solid #0097A7;
+    border-bottom: 2px solid var(--color-secondary);
     text-align: center;
     vertical-align: middle;
 }
@@ -150,22 +150,27 @@ export default {
 .table-custom tbody td {
     vertical-align: middle;
     text-align: center;
-    border: 1px solid #E0F7FA;
+    border: 1px solid var(--bg-celeste);
     font-size: 0.9rem;
 }
 
 /* Filas alternadas */
 .fila-impar {
-    background-color: #E0F7FA; /* Light Teal row */
+    background-color: rgba(255, 255, 255, 0.5); /* White row with opacity */
 }
 .fila-par {
-    background-color: #FFFFFF; /* White row */
+    background-color: rgba(255, 255, 255, 0.3); /* More transparent alternate row */
+}
+
+/* Glass effect for the table wrapper if needed */
+.glass-table {
+  backdrop-filter: blur(5px);
 }
 
 /* Botones paginación */
 .btn-pag-nav {
-    background: #FFCDD2; /* Light red buttons like reference */
-    border: 1px solid #EF9A9A;
+    background: #fff;
+    border: 1px solid var(--color-primary);
     border-radius: 5px;
     width: 30px;
     height: 30px;
@@ -173,11 +178,12 @@ export default {
     align-items: center;
     justify-content: center;
     font-size: 0.8rem;
-    color: #333;
+    color: var(--color-primary);
 }
 .btn-pag-numero.active {
-    background: #FFCDD2;
-    border: 1px solid #EF9A9A;
+    background: var(--color-primary);
+    border: 1px solid var(--color-primary);
+    color: #fff;
     border-radius: 5px;
     width: 30px;
     height: 30px;

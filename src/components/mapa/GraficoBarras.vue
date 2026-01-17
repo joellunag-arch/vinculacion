@@ -230,7 +230,7 @@ export default {
 }
 
 .titulo-estatico {
-  background-color: #1ba7c9;
+  background-color: var(--color-secondary);
   color: white;
   font-size: 24px;
   font-weight: 700;
@@ -265,7 +265,7 @@ export default {
   height: 10px;
 }
 .chart-scroll-wrapper::-webkit-scrollbar-thumb {
-  background: #1ba7c9;
+  background: var(--color-secondary);
   border-radius: 10px;
 }
 </style>

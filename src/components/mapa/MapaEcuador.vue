@@ -780,11 +780,12 @@ Votos: {winnerVotes} ({winnerPercent}%)`;
 ::v-deep .amcharts-export-menu li {
   padding: 8px 16px;
   cursor: pointer;
-  color: #333;
+  color: var(--text-main);
+  font-family: var(--font-body);
 }
 
 ::v-deep .amcharts-export-menu li:hover {
-  background: #f5f5f5;
-  color: #000;
+  background: var(--bg-soft);
+  color: var(--color-secondary);
 }
 </style>

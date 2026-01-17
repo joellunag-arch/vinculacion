@@ -177,8 +177,7 @@ export default {
 </script>
 
 <style scoped>
-@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap");
+/* Fuentes importadas globalmente en main.js se usan aquí */
 
 /* NOTA: Se eliminó .fondo-pantalla */
 
@@ -192,7 +191,7 @@ export default {
 
 /* HEADER */
 .header-select {
-  background-color: #12a2c2;
+  background-color: var(--color-secondary);
   color: white;
   padding: 10px 16px;
   cursor: pointer;
@@ -209,7 +208,7 @@ export default {
 }
 
 .label-select {
-  font-family: "Roboto", sans-serif;
+  font-family: var(--font-body);
   font-size: 0.75rem;
   opacity: 0.8;
   font-weight: 400;
@@ -217,7 +216,7 @@ export default {
 }
 
 .value-select {
-  font-family: "Oswald", sans-serif;
+  font-family: var(--font-titles);
   font-size: 1.1rem;
   font-weight: 500;
   letter-spacing: 0.5px;
@@ -251,8 +250,8 @@ export default {
 
 .dropdown-item-custom {
   padding: 12px 16px;
-  color: #333;
-  font-family: "Oswald", sans-serif;
+  color: var(--text-main);
+  font-family: var(--font-titles);
   font-size: 0.95rem;
   cursor: pointer;
   border-bottom: 1px solid #f0f0f0;
@@ -260,12 +259,12 @@ export default {
 }
 
 .dropdown-item-custom:hover {
-  background-color: #e0f7fa;
+  background-color: var(--bg-soft);
 }
 
 .dropdown-item-custom.selected {
-  background-color: #e0f7fa;
-  color: #12a2c2;
+  background-color: var(--bg-soft);
+  color: var(--color-secondary);
   font-weight: 500;
 }
 
@@ -304,7 +303,7 @@ export default {
 }
 
 .texto-oswald-general {
-  font-family: "Oswald", sans-serif;
+  font-family: var(--font-titles);
   font-size: 0.9rem;
   color: #111;
   /* Texto oscuro para contraste */
@@ -322,7 +321,7 @@ export default {
 }
 
 .texto-oswald {
-  font-family: "Oswald", sans-serif;
+  font-family: var(--font-titles);
   font-size: 1rem;
   color: #2c3e50;
   text-transform: uppercase;
@@ -351,7 +350,7 @@ export default {
 }
 
 .nombre-oswald-titulo {
-  font-family: "Oswald", sans-serif;
+  font-family: var(--font-titles);
   color: #222;
   font-weight: 700;
   text-transform: uppercase;
@@ -360,7 +359,7 @@ export default {
 }
 
 .partido-oswald-sub {
-  font-family: "Oswald", sans-serif;
+  font-family: var(--font-titles);
   color: #444;
   font-size: 0.9rem;
 }
