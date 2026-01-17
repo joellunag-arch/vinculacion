@@ -58,10 +58,10 @@
       >
         <div class="mb-4">
           <div class="marco-foto mx-auto mb-2">
-            <img
-              :src="candidatoActual.url"
+            <AsyncImage
+              :resolver="candidatoActual.url"
               :alt="candidatoActual.nombre"
-              class="img-fluid w-100 h-100 object-fit-cover"
+              imgClass="img-fluid w-100 h-100 object-fit-cover"
             />
           </div>
           <h4 class="nombre-oswald-titulo text-dark">
@@ -104,8 +104,11 @@
 </template>
 
 <script>
+import AsyncImage from "@/components/global/AsyncImage.vue";
+
 export default {
   name: "TarjetaCandidato",
+  components: { AsyncImage },
   props: {
     itemsCandidato: {
       type: Array,

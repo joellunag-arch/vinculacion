@@ -14,21 +14,24 @@
  *     └── Partidos/
  */
 
-// Importación glob de TODAS las imágenes
-const imageModules = import.meta.glob('../../img/**/*.{png,jpg,jpeg,svg}', { eager: true });
+// Importación glob de TODAS las imágenes (Lazy Loading)
+const imageModules = import.meta.glob('../../img/**/*.{png,jpg,jpeg,svg}', { eager: false });
 
-// Helper mejorado que busca en los módulos importados
+// Helper mejorado que devuelve una función asíncrona para resolver la imagen
 const img = (path) => {
   const fullPath = `../../img/${path}`;
-  const module = imageModules[fullPath];
+  const loader = imageModules[fullPath];
 
-  if (module && module.default) {
-    return module.default;
+  if (loader) {
+      return async () => {
+          const mod = await loader();
+          return mod.default;
+      };
   }
 
-  console.warn(`⚠️ Imagen no encontrada: ${path}`);
-  const placeholderPath = '../../img/candidatos/1.png';
-  return imageModules[placeholderPath]?.default || '';
+  console.warn(`⚠️ Imagen no encontrada en glob: ${path}`);
+  // Fallback
+  return async () => ""; 
 };
 
 // ============================================================

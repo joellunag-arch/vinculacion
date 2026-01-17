@@ -365,12 +365,8 @@ watch(filtroVuelta, (nuevaVuelta) => {
   }
 });
 
-const leyendaColores = [
-  { porcentaje: "0–10%", ADN: "#cfe2ff", RC5: "#ffe5cc" },
-  { porcentaje: "10–30%", ADN: "#9ec5fe", RC5: "#ffcc99" },
-  { porcentaje: "30–50%", ADN: "#6ea8fe", RC5: "#ffb366" },
-  { porcentaje: "50%+", ADN: "#246cb6", RC5: "#f78c0e" },
-];
+import { dessertsData } from "@/assets/data/1996/CandidatosData";
+const leyendaColores = dessertsData;
 
 /* MAPEO TABLA */
 const mapearDatosATabla = (datos) =>

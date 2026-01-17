@@ -169,6 +169,29 @@ export default {
       return String(id).replace(/^0+/, "");
     },
 
+    getShadeForPercentage(hexColor, percentage) {
+      // 0–10% -> Muy claro (Lighten ~60%)
+      // 10–30% -> Claro (Lighten ~40%)
+      // 30–50% -> Medio (Lighten ~20%)
+      // 50%+   -> Color original
+
+      if (!hexColor || hexColor === "#666666" || hexColor === "#cccccc") return hexColor;
+
+      let lightenAmount = 0;
+
+      if (percentage < 10) {
+        lightenAmount = 0.6;
+      } else if (percentage < 30) {
+        lightenAmount = 0.4;
+      } else if (percentage < 50) {
+        lightenAmount = 0.2;
+      } else {
+        return hexColor;
+      }
+
+      return am4core.color(hexColor).lighten(lightenAmount).hex;
+    },
+
     fixGeoJsonIds(geoData) {
       if (geoData && geoData.features) {
         geoData.features.forEach((f) => {
@@ -219,7 +242,7 @@ export default {
           winnerPercent = partyData.porcentaje;
 
           const baseColor = this.colores[partidoFilter] ? this.colores[partidoFilter].principal : "#666666";
-          fill = baseColor;
+          fill = this.getShadeForPercentage(baseColor, winnerPercent);
         } else {
           if (item.resultados && item.resultados[winnerName]) {
             const winnerInfo = item.resultados[winnerName];

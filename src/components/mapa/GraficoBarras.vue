@@ -149,8 +149,16 @@ export default {
         );
 
         const colorActual = info ? info.color : "#A0A0A0";
-        const fotoUrl = info ? info.url : "";
-        const logoUrl = info ? info.logo : "";
+        let fotoUrl = info ? info.url : "";
+        let logoUrl = info ? info.logo : "";
+
+        // Resolver URLs si son funciones (lazy loading)
+        if (typeof fotoUrl === 'function') {
+            try { fotoUrl = await fotoUrl(); } catch (e) { fotoUrl = ""; }
+        }
+        if (typeof logoUrl === 'function') {
+            try { logoUrl = await logoUrl(); } catch (e) { logoUrl = ""; }
+        }
 
         dataValues.push(res.porcentaje);
         categoriesNames.push(res.candidato);

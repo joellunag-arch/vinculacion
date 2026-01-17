@@ -326,6 +326,20 @@ export default {
 @media (max-width: 991px) {
   .navbar {
     padding: 14px 16px;
+    /* Ensure relative positioning for absolute child */
+    position: relative; 
+  }
+
+  .navbar-collapse {
+    position: absolute;
+    top: 100%; /* Just below the navbar header */
+    left: 0;
+    width: 100%;
+    z-index: 1050; /* Higher than map */
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    max-height: 80vh; /* Prevent taking full screen if too long */
+    overflow-y: auto;
   }
 
   .nav-items {
@@ -341,6 +355,7 @@ export default {
 
   .nav-item a {
     padding: 0.75rem 1rem;
+    border-bottom: 1px solid #f0f0f0; /* Separator for items */
   }
 
   .dropdown-menu {
