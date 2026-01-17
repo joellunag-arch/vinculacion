@@ -72,7 +72,7 @@ export function useElectoralData() {
         candidatosInfo.value = modJS.candidatoData;
       }
  
-      // 5. Calcular Resumen para la Barra Turquesa
+      // 5. Calcular Resumen para la Barra (aun no esta )
       if (datosElectorales.value.provincias.length > 0) {
         resumenNacional.value = {
           votos_total: datosElectorales.value.provincias.reduce((a, b) => a + (b.votos_total || 0), 0),
@@ -89,7 +89,6 @@ export function useElectoralData() {
   };
  
   const obtenerEtapasDelAno = (ambito, year) => {
-    // Esto debería venir de tu config/elecciones.js idealmente
     if (year === '1996') return [1, 2];
     if (year === '2023') return [1, 2, 3];
     return [1];
