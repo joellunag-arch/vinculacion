@@ -187,8 +187,20 @@ export default {
       }
     },
     closeDropdown() {
-      this.openDropdown = null;
+      this.openDropdown = null; // Close submenu
+      this.collapseMenu(); // Close main menu (mobile)
     },
+    collapseMenu() {
+        if (window.innerWidth < 992) {
+             const navbarCollapse = document.getElementById('navbarNav');
+             if (navbarCollapse && navbarCollapse.classList.contains('show')) {
+                 // Bootstrap 5 toggle logic usually requires an instance, otherwise simple class removal works for CSS transitions
+                 // However, the button state might be out of sync.
+                 // Ideally use data-bs-toggle="collapse" on the links too, but manual removal is safer in Vue without JQuery
+                 navbarCollapse.classList.remove('show');
+             }
+        }
+    }
   },
   beforeUnmount() {
     if (this.hoverTimeout) {

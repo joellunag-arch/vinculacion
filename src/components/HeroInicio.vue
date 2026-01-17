@@ -4,25 +4,50 @@
       <div class="row align-items-center">
         <!-- Izquierda: Logo -->
         <div class="col-12 col-md-6 text-center text-md-start mb-4 mb-md-0">
-          <img
-            src="@/assets/img/logos/Sevee_Logo.svg"
+          <AsyncImage
+            :resolver="logoResolver"
             alt="Logo SEVEE"
-            class="hero__logo img-fluid mb-3"
+            imgClass="hero__logo img-fluid mb-3"
           />
         </div>
 
         <!-- Derecha: Ilustración -->
         <div class="col-12 col-md-6 text-center">
-          <img
-            src="@/assets/img/logos/Sevee_Ilustracion.svg"
+           <AsyncImage
+            :resolver="ilustracionResolver"
             alt="Ilustración"
-            class="hero__illustration img-fluid"
+            imgClass="hero__illustration img-fluid"
           />
         </div>
       </div>
     </div>
   </section>
 </template>
+
+<script>
+import AsyncImage from "@/components/global/AsyncImage.vue";
+
+// Define lazy loaders
+const logoLoader = () => import('@/assets/img/logos/Sevee_Logo.svg');
+const ilustracionLoader = () => import('@/assets/img/logos/Sevee_Ilustracion.svg');
+
+export default {
+  name: "HeroInicio",
+  components: { AsyncImage },
+  data() {
+    return {
+      logoResolver: async () => {
+         const mod = await logoLoader();
+         return mod.default;
+      },
+      ilustracionResolver: async () => {
+        const mod = await ilustracionLoader();
+        return mod.default;
+      }
+    };
+  }
+};
+</script>
 
 <style scoped>
 .hero {
