@@ -83,7 +83,7 @@ import * as am4core from "@amcharts/amcharts4/core";
 import * as am4maps from "@amcharts/amcharts4/maps";
 import am4geodata_worldLow from "@amcharts/amcharts4-geodata/worldLow";
 import am4themes_animated from "@amcharts/amcharts4/themes/animated";
-import * as XLSX from "xlsx";
+import * as XLSX from 'xlsx-js-style';
 
 import { saveAs } from "file-saver";
 import jsPDF from "jspdf";
