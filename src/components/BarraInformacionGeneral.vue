@@ -13,7 +13,7 @@
             <!-- SUFRAGANTES -->
             <div class="col-4 stat-item d-flex flex-column align-items-center">
               <img
-                src="@/assets/img/logos/P_Sevee.svg"
+                src="@/assets/img/logos/sufragio.svg"
                 alt="Icono"
                 class="stat-icon mb-1"
               />
@@ -26,7 +26,7 @@
             <!-- EN BLANCO -->
             <div class="col-4 stat-item d-flex flex-column align-items-center">
               <img
-                src="@/assets/img/logos/P_Sevee.svg"
+                src="@/assets/img/logos/sufragio.svg"
                 alt="Icono"
                 class="stat-icon mb-1"
               />
@@ -41,7 +41,7 @@
               class="col-4 stat-item d-flex flex-column align-items-center border-end-0"
             >
               <img
-                src="@/assets/img/logos/P_Sevee.svg"
+                src="@/assets/img/logos/sufragio.svg"
                 alt="Icono"
                 class="stat-icon mb-1"
               />
@@ -86,10 +86,18 @@ defineProps({
 }
 
 .stat-icon {
-  height: 35px;
+  height: 50px;
   width: auto;
-  filter: brightness(0) invert(1);
   opacity: 0.9;
+}
+
+.stat-icon.blanco-filtrado {
+  filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(0%)
+    hue-rotate(0deg);
+}
+
+.stat-icon.oscuro-a-blanco {
+  filter: brightness(0) invert(1);
 }
 
 .stat-item {

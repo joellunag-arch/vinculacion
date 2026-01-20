@@ -1,4 +1,4 @@
-import { ref } from "vue";
+import { ref, toRaw } from "vue";
 
 export function useElectoralData() {
   const loading = ref(false);
@@ -153,10 +153,10 @@ export function useElectoralData() {
       // CACHE
       // =========================
       cache.set(cacheKey, {
-        datosElectorales: structuredClone(datosElectorales.value),
-        mapas: structuredClone(mapas.value),
-        candidatosInfo: structuredClone(candidatosInfo.value),
-        resumenNacional: structuredClone(resumenNacional.value),
+        datosElectorales: JSON.parse(JSON.stringify(toRaw(datosElectorales.value))),
+        mapas: JSON.parse(JSON.stringify(toRaw(mapas.value))),
+        candidatosInfo: JSON.parse(JSON.stringify(toRaw(candidatosInfo.value))),
+        resumenNacional: JSON.parse(JSON.stringify(toRaw(resumenNacional.value))),
       });
     } catch (e) {
       console.error("❌ Error en useElectoralData:", e);
