@@ -18,7 +18,6 @@
             </button>
           </div>
 
-
           <!-- TÍTULO -->
           <div class="col-auto mx-auto text-center" v-if="slideActivo === 0">
             <div class="titulo-electoral">
@@ -28,12 +27,15 @@
 
           <!-- LIMPIAR FILTROS -->
           <div v-if="slideActivo === 0" class="col-auto clean-container">
-            <button class="btn-search-fab" @click="$emit('clean-filters')" title="Limpiar Filtros">
+            <button
+              class="btn-search-fab"
+              @click="$emit('clean-filters')"
+              title="Limpiar Filtros"
+            >
               <i class="bi bi-trash-fill"></i>
             </button>
           </div>
         </div>
-
 
         <!-- ==========================
              BOTONES DE ETAPA
@@ -81,7 +83,13 @@
         <div class="carousel-inner">
           <div class="carousel-item active p-4">
             <div class="row min-vh-50">
-              <div :class="hasFiltros ? 'col-md-9 position-relative border-end border-light' : 'col-md-12 position-relative'">
+              <div
+                :class="
+                  hasFiltros
+                    ? 'col-md-9 position-relative border-end border-light'
+                    : 'col-md-12 position-relative'
+                "
+              >
                 <slot name="mapa">
                   <div class="placeholder-content">Mapa del Ecuador</div>
                 </slot>
@@ -147,6 +155,9 @@
           </button>
         </div>
       </div>
+
+      <!-- SLOT PARA INFORMACIÓN AL PIE (BARRA) -->
+      <slot name="footer-info"></slot>
     </div>
   </div>
 </template>
@@ -191,9 +202,12 @@ const cambiarEtapa = (num) => {
 };
 
 // Sincronizar con cambios externos
-watch(() => props.etapaActual, (newVal) => {
-  etapa.value = newVal;
-});
+watch(
+  () => props.etapaActual,
+  (newVal) => {
+    etapa.value = newVal;
+  }
+);
 
 const detectarCambioSlide = (event) => {
   slideActivo.value = event.to;
@@ -217,7 +231,7 @@ onUnmounted(() => {
   background-size: cover;
   background-position: center;
   min-height: 85vh;
-  padding-bottom: 140px;
+  padding-bottom: 0px;
 }
 
 .bg-white-opacity {

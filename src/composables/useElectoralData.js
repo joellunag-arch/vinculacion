@@ -1,34 +1,33 @@
-import { ref } from 'vue';
+import { ref } from "vue";
 
 export function useElectoralData() {
-
   const loading = ref(false);
 
   const datosElectorales = ref({
     provincias: [],
     cantones: [],
-    parroquias: []
+    parroquias: [],
   });
 
   const mapas = ref({
     provincias: null,
     cantones: null,
-    parroquias: null
+    parroquias: null,
   });
 
   const resumenNacional = ref({
     votos_total: 0,
     votos_blancos: 0,
-    votos_nulos: 0
+    votos_nulos: 0,
   });
 
   const candidatosInfo = ref([]);
 
   // =========================
-  // GLOBS ESTÁTICOS (OBLIGATORIO EN VITE)
+  // GLOBS ESTÁTICOS (OBLIGATORIO EN VITE)  ( se puede mejorar en el futuro o como ultimo recurso comprimir los json)
   // =========================
-  const globJSON = import.meta.glob('../assets/data/**/*.json');
-  const globJS   = import.meta.glob('../assets/data/**/*.js');
+  const globJSON = import.meta.glob("../assets/data/**/*.json");
+  const globJS = import.meta.glob("../assets/data/**/*.js");
 
   // =========================
   // CACHE
@@ -39,7 +38,6 @@ export function useElectoralData() {
   // MAIN LOADER
   // =========================
   const cargarTodo = async (year, etapa) => {
-
     const cacheKey = `${year}-${etapa}`;
     if (cache.has(cacheKey)) {
       const c = cache.get(cacheKey);
@@ -53,11 +51,9 @@ export function useElectoralData() {
     loading.value = true;
 
     const carpetaEtapa =
-      etapa === 1 ? 'primera_vuelta'
-      : etapa === 2 ? 'segunda_vuelta'
-      : 'asambleistas';
+      etapa === 1 ? "primera_vuelta" : etapa === 2 ? "segunda_vuelta" : "asambleistas";
 
-    const categoria = etapa === 3 ? 'asambleistas' : 'presidentes';
+    const categoria = etapa === 3 ? "asambleistas" : "presidentes";
 
     try {
       // =========================
@@ -65,10 +61,7 @@ export function useElectoralData() {
       // =========================
       const importarJSON = async (basePath, nombre) => {
         const ruta = Object.keys(globJSON).find(
-          k =>
-            k.includes(`/data/${year}/`) &&
-            k.includes(basePath) &&
-            k.includes(nombre)
+          (k) => k.includes(`/data/${year}/`) && k.includes(basePath) && k.includes(nombre),
         );
 
         if (!ruta) return [];
@@ -76,22 +69,18 @@ export function useElectoralData() {
         return mod.default || mod;
       };
 
-      const baseResultados =
-        `/informacion_electoral/${categoria}/${carpetaEtapa}/`;
+      const baseResultados = `/informacion_electoral/${categoria}/${carpetaEtapa}/`;
 
-      datosElectorales.value.provincias =
-        await importarJSON(baseResultados, 'Provincias');
+      datosElectorales.value.provincias = await importarJSON(baseResultados, "Provincias");
 
-      datosElectorales.value.cantones =
-        await importarJSON(baseResultados, 'Cantones');
+      datosElectorales.value.cantones = await importarJSON(baseResultados, "Cantones");
 
-      datosElectorales.value.parroquias =
-        await importarJSON(baseResultados, 'Parroquias');
+      datosElectorales.value.parroquias = await importarJSON(baseResultados, "Parroquias");
 
       // =========================
       // NORMALIZACIÓN
       // =========================
-      datosElectorales.value.provincias.forEach(p => {
+      datosElectorales.value.provincias.forEach((p) => {
         if (p.CODPROV && !p.CODPRO) p.CODPRO = p.CODPROV;
       });
 
@@ -100,9 +89,7 @@ export function useElectoralData() {
       // =========================
       const importarMapa = async (file) => {
         const ruta = Object.keys(globJSON).find(
-          k =>
-            k.includes(`/data/${year}/mapas/`) &&
-            k.includes(file)
+          (k) => k.includes(`/data/${year}/mapas/`) && k.includes(file),
         );
 
         if (!ruta) return null;
@@ -110,15 +97,15 @@ export function useElectoralData() {
         return mod.default || mod;
       };
 
-      mapas.value.provincias = await importarMapa('provincias.json');
-      mapas.value.cantones   = await importarMapa('cantones.json');
-      mapas.value.parroquias = await importarMapa('parroquias.json');
+      mapas.value.provincias = await importarMapa("provincias.json");
+      mapas.value.cantones = await importarMapa("cantones.json");
+      mapas.value.parroquias = await importarMapa("parroquias.json");
 
       // =========================
       // CANDIDATOS
       // =========================
-      const rutaCandidatos = Object.keys(globJS).find(
-        k => k.endsWith(`/data/${year}/CandidatosData.js`)
+      const rutaCandidatos = Object.keys(globJS).find((k) =>
+        k.endsWith(`/data/${year}/CandidatosData.js`),
       );
 
       if (rutaCandidatos) {
@@ -132,9 +119,34 @@ export function useElectoralData() {
       const provs = datosElectorales.value.provincias;
 
       resumenNacional.value = {
-        votos_total: provs.reduce((a, b) => a + (b.votos_total || 0), 0),
-        votos_blancos: provs.reduce((a, b) => a + (b.votos_blancos || 0), 0),
-        votos_nulos: provs.reduce((a, b) => a + (b.votos_nulos || 0), 0),
+        votos_total: provs.reduce((acc, p) => {
+          // Si existe prop directa, úsala
+          if (p.votos_total) return acc + p.votos_total;
+
+          // Si no, sumar candidatos
+          if (p.resultados) {
+            const sumaProv = Object.values(p.resultados).reduce((s, r) => s + (r.votos || 0), 0);
+            return acc + sumaProv;
+          }
+          return acc;
+        }, 0),
+        votos_blancos: provs.reduce((acc, p) => {
+          if (p.votos_blancos) return acc + p.votos_blancos;
+          // Intenta buscar en resultados si hay algo parecido a BLANCOS
+          if (p.resultados) {
+            const key = Object.keys(p.resultados).find((k) => k.toUpperCase().includes("BLANCO"));
+            if (key && p.resultados[key]) return acc + p.resultados[key].votos;
+          }
+          return acc + (p.votos_blancos || 0); // fallback 0
+        }, 0),
+        votos_nulos: provs.reduce((acc, p) => {
+          if (p.votos_nulos) return acc + p.votos_nulos;
+          if (p.resultados) {
+            const key = Object.keys(p.resultados).find((k) => k.toUpperCase().includes("NULO"));
+            if (key && p.resultados[key]) return acc + p.resultados[key].votos;
+          }
+          return acc + (p.votos_nulos || 0);
+        }, 0),
       };
 
       // =========================
@@ -144,19 +156,18 @@ export function useElectoralData() {
         datosElectorales: structuredClone(datosElectorales.value),
         mapas: structuredClone(mapas.value),
         candidatosInfo: structuredClone(candidatosInfo.value),
-        resumenNacional: structuredClone(resumenNacional.value)
+        resumenNacional: structuredClone(resumenNacional.value),
       });
-
     } catch (e) {
-      console.error('❌ Error en useElectoralData:', e);
+      console.error("❌ Error en useElectoralData:", e);
     } finally {
       loading.value = false;
     }
   };
 
   const obtenerEtapasDelAno = (ambito, year) => {
-    if (year === '1996') return [1, 2];
-    if (year === '2023') return [1, 2, 3];
+    if (year === "1996") return [1, 2];
+    if (year === "2023") return [1, 2, 3];
     return [1];
   };
 
@@ -167,6 +178,6 @@ export function useElectoralData() {
     candidatosInfo,
     resumenNacional,
     cargarTodo,
-    obtenerEtapasDelAno
+    obtenerEtapasDelAno,
   };
 }

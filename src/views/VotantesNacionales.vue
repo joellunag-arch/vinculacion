@@ -11,7 +11,10 @@
       color="#12a2c2"
     >
       <v-container class="contenedor-filtros text-white">
-        <h3 class="mb-4 text-uppercase fw-bold" style="font-family: 'Oswald', sans-serif; color: white;">
+        <h3
+          class="mb-4 text-uppercase fw-bold"
+          style="font-family: 'Oswald', sans-serif; color: white"
+        >
           SELECCIONAR EN FILTRO
         </h3>
 
@@ -27,7 +30,9 @@
           hide-details
           class="mb-1"
         ></v-select>
-        <div class="mb-4 text-caption white--text">Seleccionado: {{ filtroVuelta }}</div>
+        <div class="mb-4 text-caption white--text">
+          Seleccionado: {{ filtroVuelta }}
+        </div>
 
         <!-- PARTIDO -->
         <div class="texto-filtro">PARTIDO POLITICO*</div>
@@ -42,7 +47,9 @@
           hide-details
           class="mb-1"
         ></v-select>
-        <div class="mb-4 text-caption white--text">Seleccionado: {{ partidoSeleccionado }}</div>
+        <div class="mb-4 text-caption white--text">
+          Seleccionado: {{ partidoSeleccionado }}
+        </div>
 
         <!-- PROVINCIA -->
         <div class="texto-filtro">PROVINCIA*</div>
@@ -58,7 +65,9 @@
           class="mb-1"
           clearable
         ></v-select>
-        <div class="mb-4 text-caption white--text">Seleccionado: {{ filtroProvincia }}</div>
+        <div class="mb-4 text-caption white--text">
+          Seleccionado: {{ filtroProvincia }}
+        </div>
 
         <!-- CANTON -->
         <div class="texto-filtro">CANTÓN</div>
@@ -75,7 +84,9 @@
           :disabled="!filtroProvincia"
           clearable
         ></v-select>
-        <div class="mb-4 text-caption white--text">Seleccionado: {{ filtroCanton }}</div>
+        <div class="mb-4 text-caption white--text">
+          Seleccionado: {{ filtroCanton }}
+        </div>
 
         <p class="text-caption white--text mb-4">*Campo Obligatorio</p>
 
@@ -115,7 +126,7 @@
           :resultadosParroquias="datosElectorales.parroquias"
           :colores="coloresPartidos"
           :id_1="mapFilters"
-          :datosDescarga="datosElectorales.provincias" 
+          :datosDescarga="datosElectorales.provincias"
         />
       </template>
 
@@ -134,7 +145,7 @@
         <GraficoBarras
           v-if="datosElectorales.provincias.length"
           :datos="datosElectorales.provincias"
-          :candidatosExtraInfo="candidatos" 
+          :candidatosExtraInfo="candidatos"
           categoria="presidentes"
         />
         <p v-else class="estado">No hay datos para gráficos</p>
@@ -149,6 +160,11 @@
         />
         <p v-else class="estado">No hay datos para tabla</p>
       </template>
+
+      <!-- ================= INFO GENERAL ================= -->
+      <template #footer-info>
+        <BarraInformacionGeneral :stats="resumenNacional" />
+      </template>
     </ContenedorCarrusel>
   </div>
 </template>
@@ -162,9 +178,9 @@ import MapaEcuador from "@/components/mapa/MapaEcuador.vue";
 import GraficoBarras from "@/components/mapa/GraficoBarras.vue";
 import TablaGenerica from "@/components/mapa/TablaGenerica.vue";
 import TarjetaCandidato from "@/components/mapa/TarjetaCandidato.vue";
+import BarraInformacionGeneral from "@/components/BarraInformacionGeneral.vue";
 
 /* DATA IMPORT */
-
 
 /* COMPOSABLE */
 import { useElectoralData } from "@/composables/useElectoralData";
@@ -178,29 +194,45 @@ const props = defineProps({
 });
 
 /* DATA ELECTORAL */
-const { loading, datosElectorales, mapas, candidatosInfo, cargarTodo, obtenerEtapasDelAno } =
-  useElectoralData();
+const {
+  loading,
+  datosElectorales,
+  mapas,
+  candidatosInfo,
+  resumenNacional,
+  cargarTodo,
+  obtenerEtapasDelAno,
+} = useElectoralData();
 
 /* CANDIDATOS */
 const candidatos = computed(() => {
   const info = candidatosInfo.value;
   if (!info || !Array.isArray(info)) return [];
-  
+
   // Try to filter based on active results in data
   const dataProv = datosElectorales.value.provincias;
   if (dataProv && dataProv.length > 0 && dataProv[0].resultados) {
-      // Get keys that form the results (excluding metadata/stats)
-      const keys = Object.keys(dataProv[0].resultados).filter(k => 
-         !['VOTOS', 'BLANCOS', 'NULOS', 'AUSENTISMO', 'VALIDOS', 'totalVotos', 'votos_validos'].includes(k)
-      );
+    // Get keys that form the results (excluding metadata/stats)
+    const keys = Object.keys(dataProv[0].resultados).filter(
+      (k) =>
+        ![
+          "VOTOS",
+          "BLANCOS",
+          "NULOS",
+          "AUSENTISMO",
+          "VALIDOS",
+          "totalVotos",
+          "votos_validos",
+        ].includes(k)
+    );
 
-      if (keys.length > 0) {
-          return info.filter(c => {
-             // Direct match
-             if (keys.includes(c.nombrePartido)) return true;
-             return false;
-          });
-      }
+    if (keys.length > 0) {
+      return info.filter((c) => {
+        // Direct match
+        if (keys.includes(c.nombrePartido)) return true;
+        return false;
+      });
+    }
   }
   return info;
 });
@@ -242,26 +274,28 @@ const coloresPartidos = computed(() => {
 });
 
 /* LISTAS COMPUTADAS PARA SELECTS */
-const listaPartidos = computed(() => ["Resultados Generales", ...candidatos.value.map(c => c.nombrePartido)]);
+const listaPartidos = computed(() => [
+  "Resultados Generales",
+  ...candidatos.value.map((c) => c.nombrePartido),
+]);
 
 const listaProvincias = computed(() => {
   const mapProv = mapas.value.provincias;
   if (!mapProv) return [];
-  
+
   const features = Array.isArray(mapProv) ? mapProv : mapProv.features;
   if (!features) return [];
 
   return features
     .map((f) => f.properties.PROVINCIA)
-    .filter(p => p)
+    .filter((p) => p)
     .sort();
 });
-
 
 const listaCantones = computed(() => {
   const mapProv = mapas.value.provincias;
   const mapCan = mapas.value.cantones;
-  
+
   if (!filtroProvincia.value || !mapProv || !mapCan) return [];
 
   const provFeatures = Array.isArray(mapProv) ? mapProv : mapProv.features;
@@ -294,12 +328,12 @@ const idsSeleccionados = computed(() => {
 
   const mapProv = mapas.value.provincias;
   const mapCan = mapas.value.cantones;
-  
+
   if (filtroProvincia.value && mapProv) {
     const provFeatures = Array.isArray(mapProv) ? mapProv : mapProv.features;
     if (provFeatures) {
       const provFeature = provFeatures.find(
-         f => f.properties.PROVINCIA === filtroProvincia.value
+        (f) => f.properties.PROVINCIA === filtroProvincia.value
       );
       if (provFeature) {
         idProv = String(provFeature.properties.CODPRO).replace(/^0+/, "");
@@ -308,24 +342,32 @@ const idsSeleccionados = computed(() => {
   }
 
   if (filtroCanton.value && mapCan && idProv) {
-     const canFeatures = Array.isArray(mapCan) ? mapCan : mapCan.features;
-     if (canFeatures) {
-       const canFeature = canFeatures.find(f => {
-         const pId = String(f.properties.CODPRO).replace(/^0+/, "");
-         const cName = f.properties.CANTON || f.properties.NOM_CAN;
-         return pId === idProv && cName === filtroCanton.value;
-       });
-       if (canFeature) {
-         idCan = String(canFeature.properties.CODCAN).replace(/^0+/, "");
-       }
-     }
+    const canFeatures = Array.isArray(mapCan) ? mapCan : mapCan.features;
+    if (canFeatures) {
+      const canFeature = canFeatures.find((f) => {
+        const pId = String(f.properties.CODPRO).replace(/^0+/, "");
+        const cName = f.properties.CANTON || f.properties.NOM_CAN;
+        return pId === idProv && cName === filtroCanton.value;
+      });
+      if (canFeature) {
+        idCan = String(canFeature.properties.CODCAN).replace(/^0+/, "");
+      }
+    }
   }
   return { idProv, idCan };
 });
 
 const mapFilters = computed(() => {
-  let partido = partidoSeleccionado.value === "Resultados Generales" ? "" : partidoSeleccionado.value;
-  return ["1raVuelta", partido, idsSeleccionados.value.idProv, idsSeleccionados.value.idCan];
+  let partido =
+    partidoSeleccionado.value === "Resultados Generales"
+      ? ""
+      : partidoSeleccionado.value;
+  return [
+    "1raVuelta",
+    partido,
+    idsSeleccionados.value.idProv,
+    idsSeleccionados.value.idCan,
+  ];
 });
 
 /* DATOS TABLA DINÁMICOS */
@@ -336,14 +378,14 @@ const datosTabla = computed(() => {
 
   if (idCan) {
     // Mostrar Parroquias del Cantón
-    datos = datosElectorales.value.parroquias.filter(d => 
-      String(d.CODCAN).replace(/^0+/, "") === idCan
+    datos = datosElectorales.value.parroquias.filter(
+      (d) => String(d.CODCAN).replace(/^0+/, "") === idCan
     );
     tituloNivel = `CANTÓN ${filtroCanton.value}`;
   } else if (idProv) {
     // Mostrar Cantones de la Provincia
-    datos = datosElectorales.value.cantones.filter(d => 
-      String(d.CODPRO).replace(/^0+/, "") === idProv
+    datos = datosElectorales.value.cantones.filter(
+      (d) => String(d.CODPRO).replace(/^0+/, "") === idProv
     );
     tituloNivel = `PROVINCIA ${filtroProvincia.value}`;
   } else {
@@ -351,7 +393,10 @@ const datosTabla = computed(() => {
     datos = datosElectorales.value.provincias;
   }
 
-  return { rows: mapearDatosATabla(datos), titulo: `RESULTADOS ${tituloNivel} ${props.year}` };
+  return {
+    rows: mapearDatosATabla(datos),
+    titulo: `RESULTADOS ${tituloNivel} ${props.year}`,
+  };
 });
 
 /* WATCHERS */
@@ -361,7 +406,7 @@ watch(filtroProvincia, () => {
 
 watch(filtroVuelta, (nuevaVuelta) => {
   if (nuevaVuelta) {
-     cargarTodo(props.year, nuevaVuelta);
+    cargarTodo(props.year, nuevaVuelta);
   }
 });
 
@@ -372,44 +417,45 @@ const leyendaColores = dessertsData;
 const mapearDatosATabla = (datos) =>
   datos.map((item) => {
     // Determine location name based on available keys
-    const nombre = item.PARROQUIA || item.CANTON || item.PROVINCIA || "Desconocido";
-    
+    const nombre =
+      item.PARROQUIA || item.CANTON || item.PROVINCIA || "Desconocido";
+
     // Check filter
     const partidoFilter = partidoSeleccionado.value;
     const isGeneral = partidoFilter === "Resultados Generales";
-    
+
     let candidato = "N/A";
     let partido = "N/A";
     let porcentaje = 0;
 
     if (isGeneral) {
-        // Show winner
-        const winner = item.ganador;
-        partido = winner;
-        if (item.resultados && winner && item.resultados[winner]) {
-            candidato = item.resultados[winner].candidato;
-            porcentaje = item.resultados[winner].porcentaje;
-        }
+      // Show winner
+      const winner = item.ganador;
+      partido = winner;
+      if (item.resultados && winner && item.resultados[winner]) {
+        candidato = item.resultados[winner].candidato;
+        porcentaje = item.resultados[winner].porcentaje;
+      }
     } else {
-        // Show selected party
-        partido = partidoFilter;
-        let key = partidoFilter;
+      // Show selected party
+      partido = partidoFilter;
+      let key = partidoFilter;
 
-        if (item.resultados && item.resultados[key]) {
-            candidato = item.resultados[key].candidato;
-            porcentaje = item.resultados[key].porcentaje;
-        } else {
-             // Party didn't participate or 0 votes
-             candidato = ""; // Or lookup candidate name from global info if needed
-             porcentaje = 0;
-        }
+      if (item.resultados && item.resultados[key]) {
+        candidato = item.resultados[key].candidato;
+        porcentaje = item.resultados[key].porcentaje;
+      } else {
+        // Party didn't participate or 0 votes
+        candidato = ""; // Or lookup candidate name from global info if needed
+        porcentaje = 0;
+      }
     }
 
     return {
-       nombre: nombre,
-       candidato: candidato,
-       partido: partido,
-       porcentaje: porcentaje
+      nombre: nombre,
+      candidato: candidato,
+      partido: partido,
+      porcentaje: porcentaje,
     };
   });
 
@@ -422,16 +468,19 @@ const manejarCambioVuelta = (vuelta) => {
 onMounted(async () => {
   console.log("🚀 VotantesNacionales montado");
   await cargarTodo(props.year, 1);
-  
+
   // Verificación de candidatos
-  console.log('📊 Candidatos cargados (candidatosInfo):', candidatosInfo.value);
-  console.log('🎨 Total candidatos computados:', candidatos.value.length);
-  console.log('📦 Datos Electorales (provincias):', datosElectorales.value.provincias);
-  
+  console.log("📊 Candidatos cargados (candidatosInfo):", candidatosInfo.value);
+  console.log("🎨 Total candidatos computados:", candidatos.value.length);
+  console.log(
+    "📦 Datos Electorales (provincias):",
+    datosElectorales.value.provincias
+  );
+
   // Verifica URLs de imágenes
   if (candidatos.value.length > 0) {
-    console.log('🖼️ Primera imagen URL:', candidatos.value[0].url);
-    console.log('🏢 Primer logo URL:', candidatos.value[0].logo);
+    console.log("🖼️ Primera imagen URL:", candidatos.value[0].url);
+    console.log("🏢 Primer logo URL:", candidatos.value[0].logo);
   }
 });
 
@@ -445,7 +494,7 @@ watch(
 @import url("https://fonts.googleapis.com/css2?family=Oswald&display=swap");
 
 .vista-nacional {
-  padding: 2rem;
+  padding: 0;
   position: relative; /* Para el drawer */
 }
 

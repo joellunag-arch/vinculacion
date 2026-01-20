@@ -2,7 +2,7 @@
   <div class="graficobarras_container">
     <div class="titulo-estatico">Gráfica Resultados {{ categoria }}</div>
 
-    <div class="chart-scroll-wrapper" :class="{'modo_centrado': pocosCandidatos}">
+    <div class="chart-scroll-wrapper" :class="{ modo_centrado: pocosCandidatos }">
       <apexchart
         v-if="chartReady"
         :width="longitud"
@@ -30,8 +30,8 @@ export default {
   props: {
     datos: { type: Array, required: true },
     categoria: { type: String, default: "presidentes" },
-    // Aquí pasamos el candidatosInfo que viene de useElectoralData
-    candidatosExtraInfo: { type: Array, default: () => [] }
+    // Aquí pasamos el candidatosInfo que viene de useElectoralData ( por el momenot)
+    candidatosExtraInfo: { type: Array, default: () => [] },
   },
   data() {
     return {
@@ -43,43 +43,43 @@ export default {
         chart: {
           type: "bar",
           toolbar: { show: false },
-          animations: { enabled: false }
+          animations: { enabled: false },
         },
         plotOptions: {
           bar: {
             distributed: true,
             borderRadius: 8,
             columnWidth: "40%",
-            dataLabels: { position: "top" }
-          }
+            dataLabels: { position: "top" },
+          },
         },
         dataLabels: {
           enabled: true,
           formatter: (val) => val + "%",
           offsetY: -30,
-          style: { fontSize: "16px", colors: ["#333"], fontWeight: "900" }
+          style: { fontSize: "16px", colors: ["#333"], fontWeight: "900" },
         },
         xaxis: {
           categories: [],
           labels: {
             rotate: -15,
             style: { fontSize: "12px", fontWeight: "bold" },
-            offsetY: 60 // Espacio para que la foto no tape el nombre
-          }
+            offsetY: 60, // Espacio para que la foto no tape el nombre
+          },
         },
         yaxis: { show: false },
         grid: {
           show: false,
-          padding: { top: 50, bottom: 120 } // Espacio para fotos y logos
+          padding: { top: 50, bottom: 120 }, // Espacio para fotos y logos
         },
         legend: { show: false },
-        annotations: { points: [] }
-      }
+        annotations: { points: [] },
+      },
     };
   },
   watch: {
     datos: { handler: "cargarYProcesarDatos", deep: true },
-    candidatosExtraInfo: { handler: "cargarYProcesarDatos", deep: true }
+    candidatosExtraInfo: { handler: "cargarYProcesarDatos", deep: true },
   },
   mounted() {
     this.cargarYProcesarDatos();
@@ -139,13 +139,14 @@ export default {
       // 3. Cruzar datos numéricos con info visual (CandidatosData)
       for (const key of keysPartidos) {
         const res = resultadosCalculados[key];
-        
+
         // Buscar el candidato en la info extra por nombre o nombre de partido
-        const info = this.candidatosExtraInfo.find(c => 
-           c.nombrePartido === key || 
-           c.keyNormalizada === key || // Match normalized key from helper
-           c.nombre === res.candidato ||
-           String(c.partido) === String(key)
+        const info = this.candidatosExtraInfo.find(
+          (c) =>
+            c.nombrePartido === key ||
+            c.keyNormalizada === key || // Match normalized key from helper
+            c.nombre === res.candidato ||
+            String(c.partido) === String(key),
         );
 
         const colorActual = info ? info.color : "#A0A0A0";
@@ -153,11 +154,19 @@ export default {
         let logoUrl = info ? info.logo : "";
 
         // Resolver URLs si son funciones (lazy loading)
-        if (typeof fotoUrl === 'function') {
-            try { fotoUrl = await fotoUrl(); } catch (e) { fotoUrl = ""; }
+        if (typeof fotoUrl === "function") {
+          try {
+            fotoUrl = await fotoUrl();
+          } catch (e) {
+            fotoUrl = "";
+          }
         }
-        if (typeof logoUrl === 'function') {
-            try { logoUrl = await logoUrl(); } catch (e) { logoUrl = ""; }
+        if (typeof logoUrl === "function") {
+          try {
+            logoUrl = await logoUrl();
+          } catch (e) {
+            logoUrl = "";
+          }
         }
 
         dataValues.push(res.porcentaje);
@@ -174,8 +183,8 @@ export default {
               path: logoUrl,
               width: 50,
               height: 50,
-              offsetY: -60
-            }
+              offsetY: -60,
+            },
           });
         }
 
@@ -190,8 +199,8 @@ export default {
               path: circularFoto,
               width: 70,
               height: 70,
-              offsetY: 60
-            }
+              offsetY: 60,
+            },
           });
         }
       }
@@ -202,19 +211,21 @@ export default {
         colors: barColors,
         xaxis: {
           ...this.chartOptions.xaxis,
-          categories: categoriesNames
+          categories: categoriesNames,
         },
         annotations: {
-          points: annotationsPoints
-        }
+          points: annotationsPoints,
+        },
       };
 
       this.series = [{ name: "Porcentaje Nacional", data: dataValues }];
-      
+
       // Pequeño delay para asegurar que el DOM esté listo
-      setTimeout(() => { this.chartReady = true; }, 100);
-    }
-  }
+      setTimeout(() => {
+        this.chartReady = true;
+      }, 100);
+    },
+  },
 };
 </script>
 
