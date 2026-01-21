@@ -466,12 +466,12 @@ const manejarCambioVuelta = (vuelta) => {
 
 /* LIFECYCLE */
 onMounted(async () => {
-  console.log("🚀 VotantesNacionales montado");
+  console.log("VotantesNacionales montado");
   await cargarTodo(props.year, 1);
 
   // Verificación de candidatos
-  console.log("📊 Candidatos cargados (candidatosInfo):", candidatosInfo.value);
-  console.log("🎨 Total candidatos computados:", candidatos.value.length);
+  console.log(" Candidatos cargados (candidatosInfo):", candidatosInfo.value);
+  console.log(" Total candidatos computados:", candidatos.value.length);
   console.log(
     "📦 Datos Electorales (provincias):",
     datosElectorales.value.provincias
@@ -491,8 +491,6 @@ watch(
 </script>
 
 <style scoped>
-@import url("https://fonts.googleapis.com/css2?family=Oswald&display=swap");
-
 .vista-nacional {
   padding: 0;
   position: relative; /* Para el drawer */
