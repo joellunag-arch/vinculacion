@@ -192,7 +192,7 @@ export default {
    CABECERA
 ============================================================ */
 .table-custom thead th {
-  background: var(--color-secondary) !important; /* Solid Celeste #12a2c2 */
+  background: rgba(18, 162, 194, 0.3) !important; /* Semi-transparent teal */
 
   color: white;
   font-family: var(--font-titles);

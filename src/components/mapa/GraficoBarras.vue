@@ -2,7 +2,10 @@
   <div class="graficobarras_container">
     <div class="titulo-estatico">Gráfica Resultados {{ categoria }}</div>
 
-    <div class="chart-scroll-wrapper" :class="{ modo_centrado: pocosCandidatos }">
+    <div
+      class="chart-scroll-wrapper"
+      :class="{ modo_centrado: pocosCandidatos }"
+    >
       <apexchart
         v-if="chartReady"
         :width="longitud"
@@ -12,7 +15,10 @@
       ></apexchart>
 
       <div v-else class="loading-container">
-        <v-progress-circular indeterminate color="primary"></v-progress-circular>
+        <v-progress-circular
+          indeterminate
+          color="primary"
+        ></v-progress-circular>
         <p>Procesando gráficos e imágenes...</p>
       </div>
     </div>
@@ -86,7 +92,11 @@ export default {
   },
   methods: {
     // Convierte la URL de la imagen en un círculo con borde de color
-    async envolverImagenEnCirculo(urlImagen, size = 120, colorBorde = "#ffffff") {
+    async envolverImagenEnCirculo(
+      urlImagen,
+      size = 120,
+      colorBorde = "#ffffff"
+    ) {
       return new Promise((resolve) => {
         const img = new Image();
         img.crossOrigin = "anonymous";
@@ -129,7 +139,9 @@ export default {
 
       // 2. Configurar dimensiones
       this.pocosCandidatos = keysPartidos.length <= 3;
-      this.longitud = this.pocosCandidatos ? "100%" : `${keysPartidos.length * 200}px`;
+      this.longitud = this.pocosCandidatos
+        ? "100%"
+        : `${keysPartidos.length * 200}px`;
 
       const dataValues = [];
       const categoriesNames = [];
@@ -146,7 +158,7 @@ export default {
             c.nombrePartido === key ||
             c.keyNormalizada === key || // Match normalized key from helper
             c.nombre === res.candidato ||
-            String(c.partido) === String(key),
+            String(c.partido) === String(key)
         );
 
         const colorActual = info ? info.color : "#A0A0A0";
@@ -190,7 +202,11 @@ export default {
 
         // --- ANOTACIÓN: FOTO CANDIDATO (Abajo) ---
         if (fotoUrl) {
-          const circularFoto = await this.envolverImagenEnCirculo(fotoUrl, 100, colorActual);
+          const circularFoto = await this.envolverImagenEnCirculo(
+            fotoUrl,
+            100,
+            colorActual
+          );
           annotationsPoints.push({
             x: res.candidato,
             y: 0,

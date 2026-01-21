@@ -82,7 +82,7 @@
         ========================== -->
         <div class="carousel-inner">
           <div class="carousel-item active p-4">
-            <div class="row min-vh-50">
+            <div class="row fixed-carousel-height">
               <div
                 :class="
                   hasFiltros
@@ -104,7 +104,7 @@
 
           <div class="carousel-item p-4">
             <div
-              class="min-vh-50 d-flex align-items-center justify-content-center"
+              class="fixed-carousel-height d-flex align-items-center justify-content-center"
             >
               <slot name="graficos">
                 <div class="placeholder-content">Gráficos de resultados</div>
@@ -113,7 +113,7 @@
           </div>
 
           <div class="carousel-item p-4">
-            <div class="min-vh-50 overflow-auto">
+            <div class="fixed-carousel-height overflow-auto">
               <slot name="tablas">
                 <div class="placeholder-content">Tablas de resultados</div>
               </slot>
@@ -421,8 +421,18 @@ h2 {
 /* =========================
    GENERAL
 ========================= */
-.min-vh-50 {
-  min-height: 520px;
+.fixed-carousel-height {
+  height: auto;
+  min-height: 500px;
+}
+
+@media (min-width: 768px) {
+  .fixed-carousel-height {
+    min-height: 550px;
+    height: auto;
+    overflow-y: visible;
+    overflow-x: hidden;
+  }
 }
 
 .placeholder-content {
