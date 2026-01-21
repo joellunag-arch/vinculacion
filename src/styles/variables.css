@@ -2,41 +2,70 @@
    ARCHIVO: src/styles/variables.css
    DESCRIPCIÓN: Paleta de colores institucional y variables globales
    ============================================================ */
-
 :root {
-  
+  /* ========== COLORES PRINCIPALES ========== */
+
   /* Azul Institucional (Logo SEVEE y Títulos Principales) */
-  --color-primary:  #246cb6; 
-  
+  --color-primary: #246cb6;
+
   /* Turquesa Vibrante (Fondo del Filtro Lateral y Barra Info) */
-  --color-secondary: #12a2c2;  /*clor secundario*/
-  
+  --color-secondary: #12a2c2;
+
   /* Naranja (Botón 'Primera Vuelta' y destacados) */
   --color-accent: #f78c0e;
-  
+
+  /* ========== FONDOS ========== */
+
   /* Gris Oscuro / Negro (Fondo del Footer) */
   --bg-footer: #1e1e1e;
-  
+
   /* Azul Muy Claro (Fondos suaves de secciones) */
-  --bg-soft: #f0f8fb; 
+  --bg-soft: #f0f8fb;
+  --bg-celeste: #d8edff;
 
-  --bg-celeste: #d8edff; 
+  /* Rosa/Celeste para cabecera de tablas */
+  --bg-table-header: linear-gradient(
+    135deg,
+    rgba(216, 237, 255, 0.8) 0%,
+    rgba(255, 225, 235, 0.7) 100%
+  );
 
-  /*colores grupo mapas */
+  /* Transparencias para glassmorphism */
+  --glass-light: rgba(255, 255, 255, 0.7);
+  --glass-medium: rgba(255, 255, 255, 0.5);
+  --glass-celeste: rgba(216, 237, 255, 0.3);
+
+  /* ========== COLORES GRUPO MAPAS ========== */
+
   --color-naranja: #f88c0f;
   --color-cyan: #12a2c2;
   --color-texto-blanco: #ffffff;
   --color-texto-negro: #000000;
-  
-  /* Blancos y Grises de Texto */
-  --text-main: #333333;       /* Texto general */
-  --text-muted: #6c757d;      /* Texto secundario */
-  --bg-light: #f8f9fa;        /* Fondo general */
+  --color-row-divider: rgba(255, 140, 160, 0.65); /* rosa suave */
 
-  /* --- TIPOGRAFÍA --- */
+  /* ========== TEXTOS ========== */
+
+  --text-main: #333333; /* Texto general */
+  --text-muted: #6c757d; /* Texto secundario */
+  --bg-light: #f8f9fa; /* Fondo general */
+
+  /* ========== TIPOGRAFÍA ========== */
+
   /* Oswald: Solo para Títulos grandes */
-  --font-titles: 'Oswald', sans-serif;
-  
+  --font-titles: "Oswald", sans-serif;
+
   /* Open Sans: Para TODO lo demás (Párrafos, Tablas, Menús) */
-  --font-body: 'Open Sans', sans-serif;
+  --font-body: "Open Sans", sans-serif;
+
+  /* ========== SOMBRAS ========== */
+
+  --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.1);
+  --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.08);
+  --shadow-lg: 0 8px 24px rgba(0, 0, 0, 0.12);
+
+  /* ========== BORDES ========== */
+
+  --border-radius-sm: 4px;
+  --border-radius-md: 6px;
+  --border-radius-lg: 8px;
 }

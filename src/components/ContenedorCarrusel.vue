@@ -348,6 +348,27 @@ h2 {
 }
 
 /* =========================
+   FORZAR TRANSPARENCIA TOTAL
+========================= */
+
+/* Carrusel base */
+.carousel,
+.carousel-inner,
+.carousel-item {
+  background: transparent !important;
+}
+
+/* Evita que Bootstrap pinte blanco */
+.carousel-item {
+  background-color: transparent !important;
+}
+
+/* Contenedor del slide */
+.carousel-item > .row {
+  background: transparent !important;
+}
+
+/* =========================
    INDICADORES
 ========================= */
 .carousel-indicators-custom {
