@@ -8,45 +8,58 @@
             INSTITUTO DE ALTOS ESTUDIOS NACIONALES
           </h2>
           <p class="institution-description">
-            La Universidad de Posgrado del Estado Ecuatoriano,
-            provee educación continua orientada hacia la mejora de la planificación,
-            coordinación, dirección y ejecución de las políticas y la gestión pública.
-            Esta formación resulta en que el Estado, sus instituciones y los servidores
-            públicos contribuyan exitosamente al desarrollo y bienestar colectivo.
-            Para llevar a cabo esta misión, el IAEN promueve el vínculo estrecho entre la academia
-            y la sociedad, a través de un sistema que combina la docencia, la investigación y el
-            desarrollo cultural en un esfuerzo por solucionar los problemas sociales de nuestro país.
+            La Universidad de Posgrado del Estado Ecuatoriano, provee educación
+            continua orientada hacia la mejora de la planificación,
+            coordinación, dirección y ejecución de las políticas y la gestión
+            pública. Esta formación resulta en que el Estado, sus instituciones
+            y los servidores públicos contribuyan exitosamente al desarrollo y
+            bienestar colectivo. Para llevar a cabo esta misión, el IAEN
+            promueve el vínculo estrecho entre la academia y la sociedad, a
+            través de un sistema que combina la docencia, la investigación y el
+            desarrollo cultural en un esfuerzo por solucionar los problemas
+            sociales de nuestro país.
           </p>
-          
+
           <div class="contact-section">
             <h3 class="contact-title">CONTACTOS</h3>
             <div class="contact-items">
               <div class="contact-item">
                 <svg class="contact-icon" viewBox="0 0 24 24">
-                  <path fill="currentColor" d="M12,11.5A2.5,2.5 0 0,1 9.5,9A2.5,2.5 0 0,1 12,6.5A2.5,2.5 0 0,1 14.5,9A2.5,2.5 0 0,1 12,11.5M12,2A7,7 0 0,0 5,9C5,14.25 12,22 12,22C12,22 19,14.25 19,9A7,7 0 0,0 12,2Z" />
+                  <path
+                    fill="currentColor"
+                    d="M12,11.5A2.5,2.5 0 0,1 9.5,9A2.5,2.5 0 0,1 12,6.5A2.5,2.5 0 0,1 14.5,9A2.5,2.5 0 0,1 12,11.5M12,2A7,7 0 0,0 5,9C5,14.25 12,22 12,22C12,22 19,14.25 19,9A7,7 0 0,0 12,2Z"
+                  />
                 </svg>
-                <span class="contact-text">Av. Amazonas N37-271 y Villalengua. Quito - Ecuador</span>
+                <span class="contact-text"
+                  >Av. Amazonas N37-271 y Villalengua. Quito - Ecuador</span
+                >
               </div>
               <div class="contact-item">
                 <svg class="contact-icon" viewBox="0 0 24 24">
-                  <path fill="currentColor" d="M6.62,10.79C8.06,13.62 10.38,15.94 13.21,17.38L15.41,15.18C15.69,14.9 16.08,14.82 16.43,14.93C17.55,15.3 18.75,15.5 20,15.5A1,1 0 0,1 21,16.5V20A1,1 0 0,1 20,21A17,17 0 0,1 3,4A1,1 0 0,1 4,3H7.5A1,1 0 0,1 8.5,4C8.5,5.25 8.7,6.45 9.07,7.57C9.18,7.92 9.1,8.31 8.82,8.59L6.62,10.79Z" />
+                  <path
+                    fill="currentColor"
+                    d="M6.62,10.79C8.06,13.62 10.38,15.94 13.21,17.38L15.41,15.18C15.69,14.9 16.08,14.82 16.43,14.93C17.55,15.3 18.75,15.5 20,15.5A1,1 0 0,1 21,16.5V20A1,1 0 0,1 20,21A17,17 0 0,1 3,4A1,1 0 0,1 4,3H7.5A1,1 0 0,1 8.5,4C8.5,5.25 8.7,6.45 9.07,7.57C9.18,7.92 9.1,8.31 8.82,8.59L6.62,10.79Z"
+                  />
                 </svg>
                 <span class="contact-text">(593 2) 3829900</span>
               </div>
               <div class="contact-item">
                 <svg class="contact-icon" viewBox="0 0 24 24">
-                  <path fill="currentColor" d="M20,8L12,13L4,8V6L12,11L20,6M20,4H4C2.89,4 2,4.89 2,6V18A2,2 0 0,0 4,20H20A2,2 0 0,0 22,18V6C22,4.89 21.1,4 20,4Z" />
+                  <path
+                    fill="currentColor"
+                    d="M20,8L12,13L4,8V6L12,11L20,6M20,4H4C2.89,4 2,4.89 2,6V18A2,2 0 0,0 4,20H20A2,2 0 0,0 22,18V6C22,4.89 21.1,4 20,4Z"
+                  />
                 </svg>
                 <span class="contact-text">tramites@iaen.edu.ec</span>
               </div>
             </div>
           </div>
         </div>
-        
+
         <div class="institution-image">
-          <img 
-            src="../assets/img/iaen_edificio.png" 
-            alt="Edificio IAEN" 
+          <img
+            src="../assets/img/acerca/iaen_edificio.png"
+            alt="Edificio IAEN"
             class="image"
           />
         </div>
@@ -57,46 +70,57 @@
     <section class="institution-section reverse">
       <div class="institution-content">
         <div class="institution-image">
-          <img 
-            src="../assets/img/UCE.png" 
-            alt="Universidad Central del Ecuador" 
+          <img
+            src="../assets/img/acerca/UCE.png"
+            alt="Universidad Central del Ecuador"
             class="image"
           />
         </div>
-        
+
         <div class="institution-info">
-          <h2 class="institution-title">
-            UNIVERSIDAD CENTRAL DEL ECUADOR
-          </h2>
+          <h2 class="institution-title">UNIVERSIDAD CENTRAL DEL ECUADOR</h2>
           <p class="institution-description">
-            La Universidad Central del Ecuador,
-            además de enfocarse en la formación de profesionales con pensamiento
-            crítico, manifiesta su compromiso social a través de programas de investigación-acción
-            llevados a cabo por miembros de la comunidad universitaria. El presente proyecto se ha
-            desarrollado mediante la colaboración del IAEN y las carreras de Ingeniería en Computación
-            Gráfica e Ingeniería en Ciencias de la Computación, usando servicios telemáticos para ofrecer
-            estadísticas electorales transparentes y de acceso libre, con el objetivo de entregar a los
-            ciudadanos y las organizaciones la información de una manera eficaz y eficiente.
+            La Universidad Central del Ecuador, además de enfocarse en la
+            formación de profesionales con pensamiento crítico, manifiesta su
+            compromiso social a través de programas de investigación-acción
+            llevados a cabo por miembros de la comunidad universitaria. El
+            presente proyecto se ha desarrollado mediante la colaboración del
+            IAEN y las carreras de Ingeniería en Computación Gráfica e
+            Ingeniería en Ciencias de la Computación, usando servicios
+            telemáticos para ofrecer estadísticas electorales transparentes y de
+            acceso libre, con el objetivo de entregar a los ciudadanos y las
+            organizaciones la información de una manera eficaz y eficiente.
           </p>
-          
+
           <div class="contact-section">
             <h3 class="contact-title">CONTACTOS</h3>
             <div class="contact-items">
               <div class="contact-item">
                 <svg class="contact-icon" viewBox="0 0 24 24">
-                  <path fill="currentColor" d="M12,11.5A2.5,2.5 0 0,1 9.5,9A2.5,2.5 0 0,1 12,6.5A2.5,2.5 0 0,1 14.5,9A2.5,2.5 0 0,1 12,11.5M12,2A7,7 0 0,0 5,9C5,14.25 12,22 12,22C12,22 19,14.25 19,9A7,7 0 0,0 12,2Z" />
+                  <path
+                    fill="currentColor"
+                    d="M12,11.5A2.5,2.5 0 0,1 9.5,9A2.5,2.5 0 0,1 12,6.5A2.5,2.5 0 0,1 14.5,9A2.5,2.5 0 0,1 12,11.5M12,2A7,7 0 0,0 5,9C5,14.25 12,22 12,22C12,22 19,14.25 19,9A7,7 0 0,0 12,2Z"
+                  />
                 </svg>
-                <span class="contact-text">Av. Universitaria, Quito 170129</span>
+                <span class="contact-text"
+                  >Av. Universitaria, Quito 170129</span
+                >
               </div>
               <div class="contact-item">
                 <svg class="contact-icon" viewBox="0 0 24 24">
-                  <path fill="currentColor" d="M6.62,10.79C8.06,13.62 10.38,15.94 13.21,17.38L15.41,15.18C15.69,14.9 16.08,14.82 16.43,14.93C17.55,15.3 18.75,15.5 20,15.5A1,1 0 0,1 21,16.5V20A1,1 0 0,1 20,21A17,17 0 0,1 3,4A1,1 0 0,1 4,3H7.5A1,1 0 0,1 8.5,4C8.5,5.25 8.7,6.45 9.07,7.57C9.18,7.92 9.1,8.31 8.82,8.59L6.62,10.79Z" />
+                  <path
+                    fill="currentColor"
+                    d="M6.62,10.79C8.06,13.62 10.38,15.94 13.21,17.38L15.41,15.18C15.69,14.9 16.08,14.82 16.43,14.93C17.55,15.3 18.75,15.5 20,15.5A1,1 0 0,1 21,16.5V20A1,1 0 0,1 20,21A17,17 0 0,1 3,4A1,1 0 0,1 4,3H7.5A1,1 0 0,1 8.5,4C8.5,5.25 8.7,6.45 9.07,7.57C9.18,7.92 9.1,8.31 8.82,8.59L6.62,10.79Z"
+                  />
                 </svg>
                 <span class="contact-text">(02) 252-8810</span>
               </div>
               <div class="contact-item">
                 <svg class="contact-icon" viewBox="0 0 24 24">
-                  <path fill="currentColor" d="M20,8L12,13L4,8V6L12,11L20,6M20,4H4C2.89,4 2,4.89 2,6V18A2,2 0 0,0 4,20H20A2,2 0 0,0 22,18V6C22,4.89 21.1,4 20,4Z" />
+                  <path
+                    fill="currentColor"
+                    d="M20,8L12,13L4,8V6L12,11L20,6M20,4H4C2.89,4 2,4.89 2,6V18A2,2 0 0,0 4,20H20A2,2 0 0,0 22,18V6C22,4.89 21.1,4 20,4Z"
+                  />
                 </svg>
                 <span class="contact-text">uce.edu.ec</span>
               </div>
@@ -110,48 +134,62 @@
     <section class="institution-section">
       <div class="institution-content">
         <div class="institution-info">
-          <h2 class="institution-title">
-            ÁGORA CIUDADANA
-          </h2>
+          <h2 class="institution-title">ÁGORA CIUDADANA</h2>
           <p class="institution-description">
             El colectivo Ágora Ciudadana es una organización académica, plural,
-            independiente y con conciencia crítica sobre el acontecer nacional. Constituye
-            un espacio alternativo de debate y reflexión política, con el fin de promover una
-            práctica política responsable, honesta, solidaria e incluyente. Brinda un espacio
-            plural para la reflexión, análisis, investigación y estudio multidisciplinario de
-            las experiencias educativas, democráticas, sociales y económicas, promoviendo la 
-            participación de la ciudadanía y el ejercicio del derecho al control social.
+            independiente y con conciencia crítica sobre el acontecer nacional.
+            Constituye un espacio alternativo de debate y reflexión política,
+            con el fin de promover una práctica política responsable, honesta,
+            solidaria e incluyente. Brinda un espacio plural para la reflexión,
+            análisis, investigación y estudio multidisciplinario de las
+            experiencias educativas, democráticas, sociales y económicas,
+            promoviendo la participación de la ciudadanía y el ejercicio del
+            derecho al control social.
           </p>
-          
+
           <div class="contact-section">
             <h3 class="contact-title">CONTACTOS</h3>
             <div class="contact-items">
               <div class="contact-item">
                 <svg class="contact-icon" viewBox="0 0 24 24">
-                  <path fill="currentColor" d="M12,11.5A2.5,2.5 0 0,1 9.5,9A2.5,2.5 0 0,1 12,6.5A2.5,2.5 0 0,1 14.5,9A2.5,2.5 0 0,1 12,11.5M12,2A7,7 0 0,0 5,9C5,14.25 12,22 12,22C12,22 19,14.25 19,9A7,7 0 0,0 12,2Z" />
+                  <path
+                    fill="currentColor"
+                    d="M12,11.5A2.5,2.5 0 0,1 9.5,9A2.5,2.5 0 0,1 12,6.5A2.5,2.5 0 0,1 14.5,9A2.5,2.5 0 0,1 12,11.5M12,2A7,7 0 0,0 5,9C5,14.25 12,22 12,22C12,22 19,14.25 19,9A7,7 0 0,0 12,2Z"
+                  />
                 </svg>
-                <span class="contact-text">Av. Diego de Almagro N29-54 y Pradera, Edificio Posada de las Artes Kingman, 6to Piso.</span>
+                <span class="contact-text"
+                  >Av. Diego de Almagro N29-54 y Pradera, Edificio Posada de las
+                  Artes Kingman, 6to Piso.</span
+                >
               </div>
               <div class="contact-item">
                 <svg class="contact-icon" viewBox="0 0 24 24">
-                  <path fill="currentColor" d="M6.62,10.79C8.06,13.62 10.38,15.94 13.21,17.38L15.41,15.18C15.69,14.9 16.08,14.82 16.43,14.93C17.55,15.3 18.75,15.5 20,15.5A1,1 0 0,1 21,16.5V20A1,1 0 0,1 20,21A17,17 0 0,1 3,4A1,1 0 0,1 4,3H7.5A1,1 0 0,1 8.5,4C8.5,5.25 8.7,6.45 9.07,7.57C9.18,7.92 9.1,8.31 8.82,8.59L6.62,10.79Z" />
+                  <path
+                    fill="currentColor"
+                    d="M6.62,10.79C8.06,13.62 10.38,15.94 13.21,17.38L15.41,15.18C15.69,14.9 16.08,14.82 16.43,14.93C17.55,15.3 18.75,15.5 20,15.5A1,1 0 0,1 21,16.5V20A1,1 0 0,1 20,21A17,17 0 0,1 3,4A1,1 0 0,1 4,3H7.5A1,1 0 0,1 8.5,4C8.5,5.25 8.7,6.45 9.07,7.57C9.18,7.92 9.1,8.31 8.82,8.59L6.62,10.79Z"
+                  />
                 </svg>
-                <span class="contact-text">(593) 961201853 – (593) 997218617</span>
+                <span class="contact-text"
+                  >(593) 961201853 – (593) 997218617</span
+                >
               </div>
               <div class="contact-item">
                 <svg class="contact-icon" viewBox="0 0 24 24">
-                  <path fill="currentColor" d="M20,8L12,13L4,8V6L12,11L20,6M20,4H4C2.89,4 2,4.89 2,6V18A2,2 0 0,0 4,20H20A2,2 0 0,0 22,18V6C22,4.89 21.1,4 20,4Z" />
+                  <path
+                    fill="currentColor"
+                    d="M20,8L12,13L4,8V6L12,11L20,6M20,4H4C2.89,4 2,4.89 2,6V18A2,2 0 0,0 4,20H20A2,2 0 0,0 22,18V6C22,4.89 21.1,4 20,4Z"
+                  />
                 </svg>
                 <span class="contact-text">agorciudadana@gmail.com</span>
               </div>
             </div>
           </div>
         </div>
-        
+
         <div class="institution-image">
-          <img 
-            src="../assets/img/AgoraCiudadana.png" 
-            alt="Ágora Ciudadana" 
+          <img
+            src="../assets/img/acerca/AgoraCiudadana.png"
+            alt="Ágora Ciudadana"
             class="image"
           />
         </div>
@@ -160,12 +198,11 @@
   </div>
 </template>
 
-<script setup>
-</script>
+<script setup></script>
 
 <style scoped>
-@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap");
 
 /* Container principal */
 .about-container {
@@ -178,7 +215,7 @@
 .institution-section {
   margin: 2rem auto;
   max-width: 1400px;
-  background: linear-gradient(180deg, #fdfdff 0%, #D8EDFF 60.19%);
+  background: linear-gradient(180deg, #fdfdff 0%, #d8edff 60.19%);
   border-radius: 16px;
   padding: 3rem;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
@@ -214,17 +251,17 @@
 }
 
 .institution-title {
-  font-family: 'Oswald', sans-serif;
+  font-family: "Oswald", sans-serif;
   font-size: 28px;
   font-weight: 600;
   text-align: center;
-  color: #246CB6;
+  color: #246cb6;
   margin: 0;
   line-height: 1.3;
 }
 
 .institution-description {
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-size: 16px;
   font-weight: 400;
   text-align: justify;
@@ -241,10 +278,10 @@
 }
 
 .contact-title {
-  font-family: 'Oswald', sans-serif;
+  font-family: "Oswald", sans-serif;
   font-size: 20px;
   font-weight: 600;
-  color: #246CB6;
+  color: #246cb6;
   margin-bottom: 1rem;
 }
 
@@ -269,12 +306,12 @@
 .contact-icon {
   width: 28px;
   height: 28px;
-  color: #12A2C2;
+  color: #12a2c2;
   flex-shrink: 0;
 }
 
 .contact-text {
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-size: 15px;
   color: #444;
   line-height: 1.4;
@@ -453,7 +490,7 @@
 
 /* Links dentro del texto */
 .contact-text a {
-  color: #12A2C2;
+  color: #12a2c2;
   text-decoration: none;
   transition: color 0.3s ease;
 }
