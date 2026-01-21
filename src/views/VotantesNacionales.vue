@@ -473,14 +473,14 @@ onMounted(async () => {
   console.log(" Candidatos cargados (candidatosInfo):", candidatosInfo.value);
   console.log(" Total candidatos computados:", candidatos.value.length);
   console.log(
-    "📦 Datos Electorales (provincias):",
+    " Datos Electorales (provincias):",
     datosElectorales.value.provincias
   );
 
   // Verifica URLs de imágenes
   if (candidatos.value.length > 0) {
-    console.log("🖼️ Primera imagen URL:", candidatos.value[0].url);
-    console.log("🏢 Primer logo URL:", candidatos.value[0].logo);
+    console.log(" Primera imagen URL:", candidatos.value[0].url);
+    console.log(" Primer logo URL:", candidatos.value[0].logo);
   }
 });
 

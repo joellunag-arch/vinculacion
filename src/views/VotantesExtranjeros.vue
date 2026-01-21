@@ -199,12 +199,9 @@ const {
 
 /* CANDIDATOS */
 const candidatos = computed(() => {
-  // Similar filter logic to VotantesNacionales if needed, or just return all
   const info = candidatosInfo.value;
   if (!info || !Array.isArray(info)) return [];
 
-  // Attempt to filter by active parties in results if possible
-  // For now, return all to ensure full legend
   return info;
 });
 
@@ -217,8 +214,8 @@ const etapasDisponibles = computed(() =>
 const drawer = ref(false);
 const filtroVuelta = ref(1);
 const partidoSeleccionado = ref("Resultados Generales");
-const filtroZona = ref(null); // Equivalent to Provincia (Region/Zone)
-const filtroPais = ref(null); // Equivalent to Canton (Country)
+const filtroZona = ref(null);
+const filtroPais = ref(null);
 
 const buscar = () => {
   drawer.value = false;
@@ -237,7 +234,6 @@ const coloresPartidos = computed(() => {
     candidatosInfo.value.forEach((c) => {
       if (c.nombrePartido && c.color) {
         map[c.nombrePartido] = { principal: c.color };
-        // Alias if needed (historic data often has aliases)
         if (c.nombrePartido === "RC/RETO") map["RC5"] = { principal: c.color };
       }
     });
@@ -245,21 +241,15 @@ const coloresPartidos = computed(() => {
   return map;
 });
 
-// Import local fallback data if needed, or rely on API/Props
 import { dessertsData } from "@/assets/data/1996/CandidatosData";
-const leyendaColores = dessertsData; // Using fallback for legend temporarily
+const leyendaColores = dessertsData;
 
-/* COMPUTED LISTS FOR SELECTS */
 const listaPartidos = computed(() => [
   "Resultados Generales",
   ...candidatos.value.map((c) => c.nombrePartido),
 ]);
 
-// Extract unique Zonas from data if available, otherwise maybe use Continents logic if implied in data
-// Looking at previous file checks, 'Cantones' data usually has 'CANTON' which is country name.
-// 'Provincias' data usually acts as the Zone container.
 const listaZonas = computed(() => {
-  // If 'Provincias' file contains Zones (America Latina, Europa, etc.)
   if (
     datosElectorales.value.provincias &&
     datosElectorales.value.provincias.length
@@ -273,12 +263,9 @@ const listaZonas = computed(() => {
 });
 
 const listaPaises = computed(() => {
-  // Filter countries based on selected Zona
-  // Assuming 'CODPRO' links Canton to Provincia (Country to Zone)
   let data = datosElectorales.value.cantones || [];
 
   if (filtroZona.value) {
-    // Find ID of selected Zona
     const zonaObj = datosElectorales.value.provincias.find(
       (p) => p.PROVINCIA === filtroZona.value
     );
@@ -300,24 +287,17 @@ const manejarCambioPartido = (partido) => {
 };
 
 /* DATOS FILTRADOS */
-// Mapa needs filtered data? Or MapaMundi shows all and we just highlight?
-// Usually MapaMundi shows everything. If we filter by Country, maybe we only show that country?
-// For now, let's pass everything to MapaMundi, as it is a global view.
 const datosMapa = computed(() => {
   return datosElectorales.value.cantones || [];
 });
 
-// Grafico should reflect the filtered scope
 const datosGrafico = computed(() => {
   if (filtroPais.value) {
-    // Show specific country (maybe just one bar? or Parroquias/Consulates if available?)
-    // If we don't have Parroquias for foreign, we show the Country itself
     return datosElectorales.value.cantones.filter(
       (d) => (d.CANTON || d.PAIS) === filtroPais.value
     );
   }
   if (filtroZona.value) {
-    // Show countries in that Zone
     const zonaObj = datosElectorales.value.provincias.find(
       (p) => p.PROVINCIA === filtroZona.value
     );
@@ -326,7 +306,6 @@ const datosGrafico = computed(() => {
       return datosElectorales.value.cantones.filter((d) => d.CODPRO === idZona);
     }
   }
-  // Default: Show all Zones (Provincias equivalent)
   return datosElectorales.value.provincias || [];
 });
 
@@ -336,9 +315,6 @@ const datosTabla = computed(() => {
   let tituloNivel = "EXTERIOR";
 
   if (filtroPais.value) {
-    // If we have Parroquias (Consulates), show them.
-    // If not loaded, we might just show the Country row.
-    // Check if parroquias exist and match this country
     const paisObj = datosElectorales.value.cantones.find(
       (c) => (c.CANTON || c.PAIS) === filtroPais.value
     );
@@ -349,12 +325,10 @@ const datosTabla = computed(() => {
       );
       tituloNivel = `${filtroPais.value}`;
     } else {
-      // Fallback to showing just the country if no sub-units
       datos = [paisObj].filter((x) => x);
       tituloNivel = `${filtroPais.value}`;
     }
   } else if (filtroZona.value) {
-    // Show Countries in Zone
     const zonaObj = datosElectorales.value.provincias.find(
       (p) => p.PROVINCIA === filtroZona.value
     );
@@ -446,8 +420,6 @@ onMounted(() => {
 </script>
 
 <style scoped>
-@import url("https://fonts.googleapis.com/css2?family=Oswald&display=swap");
-
 .vista-extranjeros {
   padding: 0;
   position: relative;
