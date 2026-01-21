@@ -170,13 +170,13 @@ export default {
    WRAPPER CON GLASSMORPHISM (AJUSTADO)
 ============================================================ */
 .tabla-wrapper {
-  background: rgba(255, 255, 255, 0.45); /* ⬅️ más transparente */
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
+  background: transparent !important; /* Total transparency requested */
+  backdrop-filter: none;
+  -webkit-backdrop-filter: none;
 
   border-radius: 12px;
   padding: 1rem;
-  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
+  box-shadow: none;
 }
 
 /* ============================================================
@@ -192,19 +192,15 @@ export default {
    CABECERA
 ============================================================ */
 .table-custom thead th {
-  background: linear-gradient(
-    135deg,
-    rgba(224, 247, 250, 0.9) 0%,
-    rgba(255, 235, 245, 0.85) 100%
-  ) !important;
+  background: var(--color-secondary) !important; /* Solid Celeste #12a2c2 */
 
-  color: #000;
+  color: white;
   font-family: var(--font-titles);
   font-weight: bold;
   text-align: center;
   vertical-align: middle;
 
-  border-bottom: 2px solid rgba(255, 140, 160, 0.65); /* rosa */
+  border-bottom: 2px solid rgba(255, 255, 255, 0.3);
   padding: 12px 10px;
 
   font-size: 0.95rem;

@@ -505,6 +505,11 @@ watch(
   font-size: 0.9rem;
 }
 
+.v-navigation-drawer {
+  background: rgba(18, 162, 194, 0.85) !important;
+  backdrop-filter: blur(8px);
+}
+
 .estado {
   text-align: center;
   padding: 2rem;

@@ -359,6 +359,9 @@ h2 {
 }
 
 /* Evita que Bootstrap pinte blanco */
+.carousel-item.p-4 {
+  background: transparent !important;
+}
 .carousel-item {
   background-color: transparent !important;
 }
