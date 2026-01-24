@@ -120,7 +120,11 @@
 
         <div v-else style="position: relative; width: 100%; height: 100%">
           <!-- Data Filtration for map is done in computed prop 'datosMapa' -->
-          <MapaMundi :resultados="datosMapa" :colores="coloresPartidos" />
+          <MapaMundi
+            :resultados="datosMapa"
+            :colores="coloresPartidos"
+            @datos-procesados="manejarDatosMapa"
+          />
         </div>
       </template>
 
@@ -212,7 +216,11 @@ const etapasDisponibles = computed(() =>
 
 /* ESTADO DE FILTROS */
 const drawer = ref(false);
-const filtroVuelta = ref(1);
+// Inicializar con la primera etapa disponible (ej: 2 para 2023) o fallback a 1
+const filtroVuelta = ref(
+  etapasDisponibles.value.length > 0 ? etapasDisponibles.value[0] : 1
+);
+
 const partidoSeleccionado = ref("Resultados Generales");
 const filtroZona = ref(null);
 const filtroPais = ref(null);
@@ -225,6 +233,14 @@ const limpiarFiltros = () => {
   filtroZona.value = null;
   filtroPais.value = null;
   partidoSeleccionado.value = "Resultados Generales";
+};
+
+/* DATA DEL MAPA (PROCESADA Y FILTRADA) */
+const datosMapaProcesados = ref([]);
+
+const manejarDatosMapa = (datos) => {
+  console.log("Datos recibidos del mapa:", datos);
+  datosMapaProcesados.value = datos;
 };
 
 /* COLORES */
@@ -241,38 +257,33 @@ const coloresPartidos = computed(() => {
   return map;
 });
 
-import { dessertsData } from "@/assets/data/1996/CandidatosData";
-const leyendaColores = dessertsData;
+import { NAME_TO_ISO } from "@/helpers/countryMapping";
 
+/* DATA FILTRADA BASE (SOLO EXTRANJEROS) */
+const cantonesExtranjeros = computed(() => {
+  if (!datosElectorales.value.cantones) return [];
+  return datosElectorales.value.cantones.filter((c) => {
+    // Filtramos usando el diccionario de paises (NAME_TO_ISO)
+    const nombre = (c.CANTON || c.PAIS || "").toUpperCase();
+    return NAME_TO_ISO.hasOwnProperty(nombre);
+  });
+});
+
+/* LISTAS FILTROS */
 const listaPartidos = computed(() => [
   "Resultados Generales",
   ...candidatos.value.map((c) => c.nombrePartido),
 ]);
 
-const listaZonas = computed(() => {
-  if (
-    datosElectorales.value.provincias &&
-    datosElectorales.value.provincias.length
-  ) {
-    return datosElectorales.value.provincias
-      .map((p) => p.PROVINCIA)
-      .filter((p) => p)
-      .sort();
-  }
-  return [];
-});
+// La lista de zonas se filtra para que coincida con la data extranjera si es necesario
+const listaZonas = computed(() => []);
 
 const listaPaises = computed(() => {
-  let data = datosElectorales.value.cantones || [];
+  let data = cantonesExtranjeros.value;
 
+  // Si en el futuro se habilitan zonas, filtrar aqui
   if (filtroZona.value) {
-    const zonaObj = datosElectorales.value.provincias.find(
-      (p) => p.PROVINCIA === filtroZona.value
-    );
-    if (zonaObj) {
-      const idZona = zonaObj.CODPRO; // or CODPROV
-      data = data.filter((d) => d.CODPRO === idZona || d.CODPROV === idZona);
-    }
+    // logica de zonas
   }
 
   return data
@@ -288,25 +299,16 @@ const manejarCambioPartido = (partido) => {
 
 /* DATOS FILTRADOS */
 const datosMapa = computed(() => {
-  return datosElectorales.value.cantones || [];
+  return cantonesExtranjeros.value;
 });
 
 const datosGrafico = computed(() => {
   if (filtroPais.value) {
-    return datosElectorales.value.cantones.filter(
+    return cantonesExtranjeros.value.filter(
       (d) => (d.CANTON || d.PAIS) === filtroPais.value
     );
   }
-  if (filtroZona.value) {
-    const zonaObj = datosElectorales.value.provincias.find(
-      (p) => p.PROVINCIA === filtroZona.value
-    );
-    if (zonaObj) {
-      const idZona = zonaObj.CODPRO;
-      return datosElectorales.value.cantones.filter((d) => d.CODPRO === idZona);
-    }
-  }
-  return datosElectorales.value.provincias || [];
+  return cantonesExtranjeros.value;
 });
 
 /* DATOS TABLA */
@@ -315,33 +317,22 @@ const datosTabla = computed(() => {
   let tituloNivel = "EXTERIOR";
 
   if (filtroPais.value) {
-    const paisObj = datosElectorales.value.cantones.find(
+    const paisObj = cantonesExtranjeros.value.find(
       (c) => (c.CANTON || c.PAIS) === filtroPais.value
     );
-    if (paisObj && datosElectorales.value.parroquias.length) {
-      const idPais = paisObj.CODCAN;
-      datos = datosElectorales.value.parroquias.filter(
-        (p) => p.CODCAN === idPais
-      );
+    if (paisObj) {
+      datos = [paisObj];
       tituloNivel = `${filtroPais.value}`;
-    } else {
-      datos = [paisObj].filter((x) => x);
-      tituloNivel = `${filtroPais.value}`;
-    }
-  } else if (filtroZona.value) {
-    const zonaObj = datosElectorales.value.provincias.find(
-      (p) => p.PROVINCIA === filtroZona.value
-    );
-    if (zonaObj) {
-      const idZona = zonaObj.CODPRO;
-      datos = datosElectorales.value.cantones.filter(
-        (d) => d.CODPRO === idZona
-      );
-      tituloNivel = `${filtroZona.value}`;
     }
   } else {
-    // Show Zones
-    datos = datosElectorales.value.provincias || [];
+    // Listado de todos los países
+    // PREFERENCIA: Usar datos procesados por el mapa si existen (ya tienen ganador calculado y filtrado)
+    if (datosMapaProcesados.value && datosMapaProcesados.value.length > 0) {
+      datos = datosMapaProcesados.value;
+    } else {
+      // Fallback a lógica original si el mapa no ha emitido aún
+      datos = cantonesExtranjeros.value;
+    }
   }
 
   return {
@@ -353,6 +344,17 @@ const datosTabla = computed(() => {
 /* MAPEO TABLA HELPER */
 const mapearDatosATabla = (datos) =>
   datos.map((item) => {
+    // Si viene del mapa, ya tiene propiedades procesadas
+    if (item.ganador !== undefined && item.votos !== undefined) {
+      return {
+        nombre: item.name || item.CANTON || item.PAIS || "Desconocido",
+        candidato: item.candidato || "N/A",
+        partido: item.ganador || "N/A",
+        porcentaje: item.porcentaje || 0,
+      };
+    }
+
+    // Lógica antigua (fallback)
     const nombre =
       item.PARROQUIA || item.CANTON || item.PROVINCIA || "Desconocido";
     const partidoFilter = partidoSeleccionado.value;
@@ -396,6 +398,15 @@ const manejarCambioVuelta = (vuelta) => {
 };
 
 /* WATCHERS */
+const actualizarEtapa = () => {
+  // Si cambia el año filtrado, actualizamos la vuelta disponible
+  const etapas = obtenerEtapasDelAno("EXTRANJEROS", props.year);
+  if (etapas.length > 0 && !etapas.includes(filtroVuelta.value)) {
+    filtroVuelta.value = etapas[0];
+  }
+  cargarTodo(props.year, filtroVuelta.value);
+};
+
 watch(filtroZona, () => {
   filtroPais.value = null;
 });
@@ -408,14 +419,19 @@ watch(filtroVuelta, (nuevaVuelta) => {
 
 watch(
   () => props.year,
-  (nuevoYear) => {
-    cargarTodo(nuevoYear, 1);
+  () => {
+    actualizarEtapa();
   }
 );
 
 /* LIFECYCLE */
 onMounted(() => {
-  cargarTodo(props.year, 1);
+  // Aseguramos que se cargue la etapa correcta al montar
+  const etapas = obtenerEtapasDelAno("EXTRANJEROS", props.year);
+  if (etapas.length > 0) {
+    filtroVuelta.value = etapas[0];
+  }
+  cargarTodo(props.year, filtroVuelta.value);
 });
 </script>
 

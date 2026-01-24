@@ -1,0 +1,569 @@
+[
+    {
+        "CODPRO": "01",
+        "PROVINCIA": "AZUAY",
+        "votos_validos": 442542,
+        "votos_blancos": 3196,
+        "votos_nulos": 43223,
+        "votos_totales": 488961,
+        "ganador": "PID/MOVER",
+        "resultados": {
+            "RC": {
+                "candidato": "LUISA GONZALEZ",
+                "votos": 181912,
+                "porcentaje": 41.11
+            },
+            "PID/MOVER": {
+                "candidato": "DANIEL NOBOA AZIN",
+                "votos": 260630,
+                "porcentaje": 58.89
+            }
+        }
+    },
+    {
+        "CODPRO": "02",
+        "PROVINCIA": "BOLIVAR",
+        "votos_validos": 133815,
+        "votos_blancos": 1218,
+        "votos_nulos": 15165,
+        "votos_totales": 150198,
+        "ganador": "PID/MOVER",
+        "resultados": {
+            "RC": {
+                "candidato": "LUISA GONZALEZ",
+                "votos": 48566,
+                "porcentaje": 36.29
+            },
+            "PID/MOVER": {
+                "candidato": "DANIEL NOBOA AZIN",
+                "votos": 85249,
+                "porcentaje": 63.71
+            }
+        }
+    },
+    {
+        "CODPRO": "03",
+        "PROVINCIA": "CAÑAR",
+        "votos_validos": 128926,
+        "votos_blancos": 1319,
+        "votos_nulos": 12895,
+        "votos_totales": 143140,
+        "ganador": "PID/MOVER",
+        "resultados": {
+            "RC": {
+                "candidato": "LUISA GONZALEZ",
+                "votos": 54399,
+                "porcentaje": 42.19
+            },
+            "PID/MOVER": {
+                "candidato": "DANIEL NOBOA AZIN",
+                "votos": 74527,
+                "porcentaje": 57.81
+            }
+        }
+    },
+    {
+        "CODPRO": "04",
+        "PROVINCIA": "CARCHI",
+        "votos_validos": 117802,
+        "votos_blancos": 841,
+        "votos_nulos": 9614,
+        "votos_totales": 128257,
+        "ganador": "PID/MOVER",
+        "resultados": {
+            "RC": {
+                "candidato": "LUISA GONZALEZ",
+                "votos": 46823,
+                "porcentaje": 39.75
+            },
+            "PID/MOVER": {
+                "candidato": "DANIEL NOBOA AZIN",
+                "votos": 70979,
+                "porcentaje": 60.25
+            }
+        }
+    },
+    {
+        "CODPRO": "05",
+        "PROVINCIA": "COTOPAXI",
+        "votos_validos": 295657,
+        "votos_blancos": 2118,
+        "votos_nulos": 32748,
+        "votos_totales": 330523,
+        "ganador": "PID/MOVER",
+        "resultados": {
+            "RC": {
+                "candidato": "LUISA GONZALEZ",
+                "votos": 125325,
+                "porcentaje": 42.39
+            },
+            "PID/MOVER": {
+                "candidato": "DANIEL NOBOA AZIN",
+                "votos": 170332,
+                "porcentaje": 57.61
+            }
+        }
+    },
+    {
+        "CODPRO": "06",
+        "PROVINCIA": "CHIMBORAZO",
+        "votos_validos": 303504,
+        "votos_blancos": 2071,
+        "votos_nulos": 29945,
+        "votos_totales": 335520,
+        "ganador": "PID/MOVER",
+        "resultados": {
+            "RC": {
+                "candidato": "LUISA GONZALEZ",
+                "votos": 103673,
+                "porcentaje": 34.16
+            },
+            "PID/MOVER": {
+                "candidato": "DANIEL NOBOA AZIN",
+                "votos": 199831,
+                "porcentaje": 65.84
+            }
+        }
+    },
+    {
+        "CODPRO": "07",
+        "PROVINCIA": "EL ORO",
+        "votos_validos": 424490,
+        "votos_blancos": 2576,
+        "votos_nulos": 30451,
+        "votos_totales": 457517,
+        "ganador": "PID/MOVER",
+        "resultados": {
+            "RC": {
+                "candidato": "LUISA GONZALEZ",
+                "votos": 211523,
+                "porcentaje": 49.83
+            },
+            "PID/MOVER": {
+                "candidato": "DANIEL NOBOA AZIN",
+                "votos": 212967,
+                "porcentaje": 50.17
+            }
+        }
+    },
+    {
+        "CODPRO": "08",
+        "PROVINCIA": "ESMERALDAS",
+        "votos_validos": 310423,
+        "votos_blancos": 5477,
+        "votos_nulos": 30520,
+        "votos_totales": 346420,
+        "ganador": "RC",
+        "resultados": {
+            "RC": {
+                "candidato": "LUISA GONZALEZ",
+                "votos": 191805,
+                "porcentaje": 61.79
+            },
+            "PID/MOVER": {
+                "candidato": "DANIEL NOBOA AZIN",
+                "votos": 118618,
+                "porcentaje": 38.21
+            }
+        }
+    },
+    {
+        "CODPRO": "09",
+        "PROVINCIA": "GUAYAS",
+        "votos_validos": 2458556,
+        "votos_blancos": 21540,
+        "votos_nulos": 202885,
+        "votos_totales": 2682981,
+        "ganador": "RC",
+        "resultados": {
+            "RC": {
+                "candidato": "LUISA GONZALEZ",
+                "votos": 1282262,
+                "porcentaje": 52.16
+            },
+            "PID/MOVER": {
+                "candidato": "DANIEL NOBOA AZIN",
+                "votos": 1176294,
+                "porcentaje": 47.84
+            }
+        }
+    },
+    {
+        "CODPRO": "10",
+        "PROVINCIA": "IMBABURA",
+        "votos_validos": 292491,
+        "votos_blancos": 2156,
+        "votos_nulos": 30189,
+        "votos_totales": 324836,
+        "ganador": "PID/MOVER",
+        "resultados": {
+            "RC": {
+                "candidato": "LUISA GONZALEZ",
+                "votos": 144606,
+                "porcentaje": 49.44
+            },
+            "PID/MOVER": {
+                "candidato": "DANIEL NOBOA AZIN",
+                "votos": 147885,
+                "porcentaje": 50.56
+            }
+        }
+    },
+    {
+        "CODPRO": "11",
+        "PROVINCIA": "LOJA",
+        "votos_validos": 306288,
+        "votos_blancos": 1994,
+        "votos_nulos": 16094,
+        "votos_totales": 324376,
+        "ganador": "PID/MOVER",
+        "resultados": {
+            "RC": {
+                "candidato": "LUISA GONZALEZ",
+                "votos": 102116,
+                "porcentaje": 33.34
+            },
+            "PID/MOVER": {
+                "candidato": "DANIEL NOBOA AZIN",
+                "votos": 204172,
+                "porcentaje": 66.66
+            }
+        }
+    },
+    {
+        "CODPRO": "12",
+        "PROVINCIA": "LOS RIOS",
+        "votos_validos": 547367,
+        "votos_blancos": 7641,
+        "votos_nulos": 54091,
+        "votos_totales": 609099,
+        "ganador": "RC",
+        "resultados": {
+            "RC": {
+                "candidato": "LUISA GONZALEZ",
+                "votos": 345549,
+                "porcentaje": 63.13
+            },
+            "PID/MOVER": {
+                "candidato": "DANIEL NOBOA AZIN",
+                "votos": 201818,
+                "porcentaje": 36.87
+            }
+        }
+    },
+    {
+        "CODPRO": "13",
+        "PROVINCIA": "MANABI",
+        "votos_validos": 1020664,
+        "votos_blancos": 12050,
+        "votos_nulos": 84081,
+        "votos_totales": 1116795,
+        "ganador": "RC",
+        "resultados": {
+            "RC": {
+                "candidato": "LUISA GONZALEZ",
+                "votos": 671971,
+                "porcentaje": 65.84
+            },
+            "PID/MOVER": {
+                "candidato": "DANIEL NOBOA AZIN",
+                "votos": 348693,
+                "porcentaje": 34.16
+            }
+        }
+    },
+    {
+        "CODPRO": "14",
+        "PROVINCIA": "MORONA SANTIAGO",
+        "votos_validos": 98609,
+        "votos_blancos": 950,
+        "votos_nulos": 6227,
+        "votos_totales": 105786,
+        "ganador": "PID/MOVER",
+        "resultados": {
+            "RC": {
+                "candidato": "LUISA GONZALEZ",
+                "votos": 30643,
+                "porcentaje": 31.08
+            },
+            "PID/MOVER": {
+                "candidato": "DANIEL NOBOA AZIN",
+                "votos": 67966,
+                "porcentaje": 68.92
+            }
+        }
+    },
+    {
+        "CODPRO": "15",
+        "PROVINCIA": "NAPO",
+        "votos_validos": 79219,
+        "votos_blancos": 323,
+        "votos_nulos": 4101,
+        "votos_totales": 83643,
+        "ganador": "PID/MOVER",
+        "resultados": {
+            "RC": {
+                "candidato": "LUISA GONZALEZ",
+                "votos": 23500,
+                "porcentaje": 29.66
+            },
+            "PID/MOVER": {
+                "candidato": "DANIEL NOBOA AZIN",
+                "votos": 55719,
+                "porcentaje": 70.34
+            }
+        }
+    },
+    {
+        "CODPRO": "16",
+        "PROVINCIA": "PASTAZA",
+        "votos_validos": 60549,
+        "votos_blancos": 470,
+        "votos_nulos": 4330,
+        "votos_totales": 65349,
+        "ganador": "PID/MOVER",
+        "resultados": {
+            "RC": {
+                "candidato": "LUISA GONZALEZ",
+                "votos": 16006,
+                "porcentaje": 26.43
+            },
+            "PID/MOVER": {
+                "candidato": "DANIEL NOBOA AZIN",
+                "votos": 44543,
+                "porcentaje": 73.57
+            }
+        }
+    },
+    {
+        "CODPRO": "17",
+        "PROVINCIA": "PICHINCHA",
+        "votos_validos": 1798952,
+        "votos_blancos": 7341,
+        "votos_nulos": 148904,
+        "votos_totales": 1955197,
+        "ganador": "PID/MOVER",
+        "resultados": {
+            "RC": {
+                "candidato": "LUISA GONZALEZ",
+                "votos": 717198,
+                "porcentaje": 39.87
+            },
+            "PID/MOVER": {
+                "candidato": "DANIEL NOBOA AZIN",
+                "votos": 1081754,
+                "porcentaje": 60.13
+            }
+        }
+    },
+    {
+        "CODPRO": "18",
+        "PROVINCIA": "TUNGURAHUA",
+        "votos_validos": 351605,
+        "votos_blancos": 1866,
+        "votos_nulos": 27534,
+        "votos_totales": 381005,
+        "ganador": "PID/MOVER",
+        "resultados": {
+            "RC": {
+                "candidato": "LUISA GONZALEZ",
+                "votos": 89598,
+                "porcentaje": 25.48
+            },
+            "PID/MOVER": {
+                "candidato": "DANIEL NOBOA AZIN",
+                "votos": 262007,
+                "porcentaje": 74.52
+            }
+        }
+    },
+    {
+        "CODPRO": "19",
+        "PROVINCIA": "ZAMORA CHINCHIPE",
+        "votos_validos": 69359,
+        "votos_blancos": 470,
+        "votos_nulos": 3020,
+        "votos_totales": 72849,
+        "ganador": "PID/MOVER",
+        "resultados": {
+            "RC": {
+                "candidato": "LUISA GONZALEZ",
+                "votos": 19567,
+                "porcentaje": 28.21
+            },
+            "PID/MOVER": {
+                "candidato": "DANIEL NOBOA AZIN",
+                "votos": 49792,
+                "porcentaje": 71.79
+            }
+        }
+    },
+    {
+        "CODPRO": "20",
+        "PROVINCIA": "GALAPAGOS",
+        "votos_validos": 15413,
+        "votos_blancos": 58,
+        "votos_nulos": 911,
+        "votos_totales": 16382,
+        "ganador": "PID/MOVER",
+        "resultados": {
+            "RC": {
+                "candidato": "LUISA GONZALEZ",
+                "votos": 5221,
+                "porcentaje": 33.87
+            },
+            "PID/MOVER": {
+                "candidato": "DANIEL NOBOA AZIN",
+                "votos": 10192,
+                "porcentaje": 66.13
+            }
+        }
+    },
+    {
+        "CODPRO": "21",
+        "PROVINCIA": "SUCUMBIOS",
+        "votos_validos": 122827,
+        "votos_blancos": 810,
+        "votos_nulos": 8761,
+        "votos_totales": 132398,
+        "ganador": "RC",
+        "resultados": {
+            "RC": {
+                "candidato": "LUISA GONZALEZ",
+                "votos": 73370,
+                "porcentaje": 59.73
+            },
+            "PID/MOVER": {
+                "candidato": "DANIEL NOBOA AZIN",
+                "votos": 49457,
+                "porcentaje": 40.27
+            }
+        }
+    },
+    {
+        "CODPRO": "22",
+        "PROVINCIA": "ORELLANA",
+        "votos_validos": 105879,
+        "votos_blancos": 760,
+        "votos_nulos": 7293,
+        "votos_totales": 113932,
+        "ganador": "RC",
+        "resultados": {
+            "RC": {
+                "candidato": "LUISA GONZALEZ",
+                "votos": 56005,
+                "porcentaje": 52.9
+            },
+            "PID/MOVER": {
+                "candidato": "DANIEL NOBOA AZIN",
+                "votos": 49874,
+                "porcentaje": 47.1
+            }
+        }
+    },
+    {
+        "CODPRO": "23",
+        "PROVINCIA": "STO DGO TSACHILAS",
+        "votos_validos": 301235,
+        "votos_blancos": 2239,
+        "votos_nulos": 24253,
+        "votos_totales": 327727,
+        "ganador": "RC",
+        "resultados": {
+            "RC": {
+                "candidato": "LUISA GONZALEZ",
+                "votos": 153047,
+                "porcentaje": 50.81
+            },
+            "PID/MOVER": {
+                "candidato": "DANIEL NOBOA AZIN",
+                "votos": 148188,
+                "porcentaje": 49.19
+            }
+        }
+    },
+    {
+        "CODPRO": "24",
+        "PROVINCIA": "SANTA ELENA",
+        "votos_validos": 225919,
+        "votos_blancos": 2510,
+        "votos_nulos": 16587,
+        "votos_totales": 245016,
+        "ganador": "RC",
+        "resultados": {
+            "RC": {
+                "candidato": "LUISA GONZALEZ",
+                "votos": 122911,
+                "porcentaje": 54.4
+            },
+            "PID/MOVER": {
+                "candidato": "DANIEL NOBOA AZIN",
+                "votos": 103008,
+                "porcentaje": 45.6
+            }
+        }
+    },
+    {
+        "CODPRO": "26",
+        "PROVINCIA": "EUROPA, OCEANIA Y ASIA",
+        "votos_validos": 85474,
+        "votos_blancos": 1500,
+        "votos_nulos": 6845,
+        "votos_totales": 93819,
+        "ganador": "RC",
+        "resultados": {
+            "RC": {
+                "candidato": "LUISA GONZALEZ",
+                "votos": 48447,
+                "porcentaje": 56.68
+            },
+            "PID/MOVER": {
+                "candidato": "DANIEL NOBOA AZIN",
+                "votos": 37027,
+                "porcentaje": 43.32
+            }
+        }
+    },
+    {
+        "CODPRO": "27",
+        "PROVINCIA": "CANADA Y ESTADOS UNIDOS",
+        "votos_validos": 26359,
+        "votos_blancos": 242,
+        "votos_nulos": 1220,
+        "votos_totales": 27821,
+        "ganador": "PID/MOVER",
+        "resultados": {
+            "RC": {
+                "candidato": "LUISA GONZALEZ",
+                "votos": 11171,
+                "porcentaje": 42.38
+            },
+            "PID/MOVER": {
+                "candidato": "DANIEL NOBOA AZIN",
+                "votos": 15188,
+                "porcentaje": 57.62
+            }
+        }
+    },
+    {
+        "CODPRO": "28",
+        "PROVINCIA": "LATINOAMERICA, EL CARIBE Y AFRICA",
+        "votos_validos": 8302,
+        "votos_blancos": 86,
+        "votos_nulos": 421,
+        "votos_totales": 8809,
+        "ganador": "PID/MOVER",
+        "resultados": {
+            "RC": {
+                "candidato": "LUISA GONZALEZ",
+                "votos": 3317,
+                "porcentaje": 39.95
+            },
+            "PID/MOVER": {
+                "candidato": "DANIEL NOBOA AZIN",
+                "votos": 4985,
+                "porcentaje": 60.05
+            }
+        }
+    }
+]

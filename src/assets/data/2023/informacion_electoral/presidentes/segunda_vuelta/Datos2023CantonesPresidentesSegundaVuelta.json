@@ -1,0 +1,4700 @@
+[
+  {
+    "CODCAN": "260",
+    "CODPRO": "01",
+    "CANTON": "CUENCA",
+    "ganador": "PID/MOVER",
+    "resultados": {
+      "RC": {
+        "candidato": "LUISA GONZALEZ",
+        "votos": 118856,
+        "porcentaje": 37.2
+      },
+      "PID/MOVER": {
+        "candidato": "DANIEL NOBOA AZIN",
+        "votos": 200626,
+        "porcentaje": 62.8
+      }
+    }
+  },
+  {
+    "CODCAN": "265",
+    "CODPRO": "01",
+    "CANTON": "GUALACEO",
+    "ganador": "PID/MOVER",
+    "resultados": {
+      "RC": {
+        "candidato": "LUISA GONZALEZ",
+        "votos": 11100,
+        "porcentaje": 47.57
+      },
+      "PID/MOVER": {
+        "candidato": "DANIEL NOBOA AZIN",
+        "votos": 12233,
+        "porcentaje": 52.43
+      }
+    }
+  },
+  {
+    "CODCAN": "270",
+    "CODPRO": "01",
+    "CANTON": "GIRON",
+    "ganador": "PID/MOVER",
+    "resultados": {
+      "RC": {
+        "candidato": "LUISA GONZALEZ",
+        "votos": 2274,
+        "porcentaje": 30.71
+      },
+      "PID/MOVER": {
+        "candidato": "DANIEL NOBOA AZIN",
+        "votos": 5130,
+        "porcentaje": 69.29
+      }
+    }
+  },
+  {
+    "CODCAN": "275",
+    "CODPRO": "01",
+    "CANTON": "PAUTE",
+    "ganador": "RC",
+    "resultados": {
+      "RC": {
+        "candidato": "LUISA GONZALEZ",
+        "votos": 7878,
+        "porcentaje": 50.4
+      },
+      "PID/MOVER": {
+        "candidato": "DANIEL NOBOA AZIN",
+        "votos": 7752,
+        "porcentaje": 49.6
+      }
+    }
+  },
+  {
+    "CODCAN": "280",
+    "CODPRO": "01",
+    "CANTON": "SIGSIG",
+    "ganador": "RC",
+    "resultados": {
+      "RC": {
+        "candidato": "LUISA GONZALEZ",
+        "votos": 7930,
+        "porcentaje": 52.2
+      },
+      "PID/MOVER": {
+        "candidato": "DANIEL NOBOA AZIN",
+        "votos": 7263,
+        "porcentaje": 47.8
+      }
+    }
+  },
+  {
+    "CODCAN": "285",
+    "CODPRO": "01",
+    "CANTON": "SANTA ISABEL",
+    "ganador": "PID/MOVER",
+    "resultados": {
+      "RC": {
+        "candidato": "LUISA GONZALEZ",
+        "votos": 4819,
+        "porcentaje": 39.13
+      },
+      "PID/MOVER": {
+        "candidato": "DANIEL NOBOA AZIN",
+        "votos": 7496,
+        "porcentaje": 60.87
+      }
+    }
+  },
+  {
+    "CODCAN": "555",
+    "CODPRO": "01",
+    "CANTON": "PUCARA",
+    "ganador": "RC",
+    "resultados": {
+      "RC": {
+        "candidato": "LUISA GONZALEZ",
+        "votos": 3691,
+        "porcentaje": 66.16
+      },
+      "PID/MOVER": {
+        "candidato": "DANIEL NOBOA AZIN",
+        "votos": 1888,
+        "porcentaje": 33.84
+      }
+    }
+  },
+  {
+    "CODCAN": "780",
+    "CODPRO": "01",
+    "CANTON": "OÑA",
+    "ganador": "PID/MOVER",
+    "resultados": {
+      "RC": {
+        "candidato": "LUISA GONZALEZ",
+        "votos": 1168,
+        "porcentaje": 46.96
+      },
+      "PID/MOVER": {
+        "candidato": "DANIEL NOBOA AZIN",
+        "votos": 1319,
+        "porcentaje": 53.04
+      }
+    }
+  },
+  {
+    "CODCAN": "855",
+    "CODPRO": "01",
+    "CANTON": "SAN FERNANDO",
+    "ganador": "PID/MOVER",
+    "resultados": {
+      "RC": {
+        "candidato": "LUISA GONZALEZ",
+        "votos": 978,
+        "porcentaje": 33.85
+      },
+      "PID/MOVER": {
+        "candidato": "DANIEL NOBOA AZIN",
+        "votos": 1911,
+        "porcentaje": 66.15
+      }
+    }
+  },
+  {
+    "CODCAN": "885",
+    "CODPRO": "01",
+    "CANTON": "NABON",
+    "ganador": "RC",
+    "resultados": {
+      "RC": {
+        "candidato": "LUISA GONZALEZ",
+        "votos": 5266,
+        "porcentaje": 56.16
+      },
+      "PID/MOVER": {
+        "candidato": "DANIEL NOBOA AZIN",
+        "votos": 4110,
+        "porcentaje": 43.84
+      }
+    }
+  },
+  {
+    "CODCAN": "915",
+    "CODPRO": "01",
+    "CANTON": "CHORDELEG",
+    "ganador": "PID/MOVER",
+    "resultados": {
+      "RC": {
+        "candidato": "LUISA GONZALEZ",
+        "votos": 3344,
+        "porcentaje": 48.9
+      },
+      "PID/MOVER": {
+        "candidato": "DANIEL NOBOA AZIN",
+        "votos": 3495,
+        "porcentaje": 51.1
+      }
+    }
+  },
+  {
+    "CODCAN": "955",
+    "CODPRO": "01",
+    "CANTON": "SEVILLA DE ORO",
+    "ganador": "RC",
+    "resultados": {
+      "RC": {
+        "candidato": "LUISA GONZALEZ",
+        "votos": 2697,
+        "porcentaje": 70.9
+      },
+      "PID/MOVER": {
+        "candidato": "DANIEL NOBOA AZIN",
+        "votos": 1107,
+        "porcentaje": 29.1
+      }
+    }
+  },
+  {
+    "CODCAN": "960",
+    "CODPRO": "01",
+    "CANTON": "EL PAN",
+    "ganador": "RC",
+    "resultados": {
+      "RC": {
+        "candidato": "LUISA GONZALEZ",
+        "votos": 1299,
+        "porcentaje": 63.03
+      },
+      "PID/MOVER": {
+        "candidato": "DANIEL NOBOA AZIN",
+        "votos": 762,
+        "porcentaje": 36.97
+      }
+    }
+  },
+  {
+    "CODCAN": "990",
+    "CODPRO": "01",
+    "CANTON": "GUACHAPALA",
+    "ganador": "RC",
+    "resultados": {
+      "RC": {
+        "candidato": "LUISA GONZALEZ",
+        "votos": 1305,
+        "porcentaje": 57.11
+      },
+      "PID/MOVER": {
+        "candidato": "DANIEL NOBOA AZIN",
+        "votos": 980,
+        "porcentaje": 42.89
+      }
+    }
+  },
+  {
+    "CODCAN": "556",
+    "CODPRO": "01",
+    "CANTON": "CAMILO PONCE ENRIQUEZ",
+    "ganador": "RC",
+    "resultados": {
+      "RC": {
+        "candidato": "LUISA GONZALEZ",
+        "votos": 9307,
+        "porcentaje": 67.13
+      },
+      "PID/MOVER": {
+        "candidato": "DANIEL NOBOA AZIN",
+        "votos": 4558,
+        "porcentaje": 32.87
+      }
+    }
+  },
+  {
+    "CODCAN": "165",
+    "CODPRO": "02",
+    "CANTON": "GUARANDA",
+    "ganador": "PID/MOVER",
+    "resultados": {
+      "RC": {
+        "candidato": "LUISA GONZALEZ",
+        "votos": 24136,
+        "porcentaje": 39.33
+      },
+      "PID/MOVER": {
+        "candidato": "DANIEL NOBOA AZIN",
+        "votos": 37229,
+        "porcentaje": 60.67
+      }
+    }
+  },
+  {
+    "CODCAN": "170",
+    "CODPRO": "02",
+    "CANTON": "CHIMBO",
+    "ganador": "PID/MOVER",
+    "resultados": {
+      "RC": {
+        "candidato": "LUISA GONZALEZ",
+        "votos": 2936,
+        "porcentaje": 28.09
+      },
+      "PID/MOVER": {
+        "candidato": "DANIEL NOBOA AZIN",
+        "votos": 7517,
+        "porcentaje": 71.91
+      }
+    }
+  },
+  {
+    "CODCAN": "175",
+    "CODPRO": "02",
+    "CANTON": "SAN MIGUEL",
+    "ganador": "PID/MOVER",
+    "resultados": {
+      "RC": {
+        "candidato": "LUISA GONZALEZ",
+        "votos": 6413,
+        "porcentaje": 31.95
+      },
+      "PID/MOVER": {
+        "candidato": "DANIEL NOBOA AZIN",
+        "votos": 13658,
+        "porcentaje": 68.05
+      }
+    }
+  },
+  {
+    "CODCAN": "180",
+    "CODPRO": "02",
+    "CANTON": "CHILLANES",
+    "ganador": "PID/MOVER",
+    "resultados": {
+      "RC": {
+        "candidato": "LUISA GONZALEZ",
+        "votos": 5200,
+        "porcentaje": 40.71
+      },
+      "PID/MOVER": {
+        "candidato": "DANIEL NOBOA AZIN",
+        "votos": 7573,
+        "porcentaje": 59.29
+      }
+    }
+  },
+  {
+    "CODCAN": "185",
+    "CODPRO": "02",
+    "CANTON": "ECHEANDIA",
+    "ganador": "PID/MOVER",
+    "resultados": {
+      "RC": {
+        "candidato": "LUISA GONZALEZ",
+        "votos": 4173,
+        "porcentaje": 36.07
+      },
+      "PID/MOVER": {
+        "candidato": "DANIEL NOBOA AZIN",
+        "votos": 7395,
+        "porcentaje": 63.93
+      }
+    }
+  },
+  {
+    "CODCAN": "760",
+    "CODPRO": "02",
+    "CANTON": "CALUMA",
+    "ganador": "PID/MOVER",
+    "resultados": {
+      "RC": {
+        "candidato": "LUISA GONZALEZ",
+        "votos": 3307,
+        "porcentaje": 27.42
+      },
+      "PID/MOVER": {
+        "candidato": "DANIEL NOBOA AZIN",
+        "votos": 8754,
+        "porcentaje": 72.58
+      }
+    }
+  },
+  {
+    "CODCAN": "950",
+    "CODPRO": "02",
+    "CANTON": "LAS NAVES",
+    "ganador": "PID/MOVER",
+    "resultados": {
+      "RC": {
+        "candidato": "LUISA GONZALEZ",
+        "votos": 2401,
+        "porcentaje": 43.46
+      },
+      "PID/MOVER": {
+        "candidato": "DANIEL NOBOA AZIN",
+        "votos": 3123,
+        "porcentaje": 56.54
+      }
+    }
+  },
+  {
+    "CODCAN": "235",
+    "CODPRO": "03",
+    "CANTON": "AZOGUES",
+    "ganador": "PID/MOVER",
+    "resultados": {
+      "RC": {
+        "candidato": "LUISA GONZALEZ",
+        "votos": 12798,
+        "porcentaje": 28.68
+      },
+      "PID/MOVER": {
+        "candidato": "DANIEL NOBOA AZIN",
+        "votos": 31832,
+        "porcentaje": 71.32
+      }
+    }
+  },
+  {
+    "CODCAN": "240",
+    "CODPRO": "03",
+    "CANTON": "CAÑAR",
+    "ganador": "PID/MOVER",
+    "resultados": {
+      "RC": {
+        "candidato": "LUISA GONZALEZ",
+        "votos": 13615,
+        "porcentaje": 45.36
+      },
+      "PID/MOVER": {
+        "candidato": "DANIEL NOBOA AZIN",
+        "votos": 16403,
+        "porcentaje": 54.64
+      }
+    }
+  },
+  {
+    "CODCAN": "241",
+    "CODPRO": "03",
+    "CANTON": "SUSCAL",
+    "ganador": "RC",
+    "resultados": {
+      "RC": {
+        "candidato": "LUISA GONZALEZ",
+        "votos": 1575,
+        "porcentaje": 51.44
+      },
+      "PID/MOVER": {
+        "candidato": "DANIEL NOBOA AZIN",
+        "votos": 1487,
+        "porcentaje": 48.56
+      }
+    }
+  },
+  {
+    "CODCAN": "245",
+    "CODPRO": "03",
+    "CANTON": "BIBLIAN",
+    "ganador": "PID/MOVER",
+    "resultados": {
+      "RC": {
+        "candidato": "LUISA GONZALEZ",
+        "votos": 3449,
+        "porcentaje": 32.15
+      },
+      "PID/MOVER": {
+        "candidato": "DANIEL NOBOA AZIN",
+        "votos": 7280,
+        "porcentaje": 67.85
+      }
+    }
+  },
+  {
+    "CODCAN": "250",
+    "CODPRO": "03",
+    "CANTON": "LA TRONCAL",
+    "ganador": "RC",
+    "resultados": {
+      "RC": {
+        "candidato": "LUISA GONZALEZ",
+        "votos": 18648,
+        "porcentaje": 58.53
+      },
+      "PID/MOVER": {
+        "candidato": "DANIEL NOBOA AZIN",
+        "votos": 13210,
+        "porcentaje": 41.47
+      }
+    }
+  },
+  {
+    "CODCAN": "765",
+    "CODPRO": "03",
+    "CANTON": "EL TAMBO",
+    "ganador": "PID/MOVER",
+    "resultados": {
+      "RC": {
+        "candidato": "LUISA GONZALEZ",
+        "votos": 2811,
+        "porcentaje": 49.84
+      },
+      "PID/MOVER": {
+        "candidato": "DANIEL NOBOA AZIN",
+        "votos": 2829,
+        "porcentaje": 50.16
+      }
+    }
+  },
+  {
+    "CODCAN": "905",
+    "CODPRO": "03",
+    "CANTON": "DELEG",
+    "ganador": "RC",
+    "resultados": {
+      "RC": {
+        "candidato": "LUISA GONZALEZ",
+        "votos": 1503,
+        "porcentaje": 50.28
+      },
+      "PID/MOVER": {
+        "candidato": "DANIEL NOBOA AZIN",
+        "votos": 1486,
+        "porcentaje": 49.72
+      }
+    }
+  },
+  {
+    "CODCAN": "005",
+    "CODPRO": "04",
+    "CANTON": "TULCAN",
+    "ganador": "PID/MOVER",
+    "resultados": {
+      "RC": {
+        "candidato": "LUISA GONZALEZ",
+        "votos": 19323,
+        "porcentaje": 32.11
+      },
+      "PID/MOVER": {
+        "candidato": "DANIEL NOBOA AZIN",
+        "votos": 40847,
+        "porcentaje": 67.89
+      }
+    }
+  },
+  {
+    "CODCAN": "010",
+    "CODPRO": "04",
+    "CANTON": "MONTUFAR",
+    "ganador": "PID/MOVER",
+    "resultados": {
+      "RC": {
+        "candidato": "LUISA GONZALEZ",
+        "votos": 8056,
+        "porcentaje": 39.25
+      },
+      "PID/MOVER": {
+        "candidato": "DANIEL NOBOA AZIN",
+        "votos": 12470,
+        "porcentaje": 60.75
+      }
+    }
+  },
+  {
+    "CODCAN": "015",
+    "CODPRO": "04",
+    "CANTON": "ESPEJO",
+    "ganador": "PID/MOVER",
+    "resultados": {
+      "RC": {
+        "candidato": "LUISA GONZALEZ",
+        "votos": 4934,
+        "porcentaje": 46.4
+      },
+      "PID/MOVER": {
+        "candidato": "DANIEL NOBOA AZIN",
+        "votos": 5699,
+        "porcentaje": 53.6
+      }
+    }
+  },
+  {
+    "CODCAN": "020",
+    "CODPRO": "04",
+    "CANTON": "MIRA",
+    "ganador": "RC",
+    "resultados": {
+      "RC": {
+        "candidato": "LUISA GONZALEZ",
+        "votos": 6141,
+        "porcentaje": 63.63
+      },
+      "PID/MOVER": {
+        "candidato": "DANIEL NOBOA AZIN",
+        "votos": 3510,
+        "porcentaje": 36.37
+      }
+    }
+  },
+  {
+    "CODCAN": "025",
+    "CODPRO": "04",
+    "CANTON": "BOLIVAR",
+    "ganador": "RC",
+    "resultados": {
+      "RC": {
+        "candidato": "LUISA GONZALEZ",
+        "votos": 6253,
+        "porcentaje": 58.24
+      },
+      "PID/MOVER": {
+        "candidato": "DANIEL NOBOA AZIN",
+        "votos": 4483,
+        "porcentaje": 41.76
+      }
+    }
+  },
+  {
+    "CODCAN": "995",
+    "CODPRO": "04",
+    "CANTON": "SAN PEDRO DE HUACA",
+    "ganador": "PID/MOVER",
+    "resultados": {
+      "RC": {
+        "candidato": "LUISA GONZALEZ",
+        "votos": 2116,
+        "porcentaje": 34.77
+      },
+      "PID/MOVER": {
+        "candidato": "DANIEL NOBOA AZIN",
+        "votos": 3970,
+        "porcentaje": 65.23
+      }
+    }
+  },
+  {
+    "CODCAN": "100",
+    "CODPRO": "05",
+    "CANTON": "LATACUNGA",
+    "ganador": "PID/MOVER",
+    "resultados": {
+      "RC": {
+        "candidato": "LUISA GONZALEZ",
+        "votos": 41075,
+        "porcentaje": 32.56
+      },
+      "PID/MOVER": {
+        "candidato": "DANIEL NOBOA AZIN",
+        "votos": 85082,
+        "porcentaje": 67.44
+      }
+    }
+  },
+  {
+    "CODCAN": "105",
+    "CODPRO": "05",
+    "CANTON": "PUJILI",
+    "ganador": "RC",
+    "resultados": {
+      "RC": {
+        "candidato": "LUISA GONZALEZ",
+        "votos": 25449,
+        "porcentaje": 52.68
+      },
+      "PID/MOVER": {
+        "candidato": "DANIEL NOBOA AZIN",
+        "votos": 22857,
+        "porcentaje": 47.32
+      }
+    }
+  },
+  {
+    "CODCAN": "110",
+    "CODPRO": "05",
+    "CANTON": "SALCEDO",
+    "ganador": "PID/MOVER",
+    "resultados": {
+      "RC": {
+        "candidato": "LUISA GONZALEZ",
+        "votos": 16758,
+        "porcentaje": 39.66
+      },
+      "PID/MOVER": {
+        "candidato": "DANIEL NOBOA AZIN",
+        "votos": 25491,
+        "porcentaje": 60.34
+      }
+    }
+  },
+  {
+    "CODCAN": "115",
+    "CODPRO": "05",
+    "CANTON": "SAQUISILI",
+    "ganador": "PID/MOVER",
+    "resultados": {
+      "RC": {
+        "candidato": "LUISA GONZALEZ",
+        "votos": 5669,
+        "porcentaje": 34.47
+      },
+      "PID/MOVER": {
+        "candidato": "DANIEL NOBOA AZIN",
+        "votos": 10779,
+        "porcentaje": 65.53
+      }
+    }
+  },
+  {
+    "CODCAN": "120",
+    "CODPRO": "05",
+    "CANTON": "PANGUA",
+    "ganador": "PID/MOVER",
+    "resultados": {
+      "RC": {
+        "candidato": "LUISA GONZALEZ",
+        "votos": 7171,
+        "porcentaje": 47.47
+      },
+      "PID/MOVER": {
+        "candidato": "DANIEL NOBOA AZIN",
+        "votos": 7935,
+        "porcentaje": 52.53
+      }
+    }
+  },
+  {
+    "CODCAN": "825",
+    "CODPRO": "05",
+    "CANTON": "LA MANA",
+    "ganador": "RC",
+    "resultados": {
+      "RC": {
+        "candidato": "LUISA GONZALEZ",
+        "votos": 20217,
+        "porcentaje": 60.69
+      },
+      "PID/MOVER": {
+        "candidato": "DANIEL NOBOA AZIN",
+        "votos": 13093,
+        "porcentaje": 39.31
+      }
+    }
+  },
+  {
+    "CODCAN": "930",
+    "CODPRO": "05",
+    "CANTON": "SIGCHOS",
+    "ganador": "RC",
+    "resultados": {
+      "RC": {
+        "candidato": "LUISA GONZALEZ",
+        "votos": 8986,
+        "porcentaje": 63.82
+      },
+      "PID/MOVER": {
+        "candidato": "DANIEL NOBOA AZIN",
+        "votos": 5095,
+        "porcentaje": 36.18
+      }
+    }
+  },
+  {
+    "CODCAN": "190",
+    "CODPRO": "06",
+    "CANTON": "CHAMBO",
+    "ganador": "PID/MOVER",
+    "resultados": {
+      "RC": {
+        "candidato": "LUISA GONZALEZ",
+        "votos": 1976,
+        "porcentaje": 22.23
+      },
+      "PID/MOVER": {
+        "candidato": "DANIEL NOBOA AZIN",
+        "votos": 6911,
+        "porcentaje": 77.77
+      }
+    }
+  },
+  {
+    "CODCAN": "195",
+    "CODPRO": "06",
+    "CANTON": "RIOBAMBA",
+    "ganador": "PID/MOVER",
+    "resultados": {
+      "RC": {
+        "candidato": "LUISA GONZALEZ",
+        "votos": 40346,
+        "porcentaje": 25.62
+      },
+      "PID/MOVER": {
+        "candidato": "DANIEL NOBOA AZIN",
+        "votos": 117104,
+        "porcentaje": 74.38
+      }
+    }
+  },
+  {
+    "CODCAN": "200",
+    "CODPRO": "06",
+    "CANTON": "GUANO",
+    "ganador": "PID/MOVER",
+    "resultados": {
+      "RC": {
+        "candidato": "LUISA GONZALEZ",
+        "votos": 6861,
+        "porcentaje": 23.58
+      },
+      "PID/MOVER": {
+        "candidato": "DANIEL NOBOA AZIN",
+        "votos": 22233,
+        "porcentaje": 76.42
+      }
+    }
+  },
+  {
+    "CODCAN": "205",
+    "CODPRO": "06",
+    "CANTON": "COLTA",
+    "ganador": "RC",
+    "resultados": {
+      "RC": {
+        "candidato": "LUISA GONZALEZ",
+        "votos": 14265,
+        "porcentaje": 50.47
+      },
+      "PID/MOVER": {
+        "candidato": "DANIEL NOBOA AZIN",
+        "votos": 14001,
+        "porcentaje": 49.53
+      }
+    }
+  },
+  {
+    "CODCAN": "210",
+    "CODPRO": "06",
+    "CANTON": "GUAMOTE",
+    "ganador": "RC",
+    "resultados": {
+      "RC": {
+        "candidato": "LUISA GONZALEZ",
+        "votos": 14084,
+        "porcentaje": 52.94
+      },
+      "PID/MOVER": {
+        "candidato": "DANIEL NOBOA AZIN",
+        "votos": 12521,
+        "porcentaje": 47.06
+      }
+    }
+  },
+  {
+    "CODCAN": "215",
+    "CODPRO": "06",
+    "CANTON": "ALAUSI",
+    "ganador": "RC",
+    "resultados": {
+      "RC": {
+        "candidato": "LUISA GONZALEZ",
+        "votos": 12587,
+        "porcentaje": 54.37
+      },
+      "PID/MOVER": {
+        "candidato": "DANIEL NOBOA AZIN",
+        "votos": 10563,
+        "porcentaje": 45.63
+      }
+    }
+  },
+  {
+    "CODCAN": "220",
+    "CODPRO": "06",
+    "CANTON": "CHUNCHI",
+    "ganador": "PID/MOVER",
+    "resultados": {
+      "RC": {
+        "candidato": "LUISA GONZALEZ",
+        "votos": 2772,
+        "porcentaje": 44.97
+      },
+      "PID/MOVER": {
+        "candidato": "DANIEL NOBOA AZIN",
+        "votos": 3392,
+        "porcentaje": 55.03
+      }
+    }
+  },
+  {
+    "CODCAN": "225",
+    "CODPRO": "06",
+    "CANTON": "PENIPE",
+    "ganador": "PID/MOVER",
+    "resultados": {
+      "RC": {
+        "candidato": "LUISA GONZALEZ",
+        "votos": 1499,
+        "porcentaje": 23.77
+      },
+      "PID/MOVER": {
+        "candidato": "DANIEL NOBOA AZIN",
+        "votos": 4807,
+        "porcentaje": 76.23
+      }
+    }
+  },
+  {
+    "CODCAN": "830",
+    "CODPRO": "06",
+    "CANTON": "PALLATANGA",
+    "ganador": "PID/MOVER",
+    "resultados": {
+      "RC": {
+        "candidato": "LUISA GONZALEZ",
+        "votos": 3227,
+        "porcentaje": 42.21
+      },
+      "PID/MOVER": {
+        "candidato": "DANIEL NOBOA AZIN",
+        "votos": 4419,
+        "porcentaje": 57.79
+      }
+    }
+  },
+  {
+    "CODCAN": "900",
+    "CODPRO": "06",
+    "CANTON": "CUMANDA",
+    "ganador": "RC",
+    "resultados": {
+      "RC": {
+        "candidato": "LUISA GONZALEZ",
+        "votos": 6056,
+        "porcentaje": 60.95
+      },
+      "PID/MOVER": {
+        "candidato": "DANIEL NOBOA AZIN",
+        "votos": 3880,
+        "porcentaje": 39.05
+      }
+    }
+  },
+  {
+    "CODCAN": "350",
+    "CODPRO": "07",
+    "CANTON": "MACHALA",
+    "ganador": "RC",
+    "resultados": {
+      "RC": {
+        "candidato": "LUISA GONZALEZ",
+        "votos": 85118,
+        "porcentaje": 50.64
+      },
+      "PID/MOVER": {
+        "candidato": "DANIEL NOBOA AZIN",
+        "votos": 82977,
+        "porcentaje": 49.36
+      }
+    }
+  },
+  {
+    "CODCAN": "355",
+    "CODPRO": "07",
+    "CANTON": "SANTA ROSA",
+    "ganador": "PID/MOVER",
+    "resultados": {
+      "RC": {
+        "candidato": "LUISA GONZALEZ",
+        "votos": 24272,
+        "porcentaje": 49.79
+      },
+      "PID/MOVER": {
+        "candidato": "DANIEL NOBOA AZIN",
+        "votos": 24472,
+        "porcentaje": 50.21
+      }
+    }
+  },
+  {
+    "CODCAN": "360",
+    "CODPRO": "07",
+    "CANTON": "ZARUMA",
+    "ganador": "PID/MOVER",
+    "resultados": {
+      "RC": {
+        "candidato": "LUISA GONZALEZ",
+        "votos": 5729,
+        "porcentaje": 32.88
+      },
+      "PID/MOVER": {
+        "candidato": "DANIEL NOBOA AZIN",
+        "votos": 11697,
+        "porcentaje": 67.12
+      }
+    }
+  },
+  {
+    "CODCAN": "365",
+    "CODPRO": "07",
+    "CANTON": "PASAJE",
+    "ganador": "RC",
+    "resultados": {
+      "RC": {
+        "candidato": "LUISA GONZALEZ",
+        "votos": 27846,
+        "porcentaje": 54.56
+      },
+      "PID/MOVER": {
+        "candidato": "DANIEL NOBOA AZIN",
+        "votos": 23187,
+        "porcentaje": 45.44
+      }
+    }
+  },
+  {
+    "CODCAN": "370",
+    "CODPRO": "07",
+    "CANTON": "PIÑAS",
+    "ganador": "PID/MOVER",
+    "resultados": {
+      "RC": {
+        "candidato": "LUISA GONZALEZ",
+        "votos": 6357,
+        "porcentaje": 33.8
+      },
+      "PID/MOVER": {
+        "candidato": "DANIEL NOBOA AZIN",
+        "votos": 12451,
+        "porcentaje": 66.2
+      }
+    }
+  },
+  {
+    "CODCAN": "375",
+    "CODPRO": "07",
+    "CANTON": "ARENILLAS",
+    "ganador": "PID/MOVER",
+    "resultados": {
+      "RC": {
+        "candidato": "LUISA GONZALEZ",
+        "votos": 9620,
+        "porcentaje": 48.69
+      },
+      "PID/MOVER": {
+        "candidato": "DANIEL NOBOA AZIN",
+        "votos": 10136,
+        "porcentaje": 51.31
+      }
+    }
+  },
+  {
+    "CODCAN": "380",
+    "CODPRO": "07",
+    "CANTON": "EL GUABO",
+    "ganador": "RC",
+    "resultados": {
+      "RC": {
+        "candidato": "LUISA GONZALEZ",
+        "votos": 24671,
+        "porcentaje": 69.54
+      },
+      "PID/MOVER": {
+        "candidato": "DANIEL NOBOA AZIN",
+        "votos": 10804,
+        "porcentaje": 30.46
+      }
+    }
+  },
+  {
+    "CODCAN": "585",
+    "CODPRO": "07",
+    "CANTON": "CHILLA",
+    "ganador": "RC",
+    "resultados": {
+      "RC": {
+        "candidato": "LUISA GONZALEZ",
+        "votos": 1520,
+        "porcentaje": 50.67
+      },
+      "PID/MOVER": {
+        "candidato": "DANIEL NOBOA AZIN",
+        "votos": 1480,
+        "porcentaje": 49.33
+      }
+    }
+  },
+  {
+    "CODCAN": "690",
+    "CODPRO": "07",
+    "CANTON": "PORTOVELO",
+    "ganador": "PID/MOVER",
+    "resultados": {
+      "RC": {
+        "candidato": "LUISA GONZALEZ",
+        "votos": 2925,
+        "porcentaje": 33.65
+      },
+      "PID/MOVER": {
+        "candidato": "DANIEL NOBOA AZIN",
+        "votos": 5767,
+        "porcentaje": 66.35
+      }
+    }
+  },
+  {
+    "CODCAN": "695",
+    "CODPRO": "07",
+    "CANTON": "HUAQUILLAS",
+    "ganador": "PID/MOVER",
+    "resultados": {
+      "RC": {
+        "candidato": "LUISA GONZALEZ",
+        "votos": 14751,
+        "porcentaje": 44.16
+      },
+      "PID/MOVER": {
+        "candidato": "DANIEL NOBOA AZIN",
+        "votos": 18651,
+        "porcentaje": 55.84
+      }
+    }
+  },
+  {
+    "CODCAN": "705",
+    "CODPRO": "07",
+    "CANTON": "ATAHUALPA",
+    "ganador": "PID/MOVER",
+    "resultados": {
+      "RC": {
+        "candidato": "LUISA GONZALEZ",
+        "votos": 1620,
+        "porcentaje": 31.65
+      },
+      "PID/MOVER": {
+        "candidato": "DANIEL NOBOA AZIN",
+        "votos": 3499,
+        "porcentaje": 68.35
+      }
+    }
+  },
+  {
+    "CODCAN": "755",
+    "CODPRO": "07",
+    "CANTON": "LAS LAJAS",
+    "ganador": "PID/MOVER",
+    "resultados": {
+      "RC": {
+        "candidato": "LUISA GONZALEZ",
+        "votos": 1971,
+        "porcentaje": 44.31
+      },
+      "PID/MOVER": {
+        "candidato": "DANIEL NOBOA AZIN",
+        "votos": 2477,
+        "porcentaje": 55.69
+      }
+    }
+  },
+  {
+    "CODCAN": "860",
+    "CODPRO": "07",
+    "CANTON": "MARCABELI",
+    "ganador": "PID/MOVER",
+    "resultados": {
+      "RC": {
+        "candidato": "LUISA GONZALEZ",
+        "votos": 2185,
+        "porcentaje": 46.87
+      },
+      "PID/MOVER": {
+        "candidato": "DANIEL NOBOA AZIN",
+        "votos": 2477,
+        "porcentaje": 53.13
+      }
+    }
+  },
+  {
+    "CODCAN": "875",
+    "CODPRO": "07",
+    "CANTON": "BALSAS",
+    "ganador": "RC",
+    "resultados": {
+      "RC": {
+        "candidato": "LUISA GONZALEZ",
+        "votos": 2938,
+        "porcentaje": 50.39
+      },
+      "PID/MOVER": {
+        "candidato": "DANIEL NOBOA AZIN",
+        "votos": 2892,
+        "porcentaje": 49.61
+      }
+    }
+  },
+  {
+    "CODCAN": "560",
+    "CODPRO": "08",
+    "CANTON": "ESMERALDAS",
+    "ganador": "PID/MOVER",
+    "resultados": {
+      "RC": {
+        "candidato": "LUISA GONZALEZ",
+        "votos": 58248,
+        "porcentaje": 49.38
+      },
+      "PID/MOVER": {
+        "candidato": "DANIEL NOBOA AZIN",
+        "votos": 59708,
+        "porcentaje": 50.62
+      }
+    }
+  },
+  {
+    "CODCAN": "561",
+    "CODPRO": "08",
+    "CANTON": "RIO VERDE",
+    "ganador": "RC",
+    "resultados": {
+      "RC": {
+        "candidato": "LUISA GONZALEZ",
+        "votos": 14590,
+        "porcentaje": 78.27
+      },
+      "PID/MOVER": {
+        "candidato": "DANIEL NOBOA AZIN",
+        "votos": 4050,
+        "porcentaje": 21.73
+      }
+    }
+  },
+  {
+    "CODCAN": "565",
+    "CODPRO": "08",
+    "CANTON": "ELOY ALFARO",
+    "ganador": "RC",
+    "resultados": {
+      "RC": {
+        "candidato": "LUISA GONZALEZ",
+        "votos": 20451,
+        "porcentaje": 77.7
+      },
+      "PID/MOVER": {
+        "candidato": "DANIEL NOBOA AZIN",
+        "votos": 5869,
+        "porcentaje": 22.3
+      }
+    }
+  },
+  {
+    "CODCAN": "570",
+    "CODPRO": "08",
+    "CANTON": "MUISNE",
+    "ganador": "RC",
+    "resultados": {
+      "RC": {
+        "candidato": "LUISA GONZALEZ",
+        "votos": 15458,
+        "porcentaje": 77.72
+      },
+      "PID/MOVER": {
+        "candidato": "DANIEL NOBOA AZIN",
+        "votos": 4431,
+        "porcentaje": 22.28
+      }
+    }
+  },
+  {
+    "CODCAN": "575",
+    "CODPRO": "08",
+    "CANTON": "QUININDE",
+    "ganador": "RC",
+    "resultados": {
+      "RC": {
+        "candidato": "LUISA GONZALEZ",
+        "votos": 45676,
+        "porcentaje": 60.99
+      },
+      "PID/MOVER": {
+        "candidato": "DANIEL NOBOA AZIN",
+        "votos": 29215,
+        "porcentaje": 39.01
+      }
+    }
+  },
+  {
+    "CODCAN": "580",
+    "CODPRO": "08",
+    "CANTON": "SAN LORENZO",
+    "ganador": "RC",
+    "resultados": {
+      "RC": {
+        "candidato": "LUISA GONZALEZ",
+        "votos": 17184,
+        "porcentaje": 72.17
+      },
+      "PID/MOVER": {
+        "candidato": "DANIEL NOBOA AZIN",
+        "votos": 6626,
+        "porcentaje": 27.83
+      }
+    }
+  },
+  {
+    "CODCAN": "785",
+    "CODPRO": "08",
+    "CANTON": "ATACAMES",
+    "ganador": "RC",
+    "resultados": {
+      "RC": {
+        "candidato": "LUISA GONZALEZ",
+        "votos": 20198,
+        "porcentaje": 69.85
+      },
+      "PID/MOVER": {
+        "candidato": "DANIEL NOBOA AZIN",
+        "votos": 8719,
+        "porcentaje": 30.15
+      }
+    }
+  },
+  {
+    "CODCAN": "095",
+    "CODPRO": "09",
+    "CANTON": "BALAO",
+    "ganador": "RC",
+    "resultados": {
+      "RC": {
+        "candidato": "LUISA GONZALEZ",
+        "votos": 9783,
+        "porcentaje": 74.71
+      },
+      "PID/MOVER": {
+        "candidato": "DANIEL NOBOA AZIN",
+        "votos": 3311,
+        "porcentaje": 25.29
+      }
+    }
+  },
+  {
+    "CODCAN": "125",
+    "CODPRO": "09",
+    "CANTON": "COLIMES",
+    "ganador": "RC",
+    "resultados": {
+      "RC": {
+        "candidato": "LUISA GONZALEZ",
+        "votos": 12980,
+        "porcentaje": 77.99
+      },
+      "PID/MOVER": {
+        "candidato": "DANIEL NOBOA AZIN",
+        "votos": 3663,
+        "porcentaje": 22.01
+      }
+    }
+  },
+  {
+    "CODCAN": "385",
+    "CODPRO": "09",
+    "CANTON": "EL EMPALME",
+    "ganador": "RC",
+    "resultados": {
+      "RC": {
+        "candidato": "LUISA GONZALEZ",
+        "votos": 40462,
+        "porcentaje": 73.08
+      },
+      "PID/MOVER": {
+        "candidato": "DANIEL NOBOA AZIN",
+        "votos": 14904,
+        "porcentaje": 26.92
+      }
+    }
+  },
+  {
+    "CODCAN": "390",
+    "CODPRO": "09",
+    "CANTON": "GUAYAQUIL",
+    "ganador": "PID/MOVER",
+    "resultados": {
+      "RC": {
+        "candidato": "LUISA GONZALEZ",
+        "votos": 707297,
+        "porcentaje": 46.48
+      },
+      "PID/MOVER": {
+        "candidato": "DANIEL NOBOA AZIN",
+        "votos": 814507,
+        "porcentaje": 53.52
+      }
+    }
+  },
+  {
+    "CODCAN": "395",
+    "CODPRO": "09",
+    "CANTON": "YAGUACHI",
+    "ganador": "RC",
+    "resultados": {
+      "RC": {
+        "candidato": "LUISA GONZALEZ",
+        "votos": 28489,
+        "porcentaje": 71.66
+      },
+      "PID/MOVER": {
+        "candidato": "DANIEL NOBOA AZIN",
+        "votos": 11268,
+        "porcentaje": 28.34
+      }
+    }
+  },
+  {
+    "CODCAN": "400",
+    "CODPRO": "09",
+    "CANTON": "DAULE",
+    "ganador": "RC",
+    "resultados": {
+      "RC": {
+        "candidato": "LUISA GONZALEZ",
+        "votos": 53250,
+        "porcentaje": 50.5
+      },
+      "PID/MOVER": {
+        "candidato": "DANIEL NOBOA AZIN",
+        "votos": 52201,
+        "porcentaje": 49.5
+      }
+    }
+  },
+  {
+    "CODCAN": "415",
+    "CODPRO": "09",
+    "CANTON": "BALZAR",
+    "ganador": "RC",
+    "resultados": {
+      "RC": {
+        "candidato": "LUISA GONZALEZ",
+        "votos": 26347,
+        "porcentaje": 69.62
+      },
+      "PID/MOVER": {
+        "candidato": "DANIEL NOBOA AZIN",
+        "votos": 11499,
+        "porcentaje": 30.38
+      }
+    }
+  },
+  {
+    "CODCAN": "420",
+    "CODPRO": "09",
+    "CANTON": "MILAGRO",
+    "ganador": "RC",
+    "resultados": {
+      "RC": {
+        "candidato": "LUISA GONZALEZ",
+        "votos": 68376,
+        "porcentaje": 57.1
+      },
+      "PID/MOVER": {
+        "candidato": "DANIEL NOBOA AZIN",
+        "votos": 51378,
+        "porcentaje": 42.9
+      }
+    }
+  },
+  {
+    "CODCAN": "425",
+    "CODPRO": "09",
+    "CANTON": "SAMBORONDON",
+    "ganador": "PID/MOVER",
+    "resultados": {
+      "RC": {
+        "candidato": "LUISA GONZALEZ",
+        "votos": 23065,
+        "porcentaje": 44.25
+      },
+      "PID/MOVER": {
+        "candidato": "DANIEL NOBOA AZIN",
+        "votos": 29057,
+        "porcentaje": 55.75
+      }
+    }
+  },
+  {
+    "CODCAN": "430",
+    "CODPRO": "09",
+    "CANTON": "SALITRE",
+    "ganador": "RC",
+    "resultados": {
+      "RC": {
+        "candidato": "LUISA GONZALEZ",
+        "votos": 27644,
+        "porcentaje": 67.09
+      },
+      "PID/MOVER": {
+        "candidato": "DANIEL NOBOA AZIN",
+        "votos": 13560,
+        "porcentaje": 32.91
+      }
+    }
+  },
+  {
+    "CODCAN": "435",
+    "CODPRO": "09",
+    "CANTON": "NARANJAL",
+    "ganador": "RC",
+    "resultados": {
+      "RC": {
+        "candidato": "LUISA GONZALEZ",
+        "votos": 31621,
+        "porcentaje": 70.36
+      },
+      "PID/MOVER": {
+        "candidato": "DANIEL NOBOA AZIN",
+        "votos": 13318,
+        "porcentaje": 29.64
+      }
+    }
+  },
+  {
+    "CODCAN": "505",
+    "CODPRO": "09",
+    "CANTON": "EL TRIUNFO",
+    "ganador": "RC",
+    "resultados": {
+      "RC": {
+        "candidato": "LUISA GONZALEZ",
+        "votos": 23007,
+        "porcentaje": 65.72
+      },
+      "PID/MOVER": {
+        "candidato": "DANIEL NOBOA AZIN",
+        "votos": 11999,
+        "porcentaje": 34.28
+      }
+    }
+  },
+  {
+    "CODCAN": "510",
+    "CODPRO": "09",
+    "CANTON": "NARANJITO",
+    "ganador": "RC",
+    "resultados": {
+      "RC": {
+        "candidato": "LUISA GONZALEZ",
+        "votos": 18337,
+        "porcentaje": 68.54
+      },
+      "PID/MOVER": {
+        "candidato": "DANIEL NOBOA AZIN",
+        "votos": 8416,
+        "porcentaje": 31.46
+      }
+    }
+  },
+  {
+    "CODCAN": "675",
+    "CODPRO": "09",
+    "CANTON": "PALESTINA",
+    "ganador": "RC",
+    "resultados": {
+      "RC": {
+        "candidato": "LUISA GONZALEZ",
+        "votos": 8321,
+        "porcentaje": 70.86
+      },
+      "PID/MOVER": {
+        "candidato": "DANIEL NOBOA AZIN",
+        "votos": 3422,
+        "porcentaje": 29.14
+      }
+    }
+  },
+  {
+    "CODCAN": "715",
+    "CODPRO": "09",
+    "CANTON": "PEDRO CARBO",
+    "ganador": "RC",
+    "resultados": {
+      "RC": {
+        "candidato": "LUISA GONZALEZ",
+        "votos": 22159,
+        "porcentaje": 65.95
+      },
+      "PID/MOVER": {
+        "candidato": "DANIEL NOBOA AZIN",
+        "votos": 11441,
+        "porcentaje": 34.05
+      }
+    }
+  },
+  {
+    "CODCAN": "735",
+    "CODPRO": "09",
+    "CANTON": "PLAYAS",
+    "ganador": "RC",
+    "resultados": {
+      "RC": {
+        "candidato": "LUISA GONZALEZ",
+        "votos": 20359,
+        "porcentaje": 57.58
+      },
+      "PID/MOVER": {
+        "candidato": "DANIEL NOBOA AZIN",
+        "votos": 15001,
+        "porcentaje": 42.42
+      }
+    }
+  },
+  {
+    "CODCAN": "790",
+    "CODPRO": "09",
+    "CANTON": "SIMON BOLIVAR",
+    "ganador": "RC",
+    "resultados": {
+      "RC": {
+        "candidato": "LUISA GONZALEZ",
+        "votos": 10677,
+        "porcentaje": 64.14
+      },
+      "PID/MOVER": {
+        "candidato": "DANIEL NOBOA AZIN",
+        "votos": 5969,
+        "porcentaje": 35.86
+      }
+    }
+  },
+  {
+    "CODCAN": "820",
+    "CODPRO": "09",
+    "CANTON": "DURAN",
+    "ganador": "RC",
+    "resultados": {
+      "RC": {
+        "candidato": "LUISA GONZALEZ",
+        "votos": 84384,
+        "porcentaje": 55.54
+      },
+      "PID/MOVER": {
+        "candidato": "DANIEL NOBOA AZIN",
+        "votos": 67538,
+        "porcentaje": 44.46
+      }
+    }
+  },
+  {
+    "CODCAN": "835",
+    "CODPRO": "09",
+    "CANTON": "A.BAQUERIZO MORENO",
+    "ganador": "RC",
+    "resultados": {
+      "RC": {
+        "candidato": "LUISA GONZALEZ",
+        "votos": 11198,
+        "porcentaje": 66.91
+      },
+      "PID/MOVER": {
+        "candidato": "DANIEL NOBOA AZIN",
+        "votos": 5538,
+        "porcentaje": 33.09
+      }
+    }
+  },
+  {
+    "CODCAN": "870",
+    "CODPRO": "09",
+    "CANTON": "SANTA LUCIA",
+    "ganador": "RC",
+    "resultados": {
+      "RC": {
+        "candidato": "LUISA GONZALEZ",
+        "votos": 19116,
+        "porcentaje": 70.01
+      },
+      "PID/MOVER": {
+        "candidato": "DANIEL NOBOA AZIN",
+        "votos": 8189,
+        "porcentaje": 29.99
+      }
+    }
+  },
+  {
+    "CODCAN": "890",
+    "CODPRO": "09",
+    "CANTON": "CRNL MARCELINO MARIDUENAS",
+    "ganador": "RC",
+    "resultados": {
+      "RC": {
+        "candidato": "LUISA GONZALEZ",
+        "votos": 5797,
+        "porcentaje": 67.13
+      },
+      "PID/MOVER": {
+        "candidato": "DANIEL NOBOA AZIN",
+        "votos": 2839,
+        "porcentaje": 32.87
+      }
+    }
+  },
+  {
+    "CODCAN": "920",
+    "CODPRO": "09",
+    "CANTON": "LOMAS DE SARGENTILLO",
+    "ganador": "RC",
+    "resultados": {
+      "RC": {
+        "candidato": "LUISA GONZALEZ",
+        "votos": 7903,
+        "porcentaje": 59.78
+      },
+      "PID/MOVER": {
+        "candidato": "DANIEL NOBOA AZIN",
+        "votos": 5317,
+        "porcentaje": 40.22
+      }
+    }
+  },
+  {
+    "CODCAN": "940",
+    "CODPRO": "09",
+    "CANTON": "NOBOL / PIEDRAHITA",
+    "ganador": "RC",
+    "resultados": {
+      "RC": {
+        "candidato": "LUISA GONZALEZ",
+        "votos": 9753,
+        "porcentaje": 63.44
+      },
+      "PID/MOVER": {
+        "candidato": "DANIEL NOBOA AZIN",
+        "votos": 5620,
+        "porcentaje": 36.56
+      }
+    }
+  },
+  {
+    "CODCAN": "985",
+    "CODPRO": "09",
+    "CANTON": "GRAL. A. ELIZALDE",
+    "ganador": "RC",
+    "resultados": {
+      "RC": {
+        "candidato": "LUISA GONZALEZ",
+        "votos": 5061,
+        "porcentaje": 56.11
+      },
+      "PID/MOVER": {
+        "candidato": "DANIEL NOBOA AZIN",
+        "votos": 3959,
+        "porcentaje": 43.89
+      }
+    }
+  },
+  {
+    "CODCAN": "986",
+    "CODPRO": "09",
+    "CANTON": "ISIDRO AYORA",
+    "ganador": "RC",
+    "resultados": {
+      "RC": {
+        "candidato": "LUISA GONZALEZ",
+        "votos": 6876,
+        "porcentaje": 74.29
+      },
+      "PID/MOVER": {
+        "candidato": "DANIEL NOBOA AZIN",
+        "votos": 2380,
+        "porcentaje": 25.71
+      }
+    }
+  },
+  {
+    "CODCAN": "045",
+    "CODPRO": "10",
+    "CANTON": "ANTONIO ANTE",
+    "ganador": "PID/MOVER",
+    "resultados": {
+      "RC": {
+        "candidato": "LUISA GONZALEZ",
+        "votos": 14249,
+        "porcentaje": 45.07
+      },
+      "PID/MOVER": {
+        "candidato": "DANIEL NOBOA AZIN",
+        "votos": 17364,
+        "porcentaje": 54.93
+      }
+    }
+  },
+  {
+    "CODCAN": "040",
+    "CODPRO": "10",
+    "CANTON": "COTACACHI",
+    "ganador": "RC",
+    "resultados": {
+      "RC": {
+        "candidato": "LUISA GONZALEZ",
+        "votos": 19077,
+        "porcentaje": 60.01
+      },
+      "PID/MOVER": {
+        "candidato": "DANIEL NOBOA AZIN",
+        "votos": 12712,
+        "porcentaje": 39.99
+      }
+    }
+  },
+  {
+    "CODCAN": "030",
+    "CODPRO": "10",
+    "CANTON": "IBARRA",
+    "ganador": "PID/MOVER",
+    "resultados": {
+      "RC": {
+        "candidato": "LUISA GONZALEZ",
+        "votos": 54009,
+        "porcentaje": 40.9
+      },
+      "PID/MOVER": {
+        "candidato": "DANIEL NOBOA AZIN",
+        "votos": 78027,
+        "porcentaje": 59.1
+      }
+    }
+  },
+  {
+    "CODCAN": "035",
+    "CODPRO": "10",
+    "CANTON": "OTAVALO",
+    "ganador": "RC",
+    "resultados": {
+      "RC": {
+        "candidato": "LUISA GONZALEZ",
+        "votos": 43481,
+        "porcentaje": 58.64
+      },
+      "PID/MOVER": {
+        "candidato": "DANIEL NOBOA AZIN",
+        "votos": 30673,
+        "porcentaje": 41.36
+      }
+    }
+  },
+  {
+    "CODCAN": "050",
+    "CODPRO": "10",
+    "CANTON": "PIMAMPIRO",
+    "ganador": "RC",
+    "resultados": {
+      "RC": {
+        "candidato": "LUISA GONZALEZ",
+        "votos": 6444,
+        "porcentaje": 61.45
+      },
+      "PID/MOVER": {
+        "candidato": "DANIEL NOBOA AZIN",
+        "votos": 4042,
+        "porcentaje": 38.55
+      }
+    }
+  },
+  {
+    "CODCAN": "055",
+    "CODPRO": "10",
+    "CANTON": "URCUQUI",
+    "ganador": "RC",
+    "resultados": {
+      "RC": {
+        "candidato": "LUISA GONZALEZ",
+        "votos": 7346,
+        "porcentaje": 59.18
+      },
+      "PID/MOVER": {
+        "candidato": "DANIEL NOBOA AZIN",
+        "votos": 5067,
+        "porcentaje": 40.82
+      }
+    }
+  },
+  {
+    "CODCAN": "290",
+    "CODPRO": "11",
+    "CANTON": "CATAMAYO",
+    "ganador": "PID/MOVER",
+    "resultados": {
+      "RC": {
+        "candidato": "LUISA GONZALEZ",
+        "votos": 8241,
+        "porcentaje": 38.25
+      },
+      "PID/MOVER": {
+        "candidato": "DANIEL NOBOA AZIN",
+        "votos": 13302,
+        "porcentaje": 61.75
+      }
+    }
+  },
+  {
+    "CODCAN": "295",
+    "CODPRO": "11",
+    "CANTON": "ZAPOTILLO",
+    "ganador": "RC",
+    "resultados": {
+      "RC": {
+        "candidato": "LUISA GONZALEZ",
+        "votos": 4838,
+        "porcentaje": 54.01
+      },
+      "PID/MOVER": {
+        "candidato": "DANIEL NOBOA AZIN",
+        "votos": 4119,
+        "porcentaje": 45.99
+      }
+    }
+  },
+  {
+    "CODCAN": "300",
+    "CODPRO": "11",
+    "CANTON": "LOJA",
+    "ganador": "PID/MOVER",
+    "resultados": {
+      "RC": {
+        "candidato": "LUISA GONZALEZ",
+        "votos": 35200,
+        "porcentaje": 23.28
+      },
+      "PID/MOVER": {
+        "candidato": "DANIEL NOBOA AZIN",
+        "votos": 115984,
+        "porcentaje": 76.72
+      }
+    }
+  },
+  {
+    "CODCAN": "305",
+    "CODPRO": "11",
+    "CANTON": "SARAGURO",
+    "ganador": "PID/MOVER",
+    "resultados": {
+      "RC": {
+        "candidato": "LUISA GONZALEZ",
+        "votos": 6851,
+        "porcentaje": 36.44
+      },
+      "PID/MOVER": {
+        "candidato": "DANIEL NOBOA AZIN",
+        "votos": 11949,
+        "porcentaje": 63.56
+      }
+    }
+  },
+  {
+    "CODCAN": "310",
+    "CODPRO": "11",
+    "CANTON": "PALTAS",
+    "ganador": "PID/MOVER",
+    "resultados": {
+      "RC": {
+        "candidato": "LUISA GONZALEZ",
+        "votos": 6228,
+        "porcentaje": 40.94
+      },
+      "PID/MOVER": {
+        "candidato": "DANIEL NOBOA AZIN",
+        "votos": 8983,
+        "porcentaje": 59.06
+      }
+    }
+  },
+  {
+    "CODCAN": "311",
+    "CODPRO": "11",
+    "CANTON": "OLMEDO",
+    "ganador": "PID/MOVER",
+    "resultados": {
+      "RC": {
+        "candidato": "LUISA GONZALEZ",
+        "votos": 1246,
+        "porcentaje": 33.28
+      },
+      "PID/MOVER": {
+        "candidato": "DANIEL NOBOA AZIN",
+        "votos": 2498,
+        "porcentaje": 66.72
+      }
+    }
+  },
+  {
+    "CODCAN": "315",
+    "CODPRO": "11",
+    "CANTON": "CELICA",
+    "ganador": "PID/MOVER",
+    "resultados": {
+      "RC": {
+        "candidato": "LUISA GONZALEZ",
+        "votos": 4578,
+        "porcentaje": 49.23
+      },
+      "PID/MOVER": {
+        "candidato": "DANIEL NOBOA AZIN",
+        "votos": 4722,
+        "porcentaje": 50.77
+      }
+    }
+  },
+  {
+    "CODCAN": "320",
+    "CODPRO": "11",
+    "CANTON": "CALVAS",
+    "ganador": "PID/MOVER",
+    "resultados": {
+      "RC": {
+        "candidato": "LUISA GONZALEZ",
+        "votos": 5852,
+        "porcentaje": 34.9
+      },
+      "PID/MOVER": {
+        "candidato": "DANIEL NOBOA AZIN",
+        "votos": 10917,
+        "porcentaje": 65.1
+      }
+    }
+  },
+  {
+    "CODCAN": "325",
+    "CODPRO": "11",
+    "CANTON": "MACARA",
+    "ganador": "PID/MOVER",
+    "resultados": {
+      "RC": {
+        "candidato": "LUISA GONZALEZ",
+        "votos": 3987,
+        "porcentaje": 34.85
+      },
+      "PID/MOVER": {
+        "candidato": "DANIEL NOBOA AZIN",
+        "votos": 7452,
+        "porcentaje": 65.15
+      }
+    }
+  },
+  {
+    "CODCAN": "330",
+    "CODPRO": "11",
+    "CANTON": "PUYANGO",
+    "ganador": "RC",
+    "resultados": {
+      "RC": {
+        "candidato": "LUISA GONZALEZ",
+        "votos": 6591,
+        "porcentaje": 58.36
+      },
+      "PID/MOVER": {
+        "candidato": "DANIEL NOBOA AZIN",
+        "votos": 4702,
+        "porcentaje": 41.64
+      }
+    }
+  },
+  {
+    "CODCAN": "335",
+    "CODPRO": "11",
+    "CANTON": "GONZANAMA",
+    "ganador": "PID/MOVER",
+    "resultados": {
+      "RC": {
+        "candidato": "LUISA GONZALEZ",
+        "votos": 3141,
+        "porcentaje": 36.93
+      },
+      "PID/MOVER": {
+        "candidato": "DANIEL NOBOA AZIN",
+        "votos": 5365,
+        "porcentaje": 63.07
+      }
+    }
+  },
+  {
+    "CODCAN": "340",
+    "CODPRO": "11",
+    "CANTON": "ESPINDOLA",
+    "ganador": "RC",
+    "resultados": {
+      "RC": {
+        "candidato": "LUISA GONZALEZ",
+        "votos": 5675,
+        "porcentaje": 58.6
+      },
+      "PID/MOVER": {
+        "candidato": "DANIEL NOBOA AZIN",
+        "votos": 4009,
+        "porcentaje": 41.4
+      }
+    }
+  },
+  {
+    "CODCAN": "345",
+    "CODPRO": "11",
+    "CANTON": "SOZORANGA",
+    "ganador": "PID/MOVER",
+    "resultados": {
+      "RC": {
+        "candidato": "LUISA GONZALEZ",
+        "votos": 1491,
+        "porcentaje": 37.24
+      },
+      "PID/MOVER": {
+        "candidato": "DANIEL NOBOA AZIN",
+        "votos": 2513,
+        "porcentaje": 62.76
+      }
+    }
+  },
+  {
+    "CODCAN": "730",
+    "CODPRO": "11",
+    "CANTON": "PINDAL",
+    "ganador": "RC",
+    "resultados": {
+      "RC": {
+        "candidato": "LUISA GONZALEZ",
+        "votos": 4490,
+        "porcentaje": 65.11
+      },
+      "PID/MOVER": {
+        "candidato": "DANIEL NOBOA AZIN",
+        "votos": 2406,
+        "porcentaje": 34.89
+      }
+    }
+  },
+  {
+    "CODCAN": "740",
+    "CODPRO": "11",
+    "CANTON": "QUILANGA",
+    "ganador": "PID/MOVER",
+    "resultados": {
+      "RC": {
+        "candidato": "LUISA GONZALEZ",
+        "votos": 1123,
+        "porcentaje": 34.56
+      },
+      "PID/MOVER": {
+        "candidato": "DANIEL NOBOA AZIN",
+        "votos": 2126,
+        "porcentaje": 65.44
+      }
+    }
+  },
+  {
+    "CODCAN": "815",
+    "CODPRO": "11",
+    "CANTON": "CHAGUARPAMBA",
+    "ganador": "PID/MOVER",
+    "resultados": {
+      "RC": {
+        "candidato": "LUISA GONZALEZ",
+        "votos": 2584,
+        "porcentaje": 45.26
+      },
+      "PID/MOVER": {
+        "candidato": "DANIEL NOBOA AZIN",
+        "votos": 3125,
+        "porcentaje": 54.74
+      }
+    }
+  },
+  {
+    "CODCAN": "515",
+    "CODPRO": "12",
+    "CANTON": "BABAHOYO",
+    "ganador": "RC",
+    "resultados": {
+      "RC": {
+        "candidato": "LUISA GONZALEZ",
+        "votos": 57256,
+        "porcentaje": 53.31
+      },
+      "PID/MOVER": {
+        "candidato": "DANIEL NOBOA AZIN",
+        "votos": 50151,
+        "porcentaje": 46.69
+      }
+    }
+  },
+  {
+    "CODCAN": "516",
+    "CODPRO": "12",
+    "CANTON": "VALENCIA",
+    "ganador": "RC",
+    "resultados": {
+      "RC": {
+        "candidato": "LUISA GONZALEZ",
+        "votos": 20992,
+        "porcentaje": 73.05
+      },
+      "PID/MOVER": {
+        "candidato": "DANIEL NOBOA AZIN",
+        "votos": 7744,
+        "porcentaje": 26.95
+      }
+    }
+  },
+  {
+    "CODCAN": "520",
+    "CODPRO": "12",
+    "CANTON": "BABA",
+    "ganador": "RC",
+    "resultados": {
+      "RC": {
+        "candidato": "LUISA GONZALEZ",
+        "votos": 20552,
+        "porcentaje": 75.69
+      },
+      "PID/MOVER": {
+        "candidato": "DANIEL NOBOA AZIN",
+        "votos": 6600,
+        "porcentaje": 24.31
+      }
+    }
+  },
+  {
+    "CODCAN": "525",
+    "CODPRO": "12",
+    "CANTON": "VINCES",
+    "ganador": "RC",
+    "resultados": {
+      "RC": {
+        "candidato": "LUISA GONZALEZ",
+        "votos": 33008,
+        "porcentaje": 64.39
+      },
+      "PID/MOVER": {
+        "candidato": "DANIEL NOBOA AZIN",
+        "votos": 18258,
+        "porcentaje": 35.61
+      }
+    }
+  },
+  {
+    "CODCAN": "530",
+    "CODPRO": "12",
+    "CANTON": "PUEBLO VIEJO",
+    "ganador": "RC",
+    "resultados": {
+      "RC": {
+        "candidato": "LUISA GONZALEZ",
+        "votos": 16916,
+        "porcentaje": 63.42
+      },
+      "PID/MOVER": {
+        "candidato": "DANIEL NOBOA AZIN",
+        "votos": 9759,
+        "porcentaje": 36.58
+      }
+    }
+  },
+  {
+    "CODCAN": "535",
+    "CODPRO": "12",
+    "CANTON": "URDANETA",
+    "ganador": "RC",
+    "resultados": {
+      "RC": {
+        "candidato": "LUISA GONZALEZ",
+        "votos": 13081,
+        "porcentaje": 61.84
+      },
+      "PID/MOVER": {
+        "candidato": "DANIEL NOBOA AZIN",
+        "votos": 8071,
+        "porcentaje": 38.16
+      }
+    }
+  },
+  {
+    "CODCAN": "540",
+    "CODPRO": "12",
+    "CANTON": "QUEVEDO",
+    "ganador": "RC",
+    "resultados": {
+      "RC": {
+        "candidato": "LUISA GONZALEZ",
+        "votos": 76546,
+        "porcentaje": 61.48
+      },
+      "PID/MOVER": {
+        "candidato": "DANIEL NOBOA AZIN",
+        "votos": 47957,
+        "porcentaje": 38.52
+      }
+    }
+  },
+  {
+    "CODCAN": "545",
+    "CODPRO": "12",
+    "CANTON": "VENTANAS",
+    "ganador": "RC",
+    "resultados": {
+      "RC": {
+        "candidato": "LUISA GONZALEZ",
+        "votos": 27304,
+        "porcentaje": 60.05
+      },
+      "PID/MOVER": {
+        "candidato": "DANIEL NOBOA AZIN",
+        "votos": 18165,
+        "porcentaje": 39.95
+      }
+    }
+  },
+  {
+    "CODCAN": "710",
+    "CODPRO": "12",
+    "CANTON": "MONTALVO",
+    "ganador": "PID/MOVER",
+    "resultados": {
+      "RC": {
+        "candidato": "LUISA GONZALEZ",
+        "votos": 7957,
+        "porcentaje": 45.39
+      },
+      "PID/MOVER": {
+        "candidato": "DANIEL NOBOA AZIN",
+        "votos": 9573,
+        "porcentaje": 54.61
+      }
+    }
+  },
+  {
+    "CODCAN": "750",
+    "CODPRO": "12",
+    "CANTON": "PALENQUE",
+    "ganador": "RC",
+    "resultados": {
+      "RC": {
+        "candidato": "LUISA GONZALEZ",
+        "votos": 12402,
+        "porcentaje": 82.22
+      },
+      "PID/MOVER": {
+        "candidato": "DANIEL NOBOA AZIN",
+        "votos": 2682,
+        "porcentaje": 17.78
+      }
+    }
+  },
+  {
+    "CODCAN": "946",
+    "CODPRO": "12",
+    "CANTON": "MOCACHE",
+    "ganador": "RC",
+    "resultados": {
+      "RC": {
+        "candidato": "LUISA GONZALEZ",
+        "votos": 18841,
+        "porcentaje": 76.72
+      },
+      "PID/MOVER": {
+        "candidato": "DANIEL NOBOA AZIN",
+        "votos": 5716,
+        "porcentaje": 23.28
+      }
+    }
+  },
+  {
+    "CODCAN": "546",
+    "CODPRO": "12",
+    "CANTON": "QUINSALOMA",
+    "ganador": "RC",
+    "resultados": {
+      "RC": {
+        "candidato": "LUISA GONZALEZ",
+        "votos": 5938,
+        "porcentaje": 55.76
+      },
+      "PID/MOVER": {
+        "candidato": "DANIEL NOBOA AZIN",
+        "votos": 4712,
+        "porcentaje": 44.24
+      }
+    }
+  },
+  {
+    "CODCAN": "945",
+    "CODPRO": "12",
+    "CANTON": "BUENA FE",
+    "ganador": "RC",
+    "resultados": {
+      "RC": {
+        "candidato": "LUISA GONZALEZ",
+        "votos": 34756,
+        "porcentaje": 73.66
+      },
+      "PID/MOVER": {
+        "candidato": "DANIEL NOBOA AZIN",
+        "votos": 12430,
+        "porcentaje": 26.34
+      }
+    }
+  },
+  {
+    "CODCAN": "230",
+    "CODPRO": "13",
+    "CANTON": "FLAVIO ALFARO",
+    "ganador": "RC",
+    "resultados": {
+      "RC": {
+        "candidato": "LUISA GONZALEZ",
+        "votos": 12697,
+        "porcentaje": 62.72
+      },
+      "PID/MOVER": {
+        "candidato": "DANIEL NOBOA AZIN",
+        "votos": 7546,
+        "porcentaje": 37.28
+      }
+    }
+  },
+  {
+    "CODCAN": "465",
+    "CODPRO": "13",
+    "CANTON": "ROCAFUERTE",
+    "ganador": "RC",
+    "resultados": {
+      "RC": {
+        "candidato": "LUISA GONZALEZ",
+        "votos": 19737,
+        "porcentaje": 72.47
+      },
+      "PID/MOVER": {
+        "candidato": "DANIEL NOBOA AZIN",
+        "votos": 7497,
+        "porcentaje": 27.53
+      }
+    }
+  },
+  {
+    "CODCAN": "440",
+    "CODPRO": "13",
+    "CANTON": "PORTOVIEJO",
+    "ganador": "RC",
+    "resultados": {
+      "RC": {
+        "candidato": "LUISA GONZALEZ",
+        "votos": 122017,
+        "porcentaje": 61.2
+      },
+      "PID/MOVER": {
+        "candidato": "DANIEL NOBOA AZIN",
+        "votos": 77357,
+        "porcentaje": 38.8
+      }
+    }
+  },
+  {
+    "CODCAN": "445",
+    "CODPRO": "13",
+    "CANTON": "MONTECRISTI",
+    "ganador": "RC",
+    "resultados": {
+      "RC": {
+        "candidato": "LUISA GONZALEZ",
+        "votos": 38243,
+        "porcentaje": 75.28
+      },
+      "PID/MOVER": {
+        "candidato": "DANIEL NOBOA AZIN",
+        "votos": 12561,
+        "porcentaje": 24.72
+      }
+    }
+  },
+  {
+    "CODCAN": "446",
+    "CODPRO": "13",
+    "CANTON": "JARAMIJO",
+    "ganador": "RC",
+    "resultados": {
+      "RC": {
+        "candidato": "LUISA GONZALEZ",
+        "votos": 12627,
+        "porcentaje": 82.67
+      },
+      "PID/MOVER": {
+        "candidato": "DANIEL NOBOA AZIN",
+        "votos": 2647,
+        "porcentaje": 17.33
+      }
+    }
+  },
+  {
+    "CODCAN": "450",
+    "CODPRO": "13",
+    "CANTON": "MANTA",
+    "ganador": "RC",
+    "resultados": {
+      "RC": {
+        "candidato": "LUISA GONZALEZ",
+        "votos": 112357,
+        "porcentaje": 66.44
+      },
+      "PID/MOVER": {
+        "candidato": "DANIEL NOBOA AZIN",
+        "votos": 56747,
+        "porcentaje": 33.56
+      }
+    }
+  },
+  {
+    "CODCAN": "455",
+    "CODPRO": "13",
+    "CANTON": "JIPIJAPA",
+    "ganador": "RC",
+    "resultados": {
+      "RC": {
+        "candidato": "LUISA GONZALEZ",
+        "votos": 28312,
+        "porcentaje": 53.14
+      },
+      "PID/MOVER": {
+        "candidato": "DANIEL NOBOA AZIN",
+        "votos": 24962,
+        "porcentaje": 46.86
+      }
+    }
+  },
+  {
+    "CODCAN": "460",
+    "CODPRO": "13",
+    "CANTON": "24 DE MAYO",
+    "ganador": "RC",
+    "resultados": {
+      "RC": {
+        "candidato": "LUISA GONZALEZ",
+        "votos": 15529,
+        "porcentaje": 71.44
+      },
+      "PID/MOVER": {
+        "candidato": "DANIEL NOBOA AZIN",
+        "votos": 6209,
+        "porcentaje": 28.56
+      }
+    }
+  },
+  {
+    "CODCAN": "470",
+    "CODPRO": "13",
+    "CANTON": "SANTA ANA",
+    "ganador": "RC",
+    "resultados": {
+      "RC": {
+        "candidato": "LUISA GONZALEZ",
+        "votos": 25248,
+        "porcentaje": 71.67
+      },
+      "PID/MOVER": {
+        "candidato": "DANIEL NOBOA AZIN",
+        "votos": 9981,
+        "porcentaje": 28.33
+      }
+    }
+  },
+  {
+    "CODCAN": "475",
+    "CODPRO": "13",
+    "CANTON": "SUCRE",
+    "ganador": "RC",
+    "resultados": {
+      "RC": {
+        "candidato": "LUISA GONZALEZ",
+        "votos": 28480,
+        "porcentaje": 68.84
+      },
+      "PID/MOVER": {
+        "candidato": "DANIEL NOBOA AZIN",
+        "votos": 12891,
+        "porcentaje": 31.16
+      }
+    }
+  },
+  {
+    "CODCAN": "476",
+    "CODPRO": "13",
+    "CANTON": "JAMA",
+    "ganador": "RC",
+    "resultados": {
+      "RC": {
+        "candidato": "LUISA GONZALEZ",
+        "votos": 8627,
+        "porcentaje": 80.66
+      },
+      "PID/MOVER": {
+        "candidato": "DANIEL NOBOA AZIN",
+        "votos": 2068,
+        "porcentaje": 19.34
+      }
+    }
+  },
+  {
+    "CODCAN": "477",
+    "CODPRO": "13",
+    "CANTON": "SAN VICENTE",
+    "ganador": "RC",
+    "resultados": {
+      "RC": {
+        "candidato": "LUISA GONZALEZ",
+        "votos": 11862,
+        "porcentaje": 75.44
+      },
+      "PID/MOVER": {
+        "candidato": "DANIEL NOBOA AZIN",
+        "votos": 3861,
+        "porcentaje": 24.56
+      }
+    }
+  },
+  {
+    "CODCAN": "480",
+    "CODPRO": "13",
+    "CANTON": "CHONE",
+    "ganador": "RC",
+    "resultados": {
+      "RC": {
+        "candidato": "LUISA GONZALEZ",
+        "votos": 52685,
+        "porcentaje": 59.8
+      },
+      "PID/MOVER": {
+        "candidato": "DANIEL NOBOA AZIN",
+        "votos": 35423,
+        "porcentaje": 40.2
+      }
+    }
+  },
+  {
+    "CODCAN": "485",
+    "CODPRO": "13",
+    "CANTON": "BOLIVAR",
+    "ganador": "RC",
+    "resultados": {
+      "RC": {
+        "candidato": "LUISA GONZALEZ",
+        "votos": 19380,
+        "porcentaje": 59.59
+      },
+      "PID/MOVER": {
+        "candidato": "DANIEL NOBOA AZIN",
+        "votos": 13141,
+        "porcentaje": 40.41
+      }
+    }
+  },
+  {
+    "CODCAN": "490",
+    "CODPRO": "13",
+    "CANTON": "JUNIN",
+    "ganador": "RC",
+    "resultados": {
+      "RC": {
+        "candidato": "LUISA GONZALEZ",
+        "votos": 9809,
+        "porcentaje": 64.93
+      },
+      "PID/MOVER": {
+        "candidato": "DANIEL NOBOA AZIN",
+        "votos": 5297,
+        "porcentaje": 35.07
+      }
+    }
+  },
+  {
+    "CODCAN": "495",
+    "CODPRO": "13",
+    "CANTON": "PAJAN",
+    "ganador": "RC",
+    "resultados": {
+      "RC": {
+        "candidato": "LUISA GONZALEZ",
+        "votos": 20225,
+        "porcentaje": 66.3
+      },
+      "PID/MOVER": {
+        "candidato": "DANIEL NOBOA AZIN",
+        "votos": 10280,
+        "porcentaje": 33.7
+      }
+    }
+  },
+  {
+    "CODCAN": "500",
+    "CODPRO": "13",
+    "CANTON": "EL CARMEN",
+    "ganador": "RC",
+    "resultados": {
+      "RC": {
+        "candidato": "LUISA GONZALEZ",
+        "votos": 43524,
+        "porcentaje": 57.29
+      },
+      "PID/MOVER": {
+        "candidato": "DANIEL NOBOA AZIN",
+        "votos": 32450,
+        "porcentaje": 42.71
+      }
+    }
+  },
+  {
+    "CODCAN": "550",
+    "CODPRO": "13",
+    "CANTON": "TOSAGUA",
+    "ganador": "RC",
+    "resultados": {
+      "RC": {
+        "candidato": "LUISA GONZALEZ",
+        "votos": 20612,
+        "porcentaje": 70.93
+      },
+      "PID/MOVER": {
+        "candidato": "DANIEL NOBOA AZIN",
+        "votos": 8446,
+        "porcentaje": 29.07
+      }
+    }
+  },
+  {
+    "CODCAN": "840",
+    "CODPRO": "13",
+    "CANTON": "PICHINCHA",
+    "ganador": "RC",
+    "resultados": {
+      "RC": {
+        "candidato": "LUISA GONZALEZ",
+        "votos": 20061,
+        "porcentaje": 82.21
+      },
+      "PID/MOVER": {
+        "candidato": "DANIEL NOBOA AZIN",
+        "votos": 4342,
+        "porcentaje": 17.79
+      }
+    }
+  },
+  {
+    "CODCAN": "910",
+    "CODPRO": "13",
+    "CANTON": "PEDERNALES",
+    "ganador": "RC",
+    "resultados": {
+      "RC": {
+        "candidato": "LUISA GONZALEZ",
+        "votos": 31363,
+        "porcentaje": 77.85
+      },
+      "PID/MOVER": {
+        "candidato": "DANIEL NOBOA AZIN",
+        "votos": 8921,
+        "porcentaje": 22.15
+      }
+    }
+  },
+  {
+    "CODCAN": "970",
+    "CODPRO": "13",
+    "CANTON": "OLMEDO",
+    "ganador": "RC",
+    "resultados": {
+      "RC": {
+        "candidato": "LUISA GONZALEZ",
+        "votos": 7068,
+        "porcentaje": 80.11
+      },
+      "PID/MOVER": {
+        "candidato": "DANIEL NOBOA AZIN",
+        "votos": 1755,
+        "porcentaje": 19.89
+      }
+    }
+  },
+  {
+    "CODCAN": "975",
+    "CODPRO": "13",
+    "CANTON": "PUERTO LOPEZ",
+    "ganador": "RC",
+    "resultados": {
+      "RC": {
+        "candidato": "LUISA GONZALEZ",
+        "votos": 11508,
+        "porcentaje": 72.75
+      },
+      "PID/MOVER": {
+        "candidato": "DANIEL NOBOA AZIN",
+        "votos": 4311,
+        "porcentaje": 27.25
+      }
+    }
+  },
+  {
+    "CODCAN": "590",
+    "CODPRO": "14",
+    "CANTON": "MORONA",
+    "ganador": "PID/MOVER",
+    "resultados": {
+      "RC": {
+        "candidato": "LUISA GONZALEZ",
+        "votos": 8727,
+        "porcentaje": 32.79
+      },
+      "PID/MOVER": {
+        "candidato": "DANIEL NOBOA AZIN",
+        "votos": 17886,
+        "porcentaje": 67.21
+      }
+    }
+  },
+  {
+    "CODCAN": "595",
+    "CODPRO": "14",
+    "CANTON": "GUALAQUIZA",
+    "ganador": "PID/MOVER",
+    "resultados": {
+      "RC": {
+        "candidato": "LUISA GONZALEZ",
+        "votos": 3095,
+        "porcentaje": 27.84
+      },
+      "PID/MOVER": {
+        "candidato": "DANIEL NOBOA AZIN",
+        "votos": 8022,
+        "porcentaje": 72.16
+      }
+    }
+  },
+  {
+    "CODCAN": "600",
+    "CODPRO": "14",
+    "CANTON": "LIMON INDANZA",
+    "ganador": "PID/MOVER",
+    "resultados": {
+      "RC": {
+        "candidato": "LUISA GONZALEZ",
+        "votos": 1659,
+        "porcentaje": 27.2
+      },
+      "PID/MOVER": {
+        "candidato": "DANIEL NOBOA AZIN",
+        "votos": 4440,
+        "porcentaje": 72.8
+      }
+    }
+  },
+  {
+    "CODCAN": "605",
+    "CODPRO": "14",
+    "CANTON": "SANTIAGO",
+    "ganador": "PID/MOVER",
+    "resultados": {
+      "RC": {
+        "candidato": "LUISA GONZALEZ",
+        "votos": 2172,
+        "porcentaje": 35.21
+      },
+      "PID/MOVER": {
+        "candidato": "DANIEL NOBOA AZIN",
+        "votos": 3997,
+        "porcentaje": 64.79
+      }
+    }
+  },
+  {
+    "CODCAN": "610",
+    "CODPRO": "14",
+    "CANTON": "SUCUA",
+    "ganador": "PID/MOVER",
+    "resultados": {
+      "RC": {
+        "candidato": "LUISA GONZALEZ",
+        "votos": 4588,
+        "porcentaje": 38.09
+      },
+      "PID/MOVER": {
+        "candidato": "DANIEL NOBOA AZIN",
+        "votos": 7457,
+        "porcentaje": 61.91
+      }
+    }
+  },
+  {
+    "CODCAN": "611",
+    "CODPRO": "14",
+    "CANTON": "LOGROÑO",
+    "ganador": "PID/MOVER",
+    "resultados": {
+      "RC": {
+        "candidato": "LUISA GONZALEZ",
+        "votos": 1159,
+        "porcentaje": 27.86
+      },
+      "PID/MOVER": {
+        "candidato": "DANIEL NOBOA AZIN",
+        "votos": 3001,
+        "porcentaje": 72.14
+      }
+    }
+  },
+  {
+    "CODCAN": "615",
+    "CODPRO": "14",
+    "CANTON": "PALORA",
+    "ganador": "PID/MOVER",
+    "resultados": {
+      "RC": {
+        "candidato": "LUISA GONZALEZ",
+        "votos": 2010,
+        "porcentaje": 33.95
+      },
+      "PID/MOVER": {
+        "candidato": "DANIEL NOBOA AZIN",
+        "votos": 3910,
+        "porcentaje": 66.05
+      }
+    }
+  },
+  {
+    "CODCAN": "795",
+    "CODPRO": "14",
+    "CANTON": "HUAMBOYA",
+    "ganador": "PID/MOVER",
+    "resultados": {
+      "RC": {
+        "candidato": "LUISA GONZALEZ",
+        "votos": 1709,
+        "porcentaje": 31.77
+      },
+      "PID/MOVER": {
+        "candidato": "DANIEL NOBOA AZIN",
+        "votos": 3670,
+        "porcentaje": 68.23
+      }
+    }
+  },
+  {
+    "CODCAN": "796",
+    "CODPRO": "14",
+    "CANTON": "PABLO SEXTO",
+    "ganador": "PID/MOVER",
+    "resultados": {
+      "RC": {
+        "candidato": "LUISA GONZALEZ",
+        "votos": 420,
+        "porcentaje": 32.11
+      },
+      "PID/MOVER": {
+        "candidato": "DANIEL NOBOA AZIN",
+        "votos": 888,
+        "porcentaje": 67.89
+      }
+    }
+  },
+  {
+    "CODCAN": "797",
+    "CODPRO": "14",
+    "CANTON": "TIWINTZA",
+    "ganador": "PID/MOVER",
+    "resultados": {
+      "RC": {
+        "candidato": "LUISA GONZALEZ",
+        "votos": 1587,
+        "porcentaje": 31.84
+      },
+      "PID/MOVER": {
+        "candidato": "DANIEL NOBOA AZIN",
+        "votos": 3397,
+        "porcentaje": 68.16
+      }
+    }
+  },
+  {
+    "CODCAN": "925",
+    "CODPRO": "14",
+    "CANTON": "SAN JUAN BOSCO",
+    "ganador": "PID/MOVER",
+    "resultados": {
+      "RC": {
+        "candidato": "LUISA GONZALEZ",
+        "votos": 1026,
+        "porcentaje": 37.99
+      },
+      "PID/MOVER": {
+        "candidato": "DANIEL NOBOA AZIN",
+        "votos": 1675,
+        "porcentaje": 62.01
+      }
+    }
+  },
+  {
+    "CODCAN": "926",
+    "CODPRO": "14",
+    "CANTON": "TAISHA",
+    "ganador": "PID/MOVER",
+    "resultados": {
+      "RC": {
+        "candidato": "LUISA GONZALEZ",
+        "votos": 2491,
+        "porcentaje": 20.56
+      },
+      "PID/MOVER": {
+        "candidato": "DANIEL NOBOA AZIN",
+        "votos": 9623,
+        "porcentaje": 79.44
+      }
+    }
+  },
+  {
+    "CODCAN": "700",
+    "CODPRO": "15",
+    "CANTON": "ARCHIDONA",
+    "ganador": "PID/MOVER",
+    "resultados": {
+      "RC": {
+        "candidato": "LUISA GONZALEZ",
+        "votos": 6369,
+        "porcentaje": 32.95
+      },
+      "PID/MOVER": {
+        "candidato": "DANIEL NOBOA AZIN",
+        "votos": 12961,
+        "porcentaje": 67.05
+      }
+    }
+  },
+  {
+    "CODCAN": "621",
+    "CODPRO": "15",
+    "CANTON": "C. J. AROSEMENA TOLA",
+    "ganador": "PID/MOVER",
+    "resultados": {
+      "RC": {
+        "candidato": "LUISA GONZALEZ",
+        "votos": 696,
+        "porcentaje": 22.13
+      },
+      "PID/MOVER": {
+        "candidato": "DANIEL NOBOA AZIN",
+        "votos": 2449,
+        "porcentaje": 77.87
+      }
+    }
+  },
+  {
+    "CODCAN": "255",
+    "CODPRO": "15",
+    "CANTON": "EL CHACO",
+    "ganador": "RC",
+    "resultados": {
+      "RC": {
+        "candidato": "LUISA GONZALEZ",
+        "votos": 3354,
+        "porcentaje": 52.65
+      },
+      "PID/MOVER": {
+        "candidato": "DANIEL NOBOA AZIN",
+        "votos": 3016,
+        "porcentaje": 47.35
+      }
+    }
+  },
+  {
+    "CODCAN": "635",
+    "CODPRO": "15",
+    "CANTON": "QUIJOS",
+    "ganador": "PID/MOVER",
+    "resultados": {
+      "RC": {
+        "candidato": "LUISA GONZALEZ",
+        "votos": 1826,
+        "porcentaje": 38.65
+      },
+      "PID/MOVER": {
+        "candidato": "DANIEL NOBOA AZIN",
+        "votos": 2898,
+        "porcentaje": 61.35
+      }
+    }
+  },
+  {
+    "CODCAN": "620",
+    "CODPRO": "15",
+    "CANTON": "TENA",
+    "ganador": "PID/MOVER",
+    "resultados": {
+      "RC": {
+        "candidato": "LUISA GONZALEZ",
+        "votos": 11255,
+        "porcentaje": 24.65
+      },
+      "PID/MOVER": {
+        "candidato": "DANIEL NOBOA AZIN",
+        "votos": 34395,
+        "porcentaje": 75.35
+      }
+    }
+  },
+  {
+    "CODCAN": "680",
+    "CODPRO": "16",
+    "CANTON": "PASTAZA",
+    "ganador": "PID/MOVER",
+    "resultados": {
+      "RC": {
+        "candidato": "LUISA GONZALEZ",
+        "votos": 10906,
+        "porcentaje": 24.85
+      },
+      "PID/MOVER": {
+        "candidato": "DANIEL NOBOA AZIN",
+        "votos": 32990,
+        "porcentaje": 75.15
+      }
+    }
+  },
+  {
+    "CODCAN": "685",
+    "CODPRO": "16",
+    "CANTON": "MERA",
+    "ganador": "PID/MOVER",
+    "resultados": {
+      "RC": {
+        "candidato": "LUISA GONZALEZ",
+        "votos": 2116,
+        "porcentaje": 27.33
+      },
+      "PID/MOVER": {
+        "candidato": "DANIEL NOBOA AZIN",
+        "votos": 5625,
+        "porcentaje": 72.67
+      }
+    }
+  },
+  {
+    "CODCAN": "880",
+    "CODPRO": "16",
+    "CANTON": "SANTA CLARA",
+    "ganador": "PID/MOVER",
+    "resultados": {
+      "RC": {
+        "candidato": "LUISA GONZALEZ",
+        "votos": 1377,
+        "porcentaje": 34.85
+      },
+      "PID/MOVER": {
+        "candidato": "DANIEL NOBOA AZIN",
+        "votos": 2574,
+        "porcentaje": 65.15
+      }
+    }
+  },
+  {
+    "CODCAN": "881",
+    "CODPRO": "16",
+    "CANTON": "ARAJUNO",
+    "ganador": "PID/MOVER",
+    "resultados": {
+      "RC": {
+        "candidato": "LUISA GONZALEZ",
+        "votos": 1607,
+        "porcentaje": 32.39
+      },
+      "PID/MOVER": {
+        "candidato": "DANIEL NOBOA AZIN",
+        "votos": 3354,
+        "porcentaje": 67.61
+      }
+    }
+  },
+  {
+    "CODCAN": "060",
+    "CODPRO": "17",
+    "CANTON": "QUITO",
+    "ganador": "PID/MOVER",
+    "resultados": {
+      "RC": {
+        "candidato": "LUISA GONZALEZ",
+        "votos": 592430,
+        "porcentaje": 38.4
+      },
+      "PID/MOVER": {
+        "candidato": "DANIEL NOBOA AZIN",
+        "votos": 950279,
+        "porcentaje": 61.6
+      }
+    }
+  },
+  {
+    "CODCAN": "065",
+    "CODPRO": "17",
+    "CANTON": "CAYAMBE",
+    "ganador": "RC",
+    "resultados": {
+      "RC": {
+        "candidato": "LUISA GONZALEZ",
+        "votos": 40538,
+        "porcentaje": 62.14
+      },
+      "PID/MOVER": {
+        "candidato": "DANIEL NOBOA AZIN",
+        "votos": 24703,
+        "porcentaje": 37.86
+      }
+    }
+  },
+  {
+    "CODCAN": "070",
+    "CODPRO": "17",
+    "CANTON": "MEJIA",
+    "ganador": "PID/MOVER",
+    "resultados": {
+      "RC": {
+        "candidato": "LUISA GONZALEZ",
+        "votos": 25340,
+        "porcentaje": 43.04
+      },
+      "PID/MOVER": {
+        "candidato": "DANIEL NOBOA AZIN",
+        "votos": 33537,
+        "porcentaje": 56.96
+      }
+    }
+  },
+  {
+    "CODCAN": "075",
+    "CODPRO": "17",
+    "CANTON": "PEDRO MONCAYO",
+    "ganador": "RC",
+    "resultados": {
+      "RC": {
+        "candidato": "LUISA GONZALEZ",
+        "votos": 15207,
+        "porcentaje": 63.27
+      },
+      "PID/MOVER": {
+        "candidato": "DANIEL NOBOA AZIN",
+        "votos": 8829,
+        "porcentaje": 36.73
+      }
+    }
+  },
+  {
+    "CODCAN": "080",
+    "CODPRO": "17",
+    "CANTON": "RUMINAHUI",
+    "ganador": "PID/MOVER",
+    "resultados": {
+      "RC": {
+        "candidato": "LUISA GONZALEZ",
+        "votos": 26642,
+        "porcentaje": 35.5
+      },
+      "PID/MOVER": {
+        "candidato": "DANIEL NOBOA AZIN",
+        "votos": 48416,
+        "porcentaje": 64.5
+      }
+    }
+  },
+  {
+    "CODCAN": "770",
+    "CODPRO": "17",
+    "CANTON": "SAN MIGUEL DE LOS BANCOS",
+    "ganador": "PID/MOVER",
+    "resultados": {
+      "RC": {
+        "candidato": "LUISA GONZALEZ",
+        "votos": 3949,
+        "porcentaje": 42.15
+      },
+      "PID/MOVER": {
+        "candidato": "DANIEL NOBOA AZIN",
+        "votos": 5421,
+        "porcentaje": 57.85
+      }
+    }
+  },
+  {
+    "CODCAN": "895",
+    "CODPRO": "17",
+    "CANTON": "PEDRO VICENTE MALDONADO",
+    "ganador": "PID/MOVER",
+    "resultados": {
+      "RC": {
+        "candidato": "LUISA GONZALEZ",
+        "votos": 4883,
+        "porcentaje": 48.44
+      },
+      "PID/MOVER": {
+        "candidato": "DANIEL NOBOA AZIN",
+        "votos": 5197,
+        "porcentaje": 51.56
+      }
+    }
+  },
+  {
+    "CODCAN": "896",
+    "CODPRO": "17",
+    "CANTON": "PUERTO QUITO",
+    "ganador": "RC",
+    "resultados": {
+      "RC": {
+        "candidato": "LUISA GONZALEZ",
+        "votos": 8209,
+        "porcentaje": 60.44
+      },
+      "PID/MOVER": {
+        "candidato": "DANIEL NOBOA AZIN",
+        "votos": 5372,
+        "porcentaje": 39.56
+      }
+    }
+  },
+  {
+    "CODCAN": "090",
+    "CODPRO": "18",
+    "CANTON": "TISALEO",
+    "ganador": "PID/MOVER",
+    "resultados": {
+      "RC": {
+        "candidato": "LUISA GONZALEZ",
+        "votos": 2632,
+        "porcentaje": 32.24
+      },
+      "PID/MOVER": {
+        "candidato": "DANIEL NOBOA AZIN",
+        "votos": 5531,
+        "porcentaje": 67.76
+      }
+    }
+  },
+  {
+    "CODCAN": "135",
+    "CODPRO": "18",
+    "CANTON": "AMBATO",
+    "ganador": "PID/MOVER",
+    "resultados": {
+      "RC": {
+        "candidato": "LUISA GONZALEZ",
+        "votos": 55937,
+        "porcentaje": 24.97
+      },
+      "PID/MOVER": {
+        "candidato": "DANIEL NOBOA AZIN",
+        "votos": 168077,
+        "porcentaje": 75.03
+      }
+    }
+  },
+  {
+    "CODCAN": "140",
+    "CODPRO": "18",
+    "CANTON": "PELILEO",
+    "ganador": "PID/MOVER",
+    "resultados": {
+      "RC": {
+        "candidato": "LUISA GONZALEZ",
+        "votos": 10021,
+        "porcentaje": 25.21
+      },
+      "PID/MOVER": {
+        "candidato": "DANIEL NOBOA AZIN",
+        "votos": 29729,
+        "porcentaje": 74.79
+      }
+    }
+  },
+  {
+    "CODCAN": "145",
+    "CODPRO": "18",
+    "CANTON": "PILLARO",
+    "ganador": "PID/MOVER",
+    "resultados": {
+      "RC": {
+        "candidato": "LUISA GONZALEZ",
+        "votos": 7652,
+        "porcentaje": 26.31
+      },
+      "PID/MOVER": {
+        "candidato": "DANIEL NOBOA AZIN",
+        "votos": 21432,
+        "porcentaje": 73.69
+      }
+    }
+  },
+  {
+    "CODCAN": "150",
+    "CODPRO": "18",
+    "CANTON": "BAÑOS",
+    "ganador": "PID/MOVER",
+    "resultados": {
+      "RC": {
+        "candidato": "LUISA GONZALEZ",
+        "votos": 4909,
+        "porcentaje": 32.43
+      },
+      "PID/MOVER": {
+        "candidato": "DANIEL NOBOA AZIN",
+        "votos": 10229,
+        "porcentaje": 67.57
+      }
+    }
+  },
+  {
+    "CODCAN": "155",
+    "CODPRO": "18",
+    "CANTON": "PATATE",
+    "ganador": "PID/MOVER",
+    "resultados": {
+      "RC": {
+        "candidato": "LUISA GONZALEZ",
+        "votos": 2308,
+        "porcentaje": 24.93
+      },
+      "PID/MOVER": {
+        "candidato": "DANIEL NOBOA AZIN",
+        "votos": 6949,
+        "porcentaje": 75.07
+      }
+    }
+  },
+  {
+    "CODCAN": "160",
+    "CODPRO": "18",
+    "CANTON": "QUERO",
+    "ganador": "PID/MOVER",
+    "resultados": {
+      "RC": {
+        "candidato": "LUISA GONZALEZ",
+        "votos": 2985,
+        "porcentaje": 20.88
+      },
+      "PID/MOVER": {
+        "candidato": "DANIEL NOBOA AZIN",
+        "votos": 11312,
+        "porcentaje": 79.12
+      }
+    }
+  },
+  {
+    "CODCAN": "845",
+    "CODPRO": "18",
+    "CANTON": "CEVALLOS",
+    "ganador": "PID/MOVER",
+    "resultados": {
+      "RC": {
+        "candidato": "LUISA GONZALEZ",
+        "votos": 1814,
+        "porcentaje": 27.9
+      },
+      "PID/MOVER": {
+        "candidato": "DANIEL NOBOA AZIN",
+        "votos": 4688,
+        "porcentaje": 72.1
+      }
+    }
+  },
+  {
+    "CODCAN": "850",
+    "CODPRO": "18",
+    "CANTON": "MOCHA",
+    "ganador": "PID/MOVER",
+    "resultados": {
+      "RC": {
+        "candidato": "LUISA GONZALEZ",
+        "votos": 1340,
+        "porcentaje": 24.81
+      },
+      "PID/MOVER": {
+        "candidato": "DANIEL NOBOA AZIN",
+        "votos": 4060,
+        "porcentaje": 75.19
+      }
+    }
+  },
+  {
+    "CODCAN": "980",
+    "CODPRO": "19",
+    "CANTON": "CENTINELA DEL CONDOR",
+    "ganador": "PID/MOVER",
+    "resultados": {
+      "RC": {
+        "candidato": "LUISA GONZALEZ",
+        "votos": 1137,
+        "porcentaje": 22.01
+      },
+      "PID/MOVER": {
+        "candidato": "DANIEL NOBOA AZIN",
+        "votos": 4029,
+        "porcentaje": 77.99
+      }
+    }
+  },
+  {
+    "CODCAN": "660",
+    "CODPRO": "19",
+    "CANTON": "CHINCHIPE",
+    "ganador": "PID/MOVER",
+    "resultados": {
+      "RC": {
+        "candidato": "LUISA GONZALEZ",
+        "votos": 2216,
+        "porcentaje": 34.99
+      },
+      "PID/MOVER": {
+        "candidato": "DANIEL NOBOA AZIN",
+        "votos": 4118,
+        "porcentaje": 65.01
+      }
+    }
+  },
+  {
+    "CODCAN": "775",
+    "CODPRO": "19",
+    "CANTON": "EL PANGUI",
+    "ganador": "PID/MOVER",
+    "resultados": {
+      "RC": {
+        "candidato": "LUISA GONZALEZ",
+        "votos": 2183,
+        "porcentaje": 30.43
+      },
+      "PID/MOVER": {
+        "candidato": "DANIEL NOBOA AZIN",
+        "votos": 4990,
+        "porcentaje": 69.57
+      }
+    }
+  },
+  {
+    "CODCAN": "130",
+    "CODPRO": "19",
+    "CANTON": "NANGARITZA",
+    "ganador": "PID/MOVER",
+    "resultados": {
+      "RC": {
+        "candidato": "LUISA GONZALEZ",
+        "votos": 1369,
+        "porcentaje": 31.22
+      },
+      "PID/MOVER": {
+        "candidato": "DANIEL NOBOA AZIN",
+        "votos": 3016,
+        "porcentaje": 68.78
+      }
+    }
+  },
+  {
+    "CODCAN": "661",
+    "CODPRO": "19",
+    "CANTON": "PALANDA",
+    "ganador": "PID/MOVER",
+    "resultados": {
+      "RC": {
+        "candidato": "LUISA GONZALEZ",
+        "votos": 2191,
+        "porcentaje": 35.23
+      },
+      "PID/MOVER": {
+        "candidato": "DANIEL NOBOA AZIN",
+        "votos": 4029,
+        "porcentaje": 64.77
+      }
+    }
+  },
+  {
+    "CODCAN": "981",
+    "CODPRO": "19",
+    "CANTON": "PAQUISHA",
+    "ganador": "PID/MOVER",
+    "resultados": {
+      "RC": {
+        "candidato": "LUISA GONZALEZ",
+        "votos": 931,
+        "porcentaje": 27.56
+      },
+      "PID/MOVER": {
+        "candidato": "DANIEL NOBOA AZIN",
+        "votos": 2447,
+        "porcentaje": 72.44
+      }
+    }
+  },
+  {
+    "CODCAN": "665",
+    "CODPRO": "19",
+    "CANTON": "YACUAMBI",
+    "ganador": "PID/MOVER",
+    "resultados": {
+      "RC": {
+        "candidato": "LUISA GONZALEZ",
+        "votos": 1115,
+        "porcentaje": 26.73
+      },
+      "PID/MOVER": {
+        "candidato": "DANIEL NOBOA AZIN",
+        "votos": 3057,
+        "porcentaje": 73.27
+      }
+    }
+  },
+  {
+    "CODCAN": "670",
+    "CODPRO": "19",
+    "CANTON": "YANZATZA",
+    "ganador": "PID/MOVER",
+    "resultados": {
+      "RC": {
+        "candidato": "LUISA GONZALEZ",
+        "votos": 4264,
+        "porcentaje": 31.52
+      },
+      "PID/MOVER": {
+        "candidato": "DANIEL NOBOA AZIN",
+        "votos": 9266,
+        "porcentaje": 68.48
+      }
+    }
+  },
+  {
+    "CODCAN": "655",
+    "CODPRO": "19",
+    "CANTON": "ZAMORA",
+    "ganador": "PID/MOVER",
+    "resultados": {
+      "RC": {
+        "candidato": "LUISA GONZALEZ",
+        "votos": 4161,
+        "porcentaje": 21.9
+      },
+      "PID/MOVER": {
+        "candidato": "DANIEL NOBOA AZIN",
+        "votos": 14840,
+        "porcentaje": 78.1
+      }
+    }
+  },
+  {
+    "CODCAN": "800",
+    "CODPRO": "20",
+    "CANTON": "SAN CRISTOBAL",
+    "ganador": "PID/MOVER",
+    "resultados": {
+      "RC": {
+        "candidato": "LUISA GONZALEZ",
+        "votos": 1233,
+        "porcentaje": 26.01
+      },
+      "PID/MOVER": {
+        "candidato": "DANIEL NOBOA AZIN",
+        "votos": 3507,
+        "porcentaje": 73.99
+      }
+    }
+  },
+  {
+    "CODCAN": "805",
+    "CODPRO": "20",
+    "CANTON": "SANTA CRUZ",
+    "ganador": "PID/MOVER",
+    "resultados": {
+      "RC": {
+        "candidato": "LUISA GONZALEZ",
+        "votos": 3343,
+        "porcentaje": 37.09
+      },
+      "PID/MOVER": {
+        "candidato": "DANIEL NOBOA AZIN",
+        "votos": 5671,
+        "porcentaje": 62.91
+      }
+    }
+  },
+  {
+    "CODCAN": "810",
+    "CODPRO": "20",
+    "CANTON": "ISABELA",
+    "ganador": "PID/MOVER",
+    "resultados": {
+      "RC": {
+        "candidato": "LUISA GONZALEZ",
+        "votos": 645,
+        "porcentaje": 38.88
+      },
+      "PID/MOVER": {
+        "candidato": "DANIEL NOBOA AZIN",
+        "votos": 1014,
+        "porcentaje": 61.12
+      }
+    }
+  },
+  {
+    "CODCAN": "625",
+    "CODPRO": "21",
+    "CANTON": "LAGO AGRIO",
+    "ganador": "RC",
+    "resultados": {
+      "RC": {
+        "candidato": "LUISA GONZALEZ",
+        "votos": 36433,
+        "porcentaje": 58.35
+      },
+      "PID/MOVER": {
+        "candidato": "DANIEL NOBOA AZIN",
+        "votos": 26006,
+        "porcentaje": 41.65
+      }
+    }
+  },
+  {
+    "CODCAN": "626",
+    "CODPRO": "21",
+    "CANTON": "CUYABENO",
+    "ganador": "RC",
+    "resultados": {
+      "RC": {
+        "candidato": "LUISA GONZALEZ",
+        "votos": 3813,
+        "porcentaje": 67.26
+      },
+      "PID/MOVER": {
+        "candidato": "DANIEL NOBOA AZIN",
+        "votos": 1856,
+        "porcentaje": 32.74
+      }
+    }
+  },
+  {
+    "CODCAN": "640",
+    "CODPRO": "21",
+    "CANTON": "SUCUMBIOS",
+    "ganador": "RC",
+    "resultados": {
+      "RC": {
+        "candidato": "LUISA GONZALEZ",
+        "votos": 1632,
+        "porcentaje": 52.78
+      },
+      "PID/MOVER": {
+        "candidato": "DANIEL NOBOA AZIN",
+        "votos": 1460,
+        "porcentaje": 47.22
+      }
+    }
+  },
+  {
+    "CODCAN": "650",
+    "CODPRO": "21",
+    "CANTON": "PUTUMAYO",
+    "ganador": "RC",
+    "resultados": {
+      "RC": {
+        "candidato": "LUISA GONZALEZ",
+        "votos": 4097,
+        "porcentaje": 73.02
+      },
+      "PID/MOVER": {
+        "candidato": "DANIEL NOBOA AZIN",
+        "votos": 1514,
+        "porcentaje": 26.98
+      }
+    }
+  },
+  {
+    "CODCAN": "720",
+    "CODPRO": "21",
+    "CANTON": "SHUSHUFINDI",
+    "ganador": "RC",
+    "resultados": {
+      "RC": {
+        "candidato": "LUISA GONZALEZ",
+        "votos": 18906,
+        "porcentaje": 59.5
+      },
+      "PID/MOVER": {
+        "candidato": "DANIEL NOBOA AZIN",
+        "votos": 12868,
+        "porcentaje": 40.5
+      }
+    }
+  },
+  {
+    "CODCAN": "745",
+    "CODPRO": "21",
+    "CANTON": "CASCALES",
+    "ganador": "RC",
+    "resultados": {
+      "RC": {
+        "candidato": "LUISA GONZALEZ",
+        "votos": 4051,
+        "porcentaje": 53.32
+      },
+      "PID/MOVER": {
+        "candidato": "DANIEL NOBOA AZIN",
+        "votos": 3546,
+        "porcentaje": 46.68
+      }
+    }
+  },
+  {
+    "CODCAN": "865",
+    "CODPRO": "21",
+    "CANTON": "GONZALO PIZARRO",
+    "ganador": "RC",
+    "resultados": {
+      "RC": {
+        "candidato": "LUISA GONZALEZ",
+        "votos": 4438,
+        "porcentaje": 66.79
+      },
+      "PID/MOVER": {
+        "candidato": "DANIEL NOBOA AZIN",
+        "votos": 2207,
+        "porcentaje": 33.21
+      }
+    }
+  },
+  {
+    "CODCAN": "630",
+    "CODPRO": "22",
+    "CANTON": "AGUARICO",
+    "ganador": "RC",
+    "resultados": {
+      "RC": {
+        "candidato": "LUISA GONZALEZ",
+        "votos": 2313,
+        "porcentaje": 65.52
+      },
+      "PID/MOVER": {
+        "candidato": "DANIEL NOBOA AZIN",
+        "votos": 1217,
+        "porcentaje": 34.48
+      }
+    }
+  },
+  {
+    "CODCAN": "645",
+    "CODPRO": "22",
+    "CANTON": "FCO.DE ORELLANA",
+    "ganador": "RC",
+    "resultados": {
+      "RC": {
+        "candidato": "LUISA GONZALEZ",
+        "votos": 29164,
+        "porcentaje": 52.51
+      },
+      "PID/MOVER": {
+        "candidato": "DANIEL NOBOA AZIN",
+        "votos": 26378,
+        "porcentaje": 47.49
+      }
+    }
+  },
+  {
+    "CODCAN": "725",
+    "CODPRO": "22",
+    "CANTON": "JOYA DE LOS SACHAS",
+    "ganador": "RC",
+    "resultados": {
+      "RC": {
+        "candidato": "LUISA GONZALEZ",
+        "votos": 15977,
+        "porcentaje": 52.09
+      },
+      "PID/MOVER": {
+        "candidato": "DANIEL NOBOA AZIN",
+        "votos": 14692,
+        "porcentaje": 47.91
+      }
+    }
+  },
+  {
+    "CODCAN": "935",
+    "CODPRO": "22",
+    "CANTON": "LORETO",
+    "ganador": "RC",
+    "resultados": {
+      "RC": {
+        "candidato": "LUISA GONZALEZ",
+        "votos": 8551,
+        "porcentaje": 52.99
+      },
+      "PID/MOVER": {
+        "candidato": "DANIEL NOBOA AZIN",
+        "votos": 7587,
+        "porcentaje": 47.01
+      }
+    }
+  },
+  {
+    "CODCAN": "085",
+    "CODPRO": "23",
+    "CANTON": "SANTO DOMINGO",
+    "ganador": "PID/MOVER",
+    "resultados": {
+      "RC": {
+        "candidato": "LUISA GONZALEZ",
+        "votos": 130331,
+        "porcentaje": 49.22
+      },
+      "PID/MOVER": {
+        "candidato": "DANIEL NOBOA AZIN",
+        "votos": 134452,
+        "porcentaje": 50.78
+      }
+    }
+  },
+  {
+    "CODCAN": "982",
+    "CODPRO": "23",
+    "CANTON": "LA CONCORDIA",
+    "ganador": "RC",
+    "resultados": {
+      "RC": {
+        "candidato": "LUISA GONZALEZ",
+        "votos": 22716,
+        "porcentaje": 62.32
+      },
+      "PID/MOVER": {
+        "candidato": "DANIEL NOBOA AZIN",
+        "votos": 13736,
+        "porcentaje": 37.68
+      }
+    }
+  },
+  {
+    "CODCAN": "405",
+    "CODPRO": "24",
+    "CANTON": "SALINAS",
+    "ganador": "PID/MOVER",
+    "resultados": {
+      "RC": {
+        "candidato": "LUISA GONZALEZ",
+        "votos": 23418,
+        "porcentaje": 47.95
+      },
+      "PID/MOVER": {
+        "candidato": "DANIEL NOBOA AZIN",
+        "votos": 25425,
+        "porcentaje": 52.05
+      }
+    }
+  },
+  {
+    "CODCAN": "410",
+    "CODPRO": "24",
+    "CANTON": "SANTA ELENA",
+    "ganador": "RC",
+    "resultados": {
+      "RC": {
+        "candidato": "LUISA GONZALEZ",
+        "votos": 64427,
+        "porcentaje": 59.84
+      },
+      "PID/MOVER": {
+        "candidato": "DANIEL NOBOA AZIN",
+        "votos": 43244,
+        "porcentaje": 40.16
+      }
+    }
+  },
+  {
+    "CODCAN": "965",
+    "CODPRO": "24",
+    "CANTON": "LA LIBERTAD",
+    "ganador": "RC",
+    "resultados": {
+      "RC": {
+        "candidato": "LUISA GONZALEZ",
+        "votos": 35066,
+        "porcentaje": 50.52
+      },
+      "PID/MOVER": {
+        "candidato": "DANIEL NOBOA AZIN",
+        "votos": 34339,
+        "porcentaje": 49.48
+      }
+    }
+  },
+  {
+    "CODCAN": "011",
+    "CODPRO": "26",
+    "CANTON": "ALEMANIA",
+    "ganador": "PID/MOVER",
+    "resultados": {
+      "RC": {
+        "candidato": "LUISA GONZALEZ",
+        "votos": 378,
+        "porcentaje": 49.28
+      },
+      "PID/MOVER": {
+        "candidato": "DANIEL NOBOA AZIN",
+        "votos": 389,
+        "porcentaje": 50.72
+      }
+    }
+  },
+  {
+    "CODCAN": "031",
+    "CODPRO": "26",
+    "CANTON": "AUSTRALIA",
+    "ganador": "PID/MOVER",
+    "resultados": {
+      "RC": {
+        "candidato": "LUISA GONZALEZ",
+        "votos": 42,
+        "porcentaje": 41.58
+      },
+      "PID/MOVER": {
+        "candidato": "DANIEL NOBOA AZIN",
+        "votos": 59,
+        "porcentaje": 58.42
+      }
+    }
+  },
+  {
+    "CODCAN": "041",
+    "CODPRO": "26",
+    "CANTON": "AUSTRIA",
+    "ganador": "PID/MOVER",
+    "resultados": {
+      "RC": {
+        "candidato": "LUISA GONZALEZ",
+        "votos": 81,
+        "porcentaje": 48.5
+      },
+      "PID/MOVER": {
+        "candidato": "DANIEL NOBOA AZIN",
+        "votos": 86,
+        "porcentaje": 51.5
+      }
+    }
+  },
+  {
+    "CODCAN": "051",
+    "CODPRO": "26",
+    "CANTON": "BELGICA",
+    "ganador": "RC",
+    "resultados": {
+      "RC": {
+        "candidato": "LUISA GONZALEZ",
+        "votos": 758,
+        "porcentaje": 67.92
+      },
+      "PID/MOVER": {
+        "candidato": "DANIEL NOBOA AZIN",
+        "votos": 358,
+        "porcentaje": 32.08
+      }
+    }
+  },
+  {
+    "CODCAN": "101",
+    "CODPRO": "26",
+    "CANTON": "COREA (SUR) REPUBLICA DE",
+    "ganador": "PID/MOVER",
+    "resultados": {
+      "RC": {
+        "candidato": "LUISA GONZALEZ",
+        "votos": 9,
+        "porcentaje": 29.03
+      },
+      "PID/MOVER": {
+        "candidato": "DANIEL NOBOA AZIN",
+        "votos": 22,
+        "porcentaje": 70.97
+      }
+    }
+  },
+  {
+    "CODCAN": "141",
+    "CODPRO": "26",
+    "CANTON": "CHINA",
+    "ganador": "PID/MOVER",
+    "resultados": {
+      "RC": {
+        "candidato": "LUISA GONZALEZ",
+        "votos": 16,
+        "porcentaje": 30.77
+      },
+      "PID/MOVER": {
+        "candidato": "DANIEL NOBOA AZIN",
+        "votos": 36,
+        "porcentaje": 69.23
+      }
+    }
+  },
+  {
+    "CODCAN": "171",
+    "CODPRO": "26",
+    "CANTON": "ESPAÑA",
+    "ganador": "RC",
+    "resultados": {
+      "RC": {
+        "candidato": "LUISA GONZALEZ",
+        "votos": 35683,
+        "porcentaje": 58.85
+      },
+      "PID/MOVER": {
+        "candidato": "DANIEL NOBOA AZIN",
+        "votos": 24948,
+        "porcentaje": 41.15
+      }
+    }
+  },
+  {
+    "CODCAN": "191",
+    "CODPRO": "26",
+    "CANTON": "FRANCIA",
+    "ganador": "PID/MOVER",
+    "resultados": {
+      "RC": {
+        "candidato": "LUISA GONZALEZ",
+        "votos": 420,
+        "porcentaje": 49.94
+      },
+      "PID/MOVER": {
+        "candidato": "DANIEL NOBOA AZIN",
+        "votos": 421,
+        "porcentaje": 50.06
+      }
+    }
+  },
+  {
+    "CODCAN": "201",
+    "CODPRO": "26",
+    "CANTON": "REINO UNIDO DE GRAN BRETAÑA E IRLANDA DEL NORTE",
+    "ganador": "RC",
+    "resultados": {
+      "RC": {
+        "candidato": "LUISA GONZALEZ",
+        "votos": 1571,
+        "porcentaje": 60.82
+      },
+      "PID/MOVER": {
+        "candidato": "DANIEL NOBOA AZIN",
+        "votos": 1012,
+        "porcentaje": 39.18
+      }
+    }
+  },
+  {
+    "CODCAN": "231",
+    "CODPRO": "26",
+    "CANTON": "HUNGRIA",
+    "ganador": "PID/MOVER",
+    "resultados": {
+      "RC": {
+        "candidato": "LUISA GONZALEZ",
+        "votos": 23,
+        "porcentaje": 46.0
+      },
+      "PID/MOVER": {
+        "candidato": "DANIEL NOBOA AZIN",
+        "votos": 27,
+        "porcentaje": 54.0
+      }
+    }
+  },
+  {
+    "CODCAN": "251",
+    "CODPRO": "26",
+    "CANTON": "ISRAEL",
+    "ganador": "EMPATE",
+    "resultados": {
+      "RC": {
+        "candidato": "LUISA GONZALEZ",
+        "votos": 0,
+        "porcentaje": 4.8
+      },
+      "PID/MOVER": {
+        "candidato": "DANIEL NOBOA AZIN",
+        "votos": 0,
+        "porcentaje": 34.7
+      }
+    }
+  },
+  {
+    "CODCAN": "261",
+    "CODPRO": "26",
+    "CANTON": "ITALIA",
+    "ganador": "PID/MOVER",
+    "resultados": {
+      "RC": {
+        "candidato": "LUISA GONZALEZ",
+        "votos": 8832,
+        "porcentaje": 49.2
+      },
+      "PID/MOVER": {
+        "candidato": "DANIEL NOBOA AZIN",
+        "votos": 9118,
+        "porcentaje": 50.8
+      }
+    }
+  },
+  {
+    "CODCAN": "271",
+    "CODPRO": "26",
+    "CANTON": "JAPON",
+    "ganador": "PID/MOVER",
+    "resultados": {
+      "RC": {
+        "candidato": "LUISA GONZALEZ",
+        "votos": 9,
+        "porcentaje": 32.14
+      },
+      "PID/MOVER": {
+        "candidato": "DANIEL NOBOA AZIN",
+        "votos": 19,
+        "porcentaje": 67.86
+      }
+    }
+  },
+  {
+    "CODCAN": "301",
+    "CODPRO": "26",
+    "CANTON": "PAISES BAJOS (HOLANDA)",
+    "ganador": "PID/MOVER",
+    "resultados": {
+      "RC": {
+        "candidato": "LUISA GONZALEZ",
+        "votos": 118,
+        "porcentaje": 42.6
+      },
+      "PID/MOVER": {
+        "candidato": "DANIEL NOBOA AZIN",
+        "votos": 159,
+        "porcentaje": 57.4
+      }
+    }
+  },
+  {
+    "CODCAN": "361",
+    "CODPRO": "26",
+    "CANTON": "SUECIA",
+    "ganador": "RC",
+    "resultados": {
+      "RC": {
+        "candidato": "LUISA GONZALEZ",
+        "votos": 157,
+        "porcentaje": 60.62
+      },
+      "PID/MOVER": {
+        "candidato": "DANIEL NOBOA AZIN",
+        "votos": 102,
+        "porcentaje": 39.38
+      }
+    }
+  },
+  {
+    "CODCAN": "371",
+    "CODPRO": "26",
+    "CANTON": "SUIZA",
+    "ganador": "RC",
+    "resultados": {
+      "RC": {
+        "candidato": "LUISA GONZALEZ",
+        "votos": 346,
+        "porcentaje": 56.72
+      },
+      "PID/MOVER": {
+        "candidato": "DANIEL NOBOA AZIN",
+        "votos": 264,
+        "porcentaje": 43.28
+      }
+    }
+  },
+  {
+    "CODCAN": "381",
+    "CODPRO": "26",
+    "CANTON": "FEDERACION DE RUSIA",
+    "ganador": "EMPATE",
+    "resultados": {
+      "RC": {
+        "candidato": "LUISA GONZALEZ",
+        "votos": 0,
+        "porcentaje": 56.9
+      },
+      "PID/MOVER": {
+        "candidato": "DANIEL NOBOA AZIN",
+        "votos": 0,
+        "porcentaje": 34.7
+      }
+    }
+  },
+  {
+    "CODCAN": "411",
+    "CODPRO": "26",
+    "CANTON": "INDONESIA",
+    "ganador": "PID/MOVER",
+    "resultados": {
+      "RC": {
+        "candidato": "LUISA GONZALEZ",
+        "votos": 1,
+        "porcentaje": 33.33
+      },
+      "PID/MOVER": {
+        "candidato": "DANIEL NOBOA AZIN",
+        "votos": 2,
+        "porcentaje": 66.67
+      }
+    }
+  },
+  {
+    "CODCAN": "451",
+    "CODPRO": "26",
+    "CANTON": "TURQUIA",
+    "ganador": "PID/MOVER",
+    "resultados": {
+      "RC": {
+        "candidato": "LUISA GONZALEZ",
+        "votos": 3,
+        "porcentaje": 37.5
+      },
+      "PID/MOVER": {
+        "candidato": "DANIEL NOBOA AZIN",
+        "votos": 5,
+        "porcentaje": 62.5
+      }
+    }
+  },
+  {
+    "CODCAN": "081",
+    "CODPRO": "27",
+    "CANTON": "CANADA",
+    "ganador": "PID/MOVER",
+    "resultados": {
+      "RC": {
+        "candidato": "LUISA GONZALEZ",
+        "votos": 844,
+        "porcentaje": 47.52
+      },
+      "PID/MOVER": {
+        "candidato": "DANIEL NOBOA AZIN",
+        "votos": 932,
+        "porcentaje": 52.48
+      }
+    }
+  },
+  {
+    "CODCAN": "181",
+    "CODPRO": "27",
+    "CANTON": "ESTADOS UNIDOS",
+    "ganador": "PID/MOVER",
+    "resultados": {
+      "RC": {
+        "candidato": "LUISA GONZALEZ",
+        "votos": 10327,
+        "porcentaje": 42.01
+      },
+      "PID/MOVER": {
+        "candidato": "DANIEL NOBOA AZIN",
+        "votos": 14256,
+        "porcentaje": 57.99
+      }
+    }
+  },
+  {
+    "CODCAN": "021",
+    "CODPRO": "28",
+    "CANTON": "ARGENTINA",
+    "ganador": "PID/MOVER",
+    "resultados": {
+      "RC": {
+        "candidato": "LUISA GONZALEZ",
+        "votos": 157,
+        "porcentaje": 23.47
+      },
+      "PID/MOVER": {
+        "candidato": "DANIEL NOBOA AZIN",
+        "votos": 512,
+        "porcentaje": 76.53
+      }
+    }
+  },
+  {
+    "CODCAN": "061",
+    "CODPRO": "28",
+    "CANTON": "BOLIVIA",
+    "ganador": "PID/MOVER",
+    "resultados": {
+      "RC": {
+        "candidato": "LUISA GONZALEZ",
+        "votos": 10,
+        "porcentaje": 38.46
+      },
+      "PID/MOVER": {
+        "candidato": "DANIEL NOBOA AZIN",
+        "votos": 16,
+        "porcentaje": 61.54
+      }
+    }
+  },
+  {
+    "CODCAN": "071",
+    "CODPRO": "28",
+    "CANTON": "BRASIL",
+    "ganador": "PID/MOVER",
+    "resultados": {
+      "RC": {
+        "candidato": "LUISA GONZALEZ",
+        "votos": 100,
+        "porcentaje": 46.08
+      },
+      "PID/MOVER": {
+        "candidato": "DANIEL NOBOA AZIN",
+        "votos": 117,
+        "porcentaje": 53.92
+      }
+    }
+  },
+  {
+    "CODCAN": "131",
+    "CODPRO": "28",
+    "CANTON": "CHILE",
+    "ganador": "PID/MOVER",
+    "resultados": {
+      "RC": {
+        "candidato": "LUISA GONZALEZ",
+        "votos": 566,
+        "porcentaje": 28.46
+      },
+      "PID/MOVER": {
+        "candidato": "DANIEL NOBOA AZIN",
+        "votos": 1423,
+        "porcentaje": 71.54
+      }
+    }
+  },
+  {
+    "CODCAN": "091",
+    "CODPRO": "28",
+    "CANTON": "COLOMBIA",
+    "ganador": "RC",
+    "resultados": {
+      "RC": {
+        "candidato": "LUISA GONZALEZ",
+        "votos": 668,
+        "porcentaje": 53.61
+      },
+      "PID/MOVER": {
+        "candidato": "DANIEL NOBOA AZIN",
+        "votos": 578,
+        "porcentaje": 46.39
+      }
+    }
+  },
+  {
+    "CODCAN": "111",
+    "CODPRO": "28",
+    "CANTON": "COSTA RICA",
+    "ganador": "PID/MOVER",
+    "resultados": {
+      "RC": {
+        "candidato": "LUISA GONZALEZ",
+        "votos": 46,
+        "porcentaje": 25.14
+      },
+      "PID/MOVER": {
+        "candidato": "DANIEL NOBOA AZIN",
+        "votos": 137,
+        "porcentaje": 74.86
+      }
+    }
+  },
+  {
+    "CODCAN": "121",
+    "CODPRO": "28",
+    "CANTON": "CUBA",
+    "ganador": "RC",
+    "resultados": {
+      "RC": {
+        "candidato": "LUISA GONZALEZ",
+        "votos": 13,
+        "porcentaje": 54.17
+      },
+      "PID/MOVER": {
+        "candidato": "DANIEL NOBOA AZIN",
+        "votos": 11,
+        "porcentaje": 45.83
+      }
+    }
+  },
+  {
+    "CODCAN": "341",
+    "CODPRO": "28",
+    "CANTON": "EGIPTO",
+    "ganador": "PID/MOVER",
+    "resultados": {
+      "RC": {
+        "candidato": "LUISA GONZALEZ",
+        "votos": 1,
+        "porcentaje": 20.0
+      },
+      "PID/MOVER": {
+        "candidato": "DANIEL NOBOA AZIN",
+        "votos": 4,
+        "porcentaje": 80.0
+      }
+    }
+  },
+  {
+    "CODCAN": "161",
+    "CODPRO": "28",
+    "CANTON": "EL SALVADOR",
+    "ganador": "PID/MOVER",
+    "resultados": {
+      "RC": {
+        "candidato": "LUISA GONZALEZ",
+        "votos": 3,
+        "porcentaje": 15.0
+      },
+      "PID/MOVER": {
+        "candidato": "DANIEL NOBOA AZIN",
+        "votos": 17,
+        "porcentaje": 85.0
+      }
+    }
+  },
+  {
+    "CODCAN": "211",
+    "CODPRO": "28",
+    "CANTON": "GUATEMALA",
+    "ganador": "PID/MOVER",
+    "resultados": {
+      "RC": {
+        "candidato": "LUISA GONZALEZ",
+        "votos": 2,
+        "porcentaje": 5.56
+      },
+      "PID/MOVER": {
+        "candidato": "DANIEL NOBOA AZIN",
+        "votos": 34,
+        "porcentaje": 94.44
+      }
+    }
+  },
+  {
+    "CODCAN": "221",
+    "CODPRO": "28",
+    "CANTON": "HONDURAS",
+    "ganador": "PID/MOVER",
+    "resultados": {
+      "RC": {
+        "candidato": "LUISA GONZALEZ",
+        "votos": 12,
+        "porcentaje": 40.0
+      },
+      "PID/MOVER": {
+        "candidato": "DANIEL NOBOA AZIN",
+        "votos": 18,
+        "porcentaje": 60.0
+      }
+    }
+  },
+  {
+    "CODCAN": "281",
+    "CODPRO": "28",
+    "CANTON": "MEXICO",
+    "ganador": "PID/MOVER",
+    "resultados": {
+      "RC": {
+        "candidato": "LUISA GONZALEZ",
+        "votos": 86,
+        "porcentaje": 25.52
+      },
+      "PID/MOVER": {
+        "candidato": "DANIEL NOBOA AZIN",
+        "votos": 251,
+        "porcentaje": 74.48
+      }
+    }
+  },
+  {
+    "CODCAN": "312",
+    "CODPRO": "28",
+    "CANTON": "PANAMA",
+    "ganador": "PID/MOVER",
+    "resultados": {
+      "RC": {
+        "candidato": "LUISA GONZALEZ",
+        "votos": 42,
+        "porcentaje": 18.5
+      },
+      "PID/MOVER": {
+        "candidato": "DANIEL NOBOA AZIN",
+        "votos": 185,
+        "porcentaje": 81.5
+      }
+    }
+  },
+  {
+    "CODCAN": "321",
+    "CODPRO": "28",
+    "CANTON": "PARAGUAY",
+    "ganador": "PID/MOVER",
+    "resultados": {
+      "RC": {
+        "candidato": "LUISA GONZALEZ",
+        "votos": 6,
+        "porcentaje": 15.0
+      },
+      "PID/MOVER": {
+        "candidato": "DANIEL NOBOA AZIN",
+        "votos": 34,
+        "porcentaje": 85.0
+      }
+    }
+  },
+  {
+    "CODCAN": "331",
+    "CODPRO": "28",
+    "CANTON": "PERU",
+    "ganador": "PID/MOVER",
+    "resultados": {
+      "RC": {
+        "candidato": "LUISA GONZALEZ",
+        "votos": 62,
+        "porcentaje": 21.31
+      },
+      "PID/MOVER": {
+        "candidato": "DANIEL NOBOA AZIN",
+        "votos": 229,
+        "porcentaje": 78.69
+      }
+    }
+  },
+  {
+    "CODCAN": "351",
+    "CODPRO": "28",
+    "CANTON": "REPUBLICA DOMINICANA",
+    "ganador": "PID/MOVER",
+    "resultados": {
+      "RC": {
+        "candidato": "LUISA GONZALEZ",
+        "votos": 65,
+        "porcentaje": 38.24
+      },
+      "PID/MOVER": {
+        "candidato": "DANIEL NOBOA AZIN",
+        "votos": 105,
+        "porcentaje": 61.76
+      }
+    }
+  },
+  {
+    "CODCAN": "441",
+    "CODPRO": "28",
+    "CANTON": "SUDAFRICA",
+    "ganador": "PID/MOVER",
+    "resultados": {
+      "RC": {
+        "candidato": "LUISA GONZALEZ",
+        "votos": 0,
+        "porcentaje": 0.0
+      },
+      "PID/MOVER": {
+        "candidato": "DANIEL NOBOA AZIN",
+        "votos": 3,
+        "porcentaje": 100.0
+      }
+    }
+  },
+  {
+    "CODCAN": "391",
+    "CODPRO": "28",
+    "CANTON": "URUGUAY",
+    "ganador": "PID/MOVER",
+    "resultados": {
+      "RC": {
+        "candidato": "LUISA GONZALEZ",
+        "votos": 22,
+        "porcentaje": 34.38
+      },
+      "PID/MOVER": {
+        "candidato": "DANIEL NOBOA AZIN",
+        "votos": 42,
+        "porcentaje": 65.62
+      }
+    }
+  },
+  {
+    "CODCAN": "401",
+    "CODPRO": "28",
+    "CANTON": "VENEZUELA",
+    "ganador": "RC",
+    "resultados": {
+      "RC": {
+        "candidato": "LUISA GONZALEZ",
+        "votos": 1456,
+        "porcentaje": 53.43
+      },
+      "PID/MOVER": {
+        "candidato": "DANIEL NOBOA AZIN",
+        "votos": 1269,
+        "porcentaje": 46.57
+      }
+    }
+  }
+]
