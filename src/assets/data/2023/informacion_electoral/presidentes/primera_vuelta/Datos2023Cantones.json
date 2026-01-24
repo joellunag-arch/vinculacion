@@ -781,7 +781,7 @@
       "RC": {
         "candidato": "LUISA GONZALEZ",
         "votos": 1830,
-        "porcentaje": 18.0
+        "porcentaje": 18
       },
       "AMIGO": {
         "candidato": "BOLIVAR ARMIJOS",
@@ -1789,7 +1789,7 @@
       "RC": {
         "candidato": "LUISA GONZALEZ",
         "votos": 8490,
-        "porcentaje": 20.0
+        "porcentaje": 20
       },
       "AMIGO": {
         "candidato": "BOLIVAR ARMIJOS",
@@ -2347,7 +2347,7 @@
       "PSC/PSP/CD": {
         "candidato": "JAN TOPIC",
         "votos": 732,
-        "porcentaje": 12.0
+        "porcentaje": 12
       }
     }
   },
@@ -3969,7 +3969,7 @@
       "UP/PSE/DSI": {
         "candidato": "YAKU PEREZ",
         "votos": 1181,
-        "porcentaje": 3.0
+        "porcentaje": 3
       },
       "AVANZA/SUMA": {
         "candidato": "OTTO SONNENHOLZNER",
@@ -4136,7 +4136,7 @@
       "CONSTRUYE": {
         "candidato": "FERNANDO VILLAVICENCIO",
         "votos": 792,
-        "porcentaje": 7.0
+        "porcentaje": 7
       },
       "RC": {
         "candidato": "LUISA GONZALEZ",
@@ -4477,7 +4477,7 @@
       "RC": {
         "candidato": "LUISA GONZALEZ",
         "votos": 4468,
-        "porcentaje": 52.0
+        "porcentaje": 52
       },
       "AMIGO": {
         "candidato": "BOLIVAR ARMIJOS",
@@ -5750,7 +5750,7 @@
       "AVANZA/SUMA": {
         "candidato": "OTTO SONNENHOLZNER",
         "votos": 331,
-        "porcentaje": 6.0
+        "porcentaje": 6
       },
       "PSC/PSP/CD": {
         "candidato": "JAN TOPIC",
@@ -7943,7 +7943,7 @@
       "RETO": {
         "candidato": "XAVIER HERVAS",
         "votos": 110,
-        "porcentaje": 1.0
+        "porcentaje": 1
       },
       "ADN": {
         "candidato": "DANIEL NOBOA AZIN",
@@ -8390,7 +8390,7 @@
       "AVANZA/SUMA": {
         "candidato": "OTTO SONNENHOLZNER",
         "votos": 193,
-        "porcentaje": 4.0
+        "porcentaje": 4
       },
       "PSC/PSP/CD": {
         "candidato": "JAN TOPIC",
@@ -8625,7 +8625,7 @@
       "UP/PSE/DSI": {
         "candidato": "YAKU PEREZ",
         "votos": 2255,
-        "porcentaje": 3.0
+        "porcentaje": 3
       },
       "AVANZA/SUMA": {
         "candidato": "OTTO SONNENHOLZNER",
@@ -9608,7 +9608,7 @@
       "CONSTRUYE": {
         "candidato": "FERNANDO VILLAVICENCIO",
         "votos": 4294,
-        "porcentaje": 23.0
+        "porcentaje": 23
       },
       "RC": {
         "candidato": "LUISA GONZALEZ",
@@ -9681,7 +9681,7 @@
       "UP/PSE/DSI": {
         "candidato": "YAKU PEREZ",
         "votos": 95,
-        "porcentaje": 2.0
+        "porcentaje": 2
       },
       "AVANZA/SUMA": {
         "candidato": "OTTO SONNENHOLZNER",
@@ -9878,7 +9878,7 @@
       "AVANZA/SUMA": {
         "candidato": "OTTO SONNENHOLZNER",
         "votos": 110,
-        "porcentaje": 2.0
+        "porcentaje": 2
       },
       "PSC/PSP/CD": {
         "candidato": "JAN TOPIC",
@@ -10556,6 +10556,918 @@
         "candidato": "JAN TOPIC",
         "votos": 8567,
         "porcentaje": 12.42
+      }
+    }
+  },
+  {
+    "CODCAN": "011",
+    "CODPRO": "26",
+    "CANTON": "ALEMANIA",
+    "ganador": "CONSTRUYE",
+    "resultados": {
+      "CONSTRUYE": {
+        "candidato": "FERNANDO VILLAVICENCIO",
+        "votos": 3554,
+        "porcentaje": 34.15
+      },
+      "RC": {
+        "candidato": "LUISA GONZALEZ",
+        "votos": 257,
+        "porcentaje": 2.47
+      },
+      "AMIGO": {
+        "candidato": "BOLIVAR ARMIJOS",
+        "votos": 86,
+        "porcentaje": 0.83
+      },
+      "RETO": {
+        "candidato": "XAVIER HERVAS",
+        "votos": 373,
+        "porcentaje": 3.58
+      },
+      "ADN": {
+        "candidato": "DANIEL NOBOA AZIN",
+        "votos": 2451,
+        "porcentaje": 23.55
+      },
+      "UP/PSE/DSI": {
+        "candidato": "YAKU PEREZ",
+        "votos": 760,
+        "porcentaje": 7.3
+      },
+      "AVANZA/SUMA": {
+        "candidato": "OTTO SONNENHOLZNER",
+        "votos": 1749,
+        "porcentaje": 16.81
+      },
+      "PSC/PSP/CD": {
+        "candidato": "JAN TOPIC",
+        "votos": 1176,
+        "porcentaje": 11.3
+      }
+    }
+  },
+  {
+    "CODCAN": "031",
+    "CODPRO": "26",
+    "CANTON": "AUSTRALIA",
+    "ganador": "CONSTRUYE",
+    "resultados": {
+      "CONSTRUYE": {
+        "candidato": "FERNANDO VILLAVICENCIO",
+        "votos": 5017,
+        "porcentaje": 31.15
+      },
+      "RC": {
+        "candidato": "LUISA GONZALEZ",
+        "votos": 4292,
+        "porcentaje": 26.65
+      },
+      "AMIGO": {
+        "candidato": "BOLIVAR ARMIJOS",
+        "votos": 43,
+        "porcentaje": 0.27
+      },
+      "RETO": {
+        "candidato": "XAVIER HERVAS",
+        "votos": 100,
+        "porcentaje": 0.62
+      },
+      "ADN": {
+        "candidato": "DANIEL NOBOA AZIN",
+        "votos": 2090,
+        "porcentaje": 12.97
+      },
+      "UP/PSE/DSI": {
+        "candidato": "YAKU PEREZ",
+        "votos": 169,
+        "porcentaje": 1.05
+      },
+      "AVANZA/SUMA": {
+        "candidato": "OTTO SONNENHOLZNER",
+        "votos": 1783,
+        "porcentaje": 11.07
+      },
+      "PSC/PSP/CD": {
+        "candidato": "JAN TOPIC",
+        "votos": 2614,
+        "porcentaje": 16.23
+      }
+    }
+  },
+  {
+    "CODCAN": "051",
+    "CODPRO": "26",
+    "CANTON": "BELGICA",
+    "ganador": "CONSTRUYE",
+    "resultados": {
+      "CONSTRUYE": {
+        "candidato": "FERNANDO VILLAVICENCIO",
+        "votos": 4877,
+        "porcentaje": 38.29
+      },
+      "RC": {
+        "candidato": "LUISA GONZALEZ",
+        "votos": 2088,
+        "porcentaje": 16.39
+      },
+      "AMIGO": {
+        "candidato": "BOLIVAR ARMIJOS",
+        "votos": 111,
+        "porcentaje": 0.87
+      },
+      "RETO": {
+        "candidato": "XAVIER HERVAS",
+        "votos": 365,
+        "porcentaje": 2.87
+      },
+      "ADN": {
+        "candidato": "DANIEL NOBOA AZIN",
+        "votos": 836,
+        "porcentaje": 6.56
+      },
+      "UP/PSE/DSI": {
+        "candidato": "YAKU PEREZ",
+        "votos": 497,
+        "porcentaje": 3.9
+      },
+      "AVANZA/SUMA": {
+        "candidato": "OTTO SONNENHOLZNER",
+        "votos": 1449,
+        "porcentaje": 11.38
+      },
+      "PSC/PSP/CD": {
+        "candidato": "JAN TOPIC",
+        "votos": 2514,
+        "porcentaje": 19.74
+      }
+    }
+  },
+  {
+    "CODCAN": "141",
+    "CODPRO": "26",
+    "CANTON": "CHINA",
+    "ganador": "RC",
+    "resultados": {
+      "CONSTRUYE": {
+        "candidato": "FERNANDO VILLAVICENCIO",
+        "votos": 1703,
+        "porcentaje": 20.45
+      },
+      "RC": {
+        "candidato": "LUISA GONZALEZ",
+        "votos": 3792,
+        "porcentaje": 45.53
+      },
+      "AMIGO": {
+        "candidato": "BOLIVAR ARMIJOS",
+        "votos": 192,
+        "porcentaje": 2.31
+      },
+      "RETO": {
+        "candidato": "XAVIER HERVAS",
+        "votos": 177,
+        "porcentaje": 2.13
+      },
+      "ADN": {
+        "candidato": "DANIEL NOBOA AZIN",
+        "votos": 1164,
+        "porcentaje": 13.98
+      },
+      "UP/PSE/DSI": {
+        "candidato": "YAKU PEREZ",
+        "votos": 328,
+        "porcentaje": 3.94
+      },
+      "AVANZA/SUMA": {
+        "candidato": "OTTO SONNENHOLZNER",
+        "votos": 219,
+        "porcentaje": 2.63
+      },
+      "PSC/PSP/CD": {
+        "candidato": "JAN TOPIC",
+        "votos": 753,
+        "porcentaje": 9.04
+      }
+    }
+  },
+  {
+    "CODCAN": "171",
+    "CODPRO": "26",
+    "CANTON": "ESPAÑA",
+    "ganador": "RC",
+    "resultados": {
+      "CONSTRUYE": {
+        "candidato": "FERNANDO VILLAVICENCIO",
+        "votos": 2130,
+        "porcentaje": 21.08
+      },
+      "RC": {
+        "candidato": "LUISA GONZALEZ",
+        "votos": 2714,
+        "porcentaje": 26.86
+      },
+      "AMIGO": {
+        "candidato": "BOLIVAR ARMIJOS",
+        "votos": 135,
+        "porcentaje": 1.34
+      },
+      "RETO": {
+        "candidato": "XAVIER HERVAS",
+        "votos": 142,
+        "porcentaje": 1.41
+      },
+      "ADN": {
+        "candidato": "DANIEL NOBOA AZIN",
+        "votos": 2047,
+        "porcentaje": 20.26
+      },
+      "UP/PSE/DSI": {
+        "candidato": "YAKU PEREZ",
+        "votos": 443,
+        "porcentaje": 4.38
+      },
+      "AVANZA/SUMA": {
+        "candidato": "OTTO SONNENHOLZNER",
+        "votos": 1369,
+        "porcentaje": 13.55
+      },
+      "PSC/PSP/CD": {
+        "candidato": "JAN TOPIC",
+        "votos": 1123,
+        "porcentaje": 11.12
+      }
+    }
+  },
+  {
+    "CODCAN": "191",
+    "CODPRO": "26",
+    "CANTON": "FRANCIA",
+    "ganador": "ADN",
+    "resultados": {
+      "CONSTRUYE": {
+        "candidato": "FERNANDO VILLAVICENCIO",
+        "votos": 3441,
+        "porcentaje": 27.73
+      },
+      "RC": {
+        "candidato": "LUISA GONZALEZ",
+        "votos": 930,
+        "porcentaje": 7.5
+      },
+      "AMIGO": {
+        "candidato": "BOLIVAR ARMIJOS",
+        "votos": 128,
+        "porcentaje": 1.03
+      },
+      "RETO": {
+        "candidato": "XAVIER HERVAS",
+        "votos": 198,
+        "porcentaje": 1.6
+      },
+      "ADN": {
+        "candidato": "DANIEL NOBOA AZIN",
+        "votos": 5058,
+        "porcentaje": 40.77
+      },
+      "UP/PSE/DSI": {
+        "candidato": "YAKU PEREZ",
+        "votos": 572,
+        "porcentaje": 4.61
+      },
+      "AVANZA/SUMA": {
+        "candidato": "OTTO SONNENHOLZNER",
+        "votos": 1156,
+        "porcentaje": 9.32
+      },
+      "PSC/PSP/CD": {
+        "candidato": "JAN TOPIC",
+        "votos": 924,
+        "porcentaje": 7.45
+      }
+    }
+  },
+  {
+    "CODCAN": "261",
+    "CODPRO": "26",
+    "CANTON": "ITALIA",
+    "ganador": "PSC/PSP/CD",
+    "resultados": {
+      "CONSTRUYE": {
+        "candidato": "FERNANDO VILLAVICENCIO",
+        "votos": 2216,
+        "porcentaje": 20.69
+      },
+      "RC": {
+        "candidato": "LUISA GONZALEZ",
+        "votos": 1365,
+        "porcentaje": 12.74
+      },
+      "AMIGO": {
+        "candidato": "BOLIVAR ARMIJOS",
+        "votos": 143,
+        "porcentaje": 1.33
+      },
+      "RETO": {
+        "candidato": "XAVIER HERVAS",
+        "votos": 304,
+        "porcentaje": 2.84
+      },
+      "ADN": {
+        "candidato": "DANIEL NOBOA AZIN",
+        "votos": 1917,
+        "porcentaje": 17.89
+      },
+      "UP/PSE/DSI": {
+        "candidato": "YAKU PEREZ",
+        "votos": 981,
+        "porcentaje": 9.16
+      },
+      "AVANZA/SUMA": {
+        "candidato": "OTTO SONNENHOLZNER",
+        "votos": 937,
+        "porcentaje": 8.75
+      },
+      "PSC/PSP/CD": {
+        "candidato": "JAN TOPIC",
+        "votos": 2850,
+        "porcentaje": 26.6
+      }
+    }
+  },
+  {
+    "CODCAN": "271",
+    "CODPRO": "26",
+    "CANTON": "JAPON",
+    "ganador": "CONSTRUYE",
+    "resultados": {
+      "CONSTRUYE": {
+        "candidato": "FERNANDO VILLAVICENCIO",
+        "votos": 4951,
+        "porcentaje": 36.98
+      },
+      "RC": {
+        "candidato": "LUISA GONZALEZ",
+        "votos": 500,
+        "porcentaje": 3.73
+      },
+      "AMIGO": {
+        "candidato": "BOLIVAR ARMIJOS",
+        "votos": 174,
+        "porcentaje": 1.3
+      },
+      "RETO": {
+        "candidato": "XAVIER HERVAS",
+        "votos": 174,
+        "porcentaje": 1.3
+      },
+      "ADN": {
+        "candidato": "DANIEL NOBOA AZIN",
+        "votos": 4630,
+        "porcentaje": 34.58
+      },
+      "UP/PSE/DSI": {
+        "candidato": "YAKU PEREZ",
+        "votos": 126,
+        "porcentaje": 0.94
+      },
+      "AVANZA/SUMA": {
+        "candidato": "OTTO SONNENHOLZNER",
+        "votos": 348,
+        "porcentaje": 2.6
+      },
+      "PSC/PSP/CD": {
+        "candidato": "JAN TOPIC",
+        "votos": 2486,
+        "porcentaje": 18.57
+      }
+    }
+  },
+  {
+    "CODCAN": "361",
+    "CODPRO": "26",
+    "CANTON": "SUECIA",
+    "ganador": "ADN",
+    "resultados": {
+      "CONSTRUYE": {
+        "candidato": "FERNANDO VILLAVICENCIO",
+        "votos": 2809,
+        "porcentaje": 21.69
+      },
+      "RC": {
+        "candidato": "LUISA GONZALEZ",
+        "votos": 2981,
+        "porcentaje": 23.02
+      },
+      "AMIGO": {
+        "candidato": "BOLIVAR ARMIJOS",
+        "votos": 56,
+        "porcentaje": 0.43
+      },
+      "RETO": {
+        "candidato": "XAVIER HERVAS",
+        "votos": 511,
+        "porcentaje": 3.95
+      },
+      "ADN": {
+        "candidato": "DANIEL NOBOA AZIN",
+        "votos": 4638,
+        "porcentaje": 35.82
+      },
+      "UP/PSE/DSI": {
+        "candidato": "YAKU PEREZ",
+        "votos": 673,
+        "porcentaje": 5.2
+      },
+      "AVANZA/SUMA": {
+        "candidato": "OTTO SONNENHOLZNER",
+        "votos": 292,
+        "porcentaje": 2.26
+      },
+      "PSC/PSP/CD": {
+        "candidato": "JAN TOPIC",
+        "votos": 989,
+        "porcentaje": 7.64
+      }
+    }
+  },
+  {
+    "CODCAN": "371",
+    "CODPRO": "26",
+    "CANTON": "SUIZA",
+    "ganador": "CONSTRUYE",
+    "resultados": {
+      "CONSTRUYE": {
+        "candidato": "FERNANDO VILLAVICENCIO",
+        "votos": 4956,
+        "porcentaje": 47.15
+      },
+      "RC": {
+        "candidato": "LUISA GONZALEZ",
+        "votos": 2959,
+        "porcentaje": 28.15
+      },
+      "AMIGO": {
+        "candidato": "BOLIVAR ARMIJOS",
+        "votos": 133,
+        "porcentaje": 1.27
+      },
+      "RETO": {
+        "candidato": "XAVIER HERVAS",
+        "votos": 425,
+        "porcentaje": 4.04
+      },
+      "ADN": {
+        "candidato": "DANIEL NOBOA AZIN",
+        "votos": 477,
+        "porcentaje": 4.54
+      },
+      "UP/PSE/DSI": {
+        "candidato": "YAKU PEREZ",
+        "votos": 1014,
+        "porcentaje": 9.65
+      },
+      "AVANZA/SUMA": {
+        "candidato": "OTTO SONNENHOLZNER",
+        "votos": 110,
+        "porcentaje": 1.05
+      },
+      "PSC/PSP/CD": {
+        "candidato": "JAN TOPIC",
+        "votos": 438,
+        "porcentaje": 4.17
+      }
+    }
+  },
+  {
+    "CODCAN": "081",
+    "CODPRO": "27",
+    "CANTON": "CANADA",
+    "ganador": "ADN",
+    "resultados": {
+      "CONSTRUYE": {
+        "candidato": "FERNANDO VILLAVICENCIO",
+        "votos": 2013,
+        "porcentaje": 20.15
+      },
+      "RC": {
+        "candidato": "LUISA GONZALEZ",
+        "votos": 178,
+        "porcentaje": 1.78
+      },
+      "AMIGO": {
+        "candidato": "BOLIVAR ARMIJOS",
+        "votos": 196,
+        "porcentaje": 1.96
+      },
+      "RETO": {
+        "candidato": "XAVIER HERVAS",
+        "votos": 116,
+        "porcentaje": 1.16
+      },
+      "ADN": {
+        "candidato": "DANIEL NOBOA AZIN",
+        "votos": 3133,
+        "porcentaje": 31.37
+      },
+      "UP/PSE/DSI": {
+        "candidato": "YAKU PEREZ",
+        "votos": 686,
+        "porcentaje": 6.87
+      },
+      "AVANZA/SUMA": {
+        "candidato": "OTTO SONNENHOLZNER",
+        "votos": 795,
+        "porcentaje": 7.96
+      },
+      "PSC/PSP/CD": {
+        "candidato": "JAN TOPIC",
+        "votos": 2871,
+        "porcentaje": 28.74
+      }
+    }
+  },
+  {
+    "CODCAN": "181",
+    "CODPRO": "27",
+    "CANTON": "ESTADOS UNIDOS",
+    "ganador": "RC",
+    "resultados": {
+      "CONSTRUYE": {
+        "candidato": "FERNANDO VILLAVICENCIO",
+        "votos": 1979,
+        "porcentaje": 16.35
+      },
+      "RC": {
+        "candidato": "LUISA GONZALEZ",
+        "votos": 4644,
+        "porcentaje": 38.37
+      },
+      "AMIGO": {
+        "candidato": "BOLIVAR ARMIJOS",
+        "votos": 39,
+        "porcentaje": 0.32
+      },
+      "RETO": {
+        "candidato": "XAVIER HERVAS",
+        "votos": 214,
+        "porcentaje": 1.77
+      },
+      "ADN": {
+        "candidato": "DANIEL NOBOA AZIN",
+        "votos": 2357,
+        "porcentaje": 19.47
+      },
+      "UP/PSE/DSI": {
+        "candidato": "YAKU PEREZ",
+        "votos": 994,
+        "porcentaje": 8.21
+      },
+      "AVANZA/SUMA": {
+        "candidato": "OTTO SONNENHOLZNER",
+        "votos": 122,
+        "porcentaje": 1.01
+      },
+      "PSC/PSP/CD": {
+        "candidato": "JAN TOPIC",
+        "votos": 1754,
+        "porcentaje": 14.49
+      }
+    }
+  },
+  {
+    "CODCAN": "021",
+    "CODPRO": "28",
+    "CANTON": "ARGENTINA",
+    "ganador": "AVANZA/SUMA",
+    "resultados": {
+      "CONSTRUYE": {
+        "candidato": "FERNANDO VILLAVICENCIO",
+        "votos": 1690,
+        "porcentaje": 25.33
+      },
+      "RC": {
+        "candidato": "LUISA GONZALEZ",
+        "votos": 1423,
+        "porcentaje": 21.32
+      },
+      "AMIGO": {
+        "candidato": "BOLIVAR ARMIJOS",
+        "votos": 86,
+        "porcentaje": 1.29
+      },
+      "RETO": {
+        "candidato": "XAVIER HERVAS",
+        "votos": 476,
+        "porcentaje": 7.13
+      },
+      "ADN": {
+        "candidato": "DANIEL NOBOA AZIN",
+        "votos": 223,
+        "porcentaje": 3.34
+      },
+      "UP/PSE/DSI": {
+        "candidato": "YAKU PEREZ",
+        "votos": 102,
+        "porcentaje": 1.53
+      },
+      "AVANZA/SUMA": {
+        "candidato": "OTTO SONNENHOLZNER",
+        "votos": 1837,
+        "porcentaje": 27.53
+      },
+      "PSC/PSP/CD": {
+        "candidato": "JAN TOPIC",
+        "votos": 836,
+        "porcentaje": 12.53
+      }
+    }
+  },
+  {
+    "CODCAN": "071",
+    "CODPRO": "28",
+    "CANTON": "BRASIL",
+    "ganador": "UP/PSE/DSI",
+    "resultados": {
+      "CONSTRUYE": {
+        "candidato": "FERNANDO VILLAVICENCIO",
+        "votos": 902,
+        "porcentaje": 22.66
+      },
+      "RC": {
+        "candidato": "LUISA GONZALEZ",
+        "votos": 831,
+        "porcentaje": 20.88
+      },
+      "AMIGO": {
+        "candidato": "BOLIVAR ARMIJOS",
+        "votos": 30,
+        "porcentaje": 0.75
+      },
+      "RETO": {
+        "candidato": "XAVIER HERVAS",
+        "votos": 150,
+        "porcentaje": 3.77
+      },
+      "ADN": {
+        "candidato": "DANIEL NOBOA AZIN",
+        "votos": 189,
+        "porcentaje": 4.75
+      },
+      "UP/PSE/DSI": {
+        "candidato": "YAKU PEREZ",
+        "votos": 1026,
+        "porcentaje": 25.78
+      },
+      "AVANZA/SUMA": {
+        "candidato": "OTTO SONNENHOLZNER",
+        "votos": 254,
+        "porcentaje": 6.38
+      },
+      "PSC/PSP/CD": {
+        "candidato": "JAN TOPIC",
+        "votos": 598,
+        "porcentaje": 15.03
+      }
+    }
+  },
+  {
+    "CODCAN": "131",
+    "CODPRO": "28",
+    "CANTON": "CHILE",
+    "ganador": "CONSTRUYE",
+    "resultados": {
+      "CONSTRUYE": {
+        "candidato": "FERNANDO VILLAVICENCIO",
+        "votos": 3163,
+        "porcentaje": 27.74
+      },
+      "RC": {
+        "candidato": "LUISA GONZALEZ",
+        "votos": 1112,
+        "porcentaje": 9.75
+      },
+      "AMIGO": {
+        "candidato": "BOLIVAR ARMIJOS",
+        "votos": 139,
+        "porcentaje": 1.22
+      },
+      "RETO": {
+        "candidato": "XAVIER HERVAS",
+        "votos": 236,
+        "porcentaje": 2.07
+      },
+      "ADN": {
+        "candidato": "DANIEL NOBOA AZIN",
+        "votos": 2281,
+        "porcentaje": 20
+      },
+      "UP/PSE/DSI": {
+        "candidato": "YAKU PEREZ",
+        "votos": 902,
+        "porcentaje": 7.91
+      },
+      "AVANZA/SUMA": {
+        "candidato": "OTTO SONNENHOLZNER",
+        "votos": 941,
+        "porcentaje": 8.25
+      },
+      "PSC/PSP/CD": {
+        "candidato": "JAN TOPIC",
+        "votos": 2629,
+        "porcentaje": 23.06
+      }
+    }
+  },
+  {
+    "CODCAN": "091",
+    "CODPRO": "28",
+    "CANTON": "COLOMBIA",
+    "ganador": "ADN",
+    "resultados": {
+      "CONSTRUYE": {
+        "candidato": "FERNANDO VILLAVICENCIO",
+        "votos": 3390,
+        "porcentaje": 26.19
+      },
+      "RC": {
+        "candidato": "LUISA GONZALEZ",
+        "votos": 1865,
+        "porcentaje": 14.41
+      },
+      "AMIGO": {
+        "candidato": "BOLIVAR ARMIJOS",
+        "votos": 14,
+        "porcentaje": 0.11
+      },
+      "RETO": {
+        "candidato": "XAVIER HERVAS",
+        "votos": 153,
+        "porcentaje": 1.18
+      },
+      "ADN": {
+        "candidato": "DANIEL NOBOA AZIN",
+        "votos": 4249,
+        "porcentaje": 32.83
+      },
+      "UP/PSE/DSI": {
+        "candidato": "YAKU PEREZ",
+        "votos": 423,
+        "porcentaje": 3.27
+      },
+      "AVANZA/SUMA": {
+        "candidato": "OTTO SONNENHOLZNER",
+        "votos": 1177,
+        "porcentaje": 9.09
+      },
+      "PSC/PSP/CD": {
+        "candidato": "JAN TOPIC",
+        "votos": 1671,
+        "porcentaje": 12.91
+      }
+    }
+  },
+  {
+    "CODCAN": "281",
+    "CODPRO": "28",
+    "CANTON": "MEXICO",
+    "ganador": "ADN",
+    "resultados": {
+      "CONSTRUYE": {
+        "candidato": "FERNANDO VILLAVICENCIO",
+        "votos": 1916,
+        "porcentaje": 16.75
+      },
+      "RC": {
+        "candidato": "LUISA GONZALEZ",
+        "votos": 2105,
+        "porcentaje": 18.4
+      },
+      "AMIGO": {
+        "candidato": "BOLIVAR ARMIJOS",
+        "votos": 62,
+        "porcentaje": 0.54
+      },
+      "RETO": {
+        "candidato": "XAVIER HERVAS",
+        "votos": 199,
+        "porcentaje": 1.74
+      },
+      "ADN": {
+        "candidato": "DANIEL NOBOA AZIN",
+        "votos": 3802,
+        "porcentaje": 33.23
+      },
+      "UP/PSE/DSI": {
+        "candidato": "YAKU PEREZ",
+        "votos": 426,
+        "porcentaje": 3.72
+      },
+      "AVANZA/SUMA": {
+        "candidato": "OTTO SONNENHOLZNER",
+        "votos": 622,
+        "porcentaje": 5.44
+      },
+      "PSC/PSP/CD": {
+        "candidato": "JAN TOPIC",
+        "votos": 2310,
+        "porcentaje": 20.19
+      }
+    }
+  },
+  {
+    "CODCAN": "331",
+    "CODPRO": "28",
+    "CANTON": "PERU",
+    "ganador": "PSC/PSP/CD",
+    "resultados": {
+      "CONSTRUYE": {
+        "candidato": "FERNANDO VILLAVICENCIO",
+        "votos": 1406,
+        "porcentaje": 17.37
+      },
+      "RC": {
+        "candidato": "LUISA GONZALEZ",
+        "votos": 1836,
+        "porcentaje": 22.68
+      },
+      "AMIGO": {
+        "candidato": "BOLIVAR ARMIJOS",
+        "votos": 105,
+        "porcentaje": 1.3
+      },
+      "RETO": {
+        "candidato": "XAVIER HERVAS",
+        "votos": 242,
+        "porcentaje": 2.99
+      },
+      "ADN": {
+        "candidato": "DANIEL NOBOA AZIN",
+        "votos": 1466,
+        "porcentaje": 18.11
+      },
+      "UP/PSE/DSI": {
+        "candidato": "YAKU PEREZ",
+        "votos": 954,
+        "porcentaje": 11.78
+      },
+      "AVANZA/SUMA": {
+        "candidato": "OTTO SONNENHOLZNER",
+        "votos": 53,
+        "porcentaje": 0.65
+      },
+      "PSC/PSP/CD": {
+        "candidato": "JAN TOPIC",
+        "votos": 2034,
+        "porcentaje": 25.12
+      }
+    }
+  },
+  {
+    "CODCAN": "401",
+    "CODPRO": "28",
+    "CANTON": "VENEZUELA",
+    "ganador": "ADN",
+    "resultados": {
+      "CONSTRUYE": {
+        "candidato": "FERNANDO VILLAVICENCIO",
+        "votos": 766,
+        "porcentaje": 10.5
+      },
+      "RC": {
+        "candidato": "LUISA GONZALEZ",
+        "votos": 760,
+        "porcentaje": 10.42
+      },
+      "AMIGO": {
+        "candidato": "BOLIVAR ARMIJOS",
+        "votos": 127,
+        "porcentaje": 1.74
+      },
+      "RETO": {
+        "candidato": "XAVIER HERVAS",
+        "votos": 207,
+        "porcentaje": 2.84
+      },
+      "ADN": {
+        "candidato": "DANIEL NOBOA AZIN",
+        "votos": 2522,
+        "porcentaje": 34.57
+      },
+      "UP/PSE/DSI": {
+        "candidato": "YAKU PEREZ",
+        "votos": 701,
+        "porcentaje": 9.61
+      },
+      "AVANZA/SUMA": {
+        "candidato": "OTTO SONNENHOLZNER",
+        "votos": 674,
+        "porcentaje": 9.24
+      },
+      "PSC/PSP/CD": {
+        "candidato": "JAN TOPIC",
+        "votos": 1538,
+        "porcentaje": 21.08
       }
     }
   }

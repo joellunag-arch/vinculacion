@@ -22,6 +22,7 @@ export function useElectoralData() {
   });
 
   const candidatosInfo = ref([]);
+  const leyendaColores = ref([]);
 
   // =========================
   // GLOBS ESTÁTICOS (OBLIGATORIO EN VITE)  ( se puede mejorar en el futuro o como ultimo recurso comprimir los json)
@@ -44,6 +45,7 @@ export function useElectoralData() {
       datosElectorales.value = structuredClone(c.datosElectorales);
       mapas.value = structuredClone(c.mapas);
       candidatosInfo.value = structuredClone(c.candidatosInfo);
+      leyendaColores.value = structuredClone(c.leyendaColores);
       resumenNacional.value = structuredClone(c.resumenNacional);
       return;
     }
@@ -111,6 +113,7 @@ export function useElectoralData() {
       if (rutaCandidatos) {
         const mod = await globJS[rutaCandidatos]();
         candidatosInfo.value = mod.candidatoData || [];
+        leyendaColores.value = mod.dessertsData || [];
       }
 
       // =========================
@@ -156,6 +159,7 @@ export function useElectoralData() {
         datosElectorales: JSON.parse(JSON.stringify(toRaw(datosElectorales.value))),
         mapas: JSON.parse(JSON.stringify(toRaw(mapas.value))),
         candidatosInfo: JSON.parse(JSON.stringify(toRaw(candidatosInfo.value))),
+        leyendaColores: JSON.parse(JSON.stringify(toRaw(leyendaColores.value))),
         resumenNacional: JSON.parse(JSON.stringify(toRaw(resumenNacional.value))),
       });
     } catch (e) {
@@ -176,6 +180,7 @@ export function useElectoralData() {
     datosElectorales,
     mapas,
     candidatosInfo,
+    leyendaColores,
     resumenNacional,
     cargarTodo,
     obtenerEtapasDelAno,

@@ -1,23 +1,8 @@
 <template>
-  <div
-    class="map-container"
-    style="position: relative; width: 100%; height: 500px"
-  >
-    <div
-      class="contenedor-mapa-mundi"
-      ref="chartdiv"
-      style="width: 100%; height: 100%"
-    ></div>
+  <div class="map-container" style="position: relative; width: 100%; height: 500px">
+    <div class="contenedor-mapa-mundi" ref="chartdiv" style="width: 100%; height: 100%"></div>
 
-    <div
-      style="
-        position: absolute;
-        top: 0px;
-        right: 0px;
-        z-index: 1000;
-        padding: 10px;
-      "
-    >
+    <div style="position: absolute; top: 0px; right: 0px; z-index: 1000; padding: 10px">
       <v-menu offset-y :close-on-content-click="false">
         <template v-slot:activator="{ props }">
           <v-btn
@@ -109,6 +94,7 @@ import autoTable from "jspdf-autotable";
 am4core.useTheme(am4themes_animated);
 
 import { NAME_TO_ISO } from "@/helpers/countryMapping";
+// import { dessertsData, candidatoData } from "@/assets/data/2023/CandidatosData"; // Eliminado import hardcoded
 
 export default {
   name: "MapaMundi",
@@ -116,6 +102,9 @@ export default {
   props: {
     resultados: { type: Array, default: () => [] },
     colores: { type: Object, default: () => ({}) },
+    filtroPartido: { type: String, default: "Resultados Generales" },
+    candidatosInfo: { type: Array, default: () => [] }, // Nuevo prop
+    escalaColores: { type: Array, default: () => [] }, // Nuevo prop
     // Maintain old props for compatibility if needed, but intended to be replaced
     datosDescarga: { type: Array, default: () => [] },
     configuracion: {
@@ -162,6 +151,21 @@ export default {
       },
       deep: true,
     },
+    candidatosInfo: {
+      handler() {
+        this.procesarDatos();
+      },
+      deep: true,
+    },
+    escalaColores: {
+      handler() {
+        this.procesarDatos();
+      },
+      deep: true,
+    },
+    filtroPartido() {
+      this.procesarDatos();
+    },
   },
 
   methods: {
@@ -180,9 +184,7 @@ export default {
       const nombresNoEncontrados = [];
 
       this.resultados.forEach((cantonData) => {
-        const nombreCanton = cantonData.CANTON
-          ? cantonData.CANTON.toUpperCase()
-          : "";
+        const nombreCanton = cantonData.CANTON ? cantonData.CANTON.toUpperCase() : "";
         const isoCode = NAME_TO_ISO[nombreCanton];
 
         if (isoCode) {
@@ -203,7 +205,7 @@ export default {
           } else if (cantonData.resultados) {
             // Fallback calculation if ganador key is missing or invalid
             const values = Object.values(cantonData.resultados).filter(
-              (v) => v.candidato !== "VALIDOS"
+              (v) => v.candidato !== "VALIDOS",
             );
             if (values.length > 0) {
               const sorted = values.sort((a, b) => b.votos - a.votos);
@@ -219,11 +221,80 @@ export default {
 
           // Determine color
           if (this.colores[winnerName]) {
-            fill =
-              this.colores[winnerName].principal || this.colores[winnerName];
+            fill = this.colores[winnerName].principal || this.colores[winnerName];
           }
 
           tooltipText = `[bold]${nombreCanton}[/]\nGanador: ${winnerName}\nCandidato: ${winnerCandidate}\nVotos: ${winnerVotes.toLocaleString()} (${winnerPercent}%)`;
+
+          // MODO 1: RESULTADOS GENERALES (Ganador por país)
+          if (!this.filtroPartido || this.filtroPartido === "Resultados Generales") {
+            // Logic already applied above for fill and tooltipText as default
+          }
+          // MODO 2: MAPA DE CALOR (Por candidato seleccionado)
+          else {
+            const partidoSeleccionado = this.filtroPartido;
+            // Buscar ID del partido seleccionado en THIS.candidatosInfo (ej: p1, p2...)
+            const candidatoConfig = this.candidatosInfo.find(
+              (c) => c.nombrePartido === partidoSeleccionado || c.json === partidoSeleccionado,
+            );
+
+            if (candidatoConfig) {
+              const partidoId = `p${candidatoConfig.partido}`; // ej: p2
+
+              // Obtener datos específicos de este partido en este país
+              let porcentajePartido = 0;
+              let votosPartido = 0;
+              let nombreCandidatoPartido = candidatoConfig.nombre || ""; // Fallback al nombre del config si no viene en resultados
+
+              // Buscar en resultados del país
+              if (cantonData.resultados) {
+                // Intentar buscar por nombre exacto o alias
+                let dataPartido = cantonData.resultados[partidoSeleccionado];
+
+                // Si no encuentra por nombre exacto, buscar por alias JSON
+                if (
+                  !dataPartido &&
+                  candidatoConfig.json &&
+                  cantonData.resultados[candidatoConfig.json]
+                ) {
+                  dataPartido = cantonData.resultados[candidatoConfig.json];
+                }
+
+                if (dataPartido) {
+                  porcentajePartido = dataPartido.porcentaje || 0;
+                  votosPartido = dataPartido.votos || 0;
+                  if (dataPartido.candidato) {
+                    nombreCandidatoPartido = dataPartido.candidato;
+                  }
+                }
+              }
+
+              // Determinar degradado según porcentaje usando dessertsData
+              // Rango bajo < 30
+              // Rango medio 30 - 50
+              // Rango alto > 50
+
+              const pId = partidoId; // Alias para brevedad
+
+              // Verificar que escalaColores exista y tenga elementos
+              const scales =
+                this.escalaColores && this.escalaColores.length ? this.escalaColores : [{}, {}, {}];
+
+              if (porcentajePartido < 30) {
+                fill = scales[0][pId] || "#cccccc";
+              } else if (porcentajePartido < 50) {
+                fill = scales[1][pId] || "#cccccc";
+              } else {
+                fill = scales[2][pId] || "#cccccc";
+              }
+
+              // Actualizamos el tooltip para mostrar info completa
+              tooltipText = `[bold]${nombreCanton}[/]\nGanador: ${partidoSeleccionado}\nCandidato: ${nombreCandidatoPartido}\nVotos: ${votosPartido.toLocaleString()} (${porcentajePartido}%)`;
+            } else {
+              // Si no se encuentra config, usar gris o lógica default
+              fill = "#eeeeee";
+            }
+          }
 
           datosMapeados.push({
             id: isoCode,
@@ -244,10 +315,7 @@ export default {
       });
 
       if (nombresNoEncontrados.length > 0) {
-        console.warn(
-          "MapaMundi: Nombres no encontrados en diccionario ISO:",
-          nombresNoEncontrados
-        );
+        console.warn("MapaMundi: Nombres no encontrados en diccionario ISO:", nombresNoEncontrados);
       }
       console.log("MapaMundi: Datos mapeados finales:", datosMapeados);
 
@@ -357,12 +425,7 @@ export default {
         let winnerVotes = item.votos || 0;
         let winnerPercent = item.porcentaje || 0;
 
-        if (
-          !winnerCandidate &&
-          item.resultados &&
-          winnerParty &&
-          item.resultados[winnerParty]
-        ) {
+        if (!winnerCandidate && item.resultados && winnerParty && item.resultados[winnerParty]) {
           const r = item.resultados[winnerParty];
           winnerCandidate = r.candidato;
           winnerVotes = r.votos;
@@ -400,10 +463,7 @@ export default {
         const wb = XLSX.utils.book_new();
         XLSX.utils.book_append_sheet(wb, ws, "Resultados");
         const wbout = XLSX.write(wb, { bookType: "xlsx", type: "array" });
-        saveAs(
-          new Blob([wbout], { type: "application/octet-stream" }),
-          "Resultados_Exterior.xlsx"
-        );
+        saveAs(new Blob([wbout], { type: "application/octet-stream" }), "Resultados_Exterior.xlsx");
       } catch (e) {
         console.error("Error descargarXLSX", e);
       }
@@ -422,10 +482,7 @@ export default {
         datos.forEach((row) => {
           html += "<tr>";
           keys.forEach(
-            (k) =>
-              (html += `<td>${
-                row[k] !== undefined && row[k] !== null ? row[k] : ""
-              }</td>`)
+            (k) => (html += `<td>${row[k] !== undefined && row[k] !== null ? row[k] : ""}</td>`),
           );
           html += "</tr>";
         });

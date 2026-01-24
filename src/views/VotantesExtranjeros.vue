@@ -13,7 +13,7 @@
       <v-container class="contenedor-filtros text-white">
         <h3
           class="mb-4 text-uppercase fw-bold"
-          style="font-family: 'Oswald', sans-serif; color: white"
+          style="font-family: &quot;Oswald&quot;, sans-serif; color: white"
         >
           SELECCIONAR EN FILTRO
         </h3>
@@ -30,9 +30,7 @@
           hide-details
           class="mb-1"
         ></v-select>
-        <div class="mb-4 text-caption white--text">
-          Seleccionado: {{ filtroVuelta }}
-        </div>
+        <div class="mb-4 text-caption white--text">Seleccionado: {{ filtroVuelta }}</div>
 
         <!-- PARTIDO -->
         <div class="texto-filtro">PARTIDO POLITICO*</div>
@@ -47,9 +45,7 @@
           hide-details
           class="mb-1"
         ></v-select>
-        <div class="mb-4 text-caption white--text">
-          Seleccionado: {{ partidoSeleccionado }}
-        </div>
+        <div class="mb-4 text-caption white--text">Seleccionado: {{ partidoSeleccionado }}</div>
 
         <!-- ZONA (Equivalente a Provincia) -->
         <!-- Nota: Si no hay datos de Zonas explícitos, usaremos esto para filtrar por Continente si estuviera disponible, o se adaptará -->
@@ -67,9 +63,7 @@
           clearable
           placeholder="Todas las Zonas"
         ></v-select>
-        <div class="mb-4 text-caption white--text">
-          Seleccionado: {{ filtroZona || "Todas" }}
-        </div>
+        <div class="mb-4 text-caption white--text">Seleccionado: {{ filtroZona || "Todas" }}</div>
 
         <!-- PAIS (Equivalente a Cantón) -->
         <div class="texto-filtro">PAÍS</div>
@@ -87,9 +81,7 @@
           clearable
           placeholder="Todos los Países"
         ></v-select>
-        <div class="mb-4 text-caption white--text">
-          Seleccionado: {{ filtroPais || "Todos" }}
-        </div>
+        <div class="mb-4 text-caption white--text">Seleccionado: {{ filtroPais || "Todos" }}</div>
 
         <p class="text-caption white--text mb-4">*Campo Obligatorio</p>
 
@@ -97,7 +89,7 @@
           block
           color="white"
           class="font-weight-bold"
-          style="color: #12a2c2; font-family: 'Oswald', sans-serif"
+          style="color: #12a2c2; font-family: &quot;Oswald&quot;, sans-serif"
           @click="buscar"
         >
           BUSCAR
@@ -123,6 +115,9 @@
           <MapaMundi
             :resultados="datosMapa"
             :colores="coloresPartidos"
+            :filtroPartido="partidoSeleccionado"
+            :candidatosInfo="candidatosInfo"
+            :escalaColores="leyendaColores"
             @datos-procesados="manejarDatosMapa"
           />
         </div>
@@ -196,6 +191,7 @@ const {
   datosElectorales,
   mapas,
   candidatosInfo,
+  leyendaColores,
   resumenNacional,
   cargarTodo,
   obtenerEtapasDelAno,
@@ -206,20 +202,37 @@ const candidatos = computed(() => {
   const info = candidatosInfo.value;
   if (!info || !Array.isArray(info)) return [];
 
+  // Filtrar candidatos basándonos en los datos electorales actuales
+  // Si hay datos, miramos qué partidos participan en el primer registro
+  if (
+    datosElectorales.value &&
+    datosElectorales.value.cantones &&
+    datosElectorales.value.cantones.length > 0
+  ) {
+    const primerRegistro = datosElectorales.value.cantones[0];
+    if (primerRegistro && primerRegistro.resultados) {
+      const partidosEnJuego = Object.keys(primerRegistro.resultados);
+
+      // Filtramos la lista maestra de candidatos
+      return info.filter((c) => {
+        // Incluimos si el partido está en los resultados
+        // O si es un alias conocido (ej: PID/MOVER para ADN)
+        return partidosEnJuego.includes(c.nombrePartido) || partidosEnJuego.includes(c.json);
+      });
+    }
+  }
+
+  // Fallback: Si no hay datos aún, mostrar todos (o ninguno)
   return info;
 });
 
 /* ETAPAS */
-const etapasDisponibles = computed(() =>
-  obtenerEtapasDelAno("EXTRANJEROS", props.year)
-);
+const etapasDisponibles = computed(() => obtenerEtapasDelAno("EXTRANJEROS", props.year));
 
 /* ESTADO DE FILTROS */
 const drawer = ref(false);
 // Inicializar con la primera etapa disponible (ej: 2 para 2023) o fallback a 1
-const filtroVuelta = ref(
-  etapasDisponibles.value.length > 0 ? etapasDisponibles.value[0] : 1
-);
+const filtroVuelta = ref(etapasDisponibles.value.length > 0 ? etapasDisponibles.value[0] : 1);
 
 const partidoSeleccionado = ref("Resultados Generales");
 const filtroZona = ref(null);
@@ -304,9 +317,7 @@ const datosMapa = computed(() => {
 
 const datosGrafico = computed(() => {
   if (filtroPais.value) {
-    return cantonesExtranjeros.value.filter(
-      (d) => (d.CANTON || d.PAIS) === filtroPais.value
-    );
+    return cantonesExtranjeros.value.filter((d) => (d.CANTON || d.PAIS) === filtroPais.value);
   }
   return cantonesExtranjeros.value;
 });
@@ -318,7 +329,7 @@ const datosTabla = computed(() => {
 
   if (filtroPais.value) {
     const paisObj = cantonesExtranjeros.value.find(
-      (c) => (c.CANTON || c.PAIS) === filtroPais.value
+      (c) => (c.CANTON || c.PAIS) === filtroPais.value,
     );
     if (paisObj) {
       datos = [paisObj];
@@ -344,19 +355,6 @@ const datosTabla = computed(() => {
 /* MAPEO TABLA HELPER */
 const mapearDatosATabla = (datos) =>
   datos.map((item) => {
-    // Si viene del mapa, ya tiene propiedades procesadas
-    if (item.ganador !== undefined && item.votos !== undefined) {
-      return {
-        nombre: item.name || item.CANTON || item.PAIS || "Desconocido",
-        candidato: item.candidato || "N/A",
-        partido: item.ganador || "N/A",
-        porcentaje: item.porcentaje || 0,
-      };
-    }
-
-    // Lógica antigua (fallback)
-    const nombre =
-      item.PARROQUIA || item.CANTON || item.PROVINCIA || "Desconocido";
     const partidoFilter = partidoSeleccionado.value;
     const isGeneral = partidoFilter === "Resultados Generales";
 
@@ -364,25 +362,53 @@ const mapearDatosATabla = (datos) =>
     let partido = "N/A";
     let porcentaje = 0;
 
+    // Caso 1: Resultados Generales (Mostrar Ganador)
     if (isGeneral) {
-      const winner = item.ganador;
-      partido = winner;
-      if (item.resultados && winner && item.resultados[winner]) {
-        candidato = item.resultados[winner].candidato;
-        porcentaje = item.resultados[winner].porcentaje;
+      // Si viene pre-procesado del mapa (que ya calcula ganadores)
+      if (item.ganador !== undefined) {
+        partido = item.ganador;
+        candidato = item.candidato || "N/A";
+        porcentaje = item.porcentaje || 0;
       }
-    } else {
-      partido = partidoFilter;
-      // Handle aliases if needed
-      let key = partidoFilter;
-      if (item.resultados && item.resultados[key]) {
-        candidato = item.resultados[key].candidato;
-        porcentaje = item.resultados[key].porcentaje;
-      } else {
-        candidato = "";
-        porcentaje = 0;
+      // Si es data cruda
+      else {
+        const winner = item.ganador || "N/A";
+        partido = winner;
+        if (item.resultados && winner && item.resultados[winner]) {
+          candidato = item.resultados[winner].candidato;
+          porcentaje = item.resultados[winner].porcentaje;
+        }
       }
     }
+    // Caso 2: Partido Específico (Mostrar datos de ese partido en cada país)
+    else {
+      partido = partidoFilter;
+      // Intentamos buscar datos específicos del partido en los resultados del item
+      if (item.resultados) {
+        // Buscamos por nombre directo o buscamos si hay algún alias (ej: PID/MOVER para ADN)
+        // Nota: Para simplificar, asumimos que el filtro coincide con la llave o usamos la lógica de alias simple
+
+        let dataPartido = item.resultados[partidoFilter];
+
+        // Si no encontramos directo, podríamos buscar en la lista de candidatos para ver si tiene un json key diferente
+        if (!dataPartido) {
+          const candidatoInfo = candidatos.value.find((c) => c.nombrePartido === partidoFilter);
+          if (candidatoInfo && candidatoInfo.json && item.resultados[candidatoInfo.json]) {
+            dataPartido = item.resultados[candidatoInfo.json];
+          }
+        }
+
+        if (dataPartido) {
+          candidato = dataPartido.candidato;
+          porcentaje = dataPartido.porcentaje;
+        } else {
+          candidato = "Sin votos / No presentado";
+          porcentaje = 0;
+        }
+      }
+    }
+
+    const nombre = item.name || item.CANTON || item.PAIS || "Desconocido";
 
     return {
       nombre,
@@ -421,7 +447,7 @@ watch(
   () => props.year,
   () => {
     actualizarEtapa();
-  }
+  },
 );
 
 /* LIFECYCLE */
