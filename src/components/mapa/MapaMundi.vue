@@ -1,6 +1,6 @@
 <template>
-  <div class="map-container" style="position: relative; width: 100%; height: 500px">
-    <div class="contenedor-mapa-mundi" ref="chartdiv" style="width: 100%; height: 100%"></div>
+  <div class="map-container">
+    <div class="contenedor-mapa-mundi" ref="chartdiv" ></div>
 
     <div style="position: absolute; top: 0px; right: 0px; z-index: 1000; padding: 10px">
       <v-menu offset-y :close-on-content-click="false">
@@ -538,10 +538,20 @@ export default {
 };
 </script>
 
+
+
 <style scoped>
+.map-container {
+  position: relative;
+  width: 100%;
+  max-width: 1700px;
+  height: 420px;
+  margin: 0 auto;
+}
+
 .contenedor-mapa-mundi {
   width: 100%;
-  height: 500px;
+  height: 100%;
   background-color: transparent;
   position: relative;
 }

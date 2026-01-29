@@ -115,57 +115,66 @@
       <template #mapa>
         <div v-if="loading" class="estado">Procesando mapa...</div>
 
-        <MapaEcuador
-          v-else-if="mapas.provincias"
-          :key="filtroVuelta"
-          :geoProvincias="mapas.provincias"
-          :geoCantones="mapas.cantones"
-          :geoParroquias="mapas.parroquias"
-          :resultadosProvincias="datosElectorales.provincias"
-          :resultadosCantones="datosElectorales.cantones"
-          :resultadosParroquias="datosElectorales.parroquias"
-          :colores="coloresPartidos"
-          :id_1="mapFilters"
-          :datosDescarga="datosElectorales.provincias"
-        />
+        <div class="compact-component compact-map" v-else-if="mapas.provincias">
+          <MapaEcuador
+            :key="filtroVuelta"
+            :geoProvincias="mapas.provincias"
+            :geoCantones="mapas.cantones"
+            :geoParroquias="mapas.parroquias"
+            :resultadosProvincias="datosElectorales.provincias"
+            :resultadosCantones="datosElectorales.cantones"
+            :resultadosParroquias="datosElectorales.parroquias"
+            :colores="coloresPartidos"
+            :id_1="mapFilters"
+            :datosDescarga="datosElectorales.provincias"
+          />
+        </div>
       </template>
 
       <!-- ================= TARJETAS CANDIDATOS ================= -->
       <template #filtros>
-        <TarjetaCandidato
-          :itemsCandidato="candidatos"
-          :itemsLeyenda="leyendaColores"
-          :etiquetaTarjeta2="partidoSeleccionado"
-          @cambio-partido="manejarCambioPartido"
-        />
+        <div class="compact-component compact-tarjeta">
+          <TarjetaCandidato
+            :itemsCandidato="candidatos"
+            :itemsLeyenda="leyendaColores"
+            :etiquetaTarjeta2="partidoSeleccionado"
+            @cambio-partido="manejarCambioPartido"
+          />
+        </div>
       </template>
 
       <!-- ================= GRÁFICOS ================= -->
       <template #graficos>
-        <GraficoBarras
-          v-if="datosElectorales.provincias.length"
-          :datos="datosElectorales.provincias"
-          :candidatosExtraInfo="candidatos"
-          categoria="presidentes"
-        />
+        <div class="compact-component compact-graficos" v-if="datosElectorales.provincias.length">
+          <GraficoBarras
+            :datos="datosElectorales.provincias"
+            :candidatosExtraInfo="candidatos"
+            categoria="presidentes"
+          />
+        </div>
         <p v-else class="estado">No hay datos para gráficos</p>
       </template>
 
       <!-- ================= TABLAS ================= -->
       <template #tablas>
-        <TablaGenerica
-          v-if="datosTabla.rows.length"
-          :datos="datosTabla.rows"
-          :titulo="datosTabla.titulo"
-        />
+        <div class="compact-component compact-tablas" v-if="datosTabla.rows.length">
+          <TablaGenerica
+            :datos="datosTabla.rows"
+            :titulo="datosTabla.titulo"
+          />
+        </div>
         <p v-else class="estado">No hay datos para tabla</p>
       </template>
 
       <!-- ================= INFO GENERAL ================= -->
       <template #footer-info>
-        <BarraInformacionGeneral :stats="resumenNacional" />
+        <div class="sticky-footer-wrapper">
+          <BarraInformacionGeneral :stats="resumenNacional" />
+        </div>
       </template>
+      <!-- ================= INFO GENERAL ================= -->
     </ContenedorCarrusel>
+    
   </div>
 </template>
 
@@ -190,7 +199,7 @@ const props = defineProps({
   year: {
     type: [String, Number],
     required: true,
-  },
+  },  
 });
 
 /* DATA ELECTORAL */
@@ -496,6 +505,13 @@ watch(
   position: relative; /* Para el drawer */
 }
 
+/*+++++++*/
+.sticky-footer-wrapper {
+  position: sticky;
+  bottom: 0;
+}
+/*++++++++++*/
+
 .texto-filtro {
   margin-bottom: 5px;
   font-weight: 500;
@@ -512,5 +528,32 @@ watch(
   text-align: center;
   padding: 2rem;
   color: #6c757d;
+}
+
+/* Compact component wrappers to scale down heavy visual components */
+.compact-component {
+  transform-origin: center top;
+  transition: transform 160ms ease;
+}
+
+@media (min-width: 1400px) {
+  .compact-map { transform: scale(0.82); }
+  .compact-graficos { transform: scale(0.75); }
+  .compact-tablas { transform: scale(0.82); }
+  .compact-tarjeta { transform: scale(0.92); }
+}
+
+@media (min-width: 992px) and (max-width: 1399px) {
+  .compact-map { transform: scale(0.86); }
+  .compact-graficos { transform: scale(0.80); }
+  .compact-tablas { transform: scale(0.86); }
+  .compact-tarjeta { transform: scale(0.95); }
+}
+
+@media (max-width: 991px) {
+  .compact-map { transform: scale(0.94); }
+  .compact-graficos { transform: scale(0.90); }
+  .compact-tablas { transform: scale(0.96); }
+  .compact-tarjeta { transform: scale(0.98); }
 }
 </style>

@@ -9,7 +9,7 @@
       <apexchart
         v-if="chartReady"
         :width="longitud"
-        height="550px"
+        height="500px"
         :options="chartOptions"
         :series="series"
       ></apexchart>
@@ -247,8 +247,8 @@ export default {
 
 <style scoped>
 .graficobarras_container {
-  width: 100%;
-  height: 100%;
+  width:100% ;
+  height: 100%  ;
   padding: 20px;
   display: flex;
   flex-direction: column;

@@ -213,6 +213,8 @@ export default {
 <style scoped>
 .site-header {
   width: 100%;
+  position: relative; /* establish stacking context */
+  z-index: 2200; /* ensure navbar and dropdowns sit above carousel */
 }
 .top-line {
   height: 2px;
@@ -302,6 +304,8 @@ export default {
   transform: translateX(-50%) !important;
   right: auto !important;
   font-family: var(--font-body);
+  position: absolute; /* ensure it layers above sticky carousel */
+  z-index: 2250;
 }
 
 .dropdown-item {

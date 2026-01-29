@@ -1,6 +1,6 @@
 <template>
-  <div class="map-container" style="position: relative; width: 100%; height: 500px;">
-    <div class="mapa" ref="mapa" style="width: 100%; height: 100%;"></div>
+  <div class="map-container">
+    <div class="mapa" ref="mapa"></div>
 
     <div style="position: absolute; top: 0px; right: 0px; z-index: 10; padding: 10px;">
       <v-menu offset-y :close-on-content-click="false">
@@ -764,9 +764,20 @@ Votos: {winnerVotes} ({winnerPercent}%)`;
 </script>
 
 <style scoped>
+.map-container {
+  
+  position: relative;
+  width: 100%;
+  max-width: 2000px;     /* ⬅️ más ancho */
+  height: 420px;         /* ⬅️ un poco más bajo */
+  margin: 0 auto;        /* centra el mapa */
+  margin-left: 15%;
+}
 .mapa {
   width: 100%;
-  height: 500px;
+  height: 100%;
+  background-color: transparent;
+  position: relative;
 }
 
 ::v-deep .amcharts-export-menu ul {
@@ -777,12 +788,12 @@ Votos: {winnerVotes} ({winnerPercent}%)`;
   border-radius: 4px;
 }
 
-::v-deep .amcharts-export-menu li {
-  padding: 8px 16px;
-  cursor: pointer;
-  color: var(--text-main);
-  font-family: var(--font-body);
-}
+  ::v-deep .amcharts-export-menu li {
+    padding: 8px 16px;
+    cursor: pointer;
+    color: var(--text-main);
+    font-family: var(--font-body);
+  }
 
 ::v-deep .amcharts-export-menu li:hover {
   background: var(--bg-soft);

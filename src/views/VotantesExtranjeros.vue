@@ -13,7 +13,7 @@
       <v-container class="contenedor-filtros text-white">
         <h3
           class="mb-4 text-uppercase fw-bold"
-          style="font-family: &quot;Oswald&quot;, sans-serif; color: white"
+          style="font-family: 'Oswald', sans-serif; color: white"
         >
           SELECCIONAR EN FILTRO
         </h3>
@@ -89,7 +89,7 @@
           block
           color="white"
           class="font-weight-bold"
-          style="color: #12a2c2; font-family: &quot;Oswald&quot;, sans-serif"
+          style="color: #12a2c2; font-family: 'Oswald', sans-serif"
           @click="buscar"
         >
           BUSCAR
@@ -110,7 +110,8 @@
       <template #mapa>
         <div v-if="loading" class="estado">Procesando datos...</div>
 
-        <div v-else style="position: relative; width: 100%; height: 100%">
+        <div v-else >
+          <!--style="position: relative; width: 100%; height: 100%"-->
           <!-- Data Filtration for map is done in computed prop 'datosMapa' -->
           <MapaMundi
             :resultados="datosMapa"
@@ -136,22 +137,24 @@
       <!-- ================= GRÁFICOS ================= -->
       <template #graficos>
         <!-- Usamos datos filtrados por Zona/Pais si aplica -->
-        <GraficoBarras
-          v-if="datosElectorales.cantones.length"
-          :datos="datosGrafico"
-          :candidatosExtraInfo="candidatos"
-          categoria="presidentes"
-        />
+        <div class="compact-component compact-graficos" v-if="datosElectorales.cantones.length">
+          <GraficoBarras
+            :datos="datosGrafico"
+            :candidatosExtraInfo="candidatos"
+            categoria="presidentes"
+          />
+        </div>
         <p v-else class="estado">No hay datos para gráficos</p>
       </template>
 
       <!-- ================= TABLAS ================= -->
       <template #tablas>
-        <TablaGenerica
-          v-if="datosTabla.rows.length"
-          :datos="datosTabla.rows"
-          :titulo="datosTabla.titulo"
-        />
+        <div class="compact-component compact-tablas" v-if="datosTabla.rows.length">
+          <TablaGenerica
+            :datos="datosTabla.rows"
+            :titulo="datosTabla.titulo"
+          />
+        </div>
         <p v-else class="estado">No hay datos para tabla</p>
       </template>
 
@@ -483,5 +486,32 @@ onMounted(() => {
   text-align: center;
   padding: 2rem;
   color: #6c757d;
+}
+
+/* Compact component wrappers to scale down heavy visual components */
+.compact-component {
+  transform-origin: center top;
+  transition: transform 160ms ease;
+}
+
+@media (min-width: 1400px) {
+  .compact-map { transform: scale(0.82); }
+  .compact-graficos { transform: scale(0.75); }
+  .compact-tablas { transform: scale(0.82); }
+  .compact-tarjeta { transform: scale(0.92); }
+}
+
+@media (min-width: 992px) and (max-width: 1399px) {
+  .compact-map { transform: scale(0.86); }
+  .compact-graficos { transform: scale(0.80); }
+  .compact-tablas { transform: scale(0.86); }
+  .compact-tarjeta { transform: scale(0.95); }
+}
+
+@media (max-width: 991px) {
+  .compact-map { transform: scale(0.94); }
+  .compact-graficos { transform: scale(0.90); }
+  .compact-tablas { transform: scale(0.96); }
+  .compact-tarjeta { transform: scale(0.98); }
 }
 </style>

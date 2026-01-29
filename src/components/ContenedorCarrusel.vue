@@ -1,6 +1,7 @@
 <template>
-  <div class="carrusel-electoral-container">
-    <div class="container-fluid p-0">
+  <div class="carrusel-wrapper">
+    <div class="carrusel-electoral-container" :style="{ top: topOffset + 'px', height: heightVh + 'vh' }">
+      <div class="container-fluid p-0">
       <div
         id="carouselElectoral"
         ref="carouselRef"
@@ -11,12 +12,12 @@
              HEADER
         ========================== -->
         <div class="row align-items-center mx-0 header-electoral">
-          <!-- LUPA -->
-          <div v-if="slideActivo === 0" class="col-auto search-container">
-            <button class="btn-search-fab" @click="$emit('toggle-search')">
-              <i class="bi bi-search"></i>
-            </button>
-          </div>
+            <!-- LUPA -->
+            <div v-if="slideActivo === 0" class="col-auto search-container">
+              <button class="btn-search-fab" @click="$emit('toggle-search')">
+                <i class="bi bi-search"></i>
+              </button>
+            </div>
 
           <!-- TÍTULO -->
           <div class="col-auto mx-auto text-center" v-if="slideActivo === 0">
@@ -35,6 +36,8 @@
               <i class="bi bi-trash-fill"></i>
             </button>
           </div>
+
+          <!-- CONTROLES DE VISTA (desactivados) -->
         </div>
 
         <!-- ==========================
@@ -42,7 +45,7 @@
         ========================== -->
         <div
           v-if="slideActivo === 0"
-          class="row justify-content-center pb-3 mx-0 etapa-container"
+          class="row justify-content-center pb-0 mx-0 etapa-container"
         >
           <div class="col-12 d-flex justify-content-center px-0">
             <button
@@ -77,12 +80,15 @@
           </div>
         </div>
 
-        <!-- =========================
+           <!-- =========================
              SLIDES
-        ========================== -->
-        <div class="carousel-inner">
-          <div class="carousel-item active p-4">
-            <div class="row fixed-carousel-height">
+           ========================== -->
+           <div
+          class="carousel-inner"
+          :style="{ height: heightVh + 'vh', '--carousel-zoom': zoom, '--footer-safe': footerSafe + 'px', paddingBottom: footerSafe + 'px' }"
+           >
+          <div class="carousel-item active p-2">
+              <div class="row fixed-carousel-height" :style="{ transform: `scale(${zoom})`, transformOrigin: 'center top' }">
               <div
                 :class="
                   hasFiltros
@@ -90,11 +96,13 @@
                     : 'col-md-12 position-relative'
                 "
               >
-                <slot name="mapa">
-                  <div class="placeholder-content">Mapa del Ecuador</div>
-                </slot>
+                <div class="slot-content-wrap">
+                  <slot name="mapa">
+                    <div class="placeholder-content">Mapa del Ecuador</div>
+                  </slot>
+                </div>
               </div>
-              <div v-if="hasFiltros" class="col-md-3">
+              <div v-if="hasFiltros" class="col-md-3 ps-0">
                 <slot name="filtros">
                   <div class="placeholder-content small">Filtros / Listado</div>
                 </slot>
@@ -106,17 +114,21 @@
             <div
               class="fixed-carousel-height d-flex align-items-center justify-content-center"
             >
-              <slot name="graficos">
-                <div class="placeholder-content">Gráficos de resultados</div>
-              </slot>
+              <div class="slot-content-wrap">
+                <slot name="graficos">
+                  <div class="placeholder-content">Gráficos de resultados</div>
+                </slot>
+              </div>
             </div>
           </div>
 
           <div class="carousel-item p-4">
             <div class="fixed-carousel-height overflow-auto">
-              <slot name="tablas">
-                <div class="placeholder-content">Tablas de resultados</div>
-              </slot>
+              <div class="slot-content-wrap">
+                <slot name="tablas">
+                  <div class="placeholder-content">Tablas de resultados</div>
+                </slot>
+              </div>
             </div>
           </div>
         </div>
@@ -127,7 +139,7 @@
         <!-- =========================
              INDICADORES
         ========================== -->
-        <div class="carousel-indicators-custom">
+        <div class="carousel-indicators-custom" :style="{ bottom: indicatorsBottom }">
           <button
             class="btn-nav"
             data-bs-target="#carouselElectoral"
@@ -156,9 +168,13 @@
         </div>
       </div>
 
-      <!-- SLOT PARA INFORMACIÓN AL PIE (BARRA) -->
-      <slot name="footer-info"></slot>
+        <!-- SLOT PARA INFORMACIÓN AL PIE (BARRA) -->
+      <div class="footer-slot">
+        <slot name="footer-info"></slot>
+      </div>
+      </div>
     </div>
+    <div class="carrusel-spacer" :style="{ height: `calc(${heightVh}vh + ${topOffset}px)` }"></div>
   </div>
 </template>
 
@@ -183,6 +199,26 @@ const slots = useSlots();
 const etapa = ref(props.etapaActual);
 const slideActivo = ref(0);
 const carouselRef = ref(null);
+
+// Controles de vista: altura en vh y zoom (scale)
+const heightVh = ref(92);
+const zoom = ref(1);
+const footerSafe = ref(0);
+const topOffset = ref(64);
+
+const updateFooterHeight = () => {
+  const footer = document.querySelector('.footer-sevee');
+  footerSafe.value = footer ? footer.getBoundingClientRect().height : 0;
+};
+
+onMounted(() => {
+  updateFooterHeight();
+  window.addEventListener('resize', updateFooterHeight);
+});
+
+onUnmounted(() => {
+  window.removeEventListener('resize', updateFooterHeight);
+});
 
 const hasFiltros = computed(() => !!slots.filtros);
 
@@ -213,6 +249,13 @@ const detectarCambioSlide = (event) => {
   slideActivo.value = event.to;
 };
 
+//bajar o subir los botones del carrusel
+const indicatorsBottom = computed(() => {
+  const base = footerSafe.value ? Math.max(footerSafe.value - 12, 8) : 12;
+  const offsetDown = -55; // push indicators a bit lower
+  return `${base + offsetDown}px`;
+});
+
 onMounted(() => {
   carouselRef.value?.addEventListener("slide.bs.carousel", detectarCambioSlide);
 });
@@ -230,8 +273,53 @@ onUnmounted(() => {
   background-image: url("@/assets/img/fondos/fondo2.png");
   background-size: cover;
   background-position: center;
-  min-height: 85vh;
+  position: sticky;
+  top: 64px; /* use topOffset default */
+  width: 100%;
   padding-bottom: 0px;
+  overflow: hidden;
+  z-index: 1010;
+  display: flex;
+}
+
+.carrusel-electoral-container.hidden {
+  display: none !important;
+}
+
+.carrusel-electoral-container > .container-fluid {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  height: 100%;
+  position: relative;
+}
+
+.carrusel-wrapper {
+  position: relative;
+}
+
+.carrusel-spacer {
+  width: 100%;
+  display: block;
+}
+
+.spacer-footer-slot {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1015;
+}
+
+#carouselElectoral {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.carousel-inner {
+  flex: 1 1 auto;
+  overflow: visible !important;
 }
 
 .bg-white-opacity {
@@ -243,7 +331,7 @@ onUnmounted(() => {
 ========================= */
 .header-electoral {
   padding-top: 28px;
-  padding-bottom: 12px;
+  padding-bottom: 0px;//modificar espaciado
   display: flex;
   align-items: center;
 }
@@ -375,11 +463,36 @@ h2 {
    INDICADORES
 ========================= */
 .carousel-indicators-custom {
-  position: relative;
-  padding: 30px 40px;
+  position: absolute; /* place above footer-slot */
+  left: 0;
+  right: 0;
+  padding: 4px 40px;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  z-index: 2100; /* above footer (1020) but below navbar dropdown (2250) */
+  /* Allow clicks to pass through empty areas so charts remain interactive */
+  pointer-events: none;
+}
+
+.controls-container .view-controls {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.controls-container .range-height {
+  width: 110px;
+}
+
+.offset-controls {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.offset-label {
+  font-size: 0.85rem;
+  color: #444;
 }
 
 .dots {
@@ -387,13 +500,16 @@ h2 {
   left: 50%;
   transform: translateX(-50%);
   display: flex;
+  z-index: 1108;
 }
 
 .btn-nav {
   background: transparent;
   border: none;
   cursor: pointer;
-  z-index: 2;
+  z-index: 1105;
+  /* Make the interactive controls still receive pointer events */
+  pointer-events: auto;
 
   i {
     color: #888 !important;
@@ -413,6 +529,9 @@ h2 {
   border: none;
   margin: 0 4px;
 
+  /* Allow dots to be clickable even if container ignores events */
+  pointer-events: auto;
+
   &.active {
     background-color: #6c757d;
   }
@@ -422,16 +541,16 @@ h2 {
    GENERAL
 ========================= */
 .fixed-carousel-height {
-  height: auto;
-  min-height: 500px;
+  height: 100%;
+  min-height: unset;
+  overflow: auto;
+  transition: transform 120ms ease;
 }
 
 @media (min-width: 768px) {
   .fixed-carousel-height {
-    min-height: 550px;
-    height: auto;
-    overflow-y: visible;
-    overflow-x: hidden;
+    height: 100%;
+    overflow: auto;
   }
 }
 
@@ -444,6 +563,50 @@ h2 {
   color: #7a7a7a;
   font-weight: 600;
   text-align: center;
+}
+
+.slot-content-wrap {
+  width: 100%;
+  display: block;
+  transform-origin: center top;
+  transition: transform 160ms ease;
+}
+
+/* Scale down further so maps/charts/tables fit more comfortably */
+@media (min-width: 1600px) {
+  .slot-content-wrap { transform: scale(0.78); }
+}
+
+@media (min-width: 1400px) and (max-width: 1599px) {
+  .slot-content-wrap { transform: scale(0.80); }
+}
+
+@media (min-width: 1200px) and (max-width: 1399px) {
+  .slot-content-wrap { transform: scale(0.84); }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .slot-content-wrap { transform: scale(0.88); }
+}
+
+@media (max-width: 991px) {
+  .slot-content-wrap { transform: scale(0.92); }
+}
+
+.footer-slot {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1010;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.footer-slot .sticky-footer-wrapper {
+  position: static !important;
+  width: 100%;
 }
 
 .carousel,
@@ -467,5 +630,6 @@ h2 {
     justify-content: center;
     margin-top: 10px;
   }
+  
 }
 </style>

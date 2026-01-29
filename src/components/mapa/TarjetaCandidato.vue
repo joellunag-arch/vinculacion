@@ -177,26 +177,26 @@ export default {
 </script>
 
 <style scoped>
-/* Fuentes importadas globalmente en main.js se usan aquí */
-
-/* NOTA: Se eliminó .fondo-pantalla */
-
+/* =============================
+   CONTENEDOR PRINCIPAL
+============================= */
 .tarjeta-layout {
   width: 100%;
   max-width: 450px;
   position: relative;
-  /* IMPORTANTE: isolation crea un nuevo contexto de apilamiento para que el mix-blend-mode funcione bien */
   isolation: isolate;
 }
 
-/* HEADER */
+/* =============================
+   HEADER (más compacto)
+============================= */
 .header-select {
   background-color: var(--color-secondary);
   color: white;
-  padding: 10px 16px;
+  padding: 8px 14px;          /* ⬅️ reducido */
   cursor: pointer;
   position: relative;
-  height: 64px;
+  height: 56px;               /* ⬅️ reducido */
   border-radius: 4px;
   transition: background-color 0.2s;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
@@ -208,22 +208,17 @@ export default {
 }
 
 .label-select {
-  font-family: var(--font-body);
-  font-size: 0.75rem;
+  font-size: 0.7rem;          /* ⬅️ reducido */
   opacity: 0.8;
-  font-weight: 400;
-  margin-bottom: 2px;
 }
 
 .value-select {
-  font-family: var(--font-titles);
-  font-size: 1.1rem;
+  font-size: 1rem;            /* ⬅️ reducido */
   font-weight: 500;
-  letter-spacing: 0.5px;
 }
 
 .arrow-icon {
-  font-size: 0.8rem;
+  font-size: 0.75rem;
   transition: transform 0.3s;
 }
 
@@ -231,7 +226,9 @@ export default {
   transform: rotate(180deg);
 }
 
-/* DROPDOWN */
+/* =============================
+   DROPDOWN (máx 6–7 items)
+============================= */
 .custom-dropdown-list {
   position: absolute;
   top: 100%;
@@ -239,20 +236,17 @@ export default {
   width: 100%;
   background: white;
   padding: 0;
-  margin: 0;
+  margin: 4px 0 0;
   list-style: none;
   z-index: 1000;
   border-radius: 4px;
-  max-height: 300px;
+  max-height: 240px;          /* ⬅️ CLAVE */
   overflow-y: auto;
-  margin-top: 4px;
 }
 
 .dropdown-item-custom {
-  padding: 12px 16px;
-  color: var(--text-main);
-  font-family: var(--font-titles);
-  font-size: 0.95rem;
+  padding: 10px 14px;         /* ⬅️ reducido */
+  font-size: 0.85rem;
   cursor: pointer;
   border-bottom: 1px solid #f0f0f0;
   text-transform: uppercase;
@@ -268,77 +262,58 @@ export default {
   font-weight: 500;
 }
 
+/* =============================
+   CUERPO
+============================= */
 .cuerpo-transparente {
   background-color: #f0f0f0;
-  mix-blend-mode: multiply;
-  /* Fusión con el fondo */
   border-radius: 4px;
   padding: 0;
-  margin-top: 0;
   position: relative;
-  z-index: 1;
 }
 
-/* LISTA GENERAL */
+/* =============================
+   LISTA CON SCROLL REAL
+============================= */
 .lista-contenido-scroll {
-  max-height: 400px;
+  max-height: 260px;          /* ⬅️ 6–8 filas */
   overflow-y: auto;
-  scrollbar-width: thin;
-  scrollbar-color: #bdbdbd transparent;
-  padding: 40px 20px;
-  /* Padding generoso */
+  padding: 4px 0;
 }
 
+/* =============================
+   TABLA (NO empuja contenedor)
+============================= */
 .table-general {
-  width: auto;
-  margin: 0 auto;
-  border-collapse: separate;
-  border-spacing: 0 25px;
-  /* Espaciado vertical aumentado */
+  width: 100%;
+  border-collapse: collapse;  /* ⬅️ MUY IMPORTANTE */
+}
+
+.table-general tr {
+  height: 36px;               /* ⬅️ altura fija */
 }
 
 .table-general td {
-  padding: 0 12px;
+  padding: 6px 8px;           /* ⬅️ reducido */
   vertical-align: middle;
+}
+.table-general td + td {
+  padding-left: 30px;        /* 👈 espacio entre el color y el nombre */
 }
 
 .texto-oswald-general {
-  font-family: var(--font-titles);
-  font-size: 0.9rem;
-  color: #111;
-  /* Texto oscuro para contraste */
+  font-size: 0.85rem;         /* ⬅️ reducido */
   text-transform: uppercase;
-  font-weight: 500;
 }
 
-/* LEYENDA INDIVIDUAL */
-.table-legend {
-  border-collapse: collapse;
-}
-
-.table-legend td {
-  padding: 8px 0;
-}
-
-.texto-oswald {
-  font-family: var(--font-titles);
-  font-size: 1rem;
-  color: #2c3e50;
-  text-transform: uppercase;
-  font-weight: 400;
-}
-
-/* ELEMENTOS COMUNES */
+/* =============================
+   ELEMENTOS COMUNES
+============================= */
 .color-square {
-  width: 24px;
-  height: 24px;
+  width: 18px;                /* ⬅️ reducido */
+  height: 18px;
   border-radius: 2px;
   border: 1px solid rgba(0, 0, 0, 0.1);
-  mix-blend-mode: normal !important;
-  /* IMPORTANTE: Para que el color sea sólido */
-  opacity: 1 !important;
-  position: relative;
-  z-index: 2;
 }
 
 .marco-foto {
@@ -350,38 +325,32 @@ export default {
 }
 
 .nombre-oswald-titulo {
-  font-family: var(--font-titles);
-  color: #222;
-  font-weight: 700;
-  text-transform: uppercase;
-  font-size: 1.5rem;
-  margin: 0;
+  font-size: 1.4rem;
 }
 
 .partido-oswald-sub {
-  font-family: var(--font-titles);
-  color: #444;
-  font-size: 0.9rem;
+  font-size: 0.85rem;
 }
 
-/* Scrollbars */
-::-webkit-scrollbar {
+/* =============================
+   SCROLLBAR
+============================= */
+.lista-contenido-scroll::-webkit-scrollbar {
   width: 6px;
 }
 
-::-webkit-scrollbar-thumb {
+.lista-contenido-scroll::-webkit-scrollbar-thumb {
   background: #bdbdbd;
   border-radius: 3px;
 }
 
-::-webkit-scrollbar-track {
+.lista-contenido-scroll::-webkit-scrollbar-track {
   background: transparent;
 }
 
-.noselect {
-  user-select: none;
-}
-
+/* =============================
+   TRANSICIONES
+============================= */
 .fade-enter-active,
 .fade-leave-active {
   transition: opacity 0.2s;
