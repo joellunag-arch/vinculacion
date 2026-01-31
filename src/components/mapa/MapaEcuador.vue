@@ -5,19 +5,15 @@
     <div style="position: absolute; top: 0px; right: 0px; z-index: 10; padding: 10px;">
       <v-menu offset-y :close-on-content-click="false">
         <template v-slot:activator="{ props }">
-          <v-btn
-            color="#d9d9d9"
-            size="x-small"
-            class="rounded-sm"
-            elevation="1"
-            v-bind="props"
-            style="min-width: 30px; width: 30px; height: 30px; padding: 0;"
-          >
-             <img src="data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23546E7A' width='24px' height='24px'%3E%3Cpath d='M0 0h24v24H0z' fill='none'/%3E%3Cpath d='M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z'/%3E%3C/svg%3E" alt="Exportar" style="width: 20px; height: 20px;" />
+          <v-btn color="#d9d9d9" size="x-small" class="rounded-sm" elevation="1" v-bind="props"
+            style="min-width: 30px; width: 30px; height: 30px; padding: 0;">
+            <img
+              src="data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23546E7A' width='24px' height='24px'%3E%3Cpath d='M0 0h24v24H0z' fill='none'/%3E%3Cpath d='M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z'/%3E%3C/svg%3E"
+              alt="Exportar" style="width: 20px; height: 20px;" />
           </v-btn>
         </template>
         <v-list density="compact">
-          
+
           <v-menu location="start" open-on-hover :close-on-content-click="true">
             <template v-slot:activator="{ props }">
               <v-list-item v-bind="props">
@@ -44,7 +40,7 @@
           </v-menu>
 
           <v-menu location="start" open-on-hover :close-on-content-click="true">
-             <template v-slot:activator="{ props }">
+            <template v-slot:activator="{ props }">
               <v-list-item v-bind="props">
                 <v-list-item-title>Datos</v-list-item-title>
                 <template v-slot:append>
@@ -53,17 +49,17 @@
               </v-list-item>
             </template>
             <v-list density="compact">
-               <v-list-item @click="descargarJSON" value="json">
+              <v-list-item @click="descargarJSON" value="json">
                 <v-list-item-title>JSON</v-list-item-title>
               </v-list-item>
               <v-list-item @click="descargarXLSX" value="xlsx">
-                 <v-list-item-title>XLSX</v-list-item-title>
+                <v-list-item-title>XLSX</v-list-item-title>
               </v-list-item>
               <v-list-item @click="descargarHTML" value="html">
-                 <v-list-item-title>HTML</v-list-item-title>
+                <v-list-item-title>HTML</v-list-item-title>
               </v-list-item>
               <v-list-item @click="descargarPDF" value="pdf">
-                 <v-list-item-title>PDF</v-list-item-title>
+                <v-list-item-title>PDF</v-list-item-title>
               </v-list-item>
             </v-list>
           </v-menu>
@@ -141,7 +137,7 @@ export default {
       },
       deep: true
     },
-    
+
     colores: {
       handler() {
         this.updateMapData();
@@ -277,7 +273,7 @@ export default {
       chart.projection = new am4maps.projections.Miller();
       chart.zoomControl = new am4maps.ZoomControl();
 
-        
+
       this.actualizarDatosExportacion(this.datosDescarga);
 
       let pais = chart.series.push(new am4maps.MapPolygonSeries());
@@ -395,19 +391,19 @@ Votos: {winnerVotes} ({winnerPercent}%)`;
 
       if (idProv && idCan) {
         this.resetMapToHome();
-        
+
         const provPolygon = this.paisSeries.getPolygonById(this.normalizeId(idProv));
         if (provPolygon) {
           this.chart.zoomToMapObject(provPolygon);
           this.drillDownToProvince(provPolygon.dataItem.dataContext);
-          
+
           setTimeout(() => {
             const canPolygon = this.provinciaSeries.getPolygonById(this.normalizeId(idCan));
             if (canPolygon) {
               this.chart.zoomToMapObject(canPolygon);
               this.drillDownToCanton(canPolygon.dataItem.dataContext);
             }
-          }, 1000); 
+          }, 1000);
         }
       } else if (idProv) {
         this.resetMapToHome();
@@ -458,10 +454,10 @@ Votos: {winnerVotes} ({winnerPercent}%)`;
     drillDownToProvince(dataContext) {
       try {
         let id = dataContext.id || dataContext.CODPRO;
-        
+
         if (!this.geoCantones || !this.geoCantones.features || this.geoCantones.features.length === 0) {
-            console.warn("No geoCantones data available for drilldown.");
-            return;
+          console.warn("No geoCantones data available for drilldown.");
+          return;
         }
 
         let features = this.geoCantones.features || [];
@@ -495,8 +491,8 @@ Votos: {winnerVotes} ({winnerPercent}%)`;
         let idCanton = dataContext.id || dataContext.CODCAN;
 
         if (!this.geoParroquias || !this.geoParroquias.features || this.geoParroquias.features.length === 0) {
-             console.warn("No geoParroquias data available for drilldown.");
-             return;
+          console.warn("No geoParroquias data available for drilldown.");
+          return;
         }
 
         let features = this.geoParroquias.features || [];
@@ -544,25 +540,25 @@ Votos: {winnerVotes} ({winnerPercent}%)`;
 
     flattenElectionData(data) {
       if (!data || !Array.isArray(data)) return [];
-      
+
       const partidoFilter = this.id_1 && this.id_1.length > 1 ? this.id_1[1] : "";
 
       return data.map(item => {
         let locationName = item.name || item.PARROQUIA || item.CANTON || item.PROVINCIA || "Desconocido";
-        
+
         let totalVotes = item.votos_total || item.votos_validos || 0;
-        
+
         if (!totalVotes && item.resultados) {
-           if (item.resultados.VOTOS && item.resultados.VOTOS.votos) {
-               totalVotes = item.resultados.VOTOS.votos;
-           } else {
-               totalVotes = Object.values(item.resultados).reduce((sum, current) => {
-                   if (current && typeof current.votos === 'number' && current.candidato !== "VALIDOS") {
-                       return sum + current.votos;
-                   }
-                   return sum;
-               }, 0);
-           }
+          if (item.resultados.VOTOS && item.resultados.VOTOS.votos) {
+            totalVotes = item.resultados.VOTOS.votos;
+          } else {
+            totalVotes = Object.values(item.resultados).reduce((sum, current) => {
+              if (current && typeof current.votos === 'number' && current.candidato !== "VALIDOS") {
+                return sum + current.votos;
+              }
+              return sum;
+            }, 0);
+          }
         }
 
         const flatItem = {
@@ -572,43 +568,43 @@ Votos: {winnerVotes} ({winnerPercent}%)`;
 
         if (item.resultados) {
           if (partidoFilter && item.resultados[partidoFilter]) {
-              const pData = item.resultados[partidoFilter];
-              flatItem["Partido"] = partidoFilter;
-              flatItem["Candidato"] = pData.candidato;
-              flatItem["Votos"] = pData.votos;
-              flatItem["Porcentaje"] = pData.porcentaje + "%";
+            const pData = item.resultados[partidoFilter];
+            flatItem["Partido"] = partidoFilter;
+            flatItem["Candidato"] = pData.candidato;
+            flatItem["Votos"] = pData.votos;
+            flatItem["Porcentaje"] = pData.porcentaje + "%";
           } else {
-              const validCandidates = Object.values(item.resultados).filter(c => c.candidato !== "VALIDOS");
-              const sortedCandidates = validCandidates.sort((a, b) => b.votos - a.votos);
-              
-              if (sortedCandidates[0]) {
-                flatItem["Candidato 1"] = sortedCandidates[0].candidato;
-                flatItem["Votos Candidato 1"] = sortedCandidates[0].votos;
-              } else {
-                 flatItem["Candidato 1"] = "";
-                 flatItem["Votos Candidato 1"] = 0;
-              }
+            const validCandidates = Object.values(item.resultados).filter(c => c.candidato !== "VALIDOS");
+            const sortedCandidates = validCandidates.sort((a, b) => b.votos - a.votos);
 
-              if (sortedCandidates[1]) {
-                flatItem["Candidato 2"] = sortedCandidates[1].candidato;
-                flatItem["Votos Candidato 2"] = sortedCandidates[1].votos;
-              } else {
-                 flatItem["Candidato 2"] = "";
-                 flatItem["Votos Candidato 2"] = 0;
-              }
-          }
-        } else {
-           if (partidoFilter) {
-              flatItem["Partido"] = partidoFilter;
-              flatItem["Candidato"] = "";
-              flatItem["Votos"] = 0;
-              flatItem["Porcentaje"] = "0%";
-           } else {
+            if (sortedCandidates[0]) {
+              flatItem["Candidato 1"] = sortedCandidates[0].candidato;
+              flatItem["Votos Candidato 1"] = sortedCandidates[0].votos;
+            } else {
               flatItem["Candidato 1"] = "";
               flatItem["Votos Candidato 1"] = 0;
+            }
+
+            if (sortedCandidates[1]) {
+              flatItem["Candidato 2"] = sortedCandidates[1].candidato;
+              flatItem["Votos Candidato 2"] = sortedCandidates[1].votos;
+            } else {
               flatItem["Candidato 2"] = "";
               flatItem["Votos Candidato 2"] = 0;
-           }
+            }
+          }
+        } else {
+          if (partidoFilter) {
+            flatItem["Partido"] = partidoFilter;
+            flatItem["Candidato"] = "";
+            flatItem["Votos"] = 0;
+            flatItem["Porcentaje"] = "0%";
+          } else {
+            flatItem["Candidato 1"] = "";
+            flatItem["Votos Candidato 1"] = 0;
+            flatItem["Candidato 2"] = "";
+            flatItem["Votos Candidato 2"] = 0;
+          }
         }
         return flatItem;
       });
@@ -626,10 +622,10 @@ Votos: {winnerVotes} ({winnerPercent}%)`;
       }
 
       if (!sourceData || sourceData.length === 0) {
-          console.warn("No active series data found for level " + this.currentLevel + ". Using fallback.");
-          return this.datosExportacionProcesados || this.flattenElectionData(this.datosDescarga) || [];
+        console.warn("No active series data found for level " + this.currentLevel + ". Using fallback.");
+        return this.datosExportacionProcesados || this.flattenElectionData(this.datosDescarga) || [];
       }
-      
+
       return this.flattenElectionData(sourceData);
     },
 
@@ -640,10 +636,10 @@ Votos: {winnerVotes} ({winnerPercent}%)`;
 
         if (!datos || datos.length === 0) {
           datos = this.flattenElectionData(this.datosDescarga);
-           if (!datos || datos.length === 0) {
-             alert("No hay datos para exportar.");
-             return;
-           }
+          if (!datos || datos.length === 0) {
+            alert("No hay datos para exportar.");
+            return;
+          }
         }
         const blob = new Blob([JSON.stringify(datos, null, 2)], { type: "application/json;charset=utf-8" });
         saveAs(blob, "Ecuador_Resultados.json");
@@ -657,68 +653,68 @@ Votos: {winnerVotes} ({winnerPercent}%)`;
       try {
         let datos = this.getDatosParaDescarga();
         if (!datos || datos.length === 0) {
-           datos = this.flattenElectionData(this.datosDescarga);
-           if (!datos || datos.length === 0) {
-             alert("No hay datos para exportar.");
-             return;
-           }
+          datos = this.flattenElectionData(this.datosDescarga);
+          if (!datos || datos.length === 0) {
+            alert("No hay datos para exportar.");
+            return;
+          }
         }
 
         const ws = XLSX.utils.json_to_sheet(datos);
         const wb = XLSX.utils.book_new();
         XLSX.utils.book_append_sheet(wb, ws, "Resultados");
-        
+
         const wbout = XLSX.write(wb, { bookType: "xlsx", type: "array" });
         saveAs(new Blob([wbout], { type: "application/octet-stream" }), "Ecuador_Resultados.xlsx");
       } catch (e) {
-         console.error("Error en descargarXLSX: ", e);
-         alert("Error al descargar XLSX");
+        console.error("Error en descargarXLSX: ", e);
+        alert("Error al descargar XLSX");
       }
     },
 
     descargarHTML() {
-       try {
-         let datos = this.getDatosParaDescarga();
-         if (!datos || datos.length === 0) {
-            datos = this.flattenElectionData(this.datosDescarga);
-            if (!datos || datos.length === 0) {
-              alert("No hay datos para exportar.");
-              return;
-            }
-         }
+      try {
+        let datos = this.getDatosParaDescarga();
+        if (!datos || datos.length === 0) {
+          datos = this.flattenElectionData(this.datosDescarga);
+          if (!datos || datos.length === 0) {
+            alert("No hay datos para exportar.");
+            return;
+          }
+        }
 
-         let html = "<html><head><style>table, th, td { border: 1px solid black; border-collapse: collapse; padding: 5px; font-family: Arial; } th { background-color: #f2f2f2; }</style></head><body><h2>Resultados Electorales</h2><table>";
-         
-         const keys = Object.keys(datos[0]);
-         html += "<thead><tr>";
-         keys.forEach(k => html += `<th>${k}</th>`);
-         html += "</tr></thead><tbody>";
+        let html = "<html><head><style>table, th, td { border: 1px solid black; border-collapse: collapse; padding: 5px; font-family: Arial; } th { background-color: #f2f2f2; }</style></head><body><h2>Resultados Electorales</h2><table>";
 
-         datos.forEach(row => {
-           html += "<tr>";
-           keys.forEach(k => html += `<td>${row[k] !== undefined && row[k] !== null ? row[k] : ""}</td>`);
-           html += "</tr>";
-         });
+        const keys = Object.keys(datos[0]);
+        html += "<thead><tr>";
+        keys.forEach(k => html += `<th>${k}</th>`);
+        html += "</tr></thead><tbody>";
 
-         html += "</tbody></table></body></html>";
-         
-         const blob = new Blob([html], { type: "text/html;charset=utf-8" });
-         saveAs(blob, "Ecuador_Resultados.html");
-       } catch (e) {
-          console.error("Error en descargarHTML: ", e);
-          alert("Error al descargar HTML");
-       }
+        datos.forEach(row => {
+          html += "<tr>";
+          keys.forEach(k => html += `<td>${row[k] !== undefined && row[k] !== null ? row[k] : ""}</td>`);
+          html += "</tr>";
+        });
+
+        html += "</tbody></table></body></html>";
+
+        const blob = new Blob([html], { type: "text/html;charset=utf-8" });
+        saveAs(blob, "Ecuador_Resultados.html");
+      } catch (e) {
+        console.error("Error en descargarHTML: ", e);
+        alert("Error al descargar HTML");
+      }
     },
 
     descargarPDF() {
       try {
         let datos = this.getDatosParaDescarga();
         if (!datos || datos.length === 0) {
-            datos = this.flattenElectionData(this.datosDescarga);
-            if (!datos || datos.length === 0) {
-              alert("No hay datos para exportar.");
-              return;
-            }
+          datos = this.flattenElectionData(this.datosDescarga);
+          if (!datos || datos.length === 0) {
+            alert("No hay datos para exportar.");
+            return;
+          }
         }
 
         const doc = new jsPDF();
@@ -738,12 +734,12 @@ Votos: {winnerVotes} ({winnerPercent}%)`;
           body: tableRows,
           startY: 20,
         });
-        
+
         doc.save("Ecuador_Resultados.pdf");
 
       } catch (e) {
-         console.error("Error en descargarPDF: ", e);
-         alert("Error al descargar PDF: " + e.message);
+        console.error("Error en descargarPDF: ", e);
+        alert("Error al descargar PDF: " + e.message);
       }
     },
 
@@ -754,9 +750,9 @@ Votos: {winnerVotes} ({winnerPercent}%)`;
     },
 
     printMap() {
-       if (this.chart && this.chart.exporting) {
-         this.chart.exporting.export("print");
-       }
+      if (this.chart && this.chart.exporting) {
+        this.chart.exporting.export("print");
+      }
     }
 
   },
@@ -765,14 +761,18 @@ Votos: {winnerVotes} ({winnerPercent}%)`;
 
 <style scoped>
 .map-container {
-  
+
   position: relative;
   width: 100%;
-  max-width: 2000px;     /* ⬅️ más ancho */
-  height: 420px;         /* ⬅️ un poco más bajo */
-  margin: 0 auto;        /* centra el mapa */
+  max-width: 2000px;
+  /* ⬅️ más ancho */
+  height: 420px;
+  /* ⬅️ un poco más bajo */
+  margin: 0 auto;
+  /* centra el mapa */
   margin-left: 15%;
 }
+
 .mapa {
   width: 100%;
   height: 100%;
@@ -788,12 +788,12 @@ Votos: {winnerVotes} ({winnerPercent}%)`;
   border-radius: 4px;
 }
 
-  ::v-deep .amcharts-export-menu li {
-    padding: 8px 16px;
-    cursor: pointer;
-    color: var(--text-main);
-    font-family: var(--font-body);
-  }
+::v-deep .amcharts-export-menu li {
+  padding: 8px 16px;
+  cursor: pointer;
+  color: var(--text-main);
+  font-family: var(--font-body);
+}
 
 ::v-deep .amcharts-export-menu li:hover {
   background: var(--bg-soft);

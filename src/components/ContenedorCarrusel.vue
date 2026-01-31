@@ -2,16 +2,12 @@
   <div class="carrusel-wrapper">
     <div class="carrusel-electoral-container" :style="{ top: topOffset + 'px', height: heightVh + 'vh' }">
       <div class="container-fluid p-0">
-      <div
-        id="carouselElectoral"
-        ref="carouselRef"
-        class="carousel slide bg-white-opacity shadow-lg"
-        data-bs-interval="false"
-      >
-        <!-- =========================
+        <div id="carouselElectoral" ref="carouselRef" class="carousel slide bg-white-opacity shadow-lg"
+          data-bs-interval="false">
+          <!-- =========================
              HEADER
         ========================== -->
-        <div class="row align-items-center mx-0 header-electoral">
+          <div class="row align-items-center mx-0 header-electoral p-3">
             <!-- LUPA -->
             <div v-if="slideActivo === 0" class="col-auto search-container">
               <button class="btn-search-fab" @click="$emit('toggle-search')">
@@ -19,159 +15,134 @@
               </button>
             </div>
 
-          <!-- TÍTULO -->
-          <div class="col-auto mx-auto text-center" v-if="slideActivo === 0">
-            <div class="titulo-electoral">
-              <h2 class="mb-0 fw-bold">{{ tituloActual }}</h2>
+            <!-- TÍTULO -->
+            <div class="col-auto mx-auto text-center" v-if="slideActivo === 0">
+              <div class="titulo-electoral">
+                <h2 class="mb-0 fw-bold">{{ tituloActual }}</h2>
+              </div>
+            </div>
+
+            <!-- ACTIONS MOBILE: show search + clean centered under title on small screens -->
+            <div v-if="slideActivo === 0" class="actions-mobile">
+              <button class="btn-search-fab" @click="$emit('toggle-search')">
+                <i class="bi bi-search"></i>
+              </button>
+              <button class="btn-search-fab" @click="$emit('clean-filters')" title="Limpiar Filtros">
+                <i class="bi bi-trash-fill"></i>
+              </button>
+            </div>
+
+            <!-- LIMPIAR FILTROS (desktop) -->
+            <div v-if="slideActivo === 0" class="col-auto clean-container">
+              <button class="btn-search-fab" @click="$emit('clean-filters')" title="Limpiar Filtros">
+                <i class="bi bi-trash-fill"></i>
+              </button>
+            </div>
+
+            <!-- CONTROLES DE VISTA (desactivados) -->
+          </div>
+
+          <!-- ==========================
+             BOTONES DE ETAPA
+        ========================== -->
+          <div v-if="slideActivo === 0" class="row justify-content-center pb-0 mx-0 etapa-container p-0">
+            <div class="col-12 d-flex justify-content-center px-0">
+              <button @click="etapaHabilitada(1) && cambiarEtapa(1)" :class="[
+                'btn-etapa',
+                { activo: etapa === 1, disabled: !etapaHabilitada(1) },
+              ]">
+                PRIMERA VUELTA
+              </button>
+
+              <button @click="etapaHabilitada(2) && cambiarEtapa(2)" :class="[
+                'btn-etapa',
+                { activo: etapa === 2, disabled: !etapaHabilitada(2) },
+              ]">
+                SEGUNDA VUELTA
+              </button>
+
+              <button @click="etapaHabilitada(3) && cambiarEtapa(3)" :class="[
+                'btn-etapa',
+                { activo: etapa === 3, disabled: !etapaHabilitada(3) },
+              ]">
+                ASAMBLEÍSTAS
+              </button>
             </div>
           </div>
 
-          <!-- LIMPIAR FILTROS -->
-          <div v-if="slideActivo === 0" class="col-auto clean-container">
-            <button
-              class="btn-search-fab"
-              @click="$emit('clean-filters')"
-              title="Limpiar Filtros"
-            >
-              <i class="bi bi-trash-fill"></i>
-            </button>
-          </div>
-
-          <!-- CONTROLES DE VISTA (desactivados) -->
-        </div>
-
-        <!-- ==========================
-             BOTONES DE ETAPA
-        ========================== -->
-        <div
-          v-if="slideActivo === 0"
-          class="row justify-content-center pb-0 mx-0 etapa-container"
-        >
-          <div class="col-12 d-flex justify-content-center px-0">
-            <button
-              @click="etapaHabilitada(1) && cambiarEtapa(1)"
-              :class="[
-                'btn-etapa',
-                { activo: etapa === 1, disabled: !etapaHabilitada(1) },
-              ]"
-            >
-              PRIMERA VUELTA
-            </button>
-
-            <button
-              @click="etapaHabilitada(2) && cambiarEtapa(2)"
-              :class="[
-                'btn-etapa',
-                { activo: etapa === 2, disabled: !etapaHabilitada(2) },
-              ]"
-            >
-              SEGUNDA VUELTA
-            </button>
-
-            <button
-              @click="etapaHabilitada(3) && cambiarEtapa(3)"
-              :class="[
-                'btn-etapa',
-                { activo: etapa === 3, disabled: !etapaHabilitada(3) },
-              ]"
-            >
-              ASAMBLEÍSTAS
-            </button>
-          </div>
-        </div>
-
-           <!-- =========================
+          <!-- =========================
              SLIDES
            ========================== -->
-           <div
-          class="carousel-inner"
-          :style="{ height: heightVh + 'vh', '--carousel-zoom': zoom, '--footer-safe': footerSafe + 'px', paddingBottom: footerSafe + 'px' }"
-           >
-          <div class="carousel-item active p-2">
-              <div class="row fixed-carousel-height" :style="{ transform: `scale(${zoom})`, transformOrigin: 'center top' }">
-              <div
-                :class="
-                  hasFiltros
+          <div class="carousel-inner"
+            :style="{ height: heightVh + 'vh', '--carousel-zoom': zoom, '--footer-safe': footerSafe + 'px', paddingBottom: footerSafe + 'px' }">
+            <div class="carousel-item active p-2">
+              <div class="row fixed-carousel-height"
+                :style="{ transform: `scale(${zoom})`, transformOrigin: 'center top' }">
+                <div :class="hasFiltros
                     ? 'col-md-9 position-relative border-end border-light'
                     : 'col-md-12 position-relative'
-                "
-              >
-                <div class="slot-content-wrap">
-                  <slot name="mapa">
-                    <div class="placeholder-content">Mapa del Ecuador</div>
+                  ">
+                  <div class="slot-content-wrap">
+                    <slot name="mapa">
+                      <div class="placeholder-content">Mapa del Ecuador</div>
+                    </slot>
+                  </div>
+                </div>
+                <div v-if="hasFiltros" class="col-md-3 ps-0">
+                  <slot name="filtros">
+                    <div class="placeholder-content small">Filtros / Listado</div>
                   </slot>
                 </div>
               </div>
-              <div v-if="hasFiltros" class="col-md-3 ps-0">
-                <slot name="filtros">
-                  <div class="placeholder-content small">Filtros / Listado</div>
-                </slot>
+            </div>
+
+            <div class="carousel-item p-4">
+              <div class="fixed-carousel-height d-flex align-items-center justify-content-center">
+                <div class="slot-content-wrap">
+                  <slot name="graficos">
+                    <div class="placeholder-content">Gráficos de resultados</div>
+                  </slot>
+                </div>
+              </div>
+            </div>
+
+            <div class="carousel-item p-4">
+              <div class="fixed-carousel-height overflow-auto">
+                <div class="slot-content-wrap">
+                  <slot name="tablas">
+                    <div class="placeholder-content">Tablas de resultados</div>
+                  </slot>
+                </div>
               </div>
             </div>
           </div>
 
-          <div class="carousel-item p-4">
-            <div
-              class="fixed-carousel-height d-flex align-items-center justify-content-center"
-            >
-              <div class="slot-content-wrap">
-                <slot name="graficos">
-                  <div class="placeholder-content">Gráficos de resultados</div>
-                </slot>
-              </div>
-            </div>
-          </div>
-
-          <div class="carousel-item p-4">
-            <div class="fixed-carousel-height overflow-auto">
-              <div class="slot-content-wrap">
-                <slot name="tablas">
-                  <div class="placeholder-content">Tablas de resultados</div>
-                </slot>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- =========================
+          <!-- =========================
              INDICADORES
         ========================== -->
-        <!-- =========================
+          <!-- =========================
              INDICADORES
         ========================== -->
-        <div class="carousel-indicators-custom" :style="{ bottom: indicatorsBottom }">
-          <button
-            class="btn-nav"
-            data-bs-target="#carouselElectoral"
-            data-bs-slide="prev"
-          >
-            <i class="bi bi-chevron-left"></i>
-          </button>
+          <div class="carousel-indicators-custom" :style="{ bottom: indicatorsBottom }">
+            <button class="btn-nav" data-bs-target="#carouselElectoral" data-bs-slide="prev">
+              <i class="bi bi-chevron-left"></i>
+            </button>
 
-          <div class="dots">
-            <button
-              v-for="idx in 3"
-              :key="idx"
-              data-bs-target="#carouselElectoral"
-              :data-bs-slide-to="idx - 1"
-              :class="['dot-btn', { active: slideActivo === idx - 1 }]"
-            />
+            <div class="dots">
+              <button v-for="idx in 3" :key="idx" data-bs-target="#carouselElectoral" :data-bs-slide-to="idx - 1"
+                :class="['dot-btn', { active: slideActivo === idx - 1 }]" />
+            </div>
+
+            <button class="btn-nav" data-bs-target="#carouselElectoral" data-bs-slide="next">
+              <i class="bi bi-chevron-right"></i>
+            </button>
           </div>
-
-          <button
-            class="btn-nav"
-            data-bs-target="#carouselElectoral"
-            data-bs-slide="next"
-          >
-            <i class="bi bi-chevron-right"></i>
-          </button>
         </div>
-      </div>
 
         <!-- SLOT PARA INFORMACIÓN AL PIE (BARRA) -->
-      <div class="footer-slot">
-        <slot name="footer-info"></slot>
-      </div>
+        <div class="footer-slot">
+          <slot name="footer-info"></slot>
+        </div>
       </div>
     </div>
     <div class="carrusel-spacer" :style="{ height: `calc(${heightVh}vh + ${topOffset}px)` }"></div>
@@ -211,13 +182,22 @@ const updateFooterHeight = () => {
   footerSafe.value = footer ? footer.getBoundingClientRect().height : 0;
 };
 
+// track viewport width so we can compute responsive offsets
+const windowWidth = ref(typeof window !== 'undefined' ? window.innerWidth : 1024);
+
+const handleResize = () => {
+  windowWidth.value = window.innerWidth;
+  updateFooterHeight();
+};
+
 onMounted(() => {
   updateFooterHeight();
-  window.addEventListener('resize', updateFooterHeight);
+  // keep a single resize listener that updates both footer and viewport size
+  window.addEventListener('resize', handleResize);
 });
 
 onUnmounted(() => {
-  window.removeEventListener('resize', updateFooterHeight);
+  window.removeEventListener('resize', handleResize);
 });
 
 const hasFiltros = computed(() => !!slots.filtros);
@@ -249,10 +229,20 @@ const detectarCambioSlide = (event) => {
   slideActivo.value = event.to;
 };
 
-//bajar o subir los botones del carrusel
+// bajar o subir los botones del carrusel (responsive según ancho de ventana)
 const indicatorsBottom = computed(() => {
   const base = footerSafe.value ? Math.max(footerSafe.value - 12, 8) : 12;
-  const offsetDown = -55; // push indicators a bit lower
+  const w = windowWidth.value || 1024;
+  let offsetDown;
+
+  // breakpoints based on common bootstrap widths, tweak values as needed
+  if (w >= 1600) offsetDown = -40;
+  else if (w >= 1400) offsetDown = -60;
+  else if (w >= 1200) offsetDown = -55;
+  else if (w >= 992) offsetDown = -65;
+  else if (w >= 768) offsetDown = -40;
+  else offsetDown = -240; // mobile: push further down to avoid overlap
+
   return `${base + offsetDown}px`;
 });
 
@@ -274,7 +264,8 @@ onUnmounted(() => {
   background-size: cover;
   background-position: center;
   position: sticky;
-  top: 64px; /* use topOffset default */
+  top: 64px;
+  /* use topOffset default */
   width: 100%;
   padding-bottom: 0px;
   overflow: hidden;
@@ -286,7 +277,7 @@ onUnmounted(() => {
   display: none !important;
 }
 
-.carrusel-electoral-container > .container-fluid {
+.carrusel-electoral-container>.container-fluid {
   display: flex;
   flex-direction: column;
   padding: 0;
@@ -331,7 +322,7 @@ onUnmounted(() => {
 ========================= */
 .header-electoral {
   padding-top: 28px;
-  padding-bottom: 0px;//modificar espaciado
+  padding-bottom: 0px; //modificar espaciado
   display: flex;
   align-items: center;
 }
@@ -351,9 +342,38 @@ onUnmounted(() => {
 @media (max-width: 768px) {
   .titulo-electoral {
     padding: 6px 20px;
+
     h2 {
       font-size: 1.2rem;
     }
+  }
+}
+
+/* For medium/large screens ensure left-search, center-title, right-clean layout */
+@media (min-width: 769px) {
+  .header-electoral {
+    display: grid !important;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+    gap: 12px;
+    padding: 18px 24px;
+  }
+
+  .search-container {
+    justify-self: start;
+  }
+
+  .clean-container {
+    justify-self: end;
+  }
+
+  .titulo-electoral {
+    justify-self: center;
+  }
+
+  /* Ensure mobile actions row is hidden on larger screens */
+  .actions-mobile {
+    display: none !important;
   }
 }
 
@@ -367,7 +387,7 @@ h2 {
    SEPARACIÓN TÍTULO / BOTONES
 ========================= */
 .etapa-container {
-  padding-top: 14px;
+  padding-top: 0px;
 }
 
 /* =========================
@@ -382,7 +402,7 @@ h2 {
   cursor: pointer;
   transition: all 0.2s ease;
 
-  & + .btn-etapa {
+  &+.btn-etapa {
     border-left: none;
   }
 
@@ -433,6 +453,11 @@ h2 {
     color: white !important;
     font-size: 1.15rem !important;
   }
+
+  /* Mobile actions: hide desktop individual buttons and show the centered actions row */
+  .actions-mobile {
+    display: none;
+  }
 }
 
 /* =========================
@@ -450,12 +475,13 @@ h2 {
 .carousel-item.p-4 {
   background: transparent !important;
 }
+
 .carousel-item {
   background-color: transparent !important;
 }
 
 /* Contenedor del slide */
-.carousel-item > .row {
+.carousel-item>.row {
   background: transparent !important;
 }
 
@@ -463,14 +489,16 @@ h2 {
    INDICADORES
 ========================= */
 .carousel-indicators-custom {
-  position: absolute; /* place above footer-slot */
+  position: absolute;
+  /* place above footer-slot */
   left: 0;
   right: 0;
   padding: 4px 40px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  z-index: 2100; /* above footer (1020) but below navbar dropdown (2250) */
+  z-index: 2100;
+  /* above footer (1020) but below navbar dropdown (2250) */
   /* Allow clicks to pass through empty areas so charts remain interactive */
   pointer-events: none;
 }
@@ -490,6 +518,7 @@ h2 {
   align-items: center;
   gap: 6px;
 }
+
 .offset-label {
   font-size: 0.85rem;
   color: #444;
@@ -574,23 +603,33 @@ h2 {
 
 /* Scale down further so maps/charts/tables fit more comfortably */
 @media (min-width: 1600px) {
-  .slot-content-wrap { transform: scale(0.78); }
+  .slot-content-wrap {
+    transform: scale(0.78);
+  }
 }
 
 @media (min-width: 1400px) and (max-width: 1599px) {
-  .slot-content-wrap { transform: scale(0.80); }
+  .slot-content-wrap {
+    transform: scale(0.80);
+  }
 }
 
 @media (min-width: 1200px) and (max-width: 1399px) {
-  .slot-content-wrap { transform: scale(0.84); }
+  .slot-content-wrap {
+    transform: scale(0.84);
+  }
 }
 
 @media (min-width: 992px) and (max-width: 1199px) {
-  .slot-content-wrap { transform: scale(0.88); }
+  .slot-content-wrap {
+    transform: scale(0.88);
+  }
 }
 
 @media (max-width: 991px) {
-  .slot-content-wrap { transform: scale(0.92); }
+  .slot-content-wrap {
+    transform: scale(0.92);
+  }
 }
 
 .footer-slot {
@@ -618,18 +657,113 @@ h2 {
    MOBILE
 ========================= */
 @media (max-width: 768px) {
+
+  /* Make header compact: icons at sides, title centered */
   .header-electoral {
-    flex-direction: column;
-    gap: 10px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+    padding: 10px 12px;
   }
 
-  .search-container {
-    order: 3;
-    margin-left: 0;
+  .search-container,
+  .clean-container {
+    flex: 0 0 auto;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .titulo-electoral {
+    flex: 1 1 auto;
     display: flex;
     justify-content: center;
-    margin-top: 10px;
+    padding: 6px 12px;
   }
-  
+
+  .titulo-electoral h2 {
+    font-size: 1.05rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: calc(100% - 96px);
+  }
+
+  .btn-search-fab {
+    width: 36px;
+    height: 36px;
+  }
+
+  /* Show mobile actions and hide desktop left/right buttons */
+  .actions-mobile {
+    display: flex;
+    gap: 12px;
+    justify-content: center;
+    align-items: center;
+    order: 2;
+    width: 100%;
+    margin-top: 6px;
+  }
+
+  .search-container,
+  .clean-container {
+    display: none !important;
+  }
+
+  /* STACK SLIDES VERTICALLY ON MOBILE: map first, filtros/cards below */
+  .carousel-inner {
+    padding-bottom: calc(var(--footer-safe, 0px) + 8px);
+  }
+
+  .carousel-item > .row {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .carousel-item > .row > .col-md-9,
+  .carousel-item > .row > .col-md-12,
+  .carousel-item > .row > .col-md-3 {
+    width: 100% !important;
+    max-width: 100% !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+
+  /* Ensure map appears first in the flow, then filtros/cards */
+  .carousel-item > .row .col-md-9 {
+    order: -1;
+  }
+
+  .carousel-item > .row .col-md-3 {
+    order: 0;
+  }
+
+  /* Make slot content flow naturally and be scrollable if tall */
+  .slot-content-wrap {
+    transform: none !important;
+    padding: 0 12px !important;
+  }
+
+  .slot-content-wrap > * {
+    width: 100%;
+    max-height: 68vh;
+    overflow: auto;
+  }
+
+  /* Reduce internal paddings for tighter mobile presentation */
+  .carousel-item.p-4 { padding: 12px !important; }
+  .carousel-item.p-2 { padding: 8px !important; }
+
+  /* Let fixed-carousel-height adapt to content height on small screens */
+  .fixed-carousel-height {
+    height: auto !important;
+    min-height: 40vh;
+    max-height: none;
+    overflow: visible;
+  }
+
 }
 </style>

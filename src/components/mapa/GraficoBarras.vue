@@ -9,7 +9,7 @@
       <apexchart
         v-if="chartReady"
         :width="longitud"
-        height="500px"
+        :height="chartHeight"
         :options="chartOptions"
         :series="series"
       ></apexchart>
@@ -44,6 +44,7 @@ export default {
       pocosCandidatos: false,
       chartReady: false,
       longitud: "100%",
+      chartHeight: "500px",
       series: [],
       chartOptions: {
         chart: {
@@ -89,6 +90,10 @@ export default {
   },
   mounted() {
     this.cargarYProcesarDatos();
+    window.addEventListener("resize", this._handleResize);
+  },
+  beforeUnmount() {
+    window.removeEventListener("resize", this._handleResize);
   },
   methods: {
     // Convierte la URL de la imagen en un círculo con borde de color
@@ -222,17 +227,70 @@ export default {
       }
 
       // 4. Actualizar opciones del gráfico
+      // Adjust sizes for small screens
+      const w = window.innerWidth || 1024;
+      const small = w <= 768;
+
+      const xs = w <= 420;
+      const adjustedAnnotations = annotationsPoints.map((a) => {
+        // scale annotation images on small and xsmall screens
+        if (a.image && a.image.width) {
+          const scale = xs ? 0.45 : small ? 0.6 : 1;
+          return {
+            ...a,
+            image: {
+              ...a.image,
+              width: Math.round((a.image.width || 50) * scale),
+              height: Math.round((a.image.height || 50) * scale),
+              offsetY: Math.round((a.image.offsetY || 0) * scale),
+            },
+          };
+        }
+        return a;
+      });
+
+      const adjustedXaxis = {
+        ...this.chartOptions.xaxis,
+        categories: categoriesNames,
+        labels: {
+          ...this.chartOptions.xaxis.labels,
+          rotate: small ? -35 : this.chartOptions.xaxis.labels.rotate,
+          style: {
+            ...this.chartOptions.xaxis.labels.style,
+            fontSize: small ? "10px" : this.chartOptions.xaxis.labels.style.fontSize,
+          },
+          offsetY: small ? 40 : this.chartOptions.xaxis.labels.offsetY,
+        },
+      };
+
+      const adjustedDataLabels = {
+        ...this.chartOptions.dataLabels,
+        style: {
+          ...this.chartOptions.dataLabels.style,
+          fontSize: small ? "12px" : this.chartOptions.dataLabels.style.fontSize,
+        },
+        offsetY: small ? -20 : this.chartOptions.dataLabels.offsetY,
+      };
+
+      const adjustedPlotOptions = {
+        ...this.chartOptions.plotOptions,
+        bar: {
+          ...this.chartOptions.plotOptions.bar,
+          columnWidth: small ? "60%" : this.chartOptions.plotOptions.bar.columnWidth,
+        },
+      };
+
       this.chartOptions = {
         ...this.chartOptions,
         colors: barColors,
-        xaxis: {
-          ...this.chartOptions.xaxis,
-          categories: categoriesNames,
-        },
-        annotations: {
-          points: annotationsPoints,
-        },
+        xaxis: adjustedXaxis,
+        annotations: { points: adjustedAnnotations },
+        dataLabels: adjustedDataLabels,
+        plotOptions: adjustedPlotOptions,
       };
+
+      // adjust height for mobile and very small screens
+      this.chartHeight = xs ? "260px" : small ? "320px" : "500px";
 
       this.series = [{ name: "Porcentaje Nacional", data: dataValues }];
 
@@ -240,6 +298,14 @@ export default {
       setTimeout(() => {
         this.chartReady = true;
       }, 100);
+    },
+
+    _handleResize() {
+      // Recompute chart responsiveness when screen resizes
+      // If chart is already rendered, force reprocess to update sizes
+      if (this.chartReady) {
+        this.cargarYProcesarDatos();
+      }
     },
   },
 };
@@ -294,5 +360,19 @@ export default {
 .chart-scroll-wrapper::-webkit-scrollbar-thumb {
   background: var(--color-secondary);
   border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+  .graficobarras_container { padding: 12px; }
+  .titulo-estatico { font-size: 18px; padding: 8px 20px; margin-bottom: 18px; }
+  .chart-scroll-wrapper { padding-top: 12px; }
+  .loading-container { height: 220px; }
+}
+
+@media (max-width: 420px) {
+  .graficobarras_container { padding: 8px; }
+  .titulo-estatico { font-size: 16px; padding: 6px 12px; margin-bottom: 12px; }
+  .chart-scroll-wrapper { padding-top: 8px; }
+  .loading-container { height: 180px; }
 }
 </style>

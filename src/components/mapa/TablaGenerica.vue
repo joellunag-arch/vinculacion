@@ -342,6 +342,7 @@ export default {
   border-radius: 12px;
   padding: 1rem;
   box-shadow: none;
+  overflow-x: auto;
 }
 
 /* ============================================================
@@ -477,27 +478,46 @@ export default {
 ============================================================ */
 @media (max-width: 768px) {
   .titulo-general {
-    font-size: 1.2rem;
-    padding: 8px 20px !important;
+    font-size: 1rem;
+    padding: 6px 14px !important;
   }
 
   .btn-barra-descarga {
-    font-size: 0.8rem;
-    padding: 8px 15px;
-    min-width: 200px !important;
+    font-size: 0.78rem;
+    padding: 6px 10px;
+    min-width: 160px !important;
+    max-width: 100% !important;
+    width: 100% !important;
+    box-sizing: border-box;
   }
 
   .table-custom thead th,
   .table-custom tbody td {
-    font-size: 0.75rem;
-    padding: 8px 6px;
+    font-size: 0.68rem;
+    padding: 6px 6px;
   }
 
   .btn-pag-nav,
   .btn-pag-numero.active {
-    width: 28px;
-    height: 28px;
-    font-size: 0.75rem;
+    width: 26px;
+    height: 26px;
+    font-size: 0.72rem;
   }
+
+  /* Allow horizontal scrolling on very small screens */
+  .tabla-wrapper {
+    -webkit-overflow-scrolling: touch;
+    padding: 0.5rem;
+  }
+  .table-custom tbody td {
+    white-space: nowrap;
+  }
+}
+
+@media (max-width: 480px) {
+  .titulo-general { font-size: 0.9rem; padding: 4px 10px !important; }
+  .table-custom thead th, .table-custom tbody td { font-size: 0.64rem; padding: 5px 6px; }
+  .btn-barra-descarga { font-size: 0.72rem; padding: 6px; }
+  .tabla-wrapper { padding: 0.4rem; }
 }
 </style>

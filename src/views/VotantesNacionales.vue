@@ -1,156 +1,82 @@
 <template>
   <div class="vista-nacional">
     <!-- DRAWER DE FILTROS -->
-    <v-navigation-drawer
-      v-model="drawer"
-      temporary
-      absolute
-      height="100%"
-      location="left"
-      width="300"
-      color="#12a2c2"
-    >
+    <v-navigation-drawer v-model="drawer" temporary absolute height="100%" location="left" width="300" color="#12a2c2">
       <v-container class="contenedor-filtros text-white">
-        <h3
-          class="mb-4 text-uppercase fw-bold"
-          style="font-family: 'Oswald', sans-serif; color: white"
-        >
+        <h3 class="mb-4 text-uppercase fw-bold" style="font-family: 'Oswald', sans-serif; color: white">
           SELECCIONAR EN FILTRO
         </h3>
 
         <!-- VUELTA -->
-        <v-select
-          v-model="filtroVuelta"
-          :items="etapasDisponibles"
-          variant="outlined"
-          density="compact"
-          bg-color="rgba(255,255,255,0.1)"
-          base-color="white"
-          color="white"
-          hide-details
-          class="mb-1"
-        ></v-select>
+        <v-select v-model="filtroVuelta" :items="etapasDisponibles" variant="outlined" density="compact"
+          bg-color="rgba(255,255,255,0.1)" base-color="white" color="white" hide-details class="mb-1"></v-select>
         <div class="mb-4 text-caption white--text">
           Seleccionado: {{ filtroVuelta }}
         </div>
 
         <!-- PARTIDO -->
         <div class="texto-filtro">PARTIDO POLITICO*</div>
-        <v-select
-          v-model="partidoSeleccionado"
-          :items="listaPartidos"
-          variant="outlined"
-          density="compact"
-          bg-color="rgba(255,255,255,0.1)"
-          base-color="white"
-          color="white"
-          hide-details
-          class="mb-1"
-        ></v-select>
+        <v-select v-model="partidoSeleccionado" :items="listaPartidos" variant="outlined" density="compact"
+          bg-color="rgba(255,255,255,0.1)" base-color="white" color="white" hide-details class="mb-1"></v-select>
         <div class="mb-4 text-caption white--text">
           Seleccionado: {{ partidoSeleccionado }}
         </div>
 
         <!-- PROVINCIA -->
         <div class="texto-filtro">PROVINCIA*</div>
-        <v-select
-          v-model="filtroProvincia"
-          :items="listaProvincias"
-          variant="outlined"
-          density="compact"
-          bg-color="rgba(255,255,255,0.1)"
-          base-color="white"
-          color="white"
-          hide-details
-          class="mb-1"
-          clearable
-        ></v-select>
+        <v-select v-model="filtroProvincia" :items="listaProvincias" variant="outlined" density="compact"
+          bg-color="rgba(255,255,255,0.1)" base-color="white" color="white" hide-details class="mb-1"
+          clearable></v-select>
         <div class="mb-4 text-caption white--text">
           Seleccionado: {{ filtroProvincia }}
         </div>
 
         <!-- CANTON -->
         <div class="texto-filtro">CANTÓN</div>
-        <v-select
-          v-model="filtroCanton"
-          :items="listaCantones"
-          variant="outlined"
-          density="compact"
-          bg-color="rgba(255,255,255,0.1)"
-          base-color="white"
-          color="white"
-          hide-details
-          class="mb-1"
-          :disabled="!filtroProvincia"
-          clearable
-        ></v-select>
+        <v-select v-model="filtroCanton" :items="listaCantones" variant="outlined" density="compact"
+          bg-color="rgba(255,255,255,0.1)" base-color="white" color="white" hide-details class="mb-1"
+          :disabled="!filtroProvincia" clearable></v-select>
         <div class="mb-4 text-caption white--text">
           Seleccionado: {{ filtroCanton }}
         </div>
 
         <p class="text-caption white--text mb-4">*Campo Obligatorio</p>
 
-        <v-btn
-          block
-          color="white"
-          class="font-weight-bold"
-          style="color: #12a2c2; font-family: 'Oswald', sans-serif"
-          @click="buscar"
-        >
+        <v-btn block color="white" class="font-weight-bold" style="color: #12a2c2; font-family: 'Oswald', sans-serif"
+          @click="buscar">
           BUSCAR
         </v-btn>
       </v-container>
     </v-navigation-drawer>
 
-    <ContenedorCarrusel
-      titulo="Resultados Nacionales"
-      :periodo="year"
-      :etapasDisponibles="etapasDisponibles"
-      :etapaActual="filtroVuelta"
-      @update-etapa="manejarCambioVuelta"
-      @toggle-search="drawer = !drawer"
-      @clean-filters="limpiarFiltros"
-    >
+    <ContenedorCarrusel titulo="Resultados Nacionales" :periodo="year" :etapasDisponibles="etapasDisponibles"
+      :etapaActual="filtroVuelta" @update-etapa="manejarCambioVuelta" @toggle-search="drawer = !drawer"
+      @clean-filters="limpiarFiltros">
       <!-- ================= MAPA ================= -->
       <template #mapa>
         <div v-if="loading" class="estado">Procesando mapa...</div>
 
         <div class="compact-component compact-map" v-else-if="mapas.provincias">
-          <MapaEcuador
-            :key="filtroVuelta"
-            :geoProvincias="mapas.provincias"
-            :geoCantones="mapas.cantones"
-            :geoParroquias="mapas.parroquias"
-            :resultadosProvincias="datosElectorales.provincias"
-            :resultadosCantones="datosElectorales.cantones"
-            :resultadosParroquias="datosElectorales.parroquias"
-            :colores="coloresPartidos"
-            :id_1="mapFilters"
-            :datosDescarga="datosElectorales.provincias"
-          />
+          <MapaEcuador :key="filtroVuelta" :geoProvincias="mapas.provincias" :geoCantones="mapas.cantones"
+            :geoParroquias="mapas.parroquias" :resultadosProvincias="datosElectorales.provincias"
+            :resultadosCantones="datosElectorales.cantones" :resultadosParroquias="datosElectorales.parroquias"
+            :colores="coloresPartidos" :id_1="mapFilters" :datosDescarga="datosElectorales.provincias" />
         </div>
       </template>
 
       <!-- ================= TARJETAS CANDIDATOS ================= -->
       <template #filtros>
         <div class="compact-component compact-tarjeta">
-          <TarjetaCandidato
-            :itemsCandidato="candidatos"
-            :itemsLeyenda="leyendaColores"
-            :etiquetaTarjeta2="partidoSeleccionado"
-            @cambio-partido="manejarCambioPartido"
-          />
+          <TarjetaCandidato :itemsCandidato="candidatos" :itemsLeyenda="leyendaColores"
+            :etiquetaTarjeta2="partidoSeleccionado" @cambio-partido="manejarCambioPartido" />
         </div>
       </template>
 
       <!-- ================= GRÁFICOS ================= -->
       <template #graficos>
         <div class="compact-component compact-graficos" v-if="datosElectorales.provincias.length">
-          <GraficoBarras
-            :datos="datosElectorales.provincias"
-            :candidatosExtraInfo="candidatos"
-            categoria="presidentes"
-          />
+          <GraficoBarras :datos="datosElectorales.provincias" :candidatosExtraInfo="candidatos"
+            categoria="presidentes" />
         </div>
         <p v-else class="estado">No hay datos para gráficos</p>
       </template>
@@ -158,10 +84,7 @@
       <!-- ================= TABLAS ================= -->
       <template #tablas>
         <div class="compact-component compact-tablas" v-if="datosTabla.rows.length">
-          <TablaGenerica
-            :datos="datosTabla.rows"
-            :titulo="datosTabla.titulo"
-          />
+          <TablaGenerica :datos="datosTabla.rows" :titulo="datosTabla.titulo" />
         </div>
         <p v-else class="estado">No hay datos para tabla</p>
       </template>
@@ -174,7 +97,7 @@
       </template>
       <!-- ================= INFO GENERAL ================= -->
     </ContenedorCarrusel>
-    
+
   </div>
 </template>
 
@@ -199,7 +122,7 @@ const props = defineProps({
   year: {
     type: [String, Number],
     required: true,
-  },  
+  },
 });
 
 /* DATA ELECTORAL */
@@ -502,7 +425,8 @@ watch(
 <style scoped>
 .vista-nacional {
   padding: 0;
-  position: relative; /* Para el drawer */
+  position: relative;
+  /* Para el drawer */
 }
 
 /*+++++++*/
@@ -510,6 +434,7 @@ watch(
   position: sticky;
   bottom: 0;
 }
+
 /*++++++++++*/
 
 .texto-filtro {
@@ -537,23 +462,86 @@ watch(
 }
 
 @media (min-width: 1400px) {
-  .compact-map { transform: scale(0.82); }
-  .compact-graficos { transform: scale(0.75); }
-  .compact-tablas { transform: scale(0.82); }
-  .compact-tarjeta { transform: scale(0.92); }
+  .compact-map {
+    transform: scale(0.82);
+  }
+
+  .compact-graficos {
+    transform: scale(0.75);
+  }
+
+  .compact-tablas {
+    transform: scale(0.82);
+  }
+
+  .compact-tarjeta {
+    transform: scale(0.92);
+  }
 }
 
 @media (min-width: 992px) and (max-width: 1399px) {
-  .compact-map { transform: scale(0.86); }
-  .compact-graficos { transform: scale(0.80); }
-  .compact-tablas { transform: scale(0.86); }
-  .compact-tarjeta { transform: scale(0.95); }
+  .compact-map {
+    transform: scale(0.86);
+  }
+
+  .compact-graficos {
+    transform: scale(0.80);
+  }
+
+  .compact-tablas {
+    transform: scale(0.86);
+  }
+
+  .compact-tarjeta {
+    transform: scale(0.95);
+  }
 }
 
 @media (max-width: 991px) {
-  .compact-map { transform: scale(0.94); }
-  .compact-graficos { transform: scale(0.90); }
-  .compact-tablas { transform: scale(0.96); }
-  .compact-tarjeta { transform: scale(0.98); }
+  .compact-map {
+    transform: scale(0.94);
+  }
+
+  .compact-graficos {
+    transform: scale(0.90);
+  }
+
+  .compact-tablas {
+    transform: scale(0.96);
+  }
+
+  .compact-tarjeta {
+    transform: scale(0.98);
+  }
+}
+
+/* Mobile-specific adjustments to ensure map and tarjeta occupy full width
+   and stack nicely inside the carousel layout */
+@media (max-width: 768px) {
+  .compact-component {
+    transform: none !important;
+    padding: 0 30px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .compact-map,
+  .compact-tarjeta,
+  .compact-graficos,
+  .compact-tablas {
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 0 auto !important;
+  }
+
+
+  /* Make sure the inner map and tarjeta can scroll if taller than viewport */
+  .compact-map>*,
+  .compact-tarjeta>* {
+    width: 100%;
+    height: auto;
+    max-height: 100vh;
+    overflow: auto;
+  }
 }
 </style>

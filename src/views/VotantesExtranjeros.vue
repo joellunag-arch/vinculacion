@@ -514,4 +514,37 @@ onMounted(() => {
   .compact-tablas { transform: scale(0.96); }
   .compact-tarjeta { transform: scale(0.98); }
 }
+
+/* Mobile-specific adjustments to ensure map and tarjeta occupy full width
+   and stack nicely inside the carousel layout */
+@media (max-width: 768px) {
+  .compact-component {
+    transform: none !important;
+    padding: 0 12px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .compact-map,
+  .compact-tarjeta,
+  .compact-graficos,
+  .compact-tablas {
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 0 auto !important;
+  }
+
+  .compact-tarjeta {
+    margin-top: 12px !important;
+  }
+
+  /* Make sure the inner map and tarjeta can scroll if taller than viewport */
+  .compact-map > *,
+  .compact-tarjeta > * {
+    width: 100%;
+    height: auto;
+    max-height: 60vh;
+    overflow: auto;
+  }
+}
 </style>

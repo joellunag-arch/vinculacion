@@ -360,4 +360,64 @@ export default {
 .fade-leave-to {
   opacity: 0;
 }
+
+/* =============================
+   RESPONSIVE RULES
+============================== */
+@media (max-width: 992px) {
+  .tarjeta-layout {
+    max-width: 360px;
+  }
+
+  .header-select {
+    padding: 6px 12px;
+    height: 50px;
+  }
+
+  .label-select { font-size: 0.65rem; }
+  .value-select { font-size: 0.95rem; }
+
+  .marco-foto { width: 100px; height: 100px; }
+  .nombre-oswald-titulo { font-size: 1.25rem; }
+  .partido-oswald-sub { font-size: 0.8rem; }
+
+  .lista-contenido-scroll { max-height: 220px; }
+  .table-general tr { height: 32px; }
+  .color-square { width: 16px; height: 16px; }
+}
+
+@media (max-width: 768px) {
+  .tarjeta-layout {
+    max-width: calc(100% - 24px);
+    margin: 0 auto;
+  }
+
+  .header-select {
+    padding: 8px 10px;
+    height: 48px;
+  }
+
+  .label-select { font-size: 0.62rem; }
+  .value-select { font-size: 0.9rem; }
+
+  .marco-foto { width: 80px; height: 80px; }
+  .nombre-oswald-titulo { font-size: 1.05rem; }
+  .partido-oswald-sub { font-size: 0.78rem; }
+
+  .lista-contenido-scroll { max-height: 160px; }
+  .table-general tr { height: 28px; }
+  .table-general td { padding: 5px 6px; }
+  .table-general td + td { padding-left: 18px; }
+
+  .custom-dropdown-list { max-height: 180px; }
+
+  .marco-foto { border-radius: 50%; }
+}
+
+@media (max-width: 420px) {
+  .tarjeta-layout { max-width: calc(100% - 16px); }
+  .marco-foto { width: 68px; height: 68px; }
+  .nombre-oswald-titulo { font-size: 1rem; }
+  .value-select { font-size: 0.85rem; }
+}
 </style>
